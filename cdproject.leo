@@ -30,8 +30,13 @@
 <v t="course-mde-tw.20140417093332.2027" a="E"><vh>@path wsgi</vh>
 <v t="course-mde-tw.20140417093332.2028" a="E"
 expanded="course-mde-tw.20140417093332.2030,"><vh>@file application</vh></v>
+<<<<<<< HEAD
 <v t="2014spring.20140508134612.2197" a="E"
 expanded="2014spring.20140508134612.2221,2014spring.20140508134612.2262,"><vh>@file cmsimply.py</vh></v>
+=======
+<v t="2014spring.20140508134612.2197"
+expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
+>>>>>>> 32debcc129e7a0e8030cf9c2b869a633fe4499a0
 </v>
 <v t="2014spring.20140503125211.2097" a="E"><vh>分組程式開發</vh>
 <v t="2014spring.20140503125211.2098" a="E"><vh>@path wsgi/programs/cdag1</vh>
@@ -39,6 +44,12 @@ expanded="2014spring.20140508134612.2221,2014spring.20140508134612.2262,"><vh>@f
 </v>
 <v t="2014spring.20140503125211.2100" a="E"><vh>@path wsgi/programs/cdag2</vh>
 <v t="2014spring.20140503125211.2101"><vh>@edit __init__.py</vh></v>
+</v>
+<v t="2014spring.20140513092629.1905"><vh>@path wsgi/programs/cdag3</vh>
+<v t="2014spring.20140513092629.1906"><vh>@edit __init__.py</vh></v>
+</v>
+<v t="2014spring.20140513092629.2151" a="E"><vh>@path wsgi/programs/cdag17</vh>
+<v t="2014spring.20140513092629.2152"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140506174436.1831" a="E"><vh>@path wsgi/programs/cdag30</vh>
 <v t="2014spring.20140506174436.1832"><vh>@edit __init__.py</vh></v>
@@ -53,9 +64,6 @@ expanded="2014spring.20140508134612.2221,2014spring.20140508134612.2262,"><vh>@f
 </v>
 <v t="course-mde-tw.20140417093332.2047" a="E"><vh>分組協同報告區</vh>
 <v t="course-mde-tw.20140417093332.2048" a="E"><vh>@path wsgi/doc</vh>
-<v t="2014pythonE.20140503095658.1615" a="E"><vh>@path 2ag17</vh>
-<v t="2014pythonE.20140503095658.1616"><vh>@edit doc.txt</vh></v>
-</v>
 <v t="course-mde-tw.20140417093332.2049" a="E"><vh>@path 2ag1</vh>
 <v t="course-mde-tw.20140417093332.2050"><vh>@edit doc.txt</vh></v>
 </v>
@@ -74,8 +82,11 @@ expanded="2014spring.20140508134612.2221,2014spring.20140508134612.2262,"><vh>@f
 <v t="2014spring.20140506161101.1964" a="E"><vh>@path 2ag6</vh>
 <v t="2014spring.20140506161101.1965"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014pythonE.20140429160432.1843"><vh>@path 2ag7</vh>
+<v t="2014pythonE.20140429160432.1843" a="E"><vh>@path 2ag7</vh>
 <v t="2014pythonE.20140429160432.1844"><vh>@edit doc.txt</vh></v>
+</v>
+<v t="2014pythonE.20140512203125.1905" a="E"><vh>@path 2ag9</vh>
+<v t="2014pythonE.20140512203125.1906"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1968"><vh>@path 2ag10</vh>
 <v t="2014spring.20140506161101.1969"><vh>@edit doc.txt</vh></v>
@@ -92,7 +103,7 @@ expanded="2014spring.20140508134612.2221,2014spring.20140508134612.2262,"><vh>@f
 <v t="2014spring.20140506161101.1980" a="E"><vh>@path 2ag14</vh>
 <v t="2014spring.20140506161101.1981"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014pythonE.20140429160432.1847"><vh>@path 2ag16</vh>
+<v t="2014pythonE.20140429160432.1847" a="E"><vh>@path 2ag16</vh>
 <v t="2014pythonE.20140429160432.1848"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1984" a="E"><vh>@path 2ag17</vh>
@@ -134,7 +145,7 @@ course-mde-tw 為協同人員
 <t tx="2014pythonE.20140429104126.1755"></t>
 <t tx="2014pythonE.20140429160432.1843"></t>
 <t tx="2014pythonE.20140429160432.1847"></t>
-<t tx="2014pythonE.20140503095658.1615"></t>
+<t tx="2014pythonE.20140512203125.1905"></t>
 <t tx="2014spring.20140430165707.2063">0. 請各組閱讀
 
 https://wiki.mde.tw/doku.php?id=%E5%8D%94%E5%90%8C%E7%94%A2%E5%93%81%E8%A8%AD%E8%A8%88:2014s_week10
@@ -703,6 +714,8 @@ asmcomp.SetConstraints (constrs, void null);
    本週的任務一即是希望透過目前已經完成的協同環境配置, 利用流程圖進行表示, 將各模組的功能與設置目的加以整合, 並將內容放入各組的文書處理區.
    
    但是, 由於全班協同的雲端網站目前並沒有內容管理系統, 因此本週將設法嵌入 CMSimply 套件, 充當全班協同網站的內容管理系統, 以便導引全班協同的相關內容.</t>
+<t tx="2014spring.20140513092629.1905"></t>
+<t tx="2014spring.20140513092629.2151"></t>
 <t tx="course-mde-tw.20140417093332.1998"></t>
 <t tx="course-mde-tw.20140417093332.1999">QSplitter::handle {
     background-color: #CAE1FF; /* lightSteelBlue1 */
