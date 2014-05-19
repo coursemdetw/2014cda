@@ -94,7 +94,7 @@ _cp_config = {
 <span class="co"># if there is no utf-8 encoding, no Chinese input available</span>
 <span class="st">&#39;tools.encode.encoding&#39;</span>: <span class="st">&#39;utf-8&#39;</span>,
 <span class="co">&#39;tools.sessions.on&#39;</span> : <span class="ot">True</span>,
-<span class="co">&#39;tools.sessions.storage_type&#39;</span> : <span class="st">&#39;file&#39;</span>,
+<span class="co">&#39;tools.sessions.st\orage_type&#39;</span> : <span class="st">&#39;file&#39;</span>,
 <span class="co">&#39;tools.sessions.locking&#39;</span> : <span class="st">&#39;explicit&#39;</span>,
 <span class="co">&#39;tools.sessions.storage_path&#39;</span> : data_dir+<span class="st">&#39;/tmp&#39;</span>,
 <span class="co"># session timeout is 60 minutes</span>
@@ -190,71 +190,231 @@ return output</code></pre>
 <h1 id="結果與討論-6">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <p>這是第九組</p>
-<h1 id="網際鼓式煞車設計2ag10">網際鼓式煞車設計(2ag10)</h1>
+<h1 id="cd2ag10報告2ag10">cd2ag10報告(2ag10)</h1>
+<p>以下為各週報告</p>
+<h1 id="第八週報告">第八週報告</h1>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> cherrypy
+<span class="kw">class</span> HelloWorld(<span class="dt">object</span>):
+    <span class="ot">@cherrypy.expose</span>
+    <span class="kw">def</span> index(<span class="ot">self</span>, var1=<span class="dv">9</span>, var2=<span class="dv">9</span>):
+        <span class="co"># initialize outstring</span>
+        outstring = <span class="st">&quot;&quot;</span>
+        <span class="co"># initialize count</span>
+        count = <span class="dv">0</span>
+        d = <span class="dt">int</span>(var1)
+        e = <span class="dt">int</span>(var2)+<span class="dv">1</span>
+        <span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">1</span>, d):
+            <span class="kw">for</span> j in <span class="dt">range</span>(<span class="dv">1</span>, e):
+                count += <span class="dv">1</span>
+                <span class="co">#print(count)</span>
+                <span class="kw">if</span> count%(<span class="dt">int</span>(var2)) == <span class="dv">0</span>:
+                    outstring += <span class="st">&quot;&lt;td&gt;&quot;</span>+<span class="dt">str</span>(i) + <span class="st">&quot;*&quot;</span> + <span class="dt">str</span>(j) + <span class="st">&quot;=&quot;</span> + <span class="dt">str</span>(i*j) +<span class="st">&quot;&lt;/td&gt;&quot;</span>+<span class="st">&quot;&lt;/tr&gt;&quot;</span> + <span class="st">&quot;&lt;br /&gt;&quot;</span>
+                <span class="kw">else</span>:
+                    outstring += <span class="st">&quot;&lt;td&gt;&quot;</span>+<span class="dt">str</span>(i) + <span class="st">&quot;x&quot;</span> + <span class="dt">str</span>(j) + <span class="st">&quot;=&quot;</span> + <span class="dt">str</span>(i*j) + <span class="st">&quot;&lt;/td&gt;&quot;</span>
+        <span class="kw">return</span> <span class="st">&quot;&lt;table border=2&gt;&lt;tr&gt;&lt;td&gt;99乘法表&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&quot;</span>+outstring
+<span class="co">#http://127.0.0.1:8080/index?var1=10&amp;var2=20</span>
+<span class="co">#&quot;&amp;nbsp;&quot;*4</span>
+ 
+ 
+cherrypy.quickstart(HelloWorld())
+<span class="co">#application=cherrypy.Application(HelloWorld()) #將符號打開上傳openshift即可使用，並刪掉上列</span></code></pre>
+<p>以上程式碼即可跑出99乘法表.</p>
+<p>9x9openshift: http://9x9-cadp13ag8.rhcloud.com/ (因openshift空間不足，故利用第九週程式，程式碼略有差別，主要為多新增兩個輸入表單，其餘相同)</p>
+<p>同步bitbucket: https://bitbucket.org/40123153/input9x9 (同上)</p>
+<p>————我是分隔線————</p>
+<p>影片(由於網路超慢，怕錄製影片過大所以只錄製最後結果)</p>
+<p>https://vimeo.com/92003966</p>
+<p>P.S 由於題目理解錯誤，所以上述影片為失效。</p>
+<h1 id="第九週報告">第九週報告</h1>
+<p>第一題:</p>
+<p>Log以10為底之表單openshift: http://log-cadp13ag8.rhcloud.com/</p>
+<p>bitbucket: https://bitbucket.org/40123153/log10-1.00-1.99</p>
+<p>因為迴圈關係，多了一個21…還在更新中。(解決)</p>
+<p>P.S已利用elif判斷式將最後的21給剃除！</p>
+當在最後20的地方下elif將
+<tr>
+<p>給剃除，故不在往下做表格及列印出21數字。</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> cherrypy
+<span class="ch">import</span> os
+<span class="ch">import</span> math
+<span class="co"># 1. 導入所需模組</span>
+
+<span class="co"># 2. 設定近端與遠端目錄</span>
+<span class="co"># 確定程式檔案所在目錄, 在 Windows 有最後的反斜線</span>
+_curdir = os.path.join(os.getcwd(), os.path.dirname(<span class="ot">__file__</span>))
+<span class="co"># 設定在雲端與近端的資料儲存目錄</span>
+<span class="kw">if</span> <span class="st">&#39;OPENSHIFT_REPO_DIR&#39;</span> in os.environ.keys():
+    <span class="co"># 表示程式在雲端執行</span>
+    download_root_dir = os.environ[<span class="st">&#39;OPENSHIFT_DATA_DIR&#39;</span>]
+    data_dir = os.environ[<span class="st">&#39;OPENSHIFT_DATA_DIR&#39;</span>]
+<span class="kw">else</span>:
+    <span class="co"># 表示程式在近端執行</span>
+    download_root_dir = _curdir + <span class="st">&quot;/local_data/&quot;</span>
+    data_dir = _curdir + <span class="st">&quot;/local_data/&quot;</span>
+ 
+<span class="co"># 3. 建立主物件</span>
+<span class="kw">class</span> HelloWorld(<span class="dt">object</span>):
+    <span class="ot">@cherrypy.expose</span>
+    <span class="kw">def</span> index2(<span class="ot">self</span>, input1=<span class="ot">None</span>, input2=<span class="ot">None</span>):
+        <span class="kw">return</span> <span class="st">&quot;Hello world!&quot;</span>+<span class="dt">str</span>(input1)
+    <span class="ot">@cherrypy.expose</span>
+    <span class="kw">def</span> inputform(<span class="ot">self</span>, input1=<span class="ot">None</span>, input2=<span class="ot">None</span>):
+        <span class="kw">return</span> <span class="st">&quot;input form&quot;</span>+<span class="dt">str</span>(input1)
+    <span class="co">#index.exposed = True</span>
+    <span class="ot">@cherrypy.expose</span>
+    <span class="kw">def</span> index(<span class="ot">self</span>):
+        out=<span class="st">&quot;&quot;</span>
+        c = <span class="dv">0</span>
+        k = <span class="dv">0</span>
+        <span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">0</span>,<span class="dv">11</span>):
+            <span class="kw">for</span> j in <span class="dt">range</span> (<span class="dv">0</span>,<span class="dv">10</span>):
+                k += <span class="dv">1</span>
+                c = <span class="dv">10</span> + i
+                d = c/<span class="dv">10</span>+j/<span class="dv">100</span>
+                e = (<span class="dt">int</span>(math.log(d,<span class="dv">10</span>)*<span class="dv">10000</span>))
+                <span class="kw">if</span> (k%<span class="dv">10</span> == <span class="dv">0</span> and k&lt;=<span class="dv">100</span>):
+                    out += <span class="st">&quot;&lt;td&gt;&quot;</span>+<span class="dt">str</span>(e)+<span class="st">&quot;&lt;/td&gt;&lt;/tr&gt;&lt;td&gt;&quot;</span>+<span class="dt">str</span>(c<span class="dv">+1</span>)+<span class="st">&quot;&lt;/td&gt;&lt;br /&gt;&quot;</span>
+                <span class="kw">elif</span> k%<span class="dv">100</span> == <span class="dv">0</span>:
+                    out += <span class="st">&quot;&lt;td&gt;&quot;</span>+<span class="dt">str</span>(e)+<span class="st">&quot;&lt;/td&gt;&lt;br /&gt;&quot;</span>
+                <span class="kw">else</span>:
+                    out +=<span class="st">&quot;&lt;td&gt;&quot;</span>+<span class="dt">str</span>(e) + <span class="st">&quot;&lt;/td&gt;&quot;</span>
+                <span class="co">#print(&quot;log=&quot;,int(math.log(d,10)*10000))</span>
+            <span class="co">#print(&quot;\n&quot;)</span>
+        <span class="kw">return</span> <span class="st">&quot;&lt;table border=1&gt;&lt;tr&gt;&lt;td&gt;x&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;/tr&gt;&lt;td&gt;&quot;</span>+<span class="st">&quot;10&quot;</span>+<span class="st">&quot;&lt;/td&gt;&quot;</span>+out
+ 
+<span class="co"># 4. 安排啟動設定</span>
+<span class="co"># 配合程式檔案所在目錄設定靜態目錄或靜態檔案</span>
+application_conf = {<span class="st">&#39;/static&#39;</span>:{
+        <span class="st">&#39;tools.staticdir.on&#39;</span>: <span class="ot">True</span>,
+        <span class="co">&#39;tools.staticdir.dir&#39;</span>: _curdir+<span class="st">&quot;/static&quot;</span>},
+        <span class="co">&#39;/downloads&#39;</span>:{
+        <span class="st">&#39;tools.staticdir.on&#39;</span>: <span class="ot">True</span>,
+        <span class="co">&#39;tools.staticdir.dir&#39;</span>: data_dir+<span class="st">&quot;/downloads&quot;</span>}
+    }
+ 
+<span class="co"># 5. 在近端或遠端啟動程式</span>
+<span class="co"># 利用 HelloWorld() class 產生案例物件</span>
+root = HelloWorld()
+<span class="co"># 假如在 os 環境變數中存在 &#39;OPENSHIFT_REPO_DIR&#39;, 表示程式在 OpenShift 環境中執行</span>
+<span class="kw">if</span> <span class="st">&#39;OPENSHIFT_REPO_DIR&#39;</span> in os.environ.keys():
+    <span class="co"># 雲端執行啟動</span>
+    application = cherrypy.Application(root, config = application_conf)
+<span class="kw">else</span>:
+    <span class="co"># 近端執行啟動</span>
+    <span class="co">&#39;&#39;&#39;</span>
+<span class="co">    cherrypy.server.socket_port = 8083</span>
+<span class="co">    cherrypy.server.socket_host = &#39;127.0.0.1&#39;</span>
+<span class="co">    &#39;&#39;&#39;</span>
+    cherrypy.quickstart(root, config = application_conf)</code></pre>
+<p>————我是分隔線————</p>
+<p>第二題:</p>
+<p>9×9乘法表，並且有兩input可以改變9×9乘法表的範圍。例：input:9 and 20 則為9×20乘法表。</p>
+<p>openshift: http://9x9-cadp13ag8.rhcloud.com/ (備註:i為前值，j為後值)</p>
+<p>bitbucket: https://bitbucket.org/40123153/input9x9</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> cherrypy
+<span class="kw">class</span> HelloWorld(<span class="dt">object</span>):
+    <span class="ot">@cherrypy.expose</span>
+    <span class="kw">def</span> index(<span class="ot">self</span>, var1=<span class="dv">9</span>, var2=<span class="dv">9</span>):
+        <span class="co"># initialize outstring</span>
+        outstring = <span class="st">&quot;&quot;</span>
+        <span class="co"># initialize count</span>
+        count = <span class="dv">0</span>
+        d = <span class="dt">int</span>(var1)+<span class="dv">1</span>
+        e = <span class="dt">int</span>(var2)+<span class="dv">1</span>
+        <span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">1</span>, d):
+            <span class="kw">for</span> j in <span class="dt">range</span>(<span class="dv">1</span>, e):
+                count += <span class="dv">1</span>
+                <span class="kw">if</span> count%<span class="dt">int</span>(var2) == <span class="dv">0</span>:
+                    outstring += <span class="st">&quot;&lt;td&gt;&quot;</span>+<span class="dt">str</span>(i) + <span class="st">&quot;*&quot;</span> + <span class="dt">str</span>(j) + <span class="st">&quot;=&quot;</span> + <span class="dt">str</span>(i*j) +<span class="st">&quot;&lt;/td&gt;&quot;</span>+<span class="st">&quot;&lt;/tr&gt;&quot;</span> + <span class="st">&quot;&lt;br /&gt;&quot;</span>
+                <span class="kw">else</span>:
+                    outstring += <span class="st">&quot;&lt;td&gt;&quot;</span>+<span class="dt">str</span>(i) + <span class="st">&quot;x&quot;</span> + <span class="dt">str</span>(j) + <span class="st">&quot;=&quot;</span> + <span class="dt">str</span>(i*j) + <span class="st">&quot;&lt;/td&gt;&quot;</span>
+        <span class="kw">return</span> <span class="st">&quot;&lt;table border=3&gt;&lt;tr&gt;&lt;td&gt;99乘法表&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&quot;</span>+outstring+<span class="st">&#39;&#39;&#39;&lt;br/&gt;&lt;form method=&quot;POST&quot; action=&quot;index&quot;&gt;</span>
+<span class="st">                i 我是前值:&lt;input type=&quot;text&quot; name=&quot;var1&quot;&gt;&lt;br /&gt;</span>
+<span class="st">                j 我是後值:&lt;input type=&quot;text&quot; name=&quot;var2&quot;&gt;&lt;br /&gt;</span>
+<span class="st">                &lt;input type=&quot;submit&quot; value=&quot;send&quot;&gt;</span>
+<span class="st">                &lt;/form&gt;</span>
+<span class="st">                &#39;&#39;&#39;</span>
+<span class="co">#http://127.0.0.1:8080/index?var1=10&amp;var2=20</span>
+ 
+ 
+<span class="co">#cherrypy.quickstart(HelloWorld())</span>
+application=cherrypy.Application(HelloWorld())</code></pre>
+<p>————我是分隔線————</p>
+<p>第三題:</p>
+<p>新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399。</p>
+<p>影片解說: https://vimeo.com/92574166</p>
+<p>首先，我們必須要先有abc001~abc399的帳號密碼值，故先用程式迴圈跑出。 (因為懶得寫輸出檔，或者是不熟悉所以不冒險去寫。）</p>
+<p>將值複製至文件內將空白修掉，利用EXCEL把密碼在複製至B欄位。存成CSV檔</p>
+<p>同樣利用文件將逗點修掉(如果沒記錯空白處為一個TAB，為了安全還是複製之前的。)</p>
+<p>再利用程式，修改讀取的文件，將密碼處改為數列<a href="數列第一資料行位為[0]，第二資料故為[1]">1</a></p>
+<p>跑出user之後利用FZ將檔案覆蓋，則可以在雲端上登錄。(為了確認完全傳入，將abc001改為管理權限，確認帳號輸入)</p>
+<p>dokuwiki_openshift: http://dokuwiki-cadp13ag8.rhcloud.com/doku.php</p>
+<p>bitbucket: https://bitbucket.org/40123153/dokuwiki_abc</p>
+<p>第三題的程式碼實在不知道要打什麼….</p>
+<h1 id="網際鼓式煞車設計2ag11">網際鼓式煞車設計(2ag11)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-6">程式設計架構</h1>
 <p>鼓式煞車</p>
 <h1 id="結果與討論-7">結果與討論</h1>
 <p>這裡是結果與討論</p>
-<h1 id="網際鼓式煞車設計2ag11">網際鼓式煞車設計(2ag11)</h1>
+<h1 id="網際鼓式煞車設計2ag12">網際鼓式煞車設計(2ag12)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-7">程式設計架構</h1>
 <p>鼓式煞車</p>
 <h1 id="結果與討論-8">結果與討論</h1>
 <p>這裡是結果與討論</p>
-<h1 id="網際鼓式煞車設計2ag12">網際鼓式煞車設計(2ag12)</h1>
+<h1 id="網際鼓式煞車設計2ag13">網際鼓式煞車設計(2ag13)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-8">程式設計架構</h1>
 <p>鼓式煞車</p>
 <h1 id="結果與討論-9">結果與討論</h1>
 <p>這裡是結果與討論</p>
-<h1 id="網際鼓式煞車設計2ag13">網際鼓式煞車設計(2ag13)</h1>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10) &gt;&gt;&gt;&gt;&gt;&gt;&gt; 26a5b9324111e15820203a5b96463a4196def80e ===</p>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-9">程式設計架構</h1>
 <p>鼓式煞車</p>
 <h1 id="結果與討論-10">結果與討論</h1>
 <p>這裡是結果與討論</p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10) &gt;&gt;&gt;&gt;&gt;&gt;&gt; 26a5b9324111e15820203a5b96463a4196def80e ===</p>
+<h1 id="網際鼓式煞車設計2ag15">網際鼓式煞車設計(2ag15)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-10">程式設計架構</h1>
 <p>鼓式煞車</p>
 <h1 id="結果與討論-11">結果與討論</h1>
 <p>這裡是結果與討論</p>
-<h1 id="網際鼓式煞車設計2ag15">網際鼓式煞車設計(2ag15)</h1>
+<h1 id="網際鼓式煞車設計2ag16">網際鼓式煞車設計(2ag16)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-11">程式設計架構</h1>
 <p>鼓式煞車</p>
 <h1 id="結果與討論-12">結果與討論</h1>
 <p>這裡是結果與討論</p>
-<h1 id="網際鼓式煞車設計2ag16">網際鼓式煞車設計(2ag16)</h1>
-<p>有關鼓式煞車</p>
+<h1 id="第八週摘要報告">第八週摘要報告</h1>
+<p>以協同方式寫Wiki</p>
+<p>本文目的在於讓學生利用開發的wiki與應用快速原型的協作式寫作的開發方法。而本文也由定性數據收集和分析方法的來評價。 最後，對於協作方式來寫作的方式，其影響極其討論協議到組別與軟件開發方面的考慮和教學相關的要求問題 研究方法 wiki的協作式寫作，基於設計的研究包括以下四個步驟： 1. 研究的現狀與認識目的並審查與wiki的協作式寫作相關的問題。 2. wiki將用於促進以協同方式寫作來設計，參與和群體互動。 3. 使用多種方法收集其經驗數據。 4. 通過系統的評價分析，並通過各種方法收集資料。分析，設計，實施和評價是相互共存的。而缺點提出於每個週期提出，重新設計，重新實現，並重新評估。 維基應用域教育在協同方式寫作方法而成的Wiki是適用於多種情況，期望得到的wiki應用在學習投資效益與協同方式來寫作。它十分靈活的，足以適應的專業條件。更具體地，它的應用領域包括不同級別的更高教育，從研究生到社會教育。除了協同寫作與學科相關，維基可以為一些應用程序的開發系統來使用，如產生教材，網路上互相評論，並收集數據於一種項目。</p>
+<p>結論和未來研究方向 1. 這項結果不能限制於狹小的研究的範圍，即使調查結果反映了那些報導中的一致性研究文獻。 2. 用來判斷以不同方式來呈現協同，尤其是同組評議，這擁有極高的教育價值與分析性思維，並參與交流。可以促進團體間的合作和時間，wiki打開了協同寫作上新的視野，而小組互動絕不是容易的事情，解決了技術，教學和文化各種問題。 未來的工作將更顯的協同的重要性，wiki以此設計為基礎下更加精進。重要的是，它更進一步影響高等教育對於wiki的使用。最後，它也進一步實踐於系統評論的基礎</p>
+<h1 id="第九週摘要報告">第九週摘要報告</h1>
+<p>題目一 :請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.</p>
+<p>資料 : https://bitbucket.org/40123158/test</p>
+<p>題目三 : 請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.</p>
+<p>資料 : 第17組dokuwiki , 新增 abc001 ~ abc399 用戶資料 http://wikig17-weis.rhcloud.com/doku.php?id=start</p>
+<p>上傳影片- 個人Vimeo https://vimeo.com/92577964</p>
+<p>Bitbucket 連結 https://bitbucket.org/40123137/week9 Bitbucket 連結 https://bitbucket.org/40123137/week9</p>
+<h1 id="網際鼓式煞車設計2ag18">網際鼓式煞車設計(2ag18)</h1>
+<p>有關鼓式煞車g18</p>
 <h1 id="程式設計架構-12">程式設計架構</h1>
 <p>鼓式煞車</p>
 <h1 id="結果與討論-13">結果與討論</h1>
 <p>這裡是結果與討論</p>
-<h1 id="網際鼓式煞車設計2ag17">網際鼓式煞車設計(2ag17)</h1>
-<p>有關鼓式煞車g17</p>
+<h1 id="網際鼓式煞車設計2ag21">網際鼓式煞車設計(2ag21)</h1>
+<p>有關鼓式煞車</p>
 <h1 id="程式設計架構-13">程式設計架構</h1>
 <p>鼓式煞車</p>
 <h1 id="結果與討論-14">結果與討論</h1>
-<p>這裡是結果與討論</p>
-<h1 id="網際鼓式煞車設計2ag18">網際鼓式煞車設計(2ag18)</h1>
-<p>有關鼓式煞車g18</p>
-<h1 id="程式設計架構-14">程式設計架構</h1>
-<p>鼓式煞車</p>
-<h1 id="結果與討論-15">結果與討論</h1>
-<p>這裡是結果與討論</p>
-<h1 id="網際鼓式煞車設計2ag21">網際鼓式煞車設計(2ag21)</h1>
-<p>有關鼓式煞車</p>
-<h1 id="程式設計架構-15">程式設計架構</h1>
-<p>鼓式煞車</p>
-<h1 id="結果與討論-16">結果與討論</h1>
 <p>這裡是結果與討論00123</p>
 <h1 id="網際-openjscad-程式設計coursemdetw">網際 OpenJSCAD 程式設計(coursemdetw)</h1>
 <p>將 Spur 改為凸輪零件成型</p>
 <h1 id="設計程式架構-1">設計程式架構</h1>
 <p>定義凸輪設計公式</p>
-<h1 id="結果與討論-17">結果與討論</h1>
+<h1 id="結果與討論-15">結果與討論</h1>
 <p>有關凸倫程式設計的結果與討論</p>
 <div class="footnotes">
 <hr />

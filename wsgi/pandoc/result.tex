@@ -73,12 +73,6 @@
 \usepackage{graphicx} 
 \usepackage{fancyvrb} % for frame on Verbatim 
 \setCJKmainfont{新細明體}
- 
-\usepackage{xeCJK}    % 中英文字行分開設置 
-\usepackage[T1]{fontspec}    %設定字體用 
-\usepackage{graphicx} 
-\usepackage{fancyvrb} % for frame on Verbatim 
-\setCJKmainfont{新細明體}
 \begin{document}
 \maketitle
 
@@ -212,7 +206,7 @@ bitbucket 空間，而且同步指到 OpenShift 個人帳號上執行。
 \CommentTok{# if there is no utf-8 encoding, no Chinese input available}
 \StringTok{'tools.encode.encoding'}\NormalTok{: }\StringTok{'utf-8'}\NormalTok{,}
 \CommentTok{'tools.sessions.on'} \NormalTok{: }\OtherTok{True}\NormalTok{,}
-\CommentTok{'tools.sessions.storage_type'} \NormalTok{: }\StringTok{'file'}\NormalTok{,}
+\CommentTok{'tools.sessions.st\textbackslash{}orage_type'} \NormalTok{: }\StringTok{'file'}\NormalTok{,}
 \CommentTok{'tools.sessions.locking'} \NormalTok{: }\StringTok{'explicit'}\NormalTok{,}
 \CommentTok{'tools.sessions.storage_path'} \NormalTok{: data_dir+}\StringTok{'/tmp'}\NormalTok{,}
 \CommentTok{# session timeout is 60 minutes}
@@ -406,7 +400,220 @@ by 2014cdag5
 
 這是第九組
 
-\section{網際鼓式煞車設計(2ag10)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag10}
+\section{cd2ag10報告(2ag10)}\label{cd2ag10ux5831ux544a2ag10}
+
+以下為各週報告
+
+\section{第八週報告}\label{ux7b2cux516bux9031ux5831ux544a}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CharTok{import} \NormalTok{cherrypy}
+\KeywordTok{class} \NormalTok{HelloWorld(}\DataTypeTok{object}\NormalTok{):}
+    \OtherTok{@cherrypy.expose}
+    \KeywordTok{def} \NormalTok{index(}\OtherTok{self}\NormalTok{, var1=}\DecValTok{9}\NormalTok{, var2=}\DecValTok{9}\NormalTok{):}
+        \CommentTok{# initialize outstring}
+        \NormalTok{outstring = }\StringTok{""}
+        \CommentTok{# initialize count}
+        \NormalTok{count = }\DecValTok{0}
+        \NormalTok{d = }\DataTypeTok{int}\NormalTok{(var1)}
+        \NormalTok{e = }\DataTypeTok{int}\NormalTok{(var2)+}\DecValTok{1}
+        \KeywordTok{for} \NormalTok{i in }\DataTypeTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{, d):}
+            \KeywordTok{for} \NormalTok{j in }\DataTypeTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{, e):}
+                \NormalTok{count += }\DecValTok{1}
+                \CommentTok{#print(count)}
+                \KeywordTok{if} \NormalTok{count%(}\DataTypeTok{int}\NormalTok{(var2)) == }\DecValTok{0}\NormalTok{:}
+                    \NormalTok{outstring += }\StringTok{"<td>"}\NormalTok{+}\DataTypeTok{str}\NormalTok{(i) + }\StringTok{"*"} \NormalTok{+ }\DataTypeTok{str}\NormalTok{(j) + }\StringTok{"="} \NormalTok{+ }\DataTypeTok{str}\NormalTok{(i*j) +}\StringTok{"</td>"}\NormalTok{+}\StringTok{"</tr>"} \NormalTok{+ }\StringTok{"<br />"}
+                \KeywordTok{else}\NormalTok{:}
+                    \NormalTok{outstring += }\StringTok{"<td>"}\NormalTok{+}\DataTypeTok{str}\NormalTok{(i) + }\StringTok{"x"} \NormalTok{+ }\DataTypeTok{str}\NormalTok{(j) + }\StringTok{"="} \NormalTok{+ }\DataTypeTok{str}\NormalTok{(i*j) + }\StringTok{"</td>"}
+        \KeywordTok{return} \StringTok{"<table border=2><tr><td>99乘法表</td></tr><tr>"}\NormalTok{+outstring}
+\CommentTok{#http://127.0.0.1:8080/index?var1=10&var2=20}
+\CommentTok{#"&nbsp;"*4}
+ 
+ 
+\NormalTok{cherrypy.quickstart(HelloWorld())}
+\CommentTok{#application=cherrypy.Application(HelloWorld()) #將符號打開上傳openshift即可使用，並刪掉上列}
+\end{Highlighting}
+\end{Shaded}
+
+以上程式碼即可跑出99乘法表.
+
+9x9openshift: http://9x9-cadp13ag8.rhcloud.com/
+(因openshift空間不足，故利用第九週程式，程式碼略有差別，主要為多新增兩個輸入表單，其餘相同)
+
+同步bitbucket: https://bitbucket.org/40123153/input9x9 (同上)
+
+------------我是分隔線------------
+
+影片(由於網路超慢，怕錄製影片過大所以只錄製最後結果)
+
+https://vimeo.com/92003966
+
+P.S 由於題目理解錯誤，所以上述影片為失效。
+
+\section{第九週報告}\label{ux7b2cux4e5dux9031ux5831ux544a}
+
+第一題:
+
+Log以10為底之表單openshift: http://log-cadp13ag8.rhcloud.com/
+
+bitbucket: https://bitbucket.org/40123153/log10-1.00-1.99
+
+因為迴圈關係，多了一個21\ldots{}還在更新中。(解決)
+
+P.S已利用elif判斷式將最後的21給剃除！
+
+當在最後20的地方下elif將
+
+給剃除，故不在往下做表格及列印出21數字。
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CharTok{import} \NormalTok{cherrypy}
+\CharTok{import} \NormalTok{os}
+\CharTok{import} \NormalTok{math}
+\CommentTok{# 1. 導入所需模組}
+
+\CommentTok{# 2. 設定近端與遠端目錄}
+\CommentTok{# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線}
+\NormalTok{_curdir = os.path.join(os.getcwd(), os.path.dirname(}\OtherTok{__file__}\NormalTok{))}
+\CommentTok{# 設定在雲端與近端的資料儲存目錄}
+\KeywordTok{if} \StringTok{'OPENSHIFT_REPO_DIR'} \NormalTok{in os.environ.keys():}
+    \CommentTok{# 表示程式在雲端執行}
+    \NormalTok{download_root_dir = os.environ[}\StringTok{'OPENSHIFT_DATA_DIR'}\NormalTok{]}
+    \NormalTok{data_dir = os.environ[}\StringTok{'OPENSHIFT_DATA_DIR'}\NormalTok{]}
+\KeywordTok{else}\NormalTok{:}
+    \CommentTok{# 表示程式在近端執行}
+    \NormalTok{download_root_dir = _curdir + }\StringTok{"/local_data/"}
+    \NormalTok{data_dir = _curdir + }\StringTok{"/local_data/"}
+ 
+\CommentTok{# 3. 建立主物件}
+\KeywordTok{class} \NormalTok{HelloWorld(}\DataTypeTok{object}\NormalTok{):}
+    \OtherTok{@cherrypy.expose}
+    \KeywordTok{def} \NormalTok{index2(}\OtherTok{self}\NormalTok{, input1=}\OtherTok{None}\NormalTok{, input2=}\OtherTok{None}\NormalTok{):}
+        \KeywordTok{return} \StringTok{"Hello world!"}\NormalTok{+}\DataTypeTok{str}\NormalTok{(input1)}
+    \OtherTok{@cherrypy.expose}
+    \KeywordTok{def} \NormalTok{inputform(}\OtherTok{self}\NormalTok{, input1=}\OtherTok{None}\NormalTok{, input2=}\OtherTok{None}\NormalTok{):}
+        \KeywordTok{return} \StringTok{"input form"}\NormalTok{+}\DataTypeTok{str}\NormalTok{(input1)}
+    \CommentTok{#index.exposed = True}
+    \OtherTok{@cherrypy.expose}
+    \KeywordTok{def} \NormalTok{index(}\OtherTok{self}\NormalTok{):}
+        \NormalTok{out=}\StringTok{""}
+        \NormalTok{c = }\DecValTok{0}
+        \NormalTok{k = }\DecValTok{0}
+        \KeywordTok{for} \NormalTok{i in }\DataTypeTok{range}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{11}\NormalTok{):}
+            \KeywordTok{for} \NormalTok{j in }\DataTypeTok{range} \NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{10}\NormalTok{):}
+                \NormalTok{k += }\DecValTok{1}
+                \NormalTok{c = }\DecValTok{10} \NormalTok{+ i}
+                \NormalTok{d = c/}\DecValTok{10}\NormalTok{+j/}\DecValTok{100}
+                \NormalTok{e = (}\DataTypeTok{int}\NormalTok{(math.log(d,}\DecValTok{10}\NormalTok{)*}\DecValTok{10000}\NormalTok{))}
+                \KeywordTok{if} \NormalTok{(k%}\DecValTok{10} \NormalTok{== }\DecValTok{0} \NormalTok{and k<=}\DecValTok{100}\NormalTok{):}
+                    \NormalTok{out += }\StringTok{"<td>"}\NormalTok{+}\DataTypeTok{str}\NormalTok{(e)+}\StringTok{"</td></tr><td>"}\NormalTok{+}\DataTypeTok{str}\NormalTok{(c}\DecValTok{+1}\NormalTok{)+}\StringTok{"</td><br />"}
+                \KeywordTok{elif} \NormalTok{k%}\DecValTok{100} \NormalTok{== }\DecValTok{0}\NormalTok{:}
+                    \NormalTok{out += }\StringTok{"<td>"}\NormalTok{+}\DataTypeTok{str}\NormalTok{(e)+}\StringTok{"</td><br />"}
+                \KeywordTok{else}\NormalTok{:}
+                    \NormalTok{out +=}\StringTok{"<td>"}\NormalTok{+}\DataTypeTok{str}\NormalTok{(e) + }\StringTok{"</td>"}
+                \CommentTok{#print("log=",int(math.log(d,10)*10000))}
+            \CommentTok{#print("\textbackslash{}n")}
+        \KeywordTok{return} \StringTok{"<table border=1><tr><td>x</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><td>"}\NormalTok{+}\StringTok{"10"}\NormalTok{+}\StringTok{"</td>"}\NormalTok{+out}
+ 
+\CommentTok{# 4. 安排啟動設定}
+\CommentTok{# 配合程式檔案所在目錄設定靜態目錄或靜態檔案}
+\NormalTok{application_conf = \{}\StringTok{'/static'}\NormalTok{:\{}
+        \StringTok{'tools.staticdir.on'}\NormalTok{: }\OtherTok{True}\NormalTok{,}
+        \CommentTok{'tools.staticdir.dir'}\NormalTok{: _curdir+}\StringTok{"/static"}\NormalTok{\},}
+        \CommentTok{'/downloads'}\NormalTok{:\{}
+        \StringTok{'tools.staticdir.on'}\NormalTok{: }\OtherTok{True}\NormalTok{,}
+        \CommentTok{'tools.staticdir.dir'}\NormalTok{: data_dir+}\StringTok{"/downloads"}\NormalTok{\}}
+    \NormalTok{\}}
+ 
+\CommentTok{# 5. 在近端或遠端啟動程式}
+\CommentTok{# 利用 HelloWorld() class 產生案例物件}
+\NormalTok{root = HelloWorld()}
+\CommentTok{# 假如在 os 環境變數中存在 'OPENSHIFT_REPO_DIR', 表示程式在 OpenShift 環境中執行}
+\KeywordTok{if} \StringTok{'OPENSHIFT_REPO_DIR'} \NormalTok{in os.environ.keys():}
+    \CommentTok{# 雲端執行啟動}
+    \NormalTok{application = cherrypy.Application(root, config = application_conf)}
+\KeywordTok{else}\NormalTok{:}
+    \CommentTok{# 近端執行啟動}
+    \CommentTok{'''}
+\CommentTok{    cherrypy.server.socket_port = 8083}
+\CommentTok{    cherrypy.server.socket_host = '127.0.0.1'}
+\CommentTok{    '''}
+    \NormalTok{cherrypy.quickstart(root, config = application_conf)}
+\end{Highlighting}
+\end{Shaded}
+
+------------我是分隔線------------
+
+第二題:
+
+9×9乘法表，並且有兩input可以改變9×9乘法表的範圍。例：input:9 and 20
+則為9×20乘法表。
+
+openshift: http://9x9-cadp13ag8.rhcloud.com/ (備註:i為前值，j為後值)
+
+bitbucket: https://bitbucket.org/40123153/input9x9
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CharTok{import} \NormalTok{cherrypy}
+\KeywordTok{class} \NormalTok{HelloWorld(}\DataTypeTok{object}\NormalTok{):}
+    \OtherTok{@cherrypy.expose}
+    \KeywordTok{def} \NormalTok{index(}\OtherTok{self}\NormalTok{, var1=}\DecValTok{9}\NormalTok{, var2=}\DecValTok{9}\NormalTok{):}
+        \CommentTok{# initialize outstring}
+        \NormalTok{outstring = }\StringTok{""}
+        \CommentTok{# initialize count}
+        \NormalTok{count = }\DecValTok{0}
+        \NormalTok{d = }\DataTypeTok{int}\NormalTok{(var1)+}\DecValTok{1}
+        \NormalTok{e = }\DataTypeTok{int}\NormalTok{(var2)+}\DecValTok{1}
+        \KeywordTok{for} \NormalTok{i in }\DataTypeTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{, d):}
+            \KeywordTok{for} \NormalTok{j in }\DataTypeTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{, e):}
+                \NormalTok{count += }\DecValTok{1}
+                \KeywordTok{if} \NormalTok{count%}\DataTypeTok{int}\NormalTok{(var2) == }\DecValTok{0}\NormalTok{:}
+                    \NormalTok{outstring += }\StringTok{"<td>"}\NormalTok{+}\DataTypeTok{str}\NormalTok{(i) + }\StringTok{"*"} \NormalTok{+ }\DataTypeTok{str}\NormalTok{(j) + }\StringTok{"="} \NormalTok{+ }\DataTypeTok{str}\NormalTok{(i*j) +}\StringTok{"</td>"}\NormalTok{+}\StringTok{"</tr>"} \NormalTok{+ }\StringTok{"<br />"}
+                \KeywordTok{else}\NormalTok{:}
+                    \NormalTok{outstring += }\StringTok{"<td>"}\NormalTok{+}\DataTypeTok{str}\NormalTok{(i) + }\StringTok{"x"} \NormalTok{+ }\DataTypeTok{str}\NormalTok{(j) + }\StringTok{"="} \NormalTok{+ }\DataTypeTok{str}\NormalTok{(i*j) + }\StringTok{"</td>"}
+        \KeywordTok{return} \StringTok{"<table border=3><tr><td>99乘法表</td></tr><tr>"}\NormalTok{+outstring+}\StringTok{'''<br/><form method="POST" action="index">}
+\StringTok{                i 我是前值:<input type="text" name="var1"><br />}
+\StringTok{                j 我是後值:<input type="text" name="var2"><br />}
+\StringTok{                <input type="submit" value="send">}
+\StringTok{                </form>}
+\StringTok{                '''}
+\CommentTok{#http://127.0.0.1:8080/index?var1=10&var2=20}
+ 
+ 
+\CommentTok{#cherrypy.quickstart(HelloWorld())}
+\NormalTok{application=cherrypy.Application(HelloWorld())}
+\end{Highlighting}
+\end{Shaded}
+
+------------我是分隔線------------
+
+第三題:
+
+新增帳號與密碼都是由 abc001 \textasciitilde{} abc399 字串所組成的 399。
+
+影片解說: https://vimeo.com/92574166
+
+首先，我們必須要先有abc001\textasciitilde{}abc399的帳號密碼值，故先用程式迴圈跑出。
+(因為懶得寫輸出檔，或者是不熟悉所以不冒險去寫。）
+
+將值複製至文件內將空白修掉，利用EXCEL把密碼在複製至B欄位。存成CSV檔
+
+同樣利用文件將逗點修掉(如果沒記錯空白處為一個TAB，為了安全還是複製之前的。)
+
+再利用程式，修改讀取的文件，將密碼處改為數列\href{數列第一資料行位為{[}0{]}，第二資料故為{[}1{]}}{1}
+
+跑出user之後利用FZ將檔案覆蓋，則可以在雲端上登錄。(為了確認完全傳入，將abc001改為管理權限，確認帳號輸入)
+
+dokuwiki\_openshift: http://dokuwiki-cadp13ag8.rhcloud.com/doku.php
+
+bitbucket: https://bitbucket.org/40123153/dokuwiki\_abc
+
+第三題的程式碼實在不知道要打什麼\ldots{}.
+
+\section{網際鼓式煞車設計(2ag11)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag11}
 
 有關鼓式煞車
 
@@ -418,7 +625,7 @@ by 2014cdag5
 
 這裡是結果與討論
 
-\section{網際鼓式煞車設計(2ag11)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag11}
+\section{網際鼓式煞車設計(2ag12)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag12}
 
 有關鼓式煞車
 
@@ -430,7 +637,7 @@ by 2014cdag5
 
 這裡是結果與討論
 
-\section{網際鼓式煞車設計(2ag12)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag12}
+\section{網際鼓式煞車設計(2ag13)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag13}
 
 有關鼓式煞車
 
@@ -442,7 +649,10 @@ by 2014cdag5
 
 這裡是結果與討論
 
-\section{網際鼓式煞車設計(2ag13)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag13}
+\textless{}\textless{}\textless{}\textless{}\textless{}\textless{}\textless{}
+HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10)
+\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{}
+26a5b9324111e15820203a5b96463a4196def80e ===
 
 有關鼓式煞車
 
@@ -454,10 +664,7 @@ by 2014cdag5
 
 這裡是結果與討論
 
-\textless{}\textless{}\textless{}\textless{}\textless{}\textless{}\textless{}
-HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10)
-\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{}
-26a5b9324111e15820203a5b96463a4196def80e ===
+\section{網際鼓式煞車設計(2ag15)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag15}
 
 有關鼓式煞車
 
@@ -469,7 +676,7 @@ HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10)
 
 這裡是結果與討論
 
-\section{網際鼓式煞車設計(2ag15)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag15}
+\section{網際鼓式煞車設計(2ag16)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag16}
 
 有關鼓式煞車
 
@@ -481,9 +688,49 @@ HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10)
 
 這裡是結果與討論
 
-\section{網際鼓式煞車設計(2ag16)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag16}
+\section{第八週摘要報告}\label{ux7b2cux516bux9031ux6458ux8981ux5831ux544a}
 
-有關鼓式煞車
+以協同方式寫Wiki
+
+本文目的在於讓學生利用開發的wiki與應用快速原型的協作式寫作的開發方法。而本文也由定性數據收集和分析方法的來評價。
+最後，對於協作方式來寫作的方式，其影響極其討論協議到組別與軟件開發方面的考慮和教學相關的要求問題
+研究方法 wiki的協作式寫作，基於設計的研究包括以下四個步驟： 1.
+研究的現狀與認識目的並審查與wiki的協作式寫作相關的問題。 2.
+wiki將用於促進以協同方式寫作來設計，參與和群體互動。 3.
+使用多種方法收集其經驗數據。 4.
+通過系統的評價分析，並通過各種方法收集資料。分析，設計，實施和評價是相互共存的。而缺點提出於每個週期提出，重新設計，重新實現，並重新評估。
+維基應用域教育在協同方式寫作方法而成的Wiki是適用於多種情況，期望得到的wiki應用在學習投資效益與協同方式來寫作。它十分靈活的，足以適應的專業條件。更具體地，它的應用領域包括不同級別的更高教育，從研究生到社會教育。除了協同寫作與學科相關，維基可以為一些應用程序的開發系統來使用，如產生教材，網路上互相評論，並收集數據於一種項目。
+
+結論和未來研究方向 1.
+這項結果不能限制於狹小的研究的範圍，即使調查結果反映了那些報導中的一致性研究文獻。
+2.
+用來判斷以不同方式來呈現協同，尤其是同組評議，這擁有極高的教育價值與分析性思維，並參與交流。可以促進團體間的合作和時間，wiki打開了協同寫作上新的視野，而小組互動絕不是容易的事情，解決了技術，教學和文化各種問題。
+未來的工作將更顯的協同的重要性，wiki以此設計為基礎下更加精進。重要的是，它更進一步影響高等教育對於wiki的使用。最後，它也進一步實踐於系統評論的基礎
+
+\section{第九週摘要報告}\label{ux7b2cux4e5dux9031ux6458ux8981ux5831ux544a}
+
+題目一 :請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後
+Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.
+
+資料 : https://bitbucket.org/40123158/test
+
+題目三 : 請在個人的 OpenShift
+平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式,
+接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後,
+程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9,
+則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.
+
+資料 : 第17組dokuwiki , 新增 abc001 \textasciitilde{} abc399 用戶資料
+http://wikig17-weis.rhcloud.com/doku.php?id=start
+
+上傳影片- 個人Vimeo https://vimeo.com/92577964
+
+Bitbucket 連結 https://bitbucket.org/40123137/week9 Bitbucket 連結
+https://bitbucket.org/40123137/week9
+
+\section{網際鼓式煞車設計(2ag18)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag18}
+
+有關鼓式煞車g18
 
 \section{程式設計架構}\label{ux7a0bux5f0fux8a2dux8a08ux67b6ux69cb-12}
 
@@ -493,39 +740,15 @@ HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10)
 
 這裡是結果與討論
 
-\section{網際鼓式煞車設計(2ag17)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag17}
+\section{網際鼓式煞車設計(2ag21)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag21}
 
-有關鼓式煞車g17
+有關鼓式煞車
 
 \section{程式設計架構}\label{ux7a0bux5f0fux8a2dux8a08ux67b6ux69cb-13}
 
 鼓式煞車
 
 \section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-14}
-
-這裡是結果與討論
-
-\section{網際鼓式煞車設計(2ag18)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag18}
-
-有關鼓式煞車g18
-
-\section{程式設計架構}\label{ux7a0bux5f0fux8a2dux8a08ux67b6ux69cb-14}
-
-鼓式煞車
-
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-15}
-
-這裡是結果與討論
-
-\section{網際鼓式煞車設計(2ag21)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag21}
-
-有關鼓式煞車
-
-\section{程式設計架構}\label{ux7a0bux5f0fux8a2dux8a08ux67b6ux69cb-15}
-
-鼓式煞車
-
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-16}
 
 這裡是結果與討論00123
 
@@ -538,7 +761,7 @@ HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10)
 
 定義凸輪設計公式
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-17}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-15}
 
 有關凸倫程式設計的結果與討論
 
