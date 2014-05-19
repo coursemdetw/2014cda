@@ -57,12 +57,12 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <p>citations</p>
 <p>markdown inside HTML block elements</p>
 <h1 id="協同產品設計實習專案2ag1">協同產品設計實習專案(2ag1)：</h1>
-<h2 id="組員">組員</h2>
-<p>40123101、40123102、40123132</p>
-<ul>
-<li>OpenShift 網站: http://2014cdag1-cadp13ag6.rhcloud.com/</li>
-</ul>
-<h2 id="w8考試">w8考試</h2>
+<h2 id="組員">組員：</h2>
+<p>40123101</p>
+<p>40123102</p>
+<p>40123132</p>
+<p>OpenShift 網站: http://2014cdag1-cadp13ag6.rhcloud.com/</p>
+<h2 id="w8考試">w8考試：</h2>
 <ol style="list-style-type: decimal">
 <li>請寫一個執行時可以列出 9×9 乘法表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.</li>
 </ol>
@@ -71,13 +71,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <pre class="sourceCode python"><code class="sourceCode python">    <span class="kw">for</span> x in <span class="dt">range</span>(<span class="dv">0</span>,<span class="dv">10</span>):
         <span class="kw">for</span> y in <span class="dt">range</span>(<span class="dv">0</span>,<span class="dv">10</span>):
             <span class="dt">print</span>(x,<span class="st">&#39;*&#39;</span>,y,<span class="st">&#39;=&#39;</span>,x*y)</code></pre></li>
-<li><p>解題過程:</p></li>
+<li><p>解題過程:</p>
+<p>打完程式後，之後我把它上傳到bitbucket，git add .→ git commit -m &quot;99&quot;→ git push，之後為了要把99乘法表顯示在openshift CMSimply上，進去openshift CMSimply的資料夾→ wsgi資料夾→ application檔案，在裡面新增一個class 的格式，之後連線FileZilla , 把application檔案覆蓋到app-root/runtime/repo/wsgi的application檔案下，之後進去openshift CMSimply的網站，就顯示99乘法表了。</p></li>
+<li><p>解題心得:</p>
+<p>雖然要打一個99乘法表的程式很快，但要如何顯示在遠端的網頁上，思考了很久，在課堂後請教了TA，最後應用cherrypy的方式，在application檔案，新增一個class 的格式，就完成了。</p></li>
 </ul>
-<p>打完程式後，之後我把它上傳到bitbucket，git add .→ git commit -m &quot;99&quot;→ git push，之後為了要把99乘法表顯示在openshift CMSimply上，進去openshift CMSimply的資料夾→ wsgi資料夾→ application檔案，在裡面新增一個class 的格式，之後連線FileZilla , 把application檔案覆蓋到app-root/runtime/repo/wsgi的application檔案下，之後進去openshift CMSimply的網站，就顯示99乘法表了。</p>
-<ul>
-<li>解題心得:</li>
-</ul>
-<p>雖然要打一個99乘法表的程式很快，但要如何顯示在遠端的網頁上，思考了很久，在課堂後請教了TA，最後應用cherrypy的方式，在application檔案，新增一個class 的格式，就完成了。</p>
 <ol start="2" style="list-style-type: decimal">
 <li>請將上述執行過程錄為 flv 後, 上傳到個人的 Vemeo 空間中, 並將網址回報到各組網站 (dokuwiki 與 CMSimply)與報告中, 並且將相關心得與報告連結登錄到 wiki.mde.tw 第八週的分組頁面中.</li>
 </ol>
@@ -92,14 +90,12 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <li>請在各組的雲端 dowiki 中,根據下列 40 個帳號與密碼, 新增對應的使用者帳號與密碼後, 將雲端網址登錄在 wiki.mde.tw 各組第八週頁面中, 並說明操作過程與心得後, 將心得整理成 pdf 後繳交到 course@mde.tw.</li>
 </ol>
 <ul>
-<li>解題過程:</li>
+<li><p>解題過程:</p>
+<p>程式做不出來，只好一個一個建立。</p></li>
+<li><p>解題心得:</p>
+<p>想很久，還是無法想出程式，只好用最勤勞的方法，一個一個建立，唉!!!</p></li>
 </ul>
-<p>程式做不出來，只好一個一個建立。</p>
-<ul>
-<li>解題心得:</li>
-</ul>
-<p>想很久，還是無法想出程式，只好用最勤勞的方法，一個一個建立，唉!!!</p>
-<h2 id="w9考試">w9考試</h2>
+<h2 id="w9考試">w9考試：</h2>
 <ol style="list-style-type: decimal">
 <li>請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.</li>
 </ol>
@@ -114,24 +110,20 @@ text=<span class="st">&#39;</span><span class="ot">%04d</span><span class="st">&
     <span class="kw">if</span>(count == <span class="dv">10</span>):
         <span class="dt">print</span>()
         count = <span class="dv">0</span></code></pre></li>
-<li><p>解題過程:</p></li>
+<li><p>解題過程:</p>
+<p>打完程式後，有顯示出來，但無法顯示表單在CMSimply網址上，只能一個一個慢慢打。</p></li>
+<li><p>解題心得:</p>
+<p>想了很久，還是無法，只會打程式，只好把顯示出來的數字一個一個加上，慢慢打。</p></li>
 </ul>
-<p>打完程式後，有顯示出來，但無法顯示表單在CMSimply網址上，只能一個一個慢慢打。</p>
-<ul>
-<li>解題心得:</li>
-</ul>
-<p>想了很久，還是無法，只會打程式，只好把顯示出來的數字一個一個加上，慢慢打。</p>
 <ol start="2" style="list-style-type: decimal">
 <li>請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.</li>
 </ol>
 <ul>
-<li>解題過程:</li>
+<li><p>解題過程:</p>
+<p>打完程式後，之後我把它上傳到bitbucket，git add .→ git commit -m &quot;w9_2&quot;→ git push，之後為了要把99乘法表顯示在openshift CMSimply上，進去openshift CMSimply的資料夾→ wsgi資料夾→ application檔案，在裡面新增一個class 的格式，之後連線FileZilla , 把application檔案覆蓋到app-root/runtime/repo/wsgi的application檔案下，之後進去openshift CMSimply的網站，輸入 9, 20, 則顯示 9×20 的乘法表.</p></li>
+<li><p>解題心得:</p>
+<p>這題跟上週小考差不多，只是還要再新增兩個輸入表單，所以還要在回想一下，但大致上ok，所以完成了。</p></li>
 </ul>
-<p>打完程式後，之後我把它上傳到bitbucket，git add .→ git commit -m &quot;w9_2&quot;→ git push，之後為了要把99乘法表顯示在openshift CMSimply上，進去openshift CMSimply的資料夾→ wsgi資料夾→ application檔案，在裡面新增一個class 的格式，之後連線FileZilla , 把application檔案覆蓋到app-root/runtime/repo/wsgi的application檔案下，之後進去openshift CMSimply的網站，輸入 9, 20, 則顯示 9×20 的乘法表.</p>
-<ul>
-<li>解題心得:</li>
-</ul>
-<p>這題跟上週小考差不多，只是還要再新增兩個輸入表單，所以還要在回想一下，但大致上ok，所以完成了。</p>
 <ol start="3" style="list-style-type: decimal">
 <li>請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區, 並將連結放在個人第九週頁面.</li>
 </ol>
@@ -144,14 +136,12 @@ text=<span class="st">&#39;</span><span class="ot">%04d</span><span class="st">&
 text=<span class="st">&#39;abc</span><span class="ot">%03d</span><span class="st">&#39;</span>
 <span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">1</span>,<span class="dv">399+1</span>):
     <span class="dt">print</span>(text%(i)+<span class="st">&#39;:&#39;</span>+gen_password(text%(i))+<span class="st">&#39;:&#39;</span>+text%(i)+<span class="st">&#39;@gmail.com:&#39;</span>+text%(i)+<span class="st">&#39;@gmail.com:&#39;</span>+<span class="st">&#39;user&#39;</span>)</code></pre></li>
-<li><p>操作過程:</p></li>
+<li><p>操作過程:</p>
+<p>先寫一個程式使他能產生帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料，之後連線到openshift dokuwiki的FileZilla，把產生出來的程式碼貼到app-root/data/conf/users.auth.php下，之後開啟dokuwiki網站即可。</p></li>
+<li><p>心得:</p>
+<p>一開始這個程式需要思考一下，如何使帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶，打出來後還要去讓所產生的程式碼符合一開始的格式，如同users.auth.php，思考很久最後終於成功了。</p></li>
 </ul>
-<p>先寫一個程式使他能產生帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料，之後連線到openshift dokuwiki的FileZilla，把產生出來的程式碼貼到app-root/data/conf/users.auth.php下，之後開啟dokuwiki網站即可。</p>
-<ul>
-<li>心得:</li>
-</ul>
-<p>一開始這個程式需要思考一下，如何使帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶，打出來後還要去讓所產生的程式碼符合一開始的格式，如同users.auth.php，思考很久最後終於成功了。</p>
-<h2 id="w12">w12</h2>
+<h2 id="w12">w12：</h2>
 <ul>
 <li>第十二週任務:</li>
 </ul>
@@ -167,13 +157,11 @@ text=<span class="st">&#39;abc</span><span class="ot">%03d</span><span class="st
 <li>在更改FOR迴圈時切記{}! 在此DEF最下面還有一個括弧要刪除，否則會跑出CATCH</li>
 </ol>
 <ul>
-<li>組員自評:</li>
+<li><p>組員自評:</p>
+<p>40123101：85分</p>
+<p>40123102：95分</p>
+<p>40123132：95分</p></li>
 </ul>
-<ol style="list-style-type: decimal">
-<li>40123101：85分</li>
-<li>40123102：95分</li>
-<li>40123132：95分</li>
-</ol>
 <h1 id="網際鼓式煞車設計2ag2">網際鼓式煞車設計(2ag2)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構">程式設計架構</h1>
