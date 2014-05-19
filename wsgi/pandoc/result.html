@@ -56,20 +56,117 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <p>embedded LaTeX math</p>
 <p>citations</p>
 <p>markdown inside HTML block elements</p>
-<h1 id="網際正齒輪減速機設計2ag1">網際正齒輪減速機設計(2ag1)</h1>
-<p>正齒輪相關設計公式</p>
-<p>新增 commit 9 之後的資料</p>
-<h1 id="設計程式架構">設計程式架構</h1>
-<p>傳遞功率</p>
-<p>新增 commit 9 之後的資料</p>
-<h1 id="結果與討論">結果與討論</h1>
-<p>這裡是結果與討論</p>
-<p>新增 commit 9 之後的資料</p>
+<h1 id="協同產品設計實習專案2ag1">協同產品設計實習專案(2ag1)：</h1>
+<h2 id="組員">組員：</h2>
+<p>40123101</p>
+<p>40123102</p>
+<p>40123132</p>
+<p>OpenShift 網站: http://2014cdag1-cadp13ag6.rhcloud.com/</p>
+<h2 id="w8考試">w8考試：</h2>
+<ol style="list-style-type: decimal">
+<li>請寫一個執行時可以列出 9×9 乘法表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.</li>
+</ol>
+<ul>
+<li><p>程式碼:</p>
+<pre class="sourceCode python"><code class="sourceCode python">    <span class="kw">for</span> x in <span class="dt">range</span>(<span class="dv">0</span>,<span class="dv">10</span>):
+        <span class="kw">for</span> y in <span class="dt">range</span>(<span class="dv">0</span>,<span class="dv">10</span>):
+            <span class="dt">print</span>(x,<span class="st">&#39;*&#39;</span>,y,<span class="st">&#39;=&#39;</span>,x*y)</code></pre></li>
+<li><p>解題過程:</p>
+<p>打完程式後，之後我把它上傳到bitbucket，git add .→ git commit -m &quot;99&quot;→ git push，之後為了要把99乘法表顯示在openshift CMSimply上，進去openshift CMSimply的資料夾→ wsgi資料夾→ application檔案，在裡面新增一個class 的格式，之後連線FileZilla , 把application檔案覆蓋到app-root/runtime/repo/wsgi的application檔案下，之後進去openshift CMSimply的網站，就顯示99乘法表了。</p></li>
+<li><p>解題心得:</p>
+<p>雖然要打一個99乘法表的程式很快，但要如何顯示在遠端的網頁上，思考了很久，在課堂後請教了TA，最後應用cherrypy的方式，在application檔案，新增一個class 的格式，就完成了。</p></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>請將上述執行過程錄為 flv 後, 上傳到個人的 Vemeo 空間中, 並將網址回報到各組網站 (dokuwiki 與 CMSimply)與報告中, 並且將相關心得與報告連結登錄到 wiki.mde.tw 第八週的分組頁面中.</li>
+</ol>
+<ul>
+<li><p>Bitbucket 連結: https://bitbucket.org/40123102/40123102cmsimply/src</p></li>
+<li><p>Vemeo 空間: https://vimeo.com/user26935042/videos</p></li>
+<li>copy 空間: https://copy.com/XohJLdUBRJdk</li>
+<li><p>dokuwiki網站: https://40123102cdg1dokuwiki-cadp13ag6.rhcloud.com/doku.php?id=start</p></li>
+<li><p>CMSimply網址: http://40123102cdg1-cadp13ag6.rhcloud.com/w8test/</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>請在各組的雲端 dowiki 中,根據下列 40 個帳號與密碼, 新增對應的使用者帳號與密碼後, 將雲端網址登錄在 wiki.mde.tw 各組第八週頁面中, 並說明操作過程與心得後, 將心得整理成 pdf 後繳交到 course@mde.tw.</li>
+</ol>
+<ul>
+<li><p>解題過程:</p>
+<p>程式做不出來，只好一個一個建立。</p></li>
+<li><p>解題心得:</p>
+<p>想很久，還是無法想出程式，只好用最勤勞的方法，一個一個建立，唉!!!</p></li>
+</ul>
+<h2 id="w9考試">w9考試：</h2>
+<ol style="list-style-type: decimal">
+<li>請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.</li>
+</ol>
+<ul>
+<li><p>程式碼:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> math
+count = <span class="dv">0</span>
+text=<span class="st">&#39;</span><span class="ot">%04d</span><span class="st">&#39;</span>
+<span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">100</span>,<span class="dv">200+10</span>):
+    <span class="dt">print</span>(text%<span class="dt">round</span>(math.log(i/<span class="dv">100</span>,<span class="dv">10</span>)*<span class="dv">10000</span>,<span class="dv">0</span>),end=<span class="st">&#39;-&#39;</span>)
+    count += <span class="dv">1</span>
+    <span class="kw">if</span>(count == <span class="dv">10</span>):
+        <span class="dt">print</span>()
+        count = <span class="dv">0</span></code></pre></li>
+<li><p>解題過程:</p>
+<p>打完程式後，有顯示出來，但無法顯示表單在CMSimply網址上，只能一個一個慢慢打。</p></li>
+<li><p>解題心得:</p>
+<p>想了很久，還是無法，只會打程式，只好把顯示出來的數字一個一個加上，慢慢打。</p></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.</li>
+</ol>
+<ul>
+<li><p>解題過程:</p>
+<p>打完程式後，之後我把它上傳到bitbucket，git add .→ git commit -m &quot;w9_2&quot;→ git push，之後為了要把99乘法表顯示在openshift CMSimply上，進去openshift CMSimply的資料夾→ wsgi資料夾→ application檔案，在裡面新增一個class 的格式，之後連線FileZilla , 把application檔案覆蓋到app-root/runtime/repo/wsgi的application檔案下，之後進去openshift CMSimply的網站，輸入 9, 20, 則顯示 9×20 的乘法表.</p></li>
+<li><p>解題心得:</p>
+<p>這題跟上週小考差不多，只是還要再新增兩個輸入表單，所以還要在回想一下，但大致上ok，所以完成了。</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區, 並將連結放在個人第九週頁面.</li>
+</ol>
+<ul>
+<li><p>程式碼:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">import</span> hashlib
+<span class="co"># convert user_password into sha1 encoded string</span>
+<span class="kw">def</span> gen_password(user_password):
+    <span class="kw">return</span> hashlib.sha1(user_password.encode(<span class="st">&quot;utf-8&quot;</span>)).hexdigest()
+text=<span class="st">&#39;abc</span><span class="ot">%03d</span><span class="st">&#39;</span>
+<span class="kw">for</span> i in <span class="dt">range</span>(<span class="dv">1</span>,<span class="dv">399+1</span>):
+    <span class="dt">print</span>(text%(i)+<span class="st">&#39;:&#39;</span>+gen_password(text%(i))+<span class="st">&#39;:&#39;</span>+text%(i)+<span class="st">&#39;@gmail.com:&#39;</span>+text%(i)+<span class="st">&#39;@gmail.com:&#39;</span>+<span class="st">&#39;user&#39;</span>)</code></pre></li>
+<li><p>操作過程:</p>
+<p>先寫一個程式使他能產生帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料，之後連線到openshift dokuwiki的FileZilla，把產生出來的程式碼貼到app-root/data/conf/users.auth.php下，之後開啟dokuwiki網站即可。</p></li>
+<li><p>心得:</p>
+<p>一開始這個程式需要思考一下，如何使帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶，打出來後還要去讓所產生的程式碼符合一開始的格式，如同users.auth.php，思考很久最後終於成功了。</p></li>
+</ul>
+<h2 id="w12">w12：</h2>
+<ul>
+<li>第十二週任務:</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>請各組將第八週與第九週考試的摘要報告放入 Github 協同專案中的分組報告區, 並將內容放入各組控管的同步 OpenShift 網站中. (佔期末成績 5分)</li>
+<li>請各組設法利用 CherryPy 與 Pro/Web.Link 技術, 在 Github 協同專案中建立一個能夠透過連結或表單控制 Cube 零件, a, b, 或 c 零件尺寸的網際協同程式, 讓使用者可以藉以利用近端的 Creo 嵌入式瀏覽器控制 Cube 的尺寸後列出該零件的體積大小. (佔期末成績 5分)</li>
+</ol>
+<ul>
+<li>心得:</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>在URL直接更改參數:在對應的程式內，把迴圈改成可在URL後面輸入變數，EX:http://127.0.0.1:8080/cdag1/cube1?w=20&amp;h=20&amp;l=20</li>
+<li>在更改FOR迴圈時切記{}! 在此DEF最下面還有一個括弧要刪除，否則會跑出CATCH</li>
+</ol>
+<ul>
+<li><p>組員自評:</p>
+<p>40123101：85分</p>
+<p>40123102：95分</p>
+<p>40123132：95分</p></li>
+</ul>
 <h1 id="網際鼓式煞車設計2ag2">網際鼓式煞車設計(2ag2)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-1">結果與討論</h1>
+<h1 id="結果與討論">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <h1 id="w12任務2ag3">W12任務(2ag3)</h1>
 <p>請各組將第九週考試的摘要報告放入 Github 協同專案中的分組報告區</p>
@@ -161,100 +258,105 @@ return output</code></pre>
 <p>有關連桿設計</p>
 <h1 id="程式設計架構-1">程式設計架構</h1>
 <p>連桿計算</p>
-<h1 id="結果與討論-2">結果與討論</h1>
+<h1 id="結果與討論-1">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <p>by 2014cdag5</p>
 <h1 id="網際鼓式煞車設計2ag6">網際鼓式煞車設計(2ag6)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-2">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-3">結果與討論</h1>
+<h1 id="結果與討論-2">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <h1 id="網際鼓式煞車設計2ag7">網際鼓式煞車設計(2ag7)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-3">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-4">結果與討論</h1>
+<h1 id="結果與討論-3">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <h1 id="網際四連桿機構設計2ag8">網際四連桿機構設計(2ag8)</h1>
 <p>有關連桿設計</p>
 <h1 id="程式設計架構-4">程式設計架構</h1>
 <p>連桿計算</p>
-<h1 id="結果與討論-5">結果與討論</h1>
+<h1 id="結果與討論-4">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <p>by 2014cdag5</p>
 <h1 id="網際鼓式煞車設計2ag9">網際鼓式煞車設計(2ag9)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-5">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-6">結果與討論</h1>
+<h1 id="結果與討論-5">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <p>這是第九組</p>
 <h1 id="網際鼓式煞車設計2ag10">網際鼓式煞車設計(2ag10)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-6">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-7">結果與討論</h1>
+<h1 id="結果與討論-6">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <h1 id="網際鼓式煞車設計2ag11">網際鼓式煞車設計(2ag11)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-7">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-8">結果與討論</h1>
+<h1 id="結果與討論-7">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <h1 id="網際鼓式煞車設計2ag12">網際鼓式煞車設計(2ag12)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-8">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-9">結果與討論</h1>
+<h1 id="結果與討論-8">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <h1 id="網際鼓式煞車設計2ag13">網際鼓式煞車設計(2ag13)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-9">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-10">結果與討論</h1>
+<h1 id="結果與討論-9">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10) &gt;&gt;&gt;&gt;&gt;&gt;&gt; 26a5b9324111e15820203a5b96463a4196def80e ===</p>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-10">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-11">結果與討論</h1>
+<h1 id="結果與討論-10">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <h1 id="網際鼓式煞車設計2ag15">網際鼓式煞車設計(2ag15)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-11">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-12">結果與討論</h1>
+<h1 id="結果與討論-11">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <h1 id="網際鼓式煞車設計2ag16">網際鼓式煞車設計(2ag16)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-12">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-13">結果與討論</h1>
+<h1 id="結果與討論-12">結果與討論</h1>
 <p>這裡是結果與討論</p>
-<h1 id="網際鼓式煞車設計2ag17">網際鼓式煞車設計(2ag17)</h1>
-<p>有關鼓式煞車g17</p>
-<h1 id="程式設計架構-13">程式設計架構</h1>
-<p>鼓式煞車</p>
-<h1 id="結果與討論-14">結果與討論</h1>
-<p>這裡是結果與討論</p>
+<h1 id="第八週摘要報告">第八週摘要報告</h1>
+<p>以協同方式寫Wiki</p>
+<p>本文目的在於讓學生利用開發的wiki與應用快速原型的協作式寫作的開發方法。而本文也由定性數據收集和分析方法的來評價。 最後，對於協作方式來寫作的方式，其影響極其討論協議到組別與軟件開發方面的考慮和教學相關的要求問題 研究方法 wiki的協作式寫作，基於設計的研究包括以下四個步驟： 1. 研究的現狀與認識目的並審查與wiki的協作式寫作相關的問題。 2. wiki將用於促進以協同方式寫作來設計，參與和群體互動。 3. 使用多種方法收集其經驗數據。 4. 通過系統的評價分析，並通過各種方法收集資料。分析，設計，實施和評價是相互共存的。而缺點提出於每個週期提出，重新設計，重新實現，並重新評估。 維基應用域教育在協同方式寫作方法而成的Wiki是適用於多種情況，期望得到的wiki應用在學習投資效益與協同方式來寫作。它十分靈活的，足以適應的專業條件。更具體地，它的應用領域包括不同級別的更高教育，從研究生到社會教育。除了協同寫作與學科相關，維基可以為一些應用程序的開發系統來使用，如產生教材，網路上互相評論，並收集數據於一種項目。</p>
+<p>結論和未來研究方向 1. 這項結果不能限制於狹小的研究的範圍，即使調查結果反映了那些報導中的一致性研究文獻。 2. 用來判斷以不同方式來呈現協同，尤其是同組評議，這擁有極高的教育價值與分析性思維，並參與交流。可以促進團體間的合作和時間，wiki打開了協同寫作上新的視野，而小組互動絕不是容易的事情，解決了技術，教學和文化各種問題。 未來的工作將更顯的協同的重要性，wiki以此設計為基礎下更加精進。重要的是，它更進一步影響高等教育對於wiki的使用。最後，它也進一步實踐於系統評論的基礎</p>
+<h1 id="第九週摘要報告">第九週摘要報告</h1>
+<p>題目一 :請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.</p>
+<p>資料 : https://bitbucket.org/40123158/test</p>
+<p>題目三 : 請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.</p>
+<p>資料 : 第17組dokuwiki , 新增 abc001 ~ abc399 用戶資料 http://wikig17-weis.rhcloud.com/doku.php?id=start</p>
+<p>上傳影片- 個人Vimeo https://vimeo.com/92577964</p>
+<p>Bitbucket 連結 https://bitbucket.org/40123137/week9 Bitbucket 連結 https://bitbucket.org/40123137/week9</p>
 <h1 id="網際鼓式煞車設計2ag18">網際鼓式煞車設計(2ag18)</h1>
 <p>有關鼓式煞車g18</p>
-<h1 id="程式設計架構-14">程式設計架構</h1>
+<h1 id="程式設計架構-13">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-15">結果與討論</h1>
+<h1 id="結果與討論-13">結果與討論</h1>
 <p>這裡是結果與討論</p>
 <h1 id="網際鼓式煞車設計2ag21">網際鼓式煞車設計(2ag21)</h1>
 <p>有關鼓式煞車</p>
-<h1 id="程式設計架構-15">程式設計架構</h1>
+<h1 id="程式設計架構-14">程式設計架構</h1>
 <p>鼓式煞車</p>
-<h1 id="結果與討論-16">結果與討論</h1>
+<h1 id="結果與討論-14">結果與討論</h1>
 <p>這裡是結果與討論00123</p>
 <h1 id="網際-openjscad-程式設計coursemdetw">網際 OpenJSCAD 程式設計(coursemdetw)</h1>
 <p>將 Spur 改為凸輪零件成型</p>
-<h1 id="設計程式架構-1">設計程式架構</h1>
+<h1 id="設計程式架構">設計程式架構</h1>
 <p>定義凸輪設計公式</p>
-<h1 id="結果與討論-17">結果與討論</h1>
+<h1 id="結果與討論-15">結果與討論</h1>
 <p>有關凸倫程式設計的結果與討論</p>
 <div class="footnotes">
 <hr />
