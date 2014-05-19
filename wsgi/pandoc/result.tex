@@ -73,12 +73,6 @@
 \usepackage{graphicx} 
 \usepackage{fancyvrb} % for frame on Verbatim 
 \setCJKmainfont{新細明體}
- 
-\usepackage{xeCJK}    % 中英文字行分開設置 
-\usepackage[T1]{fontspec}    %設定字體用 
-\usepackage{graphicx} 
-\usepackage{fancyvrb} % for frame on Verbatim 
-\setCJKmainfont{新細明體}
 \begin{document}
 \maketitle
 
@@ -134,23 +128,227 @@ citations
 
 markdown inside HTML block elements
 
-\section{網際正齒輪減速機設計(2ag1)}\label{ux7db2ux969bux6b63ux9f52ux8f2aux6e1bux901fux6a5fux8a2dux8a082ag1}
+\section{協同產品設計實習專案(2ag1)：}\label{ux5354ux540cux7522ux54c1ux8a2dux8a08ux5be6ux7fd2ux5c08ux68482ag1}
 
-正齒輪相關設計公式
+\subsection{組員}\label{ux7d44ux54e1}
 
-新增 commit 9 之後的資料
+40123101、40123102、40123132
 
-\section{設計程式架構}\label{ux8a2dux8a08ux7a0bux5f0fux67b6ux69cb}
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  OpenShift 網站: http://2014cdag1-cadp13ag6.rhcloud.com/
+\end{itemize}
 
-傳遞功率
+\subsection{w8考試}\label{w8ux8003ux8a66}
 
-新增 commit 9 之後的資料
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  請寫一個執行時可以列出 9×9 乘法表的網際 Python 程式, 然後 Push 到個人
+  bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.
+\end{enumerate}
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6}
+\begin{itemize}
+\item
+  程式碼:
 
-這裡是結果與討論
+\begin{Shaded}
+\begin{Highlighting}[]
+    \KeywordTok{for} \NormalTok{x in }\DataTypeTok{range}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{10}\NormalTok{):}
+        \KeywordTok{for} \NormalTok{y in }\DataTypeTok{range}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{10}\NormalTok{):}
+            \DataTypeTok{print}\NormalTok{(x,}\StringTok{'*'}\NormalTok{,y,}\StringTok{'='}\NormalTok{,x*y)}
+\end{Highlighting}
+\end{Shaded}
+\item
+  解題過程:
+\end{itemize}
 
-新增 commit 9 之後的資料
+打完程式後，之後我把它上傳到bitbucket，git add .→ git commit -m ``99''→
+git push，之後為了要把99乘法表顯示在openshift CMSimply上，進去openshift
+CMSimply的資料夾→ wsgi資料夾→ application檔案，在裡面新增一個class
+的格式，之後連線FileZilla ,
+把application檔案覆蓋到app-root/runtime/repo/wsgi的application檔案下，之後進去openshift
+CMSimply的網站，就顯示99乘法表了。
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  解題心得:
+\end{itemize}
+
+雖然要打一個99乘法表的程式很快，但要如何顯示在遠端的網頁上，思考了很久，在課堂後請教了TA，最後應用cherrypy的方式，在application檔案，新增一個class
+的格式，就完成了。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  請將上述執行過程錄為 flv 後, 上傳到個人的 Vemeo 空間中,
+  並將網址回報到各組網站 (dokuwiki 與 CMSimply)與報告中,
+  並且將相關心得與報告連結登錄到 wiki.mde.tw 第八週的分組頁面中.
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Bitbucket 連結: https://bitbucket.org/40123102/40123102cmsimply/src
+\item
+  Vemeo 空間: https://vimeo.com/user26935042/videos
+\item
+  copy 空間: https://copy.com/XohJLdUBRJdk
+\item
+  dokuwiki網站:
+  https://40123102cdg1dokuwiki-cadp13ag6.rhcloud.com/doku.php?id=start
+\item
+  CMSimply網址: http://40123102cdg1-cadp13ag6.rhcloud.com/w8test/
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  請在各組的雲端 dowiki 中,根據下列 40 個帳號與密碼,
+  新增對應的使用者帳號與密碼後, 將雲端網址登錄在 wiki.mde.tw
+  各組第八週頁面中, 並說明操作過程與心得後, 將心得整理成 pdf 後繳交到
+  course@mde.tw.
+\end{enumerate}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  解題過程:
+\end{itemize}
+
+程式做不出來，只好一個一個建立。
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  解題心得:
+\end{itemize}
+
+想很久，還是無法想出程式，只好用最勤勞的方法，一個一個建立，唉!!!
+
+\subsection{w9考試}\label{w9ux8003ux8a66}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push
+  到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.
+\end{enumerate}
+
+\begin{itemize}
+\item
+  程式碼:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CharTok{import} \NormalTok{math}
+\NormalTok{count = }\DecValTok{0}
+\NormalTok{text=}\StringTok{'}\OtherTok{%04d}\StringTok{'}
+\KeywordTok{for} \NormalTok{i in }\DataTypeTok{range}\NormalTok{(}\DecValTok{100}\NormalTok{,}\DecValTok{200+10}\NormalTok{):}
+    \DataTypeTok{print}\NormalTok{(text%}\DataTypeTok{round}\NormalTok{(math.log(i/}\DecValTok{100}\NormalTok{,}\DecValTok{10}\NormalTok{)*}\DecValTok{10000}\NormalTok{,}\DecValTok{0}\NormalTok{),end=}\StringTok{'-'}\NormalTok{)}
+    \NormalTok{count += }\DecValTok{1}
+    \KeywordTok{if}\NormalTok{(count == }\DecValTok{10}\NormalTok{):}
+        \DataTypeTok{print}\NormalTok{()}
+        \NormalTok{count = }\DecValTok{0}
+\end{Highlighting}
+\end{Shaded}
+\item
+  解題過程:
+\end{itemize}
+
+打完程式後，有顯示出來，但無法顯示表單在CMSimply網址上，只能一個一個慢慢打。
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  解題心得:
+\end{itemize}
+
+想了很久，還是無法，只會打程式，只好把顯示出來的數字一個一個加上，慢慢打。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  請在個人的 OpenShift
+  平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式,
+  接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後,
+  程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9,
+  則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.
+\end{enumerate}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  解題過程:
+\end{itemize}
+
+打完程式後，之後我把它上傳到bitbucket，git add .→ git commit -m
+``w9\_2''→ git push，之後為了要把99乘法表顯示在openshift
+CMSimply上，進去openshift CMSimply的資料夾→ wsgi資料夾→
+application檔案，在裡面新增一個class 的格式，之後連線FileZilla ,
+把application檔案覆蓋到app-root/runtime/repo/wsgi的application檔案下，之後進去openshift
+CMSimply的網站，輸入 9, 20, 則顯示 9×20 的乘法表.
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  解題心得:
+\end{itemize}
+
+這題跟上週小考差不多，只是還要再新增兩個輸入表單，所以還要在回想一下，但大致上ok，所以完成了。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001
+  \textasciitilde{} abc399 字串所組成的 399 名用戶登入對應資料,
+  並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區,
+  並將連結放在個人第九週頁面.
+\end{enumerate}
+
+\begin{itemize}
+\item
+  程式碼:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CharTok{import} \NormalTok{hashlib}
+\CommentTok{# convert user_password into sha1 encoded string}
+\KeywordTok{def} \NormalTok{gen_password(user_password):}
+    \KeywordTok{return} \NormalTok{hashlib.sha1(user_password.encode(}\StringTok{"utf-8"}\NormalTok{)).hexdigest()}
+\NormalTok{text=}\StringTok{'abc}\OtherTok{%03d}\StringTok{'}
+\KeywordTok{for} \NormalTok{i in }\DataTypeTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{399+1}\NormalTok{):}
+    \DataTypeTok{print}\NormalTok{(text%(i)+}\StringTok{':'}\NormalTok{+gen_password(text%(i))+}\StringTok{':'}\NormalTok{+text%(i)+}\StringTok{'@gmail.com:'}\NormalTok{+text%(i)+}\StringTok{'@gmail.com:'}\NormalTok{+}\StringTok{'user'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+\item
+  操作過程:
+\end{itemize}
+
+先寫一個程式使他能產生帳號與密碼都是由 abc001 \textasciitilde{} abc399
+字串所組成的 399 名用戶登入對應資料，之後連線到openshift
+dokuwiki的FileZilla，把產生出來的程式碼貼到app-root/data/conf/users.auth.php下，之後開啟dokuwiki網站即可。
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  心得:
+\end{itemize}
+
+一開始這個程式需要思考一下，如何使帳號與密碼都是由 abc001
+\textasciitilde{} abc399 字串所組成的 399
+名用戶，打出來後還要去讓所產生的程式碼符合一開始的格式，如同users.auth.php，思考很久最後終於成功了。
 
 \section{網際鼓式煞車設計(2ag2)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag2}
 
@@ -160,7 +358,7 @@ markdown inside HTML block elements
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-1}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6}
 
 這裡是結果與討論
 
@@ -348,7 +546,7 @@ https://github.com/2014cdag4/2014cdag4 ===
 
 連桿計算
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-2}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-1}
 
 這裡是結果與討論
 
@@ -362,7 +560,7 @@ by 2014cdag5
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-3}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-2}
 
 這裡是結果與討論
 
@@ -374,7 +572,7 @@ by 2014cdag5
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-4}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-3}
 
 這裡是結果與討論
 
@@ -386,7 +584,7 @@ by 2014cdag5
 
 連桿計算
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-5}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-4}
 
 這裡是結果與討論
 
@@ -400,7 +598,7 @@ by 2014cdag5
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-6}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-5}
 
 這裡是結果與討論
 
@@ -414,7 +612,7 @@ by 2014cdag5
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-7}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-6}
 
 這裡是結果與討論
 
@@ -426,7 +624,7 @@ by 2014cdag5
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-8}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-7}
 
 這裡是結果與討論
 
@@ -438,7 +636,7 @@ by 2014cdag5
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-9}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-8}
 
 這裡是結果與討論
 
@@ -450,7 +648,7 @@ by 2014cdag5
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-10}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-9}
 
 這裡是結果與討論
 
@@ -465,7 +663,7 @@ HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10)
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-11}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-10}
 
 這裡是結果與討論
 
@@ -477,7 +675,7 @@ HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10)
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-12}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-11}
 
 這裡是結果與討論
 
@@ -489,31 +687,59 @@ HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10)
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-13}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-12}
 
 這裡是結果與討論
 
-\section{網際鼓式煞車設計(2ag17)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag17}
+\section{第八週摘要報告}\label{ux7b2cux516bux9031ux6458ux8981ux5831ux544a}
 
-有關鼓式煞車g17
+以協同方式寫Wiki
 
-\section{程式設計架構}\label{ux7a0bux5f0fux8a2dux8a08ux67b6ux69cb-13}
+本文目的在於讓學生利用開發的wiki與應用快速原型的協作式寫作的開發方法。而本文也由定性數據收集和分析方法的來評價。
+最後，對於協作方式來寫作的方式，其影響極其討論協議到組別與軟件開發方面的考慮和教學相關的要求問題
+研究方法 wiki的協作式寫作，基於設計的研究包括以下四個步驟： 1.
+研究的現狀與認識目的並審查與wiki的協作式寫作相關的問題。 2.
+wiki將用於促進以協同方式寫作來設計，參與和群體互動。 3.
+使用多種方法收集其經驗數據。 4.
+通過系統的評價分析，並通過各種方法收集資料。分析，設計，實施和評價是相互共存的。而缺點提出於每個週期提出，重新設計，重新實現，並重新評估。
+維基應用域教育在協同方式寫作方法而成的Wiki是適用於多種情況，期望得到的wiki應用在學習投資效益與協同方式來寫作。它十分靈活的，足以適應的專業條件。更具體地，它的應用領域包括不同級別的更高教育，從研究生到社會教育。除了協同寫作與學科相關，維基可以為一些應用程序的開發系統來使用，如產生教材，網路上互相評論，並收集數據於一種項目。
 
-鼓式煞車
+結論和未來研究方向 1.
+這項結果不能限制於狹小的研究的範圍，即使調查結果反映了那些報導中的一致性研究文獻。
+2.
+用來判斷以不同方式來呈現協同，尤其是同組評議，這擁有極高的教育價值與分析性思維，並參與交流。可以促進團體間的合作和時間，wiki打開了協同寫作上新的視野，而小組互動絕不是容易的事情，解決了技術，教學和文化各種問題。
+未來的工作將更顯的協同的重要性，wiki以此設計為基礎下更加精進。重要的是，它更進一步影響高等教育對於wiki的使用。最後，它也進一步實踐於系統評論的基礎
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-14}
+\section{第九週摘要報告}\label{ux7b2cux4e5dux9031ux6458ux8981ux5831ux544a}
 
-這裡是結果與討論
+題目一 :請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後
+Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.
+
+資料 : https://bitbucket.org/40123158/test
+
+題目三 : 請在個人的 OpenShift
+平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式,
+接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後,
+程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9,
+則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.
+
+資料 : 第17組dokuwiki , 新增 abc001 \textasciitilde{} abc399 用戶資料
+http://wikig17-weis.rhcloud.com/doku.php?id=start
+
+上傳影片- 個人Vimeo https://vimeo.com/92577964
+
+Bitbucket 連結 https://bitbucket.org/40123137/week9 Bitbucket 連結
+https://bitbucket.org/40123137/week9
 
 \section{網際鼓式煞車設計(2ag18)}\label{ux7db2ux969bux9f13ux5f0fux715eux8ecaux8a2dux8a082ag18}
 
 有關鼓式煞車g18
 
-\section{程式設計架構}\label{ux7a0bux5f0fux8a2dux8a08ux67b6ux69cb-14}
+\section{程式設計架構}\label{ux7a0bux5f0fux8a2dux8a08ux67b6ux69cb-13}
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-15}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-13}
 
 這裡是結果與討論
 
@@ -521,11 +747,11 @@ HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10)
 
 有關鼓式煞車
 
-\section{程式設計架構}\label{ux7a0bux5f0fux8a2dux8a08ux67b6ux69cb-15}
+\section{程式設計架構}\label{ux7a0bux5f0fux8a2dux8a08ux67b6ux69cb-14}
 
 鼓式煞車
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-16}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-14}
 
 這裡是結果與討論00123
 
@@ -534,11 +760,11 @@ HEAD 網際鼓式煞車設計(2ag14) ======= 網際鼓式煞車設計(2ag10)
 
 將 Spur 改為凸輪零件成型
 
-\section{設計程式架構}\label{ux8a2dux8a08ux7a0bux5f0fux67b6ux69cb-1}
+\section{設計程式架構}\label{ux8a2dux8a08ux7a0bux5f0fux67b6ux69cb}
 
 定義凸輪設計公式
 
-\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-17}
+\section{結果與討論}\label{ux7d50ux679cux8207ux8a0eux8ad6-15}
 
 有關凸倫程式設計的結果與討論
 

@@ -1,20 +1,118 @@
-網際正齒輪減速機設計(2ag1)
+協同產品設計實習專案(2ag1)：
 ===
 
-正齒輪相關設計公式
+組員
+------------------
+40123101、40123102、40123132
 
-新增 commit 9 之後的資料
+ *  OpenShift 網站: http://2014cdag1-cadp13ag6.rhcloud.com/
 
-設計程式架構
-===
+w8考試
+------------------
+1.  請寫一個執行時可以列出 9×9 乘法表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.
 
-傳遞功率
+ *  程式碼:
+```python 
+    for x in range(0,10):
+        for y in range(0,10):
+            print(x,'*',y,'=',x*y)
+```
 
-新增 commit 9 之後的資料
+ *  解題過程:
+ 
+打完程式後，之後我把它上傳到bitbucket，git add .→ git commit -m "99"→ git push，之後為了要把99乘法表顯示在openshift CMSimply上，進去openshift CMSimply的資料夾→ wsgi資料夾→ application檔案，在裡面新增一個class 的格式，之後連線FileZilla , 把application檔案覆蓋到app-root/runtime/repo/wsgi的application檔案下，之後進去openshift CMSimply的網站，就顯示99乘法表了。
 
-結果與討論
-===
+ *  解題心得:
+ 
+雖然要打一個99乘法表的程式很快，但要如何顯示在遠端的網頁上，思考了很久，在課堂後請教了TA，最後應用cherrypy的方式，在application檔案，新增一個class 的格式，就完成了。
 
-這裡是結果與討論
+2. 請將上述執行過程錄為 flv 後, 上傳到個人的 Vemeo 空間中, 並將網址回報到各組網站 (dokuwiki 與 CMSimply)與報告中, 並且將相關心得與報告連結登錄到 wiki.mde.tw 第八週的分組頁面中.
 
-新增 commit 9 之後的資料
+ *  Bitbucket 連結:
+https://bitbucket.org/40123102/40123102cmsimply/src
+
+ *  Vemeo 空間:
+https://vimeo.com/user26935042/videos
+
+ *  copy 空間:
+https://copy.com/XohJLdUBRJdk
+ *  dokuwiki網站:
+https://40123102cdg1dokuwiki-cadp13ag6.rhcloud.com/doku.php?id=start
+
+ *  CMSimply網址:
+http://40123102cdg1-cadp13ag6.rhcloud.com/w8test/
+
+3. 請在各組的雲端 dowiki 中,根據下列 40 個帳號與密碼, 新增對應的使用者帳號與密碼後, 將雲端網址登錄在 wiki.mde.tw 各組第八週頁面中, 並說明操作過程與心得後, 將心得整理成 pdf 後繳交到 course@mde.tw.
+
+ *  解題過程:
+ 
+程式做不出來，只好一個一個建立。
+
+ *  解題心得:
+ 
+想很久，還是無法想出程式，只好用最勤勞的方法，一個一個建立，唉!!!
+
+w9考試
+------------------
+1. 請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.
+
+ *  程式碼:
+```python 
+import math
+count = 0
+text='%04d'
+for i in range(100,200+10):
+    print(text%round(math.log(i/100,10)*10000,0),end='-')
+    count += 1
+    if(count == 10):
+        print()
+        count = 0
+```
+
+ *  解題過程:
+ 
+打完程式後，有顯示出來，但無法顯示表單在CMSimply網址上，只能一個一個慢慢打。
+
+ *  解題心得:
+ 
+想了很久，還是無法，只會打程式，只好把顯示出來的數字一個一個加上，慢慢打。
+
+2. 請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.
+
+ *  解題過程:
+ 
+打完程式後，之後我把它上傳到bitbucket，git add .→ git commit -m "w9_2"→ git push，之後為了要把99乘法表顯示在openshift CMSimply上，進去openshift CMSimply的資料夾→ wsgi資料夾→ application檔案，在裡面新增一個class 的格式，之後連線FileZilla , 把application檔案覆蓋到app-root/runtime/repo/wsgi的application檔案下，之後進去openshift CMSimply的網站，輸入 9, 20, 則顯示 9×20 的乘法表.
+
+ *  解題心得:
+ 
+這題跟上週小考差不多，只是還要再新增兩個輸入表單，所以還要在回想一下，但大致上ok，所以完成了。
+
+3. 請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區, 並將連結放在個人第九週頁面.
+
+ *  程式碼:
+```python
+import hashlib
+# convert user_password into sha1 encoded string
+def gen_password(user_password):
+    return hashlib.sha1(user_password.encode("utf-8")).hexdigest()
+text='abc%03d'
+for i in range(1,399+1):
+    print(text%(i)+':'+gen_password(text%(i))+':'+text%(i)+'@gmail.com:'+text%(i)+'@gmail.com:'+'user')
+```
+
+ *  操作過程:
+ 
+先寫一個程式使他能產生帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料，之後連線到openshift dokuwiki的FileZilla，把產生出來的程式碼貼到app-root/data/conf/users.auth.php下，之後開啟dokuwiki網站即可。
+
+ *  心得:
+ 
+一開始這個程式需要思考一下，如何使帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶，打出來後還要去讓所產生的程式碼符合一開始的格式，如同users.auth.php，思考很久最後終於成功了。
+
+ 
+
+
+
+
+
+
+
