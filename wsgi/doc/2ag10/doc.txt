@@ -3,10 +3,21 @@ cd2ag10報告(2ag10)
 
 以下為各週報告
 
+第十組組員
+====
+
+小組網站:http://goo.gl/aztMHi
+
+40123116-吳羽閔
+
+40123118-吳謦麟
+
+40123153-戴志軒
+
 第八週考試摘要(2ag10)
 ====
 
-小組網站:http://cdag10-40123153.rhcloud.com/cmsimply/get_page?heading=%E7%AC%AC%E5%85%AB%E9%80%B1%E8%80%83%E8%A9%A6%E6%91%98%E8%A6%81
+小組網站:http://goo.gl/yi3qJ5
 
 
 2014S CD Week8 <td>
@@ -81,7 +92,7 @@ http://vimeo.com/user24079973/videos
 第八週報告(2ag10)
 ====
 
-小組網站:http://cdag10-40123153.rhcloud.com/cmsimply/get_page?heading=%E7%AC%AC%E5%85%AB%E9%80%B1%E5%A0%B1%E5%91%8A
+小組網站:http://goo.gl/YCNd7p
 
 ```python 
 import cherrypy
@@ -128,7 +139,7 @@ P.S 由於題目理解錯誤，所以上述影片為失效。
 第九週考試摘要(2ag10)
 ====
 
-小組網站:http://cdag10-40123153.rhcloud.com/cmsimply/get_page?heading=%E7%AC%AC%E4%B9%9D%E9%80%B1%E8%80%83%E8%A9%A6%E6%91%98%E8%A6%81
+小組網站:http://goo.gl/8nPx2Y
 
 2014S CD Week9 <td>
 課程教材:
@@ -156,7 +167,7 @@ http://vimeo.com/user24079973/videos
 第九週報告(2ag10)
 ====
 
-小組網站:http://cdag10-40123153.rhcloud.com/cmsimply/get_page?heading=%E7%AC%AC%E4%B9%9D%E9%80%B1%E5%A0%B1%E5%91%8A
+小組網站:http://goo.gl/Hy7Ktn
 
 第一題:
 
@@ -310,10 +321,10 @@ bitbucket: https://bitbucket.org/40123153/dokuwiki_abc
 
 第三題的程式碼實在不知道要打什麼….
 
-第十二週(2ag10)
+第十二週報告(2ag10)
 ====
 
-小組網站:http://cdag10-40123153.rhcloud.com/cmsimply/get_page?heading=%E7%AC%AC%E5%8D%81%E4%BA%8C%E9%80%B1%E5%A0%B1%E5%91%8A
+小組網站:http://goo.gl/28PW52
 
 第十二週任務
 
@@ -352,15 +363,15 @@ github大分組倉儲:https://github.com/coursemdetw/2014cda
 (原始尺寸為150x150x150的方塊)
 
 
-第一次:1500000
+第一次:3375000
 
-第二次:1815000
+第二次:4096000
 
-第三次:2160000
+第三次:4913000
 
-第四次:2535000
+第四次:5832000
 
-第五次:2940000
+第五次:6859000
 
 
 大致上就這樣吧...不過 c變數 忘記動到...不過只是照a與b同樣的型式...將a或b複製下來改成c就可以三軸同動了。
