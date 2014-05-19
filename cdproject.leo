@@ -36,7 +36,7 @@ expanded="course-mde-tw.20140417093332.2030,"><vh>@file application</vh></v>
 expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 </v>
 <v t="2014spring.20140503125211.2097" a="E"><vh>分組程式開發</vh>
-<v t="2014spring.20140503125211.2098"><vh>@path wsgi/programs/cdag1</vh>
+<v t="2014spring.20140503125211.2098" a="E"><vh>@path wsgi/programs/cdag1</vh>
 <v t="2014spring.20140503125211.2099"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140503125211.2100"><vh>@path wsgi/programs/cdag2</vh>
@@ -48,8 +48,11 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="2014spring.20140513154549.2217"><vh>@path wsgi/programs/cdag4</vh>
 <v t="2014spring.20140513154549.2218"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="kmolII_lite.20140513162816.2130" a="E"><vh>@path wsgi/programs/cdag5</vh>
+<v t="kmolII_lite.20140513162816.2130"><vh>@path wsgi/programs/cdag5</vh>
 <v t="kmolII_lite.20140513162816.2131"><vh>@edit __init__.py</vh></v>
+</v>
+<v t=".20140519210900.2176" a="E"><vh>@path wsgi/programs/cdag9</vh>
+<v t=".20140519210900.2177"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140513154549.2225" a="E"><vh>@path wsgi/programs/cdag10</vh>
 <v t="2014spring.20140513154549.2226"><vh>@edit __init__.py</vh></v>
@@ -132,6 +135,7 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 </v>
 </vnodes>
 <tnodes>
+<t tx=".20140519210900.2176"></t>
 <t tx="123.20140502221015.1628"></t>
 <t tx="2014pythonE.20140422152422.1669">配合 2014cda 專案
 
