@@ -1603,7 +1603,6 @@ Github 倉儲則為: https://github.com/coursemdetw/2014cda
 <t tx="course-mde-tw.20140422221207.1747">mathspec.sty 檔案必須放在 pandoc 目錄中, 與文書處理原始檔案放在一起.</t>
 <t tx="kmolII_lite.20140430001511.1599"></t>
 <t tx="kmolII_lite.20140513162816.2130"></t>
-<<<<<<< HEAD
 <t tx="kmolII_lite.20140519204745.1773"></t>
 <t tx="kmolII_lite.20140519204745.1774">@language python
 import cherrypy
@@ -2373,8 +2372,6 @@ session.GetModelWindow (assembly).Repaint();
 &lt;/html&gt;
         '''
         return outstring</t>
-=======
-<t tx="kmolII_lite.20140519193822.1766"></t>
->>>>>>> 5c4869e7fedcd45a2cc612441723b3413fe5033d
+
 </tnodes>
 </leo_file>
