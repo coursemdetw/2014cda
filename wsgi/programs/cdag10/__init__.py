@@ -6,7 +6,7 @@ class CDAG10(object):
     @cherrypy.expose
     def index(self, *args, **kwargs):
         outstring = '''
-這是 2014CDA 協同專案下的 cdag2 分組程式開發網頁, 以下為 W12 的任務執行內容.<br />
+這是 2014CDA 協同專案下的 cdag10 分組程式開發網頁, 以下為 W12 的任務執行內容.<br />
 <!-- 這裡採用相對連結, 而非網址的絕對連結 (這一段為 html 註解) -->
 <a href="cube1">cdag1 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
 <a href="fourbar1">四連桿組立</a><br /><br />
@@ -18,13 +18,13 @@ class CDAG10(object):
     ''' 
     假如採用下列規畫
     
-    import programs.cdag2 as cdag2
-    root.cdag2 = cdag2.CDAG2()
+    import programs.cdag10 as cdag10
+    root.cdag10 = cdag10.CDAG10()
     
-    則程式啟動後, 可以利用 /cdag2/cube1 呼叫函式執行
+    則程式啟動後, 可以利用 /cdag10/cube10 呼叫函式執行
     '''
     @cherrypy.expose
-    def cube1(self, *args, **kwargs):
+    def cube10(self, *args, **kwargs):
         '''
     // 假如要自行打開特定零件檔案
     // 若第三輸入為 false, 表示僅載入 session, 但是不顯示
@@ -106,7 +106,7 @@ catch (err)
         return outstring
         
     @cherrypy.expose
-    def fourbar1(self, *args, **kwargs):
+    def fourbar10(self, *args, **kwargs):
         outstring = '''
     <!DOCTYPE html> 
     <html>

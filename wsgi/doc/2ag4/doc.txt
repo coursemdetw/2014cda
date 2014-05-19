@@ -1,14 +1,28 @@
 網際鼓式煞車設計(2ag4)
 ===
+github連結
+40123107: https://github.com/40123107
+40123120: https://github.com/40123120
+cdag4: https://github.com/2014cdag4/2014cdag4
 
-有關鼓式煞車
-
-程式設計架構
+cmsimply連結
+40123107: https://github.com/40123107
+40123120: https://github.com/40123120
+40123150: http://cdg4-40123150.rhcloud.com/
 ===
 
-鼓式煞車
-
-結果與討論
+第九週 
+1.(第一題 30%) 請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.
+http://cdg4-40123150.rhcloud.com/get_page?heading=%E7%AC%AC%E4%B8%80%E9%A1%8C
+2.(第二題 40%) 請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.
+http://cdg4-40123150.rhcloud.com/example/
+http://vimeo.com/92577008
+3.(第三題 30%) 請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區, 並將連結放在個人第九週頁面.
+https://php-40123150.rhcloud.com/doku.php?id=start
+http://vimeo.com/92577072
+===
+w12
+請連結 https://github.com/2014cdag4/2014cdag4
 ===
 
 這裡是結果與討論

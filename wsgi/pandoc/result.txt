@@ -90,32 +90,179 @@ markdown inside HTML block elements
 
 這裡是結果與討論
 
-網際鼓式煞車設計(2ag3)
+W12任務(2ag3)
 ===
 
-有關鼓式煞車
+請各組將第九週考試的摘要報告放入 Github 協同專案中的分組報告區
 
-程式設計架構
+摘要報告
 ===
 
-鼓式煞車
+    第一題：
 
-結果與討論
-===
+請寫一個執行時可以列出以十為底對數表的網際 Python 程式，然後 Push 到個人 bitbucket 空間，而且同步指到 OpenShift 個人帳號上執行。
 
-這裡是結果與討論
+```python 
+import math
+count = 0
+text='%04d'
+for i in range(100,200+10):
+    print(text%round(math.log(i/100,10)*10000,0),end='-')
+    count += 1
+    if(count == 10):
+        print()
+        count = 0
+```
+    
+    解題心得：
+
+可利用程式算出對數的值，就不需要一個一個按計算機。
+
+    第二題：
+
+請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式，接著在乘法表上端加上兩個輸入表單，讓使用者輸入兩個整數，按下送出鍵後，程式會列出以此兩個整數為基底的乘法表，例如：若兩個欄位都輸入: 9，則列出九九乘法表，若輸入 9，20，則列出 9×20 的乘法表。
+
+```python 
+class Example(object):
+_cp_config = {
+# if there is no utf-8 encoding, no Chinese input available
+'tools.encode.encoding': 'utf-8',
+'tools.sessions.on' : True,
+'tools.sessions.storage_type' : 'file',
+'tools.sessions.locking' : 'explicit',
+'tools.sessions.storage_path' : data_dir+'/tmp',
+# session timeout is 60 minutes
+'tools.sessions.timeout' : 60
+}
+
+@cherrypy.expose
+def index(self):
+    output = ''
+
+    form = '''
+    <form action='action'>
+    num1:<INPUT type='text' name='num1'>
+    num2:<INPUT type='text'  name='num2'>
+    <input type=submit>
+    <input type=reset>
+    </form>
+    '''
+    output += form
+    return output
+@cherrypy.expose
+def action(self, num1=9, num2=9):
+    num1 = int(num1)
+    num2 = int(num2)
+    output = ''
+    for i in range(num1):
+        for j in range(num2):
+            output += str(i) + '*' + str(j) + '=' + str(i*j) + '<br />'
+    return output
+```
+
+解題心得：
+
+利用網站輸入值並算出，並需要有兩個輸入表單。
+
+
+    第三題：
+
+請在各組的雲端 dokuwiki 中，新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料，並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區，並將連結放在個人第九週頁面。
+
+```python 
+import hashlib
+#convert user_password into sha1 encoded string
+def gen_password(user_password):
+    return hashlib.sha1(user_password.encode("utf-8")).hexdigest()
+text='abc%03d'
+for i in range(1,399+1):
+    print(text%(i)+':'+gen_password(text%(i))+':'+text%(i)+'@gmail.com:'+text%(i)+'@gmail.com:'+'user')
+```
+
+解題心得：
+
+可以利用程式創造多人帳密，一起管理網站，減少一個一個創建帳密，又會有被盜用的風險。
+
+import math
+count = 0
+text='%04d'
+for i in range(100,200+10):
+    print(text%round(math.log(i/100,10)*10000,0),end='-')
+    count += 1
+    if(count == 10):
+        print()
+        count = 0
+
+class Example(object):
+_cp_config = {
+# if there is no utf-8 encoding, no Chinese input available
+'tools.encode.encoding': 'utf-8',
+'tools.sessions.on' : True,
+'tools.sessions.storage_type' : 'file',
+'tools.sessions.locking' : 'explicit',
+'tools.sessions.storage_path' : data_dir+'/tmp',
+# session timeout is 60 minutes
+'tools.sessions.timeout' : 60
+}
+
+@cherrypy.expose
+def index(self):
+    output = ''
+
+    form = '''
+    <form action='action'>
+    num1:<INPUT type='text' name='num1'>
+    num2:<INPUT type='text'  name='num2'>
+    <input type=submit>
+    <input type=reset>
+    </form>
+    '''
+    output += form
+    return output
+@cherrypy.expose
+def action(self, num1=9, num2=9):
+    num1 = int(num1)
+    num2 = int(num2)
+    output = ''
+    for i in range(num1):
+        for j in range(num2):
+            output += str(i) + '*' + str(j) + '=' + str(i*j) + '<br />'
+    return output
+
+
+import hashlib
+#convert user_password into sha1 encoded string
+def gen_password(user_password):
+    return hashlib.sha1(user_password.encode("utf-8")).hexdigest()
+text='abc%03d'
+for i in range(1,399+1):
+    print(text%(i)+':'+gen_password(text%(i))+':'+text%(i)+'@gmail.com:'+text%(i)+'@gmail.com:'+'user')
 
 網際鼓式煞車設計(2ag4)
 ===
+github連結
+40123107: https://github.com/40123107
+40123120: https://github.com/40123120
+cdag4: https://github.com/2014cdag4/2014cdag4
 
-有關鼓式煞車
-
-程式設計架構
+cmsimply連結
+40123107: https://github.com/40123107
+40123120: https://github.com/40123120
+40123150: http://cdg4-40123150.rhcloud.com/
 ===
 
-鼓式煞車
-
-結果與討論
+第九週 
+1.(第一題 30%) 請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.
+http://cdg4-40123150.rhcloud.com/get_page?heading=%E7%AC%AC%E4%B8%80%E9%A1%8C
+2.(第二題 40%) 請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.
+http://cdg4-40123150.rhcloud.com/example/
+http://vimeo.com/92577008
+3.(第三題 30%) 請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區, 並將連結放在個人第九週頁面.
+https://php-40123150.rhcloud.com/doku.php?id=start
+http://vimeo.com/92577072
+===
+w12
+請連結 https://github.com/2014cdag4/2014cdag4
 ===
 
 這裡是結果與討論
@@ -166,6 +313,40 @@ by 2014cdag5
 ===
 
 這裡是結果與討論
+
+網際四連桿機構設計(2ag8)
+===
+
+有關連桿設計
+
+程式設計架構
+===
+
+連桿計算
+
+結果與討論
+===
+
+這裡是結果與討論
+
+by 2014cdag5
+
+網際鼓式煞車設計(2ag9)
+===
+
+有關鼓式煞車
+
+程式設計架構
+===
+
+鼓式煞車
+
+結果與討論
+===
+
+這裡是結果與討論
+
+這是第九組
 
 網際鼓式煞車設計(2ag10)
 ===
@@ -227,7 +408,26 @@ by 2014cdag5
 
 這裡是結果與討論
 
+<<<<<<< HEAD
 網際鼓式煞車設計(2ag14)
+=======
+網際鼓式煞車設計(2ag10)
+>>>>>>> 26a5b9324111e15820203a5b96463a4196def80e
+===
+
+有關鼓式煞車
+
+程式設計架構
+===
+
+鼓式煞車
+
+結果與討論
+===
+
+這裡是結果與討論
+
+網際鼓式煞車設計(2ag15)
 ===
 
 有關鼓式煞車
@@ -261,6 +461,21 @@ by 2014cdag5
 ===
 
 有關鼓式煞車g17
+
+程式設計架構
+===
+
+鼓式煞車
+
+結果與討論
+===
+
+這裡是結果與討論
+
+網際鼓式煞車設計(2ag18)
+===
+
+有關鼓式煞車g18
 
 程式設計架構
 ===

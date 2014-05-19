@@ -442,7 +442,7 @@ session.GetModelWindow (assembly).Repaint();
     // 設定 config option
     session.SetConfigOption("comp_placement_assumptions","no");
     // 建立擺放零件的位置矩陣
-      var identityMatrix = pfcCreate ("pfcMatrix3D");
+      var identityMatrix = pfcCreate("pfcMatrix3D");
       for (var x = 0; x < 4; x++)
         for (var y = 0; y < 4; y++)
           {
@@ -451,7 +451,7 @@ session.GetModelWindow (assembly).Repaint();
         else
           identityMatrix.Set (x, y, 0.0);
           }
-      var transf = pfcCreate ("pfcTransform3D").Create (identityMatrix);
+      var transf = pfcCreate("pfcTransform3D").Create(identityMatrix);
     // 取得目前的工作目錄
       var currentDir = session.getCurrentDirectory();
     // 以目前已開檔, 作為 model
@@ -466,7 +466,7 @@ session.GetModelWindow (assembly).Repaint();
      for (var partnum = 0; partnum < 20; partnum++)
     {
     // 若 link1.prt 在 session 則直接取用
-      var componentModel = session.GetModelFromDescr (descr);
+      var componentModel = session.GetModelFromDescr(descr);
     // 若 link1.prt 不在 session 則從工作目錄中載入 session
       var componentModel = session.RetrieveModel(descr);
     // 若 link1.prt 已經在 session 則放入組立檔中
