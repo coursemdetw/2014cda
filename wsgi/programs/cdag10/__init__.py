@@ -72,8 +72,10 @@ try
         // 設定變數值, 利用 ModelItem 中的 CreateDoubleParamValue 轉換成 Pro/Web.Link 所需要的浮點數值
     aValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(myn);
     bValue = pfcCreate
-    cValue = pfcCreate
  ("MpfcModelItem").CreateDoubleParamValue(myn);
+    cValue = pfcCreate
+  ("MpfcModelItem").CreateDoubleParamValue(myn);
+    
     // 將處理好的變數值, 指定給對應的零件變數
     a.Value = aValue;
     b.Value = bValue;

@@ -3,8 +3,11 @@ cd2ag10報告(2ag10)
 
 以下為各週報告
 
-第八週考試摘要
+第八週考試摘要(2ag10)
 ====
+
+小組網站:http://cdag10-40123153.rhcloud.com/cmsimply/get_page?heading=%E7%AC%AC%E5%85%AB%E9%80%B1%E8%80%83%E8%A9%A6%E6%91%98%E8%A6%81
+
 
 2014S CD Week8 <td>
 課程教材:
@@ -18,6 +21,7 @@ Web-based collaborative engineering support system <td>
 (第一題) 請寫一個執行時可以列出 9×9 乘法表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行. <td>
 (第二題) 請將上述執行過程錄為 flv 後, 上傳到個人的 Vemeo 空間中, 並將網址回報到各組網站 (dokuwiki 與 CMSimply)與報告中, 並且將相關心得與報告連結登錄到 wiki.mde.tw 第八週的分組頁面中. <td>
 (第三題) (協同計分, 分組進行) 請在各組的雲端 dowiki 中,根據下列 40 個帳號與密碼, 新增對應的使用者帳號與密碼後, 將雲端網址登錄在 wiki.mde.tw 各組第八週頁面中, 並說明操作過程與心得後, 將心得整理成 pdf 後繳交到 course@mde.tw.
+
 40 個帳號與密碼 <td>
 
 58B39 , 9J35UAVM<td>
@@ -74,8 +78,10 @@ http://ethercalc.tw/ Openshift 上的 ethercalc <td>
 上課影片
 http://vimeo.com/user24079973/videos
 
-第八週報告
+第八週報告(2ag10)
 ====
+
+小組網站:http://cdag10-40123153.rhcloud.com/cmsimply/get_page?heading=%E7%AC%AC%E5%85%AB%E9%80%B1%E5%A0%B1%E5%91%8A
 
 ```python 
 import cherrypy
@@ -119,8 +125,10 @@ https://vimeo.com/92003966
 
 P.S 由於題目理解錯誤，所以上述影片為失效。
 
-第九週考試摘要
+第九週考試摘要(2ag10)
 ====
+
+小組網站:http://cdag10-40123153.rhcloud.com/cmsimply/get_page?heading=%E7%AC%AC%E4%B9%9D%E9%80%B1%E8%80%83%E8%A9%A6%E6%91%98%E8%A6%81
 
 2014S CD Week9 <td>
 課程教材:
@@ -145,8 +153,10 @@ Web-based collaborative engineering support system <td>
 http://vimeo.com/user24079973/videos
 
 
-第九週報告
+第九週報告(2ag10)
 ====
+
+小組網站:http://cdag10-40123153.rhcloud.com/cmsimply/get_page?heading=%E7%AC%AC%E4%B9%9D%E9%80%B1%E5%A0%B1%E5%91%8A
 
 第一題:
 
@@ -300,8 +310,10 @@ bitbucket: https://bitbucket.org/40123153/dokuwiki_abc
 
 第三題的程式碼實在不知道要打什麼….
 
-第十二週
+第十二週(2ag10)
 ====
+
+小組網站:http://cdag10-40123153.rhcloud.com/cmsimply/get_page?heading=%E7%AC%AC%E5%8D%81%E4%BA%8C%E9%80%B1%E5%A0%B1%E5%91%8A
 
 第十二週任務
 
@@ -352,8 +364,3 @@ github大分組倉儲:https://github.com/coursemdetw/2014cda
 
 
 大致上就這樣吧...不過 c變數 忘記動到...不過只是照a與b同樣的型式...將a或b複製下來改成c就可以三軸同動了。
-
-
-終於結束了...在細節上有一點點小失誤就會整個失敗。
-
-程式真的是很現實，錯了就是錯了，一個字打錯、一個步驟沒做到就是不行(汗
