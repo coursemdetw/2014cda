@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by Leo (http://leoeditor.com/leo_toc.html) -->
+<!-- Created by Leo (http://webpages.charter.net/edreamleo/front.html) -->
 <?xml-stylesheet ekr_test?>
 <leo_file xmlns:leo="http://www.leo-editor.org/2011/leo" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
@@ -30,7 +30,7 @@
 <v t="2014spring.20140513154549.2535"><vh>組立約束條件屬性</vh></v>
 </v>
 <v t="course-mde-tw.20140417093332.2027" a="E"><vh>@path wsgi</vh>
-<v t="course-mde-tw.20140417093332.2028" a="E"
+<v t="course-mde-tw.20140417093332.2028"
 expanded="course-mde-tw.20140417093332.2030,"><vh>@file application</vh></v>
 <v t="2014spring.20140508134612.2197" a="E"
 expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
@@ -48,8 +48,11 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="2014spring.20140513154549.2217"><vh>@path wsgi/programs/cdag4</vh>
 <v t="2014spring.20140513154549.2218"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="kmolII_lite.20140513162816.2130" a="E"><vh>@path wsgi/programs/cdag5</vh>
+<v t="kmolII_lite.20140513162816.2130"><vh>@path wsgi/programs/cdag5</vh>
 <v t="kmolII_lite.20140513162816.2131"><vh>@edit __init__.py</vh></v>
+</v>
+<v t="kmolII_lite.20140519193822.1766" a="E"><vh>@path wsgi/programs/cdag7</vh>
+<v t="kmolII_lite.20140519193822.1767"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140513154549.2225" a="E"><vh>@path wsgi/programs/cdag10</vh>
 <v t="2014spring.20140513154549.2226"><vh>@edit __init__.py</vh></v>
@@ -68,7 +71,7 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="2014spring.20140513154549.2534"><vh>@edit man.py</vh></v>
 </v>
 </v>
-<v t="course-mde-tw.20140417093332.2058" a="E"><vh>利用 pandoc 進行格式轉換</vh>
+<v t="course-mde-tw.20140417093332.2058"><vh>利用 pandoc 進行格式轉換</vh>
 <v t="course-mde-tw.20140422221207.1747"><vh>注意事項</vh></v>
 <v t="2014spring.20140430205920.1897"><vh>@button pandoc_auto</vh></v>
 <v t="course-mde-tw.20140417093332.2060" a="E"><vh>@path wsgi/doc</vh>
@@ -1597,5 +1600,6 @@ Github 倉儲則為: https://github.com/coursemdetw/2014cda
 <t tx="course-mde-tw.20140422221207.1747">mathspec.sty 檔案必須放在 pandoc 目錄中, 與文書處理原始檔案放在一起.</t>
 <t tx="kmolII_lite.20140430001511.1599"></t>
 <t tx="kmolII_lite.20140513162816.2130"></t>
+<t tx="kmolII_lite.20140519193822.1766"></t>
 </tnodes>
 </leo_file>
