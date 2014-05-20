@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by Leo (http://leoeditor.com/leo_toc.html) -->
+<!-- Created by Leo (http://webpages.charter.net/edreamleo/front.html) -->
 <?xml-stylesheet ekr_test?>
 <leo_file xmlns:leo="http://www.leo-editor.org/2011/leo" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
@@ -127,7 +127,7 @@
 <v t="2014spring.20140506161101.1976" a="E"><vh>@path 2ag12</vh>
 <v t="2014spring.20140506161101.1977"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014spring.20140506161101.1956"><vh>@path 2ag13</vh>
+<v t="2014spring.20140506161101.1956" a="E"><vh>@path 2ag13</vh>
 <v t="2014spring.20140506161101.1957"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1980" a="E"><vh>@path 2ag14</vh>
