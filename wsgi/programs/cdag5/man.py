@@ -1,19 +1,15 @@
-人偶零件: http://2014cda-mdenfu.rhcloud.com/cmsimply/download/?filepath=/var/lib/openshift/5356315e4382ec2b3f000557/app-root/data//downloads/lego_man.7z
-
-```python
-@language python
 
 import cherrypy
 
 # 這是 MAN 類別的定義
 '''
 # 在 application 中導入子模組
-import programs.cdag30.man as cdag30_man
-# 加入 cdag30 模組下的 man.py 且以子模組 man 對應其 MAN() 類別
-root.cdag30.man = cdag30_man.MAN()
+import programs.cdag5.man as cdag5_man
+# 加入 cdag5 模組下的 man.py 且以子模組 man 對應其 MAN() 類別
+root.cdag5.man = cdag5_man.MAN()
 
 # 完成設定後, 可以利用
-/cdag30/man/assembly
+/cdag5/man/assembly
 # 呼叫 man.py 中 MAN 類別的 assembly 方法
 '''
 class MAN(object):
@@ -21,7 +17,7 @@ class MAN(object):
     @cherrypy.expose
     def index(self, *args, **kwargs):
         outstring = '''
-這是 2014CDA 協同專案下的 cdag30 模組下的 MAN 類別.<br /><br />
+這是 2014CDA 協同專案下的 cdag5 模組下的 MAN 類別.<br /><br />
 <!-- 這裡採用相對連結, 而非網址的絕對連結 (這一段為 html 註解) -->
 <a href="assembly">執行  MAN 類別中的 assembly 方法</a><br /><br />
 請確定下列零件於 V:/home/lego/man 目錄中, 且開啟空白 Creo 組立檔案.<br />
@@ -40,7 +36,7 @@ class MAN(object):
 </head>
 <body>
 </script><script language="JavaScript">
-/*設計一個零件組立函示*/
+/*設計一個零件組立函式*/
 // featID 為組立件第一個組立零件的編號
 // inc 則為 part1 的組立順序編號, 第一個入組立檔編號為 featID+0
 // part2 為外加的零件名稱
@@ -431,10 +427,12 @@ axis_plane_assembly(session, assembly, transf, featID, 6,
                               "LEGO_LEG_LT.prt", "A_8", "DTM5", "A_10", "DTM1");
 // 紅帽
 axis_plane_assembly(session, assembly, transf, featID, 5, 
-                              "LEGO_HAT.prt", "A_2", "TOP", "A_2", "FRONT");     
+                              "LEGO_HAT.prt", "A_2", "TOP", "A_2", "FRONT");
+# regenerate 並且 repaint 組立檔案
+assembly.Regenerate (void null);
+session.GetModelWindow (assembly).Repaint();    
 </script>
 </body>
 </html>
 '''
         return outstring
-```
