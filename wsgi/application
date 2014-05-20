@@ -31,7 +31,7 @@ class CDProject(object):
     'tools.encode.encoding': 'utf-8',
     'tools.sessions.on' : True,
     'tools.sessions.storage_type' : 'file',
-    'tools.sessions.locking' : 'explicit',
+    #'tools.sessions.locking' : 'explicit',
     'tools.sessions.storage_path' : data_dir+'/tmp',
     # session timeout is 60 minutes
     'tools.sessions.timeout' : 60
