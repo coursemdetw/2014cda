@@ -1,14 +1,386 @@
-網際鼓式煞車設計(2ag10)
-===
+cd2ag10報告(2ag10)
+====
 
-有關鼓式煞車
+以下為各週報告
 
-程式設計架構
-===
+第十組組員
+====
 
-鼓式煞車
+小組網站:http://goo.gl/aztMHi
 
-結果與討論
-===
+40123116-吳羽閔
 
-這裡是結果與討論
+40123118-吳謦麟
+
+40123153-戴志軒
+
+第八週考試摘要(2ag10)
+====
+
+小組網站:http://goo.gl/yi3qJ5
+
+
+2014S CD Week8 <td>
+課程教材:
+
+A collaborative writing approach to wikis <td>
+Collabrative engine for distributed mechanical design <td>
+Web-based collaborative engineering support system <td>
+第八週考試題目 <td>
+下列題目完成後, 必須(1)將程式碼送到個人的 Bitbucket repository 下(2)程式可在近端與雲端部署執行(3)在 wiki.mde.tw 個人第八週心得中留下 Bitbucket 與雲端執行連結(4)整理出一份小考第一(二, 或三)題的 PDF 檔案, 寄到 course@mde.tw, 標題為: 學號-小考第一(二, 或三)題, 內容必須包含程式碼, 解題過程, 解題心得, Bitbucket 連結, 雲端網址等資料.
+
+(第一題) 請寫一個執行時可以列出 9×9 乘法表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行. <td>
+(第二題) 請將上述執行過程錄為 flv 後, 上傳到個人的 Vemeo 空間中, 並將網址回報到各組網站 (dokuwiki 與 CMSimply)與報告中, 並且將相關心得與報告連結登錄到 wiki.mde.tw 第八週的分組頁面中. <td>
+(第三題) (協同計分, 分組進行) 請在各組的雲端 dowiki 中,根據下列 40 個帳號與密碼, 新增對應的使用者帳號與密碼後, 將雲端網址登錄在 wiki.mde.tw 各組第八週頁面中, 並說明操作過程與心得後, 將心得整理成 pdf 後繳交到 course@mde.tw.
+
+40 個帳號與密碼 <td>
+
+58B39 , 9J35UAVM<td>
+3624D , QANF34CW<td>
+7345B , 3PAFXKWZ<td>
+358DA , E6RJFKW4<td>
+3BC7B , HG2ASNYH<td>
+CA55C , XUZTHWQK<td>
+D2756 , UHK2W3D2<td>
+368B8 , A5QGYA6W<td>
+7948A , PF278WDQ<td>
+C65C4 , GT4KBCXU<td>
+A8964 , 3RPQSW2U<td>
+22422 , 7E57K7F3<td>
+9A5B4 , 4MVKRE5Z<td>
+B5A76 , 3DTAAHUF<td>
+57388 , NP39FGXR<td>
+8A833 , C7DNBHCQ<td>
+29AB8 , 6KMGK73Z<td>
+5ABD2 , PV5FH722<td>
+86293 , PJ69FBMS<td>
+9DCBC , U5HR6QR8<td>
+276DD , URE9FNWD<td>
+599AA , X2P6CTXF<td>
+9C449 , DKRN3V59<td>
+64236 , 86UWN3E9<td>
+43AAC , MNCJZCAX<td>
+73B93 , QX945VJJ<td>
+36283 , M3MQGUXD<td>
+7447C , TQZVDKPT<td>
+C73AB , MSP4GPPX<td>
+8284B , XMT8W9RD<td>
+62454 , SD4C7V89<td>
+44B3C , 636DBRJC<td>
+C75CB , M66RMMQ2<td>
+4A3CB , FF485EQ4<td>
+7D248 , FGJHQDAS<td>
+A7CC4 , R47AHA4Y<td>
+99BCC , RNQYZGQZ<td>
+6DA77 , HRCDP9D8<td>
+357AB , CKB4Q2EC<td>
+A9525 , JDVX75ST<td>
+
+
+第八週協同設計練習題目:
+
+建立各組 OpenShift 上的 dokuwiki <td>
+http://ethercalc.tw/ Openshift 上的 ethercalc <td>
+近端的 ethercalc <td>
+用 markdown 編輯電子書: https://github.com/progit/progit , <td> http://johnmacfarlane.net/pandoc/epub.html <td>
+期中考試與分組報告必選題 <td>
+請以三組共 9 個人的情況下(座位為 3×3 配置), 分析2014s_week3的協同設計題目, 如何配置座位可以得到團隊的最大配分.
+假如將組別擴大為五組共 15 人的情況下(座位為 4×4 配置, 則團隊座位安排後的最大配合又是多少? <td>
+上課影片
+http://vimeo.com/user24079973/videos
+
+第八週報告(2ag10)
+====
+
+小組網站:http://goo.gl/YCNd7p
+
+```python 
+import cherrypy
+class HelloWorld(object):
+    @cherrypy.expose
+    def index(self, var1=9, var2=9):
+        # initialize outstring
+        outstring = ""
+        # initialize count
+        count = 0
+        d = int(var1)
+        e = int(var2)+1
+        for i in range(1, d):
+            for j in range(1, e):
+                count += 1
+                #print(count)
+                if count%(int(var2)) == 0:
+                    outstring += "<td>"+str(i) + "*" + str(j) + "=" + str(i*j) +"</td>"+"</tr>" + "<br />"
+                else:
+                    outstring += "<td>"+str(i) + "x" + str(j) + "=" + str(i*j) + "</td>"
+        return "<table border=2><tr><td>99乘法表</td></tr><tr>"+outstring
+#http://127.0.0.1:8080/index?var1=10&var2=20
+#"&nbsp;"*4
+ 
+ 
+cherrypy.quickstart(HelloWorld())
+#application=cherrypy.Application(HelloWorld()) #將符號打開上傳openshift即可使用，並刪掉上列
+```
+
+以上程式碼即可跑出99乘法表.
+
+9x9openshift: http://9x9-cadp13ag8.rhcloud.com/ (因openshift空間不足，故利用第九週程式，程式碼略有差別，主要為多新增兩個輸入表單，其餘相同)
+
+同步bitbucket: https://bitbucket.org/40123153/input9x9 (同上)
+
+————我是分隔線————
+
+影片(由於網路超慢，怕錄製影片過大所以只錄製最後結果)
+
+https://vimeo.com/92003966
+
+P.S 由於題目理解錯誤，所以上述影片為失效。
+
+第九週考試摘要(2ag10)
+====
+
+小組網站:http://goo.gl/8nPx2Y
+
+2014S CD Week9 <td>
+課程教材:
+
+A collaborative writing approach to wikis <td>
+Collabrative engine for distributed mechanical design <td>
+Web-based collaborative engineering support system <td>
+期中考試題目 <td>
+下列題目完成後, 必須(1)將程式碼送到個人的 Bitbucket repository 下(2)程式可在近端與雲端部署執行(3)在 wiki.mde.tw 個人第九週心得中留下 Bitbucket 與雲端執行連結以及其它參考連結(4)整理出一份期中考第一(二, 或三)題的 PDF 檔案, 寄到 course@mde.tw, 標題為: cda_學號_姓名_期中考第一(二, 或三)題(乙班將 cda 改為 cdb), 內容必須包含程式碼, 解題過程, 解題心得, Bitbucket 連結, 雲端網址等資料.
+
+(第一題 30%) 請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行. <td>
+(第二題 40%) 請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表. <td>
+(第三題 30%) 請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區, 並將連結放在個人第九週頁面. <td>
+第一題參考資料: 對數表與應用, 當 x=10, 對應到 0 行的值, 表示要對 1.00 取以十為底的對數, 所得到的值為 math.log(1.00, 10)=0, 而 x=10 對應到 1 行的值, 表示要對 1.01 取以十為底的對數, 所得到的值為 math.log(1.01, 10)=0.004321373782642578 然後再乘上 10000, 並且只取整數, 所以對應表的值為 43, 也就是表中的 0043, 當 x=20, 而且對應到第 9 行的值, 則為 math.log(2.09, 10)=0.32014628611105395, 然後再乘上 10000, 只取整數, 所以對應表上的值為 3201.
+
+第一題參考: Python 中 str() 可以將整數或浮點數轉為字串, int() 則可以將字串轉為整數, round(1.0123, 2) 表示只取小數點後兩位, math.log(x, 10) 表示對 x 取以 10 為底的 log 值, html 表格請參考.
+
+期中成績評量 <td>
+請各組依據2014s_week7中的說明完成期中報告.(最後繳交期限為 2014.4.26 晚上 12:00) <td>
+成績評量時, 將依據各組在 wiki.mde.tw 中的頁面進行評量, 期中成績包括平時成績(參考個人自評成績)、第八週考試與期中考試成績、期中報告成績等. <td>
+上課影片
+http://vimeo.com/user24079973/videos
+
+
+第九週報告(2ag10)
+====
+
+小組網站:http://goo.gl/Hy7Ktn
+
+第一題:
+
+Log以10為底之表單openshift: http://log-cadp13ag8.rhcloud.com/
+
+bitbucket: https://bitbucket.org/40123153/log10-1.00-1.99
+
+因為迴圈關係，多了一個21…還在更新中。(解決)
+
+P.S已利用elif判斷式將最後的21給剃除！
+
+當在最後20的地方下elif將<tr>給剃除，故不在往下做表格及列印出21數字。
+
+```python 
+import cherrypy
+import os
+import math
+# 1. 導入所需模組
+
+# 2. 設定近端與遠端目錄
+# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
+_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
+# 設定在雲端與近端的資料儲存目錄
+if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
+    # 表示程式在雲端執行
+    download_root_dir = os.environ['OPENSHIFT_DATA_DIR']
+    data_dir = os.environ['OPENSHIFT_DATA_DIR']
+else:
+    # 表示程式在近端執行
+    download_root_dir = _curdir + "/local_data/"
+    data_dir = _curdir + "/local_data/"
+ 
+# 3. 建立主物件
+class HelloWorld(object):
+    @cherrypy.expose
+    def index2(self, input1=None, input2=None):
+        return "Hello world!"+str(input1)
+    @cherrypy.expose
+    def inputform(self, input1=None, input2=None):
+        return "input form"+str(input1)
+    #index.exposed = True
+    @cherrypy.expose
+    def index(self):
+        out=""
+        c = 0
+        k = 0
+        for i in range(0,11):
+            for j in range (0,10):
+                k += 1
+                c = 10 + i
+                d = c/10+j/100
+                e = (int(math.log(d,10)*10000))
+                if (k%10 == 0 and k<=100):
+                    out += "<td>"+str(e)+"</td></tr><td>"+str(c+1)+"</td><br />"
+                elif k%100 == 0:
+                    out += "<td>"+str(e)+"</td><br />"
+                else:
+                    out +="<td>"+str(e) + "</td>"
+                #print("log=",int(math.log(d,10)*10000))
+            #print("\n")
+        return "<table border=1><tr><td>x</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><td>"+"10"+"</td>"+out
+ 
+# 4. 安排啟動設定
+# 配合程式檔案所在目錄設定靜態目錄或靜態檔案
+application_conf = {'/static':{
+        'tools.staticdir.on': True,
+        'tools.staticdir.dir': _curdir+"/static"},
+        '/downloads':{
+        'tools.staticdir.on': True,
+        'tools.staticdir.dir': data_dir+"/downloads"}
+    }
+ 
+# 5. 在近端或遠端啟動程式
+# 利用 HelloWorld() class 產生案例物件
+root = HelloWorld()
+# 假如在 os 環境變數中存在 'OPENSHIFT_REPO_DIR', 表示程式在 OpenShift 環境中執行
+if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
+    # 雲端執行啟動
+    application = cherrypy.Application(root, config = application_conf)
+else:
+    # 近端執行啟動
+    '''
+    cherrypy.server.socket_port = 8083
+    cherrypy.server.socket_host = '127.0.0.1'
+    '''
+    cherrypy.quickstart(root, config = application_conf)
+```
+ 
+————我是分隔線————
+
+第二題:
+
+9×9乘法表，並且有兩input可以改變9×9乘法表的範圍。例：input:9 and 20 則為9×20乘法表。
+
+openshift: http://9x9-cadp13ag8.rhcloud.com/ (備註:i為前值，j為後值)
+
+bitbucket: https://bitbucket.org/40123153/input9x9
+
+```python 
+import cherrypy
+class HelloWorld(object):
+    @cherrypy.expose
+    def index(self, var1=9, var2=9):
+        # initialize outstring
+        outstring = ""
+        # initialize count
+        count = 0
+        d = int(var1)+1
+        e = int(var2)+1
+        for i in range(1, d):
+            for j in range(1, e):
+                count += 1
+                if count%int(var2) == 0:
+                    outstring += "<td>"+str(i) + "*" + str(j) + "=" + str(i*j) +"</td>"+"</tr>" + "<br />"
+                else:
+                    outstring += "<td>"+str(i) + "x" + str(j) + "=" + str(i*j) + "</td>"
+        return "<table border=3><tr><td>99乘法表</td></tr><tr>"+outstring+'''<br/><form method="POST" action="index">
+                i 我是前值:<input type="text" name="var1"><br />
+                j 我是後值:<input type="text" name="var2"><br />
+                <input type="submit" value="send">
+                </form>
+                '''
+#http://127.0.0.1:8080/index?var1=10&var2=20
+ 
+ 
+#cherrypy.quickstart(HelloWorld())
+application=cherrypy.Application(HelloWorld())
+```
+
+————我是分隔線————
+
+第三題:
+
+新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399。
+
+影片解說: https://vimeo.com/92574166
+
+首先，我們必須要先有abc001~abc399的帳號密碼值，故先用程式迴圈跑出。 (因為懶得寫輸出檔，或者是不熟悉所以不冒險去寫。）
+
+將值複製至文件內將空白修掉，利用EXCEL把密碼在複製至B欄位。存成CSV檔
+
+同樣利用文件將逗點修掉(如果沒記錯空白處為一個TAB，為了安全還是複製之前的。)
+
+再利用程式，修改讀取的文件，將密碼處改為數列[1](數列第一資料行位為[0]，第二資料故為[1])
+
+跑出user之後利用FZ將檔案覆蓋，則可以在雲端上登錄。(為了確認完全傳入，將abc001改為管理權限，確認帳號輸入)
+
+dokuwiki_openshift: http://dokuwiki-cadp13ag8.rhcloud.com/doku.php
+
+bitbucket: https://bitbucket.org/40123153/dokuwiki_abc
+
+第三題的程式碼實在不知道要打什麼….
+
+第十二週報告(2ag10)
+====
+
+小組網站:http://goo.gl/28PW52
+
+第十二週任務
+
+請各組將第八週與第九週考試的摘要報告放入 Github 協同專案中的分組報告區, 並將內容放入各組控管的同步 OpenShift 網站中. (佔期末成績 5分) 
+
+github小組倉儲:https://github.com/2014cdag10
+
+github大分組倉儲:https://github.com/coursemdetw/2014cda
+ 
+請各組設法利用 CherryPy 與 Pro/Web.Link 技術, 在 Github 協同專案中建立一個能夠透過連結或表單控制 Cube 零件, a, b, 或 c 零件尺寸的網際協同程式, 讓使用者可以藉以利用近端的 Creo 嵌入式瀏覽器控制 Cube 的尺寸後列出該零件的體積大小. (佔期末成績 5分) <td>
+1.  Creo 必須使用 64 位元版本 (配合 Windows 7 操作系統) <td>
+2.  Creo web_enable_javascript 設為 on, regen_failure_handling 設為 resolve_mode <td>
+3.  IE→工具→網際網路選項→安全性→信任的網站→自訂等級 允許信任網站執行 ActiveX <td>
+4.  cda 專案必須將http://cdag10-40123153.rhcloud.com/設為信任網站 <td>
+5.  開啟 Creo 2.0, 建立一個 cube, relations: d0 = a, d1 = b, d2 = c (a, b, c 為 local parameters) <td>
+6.  然後在嵌入式 IE, 連接到 http://cdag10-40123153.rhcloud.com/cdag10/cube10  (#在parameter中將函式名稱改為cube10) <td>
+7.  執行  http://cdag10-40123153.rhcloud.com/cdag10/fourbar10 (#在parameter中將函式名稱改為fourbar10) 之前則需要先下載四連桿零件放在 V:\home\fourbar 目錄中, 並開啟一個空的組立檔案, 執行時 Pro/Web.Link 程式會自動進行連桿組立. <td>
+8.  Pro/Web.Link 應用: http://www.ptc.com/company/news/inprint/taiwan/proe5.htm <td>
+9.  參考資料: http://inversionconsulting.blogspot.tw/search/label/WebLink
+ 
+
+首先必須將creo 2.0 的 config.pro檔做些設定，必須要將regen_failure_handing設為resolv_mode，使他能重繪。
+
+再來必須將web_enable_javascript設為on，這樣才能讓javascript可以動作。
+
+＃很重要！！這將會成為成功與失敗的原因....
+
+並且將IE關於ActiveX都通通啟用，將http://cdag10-40123153.rhcloud.com/設為例外網頁。
+
+再來就是繪圖，將零件的三個尺寸設關係式，d0=a , d1=b , d2=c。
+
+所有前置動作都完成了，再來就是利用creo裡面內建的IE跑囉！
+
+將http://cdag10-40123153.rhcloud.com/cdag10/cube10貼至IE的url中，就會開始跑囉！
+
+(原始尺寸為150x150x150的方塊)
+
+
+第一次:3375000
+
+第二次:4096000
+
+第三次:4913000
+
+第四次:5832000
+
+第五次:6859000
+
+
+大致上就這樣吧...不過 c變數 忘記動到...不過只是照a與b同樣的型式...將a或b複製下來改成c就可以三軸同動了。
+
+第十二週評分
+====
+
+40123116 : 80分
+
+40123118 : 80分
+
+40123153 : 80分

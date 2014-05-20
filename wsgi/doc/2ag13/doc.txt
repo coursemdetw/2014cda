@@ -1,14 +1,51 @@
-網際鼓式煞車設計(2ag13)
+協同產品設計實習專案(2ag13)
 ===
 
-有關鼓式煞車
+組員：
+------------------
+40123155
 
-程式設計架構
-===
+40123124
 
-鼓式煞車
+40123138
 
-結果與討論
-===
+OpenShift 網站: https://python-40123124.rhcloud.com/get_page?heading=%3Cspan%3E%E6%9C%9F%E4%B8%AD%E8%80%83%3C/span%3E
 
-這裡是結果與討論
+
+請各組將第八週與第九週考試的摘要報告放入 Github 協同專案中的分組報告區, 並將內容放入各組控管的同步 OpenShift 網站中. (佔期末成績 5分)
+
+考試摘要     http://dokuwiki-40123155.rhcloud.com/doku.php
+
+
+
+
+* bitbucket網站:
+https://40123155@bitbucket.org/40123155/---.git
+
+* dokuwiki網站:
+http://dokuwiki-40123155.rhcloud.com
+
+* vimeo網站:
+https://vimeo.com/user26959367
+
+* CMSimply 網站:
+https://python-40123124.rhcloud.com
+
+*  下載網站:
+https://copy.com/SjKQ8LHZpVFq
+
+* HTML網站:
+http://dokuwiki-40123155.rhcloud.com/lib/exe/fetch.php?media=%E6%9C%9F%E4%B8%AD%E5%A0%B1%E5%91%8A.pdf
+
+http://dokuwiki-40123155.rhcloud.com/lib/exe/fetch.php?media=%E8%AA%B2%E7%A8%8B%E6%95%99%E6%9D%90%E4%B8%80%E7%BF%BB%E8%AD%AF_.pdf
+
+http://dokuwiki-40123155.rhcloud.com/lib/exe/fetch.php?media=%E8%AA%B2%E7%A8%8B%E6%95%99%E6%9D%90%E4%BA%8C%E7%BF%BB%E8%AD%AF.pdf
+
+
+ 組員自評:
+
+    40123155：80分
+    
+    40123124：70分
+    
+    40123138：75分
