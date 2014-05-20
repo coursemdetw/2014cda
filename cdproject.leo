@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by Leo (http://webpages.charter.net/edreamleo/front.html) -->
+<!-- Created by Leo (http://leoeditor.com/leo_toc.html) -->
 <?xml-stylesheet ekr_test?>
 <leo_file xmlns:leo="http://www.leo-editor.org/2011/leo" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
@@ -50,8 +50,11 @@
 <v t="kmolII_lite.20140513162816.2131"><vh>@edit __init__.py</vh></v>
 <v t="kmolII_lite.20140520162524.1775"><vh>@edit man.py</vh></v>
 </v>
-<v t="2014pythonE.20140520190326.1947" a="E"><vh>@path wsgi/programs/cdag6</vh>
+<v t="2014pythonE.20140520190326.1947"><vh>@path wsgi/programs/cdag6</vh>
 <v t="2014pythonE.20140520190326.1948"><vh>@edit __init__.py</vh></v>
+</v>
+<v t="2014pythonE.20140520234911.1956" a="E"><vh>@path wsgi/programs/cdag8</vh>
+<v t="2014pythonE.20140520234911.1957"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="kmolII_lite.20140519210900.2176" a="E"><vh>@path wsgi/programs/cdag9</vh>
 <v t="kmolII_lite.20140519210900.2177"><vh>@edit __init__.py</vh></v>
@@ -106,8 +109,11 @@
 <v t="2014spring.20140506161101.1964" a="E"><vh>@path 2ag6</vh>
 <v t="2014spring.20140506161101.1965"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014pythonE.20140429160432.1843" a="E"><vh>@path 2ag7</vh>
+<v t="2014pythonE.20140429160432.1843"><vh>@path 2ag7</vh>
 <v t="2014pythonE.20140429160432.1844"><vh>@edit doc.txt</vh></v>
+</v>
+<v t="2014pythonE.20140520234454.1952" a="E"><vh>@path 2ag8</vh>
+<v t="2014pythonE.20140520234454.1953"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014pythonE.20140512203125.1905" a="E"><vh>@path 2ag9</vh>
 <v t="2014pythonE.20140512203125.1906"><vh>@edit doc.txt</vh></v>
@@ -171,6 +177,8 @@ course-mde-tw 為協同人員
 <t tx="2014pythonE.20140429160432.1847"></t>
 <t tx="2014pythonE.20140512203125.1905"></t>
 <t tx="2014pythonE.20140520190326.1947"></t>
+<t tx="2014pythonE.20140520234454.1952"></t>
+<t tx="2014pythonE.20140520234911.1956"></t>
 <t tx="2014spring.20140430165707.2063">0. 請各組閱讀
 
 https://wiki.mde.tw/doku.php?id=%E5%8D%94%E5%90%8C%E7%94%A2%E5%93%81%E8%A8%AD%E8%A8%88:2014s_week10
