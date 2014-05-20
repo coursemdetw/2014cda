@@ -1,8 +1,8 @@
 2ag21
 
-組員 : 40023143、40123143、40123145、40123156
+組員: 40023143、40123143、40123145、40123156
 
-本組CMSimply網站 : http://cmsimply-40123156.rhcloud.com/
+本組CMSimply網站: http://cmsimply-40123156.rhcloud.com/
 
 ===
 第十三週
