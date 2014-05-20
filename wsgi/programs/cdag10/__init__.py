@@ -6,7 +6,7 @@ class CDAG10(object):
     @cherrypy.expose
     def index(self, *args, **kwargs):
         outstring = '''
-這是 2014CDA 協同專案下的 cdag10 分組程式開發網頁, 以下為 W12 的任務執行內容test.<br />
+這是 2014CDA 協同專案下的 cdag10 分組程式開發網頁, 以下為 W12 的任務執行內容.<br />
 <!-- 這裡採用相對連結, 而非網址的絕對連結 (這一段為 html 註解) -->
 <a href="cube10">cdag10 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
 <a href="fourbar10">四連桿組立</a><br /><br />
