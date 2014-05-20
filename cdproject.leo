@@ -46,7 +46,7 @@
 <v t="2014spring.20140513154549.2217" a="E"><vh>@path wsgi/programs/cdag4</vh>
 <v t="2014spring.20140513154549.2218"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="kmolII_lite.20140513162816.2130"><vh>@path wsgi/programs/cdag5</vh>
+<v t="kmolII_lite.20140513162816.2130" a="E"><vh>@path wsgi/programs/cdag5</vh>
 <v t="kmolII_lite.20140513162816.2131"><vh>@edit __init__.py</vh></v>
 <v t="kmolII_lite.20140520162524.1775"><vh>@edit man.py</vh></v>
 </v>
