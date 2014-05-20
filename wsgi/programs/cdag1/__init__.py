@@ -14,7 +14,89 @@ class CDAG1(object):
 <a href="/static/fourbar.7z">fourbar.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
 '''
         return outstring
+    @cherrypy.expose
+    def test(self, w, h,l):
+        '''
+    // 假如要自行打開特定零件檔案
+    // 若第三輸入為 false, 表示僅載入 session, 但是不顯示
+    // ret 為 model open return
+    var ret = document.pwl.pwlMdlOpen("axle_5.prt", "v:/tmp", false);
+    if (!ret.Status) {
+        alert("pwlMdlOpen failed (" + ret.ErrorCode + ")");
+    }
+    //將 ProE 執行階段設為變數 session
+    var session = pfcGetProESession();
+    // 在視窗中打開零件檔案, 並且顯示出來
+    var window = session.OpenFile(pfcCreate("pfcModelDescriptor").CreateFromFileName("axle_5.prt"));
+    var solid = session.GetModel("axle_5.prt",pfcCreate("pfcModelType").MDL_PART);
+        '''
+        outstring = '''
+    <!DOCTYPE html> 
+    <html>
+    <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <script type="text/javascript" src="/static/weblink/examples/jscript/pfcUtils.js"></script>
+    <script type="text/javascript" src="/static/weblink/examples/jscript/pfcParameterExamples.js"></script>
+    <script type="text/javascript" src="/static/weblink/examples/jscript/pfcComponentFeatExamples.js"></script>
+    </head>
+    <body>
+    <script type="text/javascript">
+var session = pfcGetProESession ();
+
+// 以目前所開啟的檔案為 solid model
+// for volume
+var solid = session.CurrentModel;
+
+var a, b, c, i, j, aValue, bValue, cValue, volume, count;
+// 將模型檔中的 a 變數設為 javascript 中的 a 變數
+a = solid.GetParam("a");
+b = solid.GetParam("b");
+c = solid.GetParam("c");
+volume=0;
+count=0;
+try
+{
+    var w, h, l;
+    w = '''+w+''';
+    h = '''+h+''';
+    l = '''+l+''';
     
+        // 設定變數值, 利用 ModelItem 中的 CreateDoubleParamValue 轉換成 Pro/Web.Link 所需要的浮點數值
+    aValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(w);
+    bValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(h);
+    cValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(l);
+    // 將處理好的變數值, 指定給對應的零件變數
+    a.Value = aValue;
+    b.Value = bValue;
+    c.Value = cValue;
+    //零件尺寸重新設定後, 呼叫 Regenerate 更新模型
+    solid.Regenerate(void null);
+    //利用 GetMassProperty 取得模型的質量相關物件
+    properties = solid.GetMassProperty(void null);
+    volume = properties.Volume;
+    count = count + 1;
+    alert("執行第"+count+"次,零件總體積:"+volume);
+    // 將零件存為新檔案
+    //var newfile = document.pwl.pwlMdlSaveAs("filename.prt", "v:/tmp", "filename_5_"+count+".prt");
+    // 測試  stl 轉檔
+    //var stl_csys = "PRT_CSYS_DEF";
+    //var stl_instrs = new pfcCreate ("pfcSTLASCIIExportInstructions").Create(stl_csys);
+    //stl_instrs.SetQuality(10);  
+    //solid.Export("v:/tmp/filename_5_"+count+".stl", stl_instrs); 
+    // 結束測試轉檔
+    //if (!newfile.Status) {
+            //alert("pwlMdlSaveAs failed (" + newfile.ErrorCode + ")");
+        //}
+}
+catch (err)
+{
+    alert ("Exception occurred: "+pfcGetExceptionType (err));
+}
+    </script>
+    </body>
+    </html>
+    '''
+        return outstring
     ''' 
     假如採用下列規畫
     
