@@ -1,18 +1,179 @@
-<<<<<<< HEAD
-網際鼓式煞車設計(2ag14)
-=======
-網際鼓式煞車設計(2ag10)
->>>>>>> 26a5b9324111e15820203a5b96463a4196def80e
+﻿協同產品設計實習專案(2ag14)
 ===
 
-有關鼓式煞車
+w8
 
-程式設計架構
+第八週考試題目
+下列題目完成後, 必須(1)將程式碼送到個人的 Bitbucket repository 下(2)程式可在近端與雲端部署執行(3)在 wiki.mde.tw 個人第八週心得中留下 Bitbucket 與雲端執行連結(4)整理出一份小考第一(二, 或三)題的 PDF 檔案, 寄到 course@mde.tw, 標題為: 學號-小考第一(二, 或三)題, 內容必須包含程式碼, 解題過程, 解題心得, Bitbucket 連結, 雲端網址等資料.
+
+(第一題) 請寫一個執行時可以列出 9×9 乘法表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行
+
+'''
+<table border="1">
+<tbody>
+<tr>
+<td>1*1=1</td>
+<td>1*2=2</td>
+<td>1*3=3</td>
+<td>1*4=4</td>
+<td>1*5=5</td>
+<td>1*6=6</td>
+<td>1*7=7</td>
+<td>1*8=8</td>
+<td>1*9=9</td>
+</tr>
+<tr>
+<td>2*1=2</td>
+<td>2*2=4</td>
+<td>2*3=6</td>
+<td>2*4=8</td>
+<td>2*5=10</td>
+<td>2*6=12</td>
+<td>2*7=14</td>
+<td>2*8=16</td>
+<td>2*9=18</td>
+</tr>
+<tr>
+<td>3*1=3</td>
+<td>3*2=6</td>
+<td>3*3=9</td>
+<td>3*4=12</td>
+<td>3*5=15</td>
+<td>3*6=18</td>
+<td>3*7=21</td>
+<td>3*8=24</td>
+<td>3*9=27</td>
+</tr>
+<tr>
+<td>4*1=4</td>
+<td>4*2=8</td>
+<td>4*3=12</td>
+<td>4*4=16</td>
+<td>4*5=20</td>
+<td>4*6=24</td>
+<td>4*7=28</td>
+<td>4*8=32</td>
+<td>4*9=36</td>
+</tr>
+<tr>
+<td>5*1=5</td>
+<td>5*2=10</td>
+<td>5*3=15</td>
+<td>5*4=20</td>
+<td>5*5=25</td>
+<td>5*6=30</td>
+<td>5*7=35</td>
+<td>5*8=40</td>
+<td>5*9=45</td>
+</tr>
+<tr>
+<td>6*1=6</td>
+<td>6*2=12</td>
+<td>6*3=18</td>
+<td>6*4=24</td>
+<td>6*5=30</td>
+<td>6*6=36</td>
+<td>6*7=42</td>
+<td>6*8=48</td>
+<td>6*9=54</td>
+</tr>
+<tr>
+<td>7*1=7</td>
+<td>7*2=14</td>
+<td>7*3=21</td>
+<td>7*4=28</td>
+<td>7*5=35</td>
+<td>7*6=42</td>
+<td>7*7=49</td>
+<td>7*8=56</td>
+<td>7*9=63</td>
+</tr>
+<tr>
+<td>8*1=8</td>
+<td>8*2=16</td>
+<td>8*3=24</td>
+<td>8*4=32</td>
+<td>8*5=40</td>
+<td>8*6=48</td>
+<td>8*7=56</td>
+<td>8*8=64</td>
+<td>8*9=72</td>
+</tr>
+<tr>
+<td>9*1=9</td>
+<td>9*2=18</td>
+<td>9*3=27</td>
+<td>9*4=36</td>
+<td>9*5=45</td>
+<td>9*6=54</td>
+<td>9*7=63</td>
+<td>9*8=72</td>
+<td>9*9=81</td>
+</tr>
+</tbody>
+</table>
+''' 
+
+
+
+(第二題) 請將上述執行過程錄為 flv 後, 上傳到個人的 Vemeo 空間中, 並將網址回報到各組網站 (dokuwiki 與 CMSimply)與報告中, 並且將相關心得與報告連結登錄到 wiki.mde.tw 第八週的分組頁面中.
+
+
+(第三題) (協同計分, 分組進行) 請在各組的雲端 dowiki 中,根據下列 40 個帳號與密碼, 新增對應的使用者帳號與密碼後, 將雲端網址登錄在 wiki.mde.tw 各組第八週頁面中, 並說明操作過程與心得後, 將心得整理成 pdf 後繳交到 course@mde.tw.
+
+'''
+import hashlib
+ 
+''' sha1 secure hashes '''
+st_date =[] 
+ 
+def gen_password(user_password):
+    return hashlib.sha1(user_password.encode("utf-8")).hexdigest()
+ 
+with open("test.txt", "wt") as out_file:
+    with open("2014.txt", "r", encoding="utf-8")as in_file:
+        for index in in_file:
+ 
+            number, name =index.strip().split(' ')
+            mail=number+"@gm.nfu.edu.tw"
+            print(number,name)
+            st_date.append([number, name, mail])
+            out_file.write(str(number)+":"+gen_password(str(number))+":"+str(mail)+":user"+"\n")
+'''
+
+https://vimeo.com/95872800
+
+
+===
+任務一: 請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位, 在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
+
+1.開啟lego_body.prt(主體)之後接上lego_arm_rt.prt、lego_arm_lt.prt
+2.加上lego_hand_lt.prt再來就將機器人的頭加上lego_head.prt
+3.在接上lego_waist.prt再來就將雙腿接上
+4.最後將lego_head.prt及lego_hat.prt
+機器人組合就完成了，
+之後利用爆炸圖可以得到爆炸後的各零件但需要再調整一下位置，就能完成良好的爆炸圖即可完成作業
+這是一個組合圖教學珍貴的經驗，一個了解自動組合程式的機會。
+ 
+ 
+任務二: 請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
+
+　小組vedio:  https://vimeo.com/95872800
+
+ 
+　小組copy.com: https://copy.com/kJl91O34CfvA
+ 
+ 
+任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
+
+ 
+ 　lego_man 自動組立程式組出來的Feat ID是40 41 42 的零件載入裝配.
+　lego_parts_edu.7z 中下載的 lego_man 零件卻不是這樣順序的...
+　這代表他不是一次就組起來的
+
+
 ===
 
-鼓式煞車
 
-結果與討論
-===
 
 這裡是結果與討論
