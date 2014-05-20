@@ -17,15 +17,25 @@
 ===
 第十三週 (40023143)
 
+任務一:
+  1.開啟lego_body.prt利用重合將開啟後的lego_arm_rt.prt和lego_arm_lt.prt接上，再改變角度。
+  2.開啟lego_hand_lt.prt接上lego_arm_rt.prt和lego_arm_lt.prt完成身體與手
+  3.開啟lego_head.prt接在身體上在開啟lego_hat.prt完成頭的部分
+  4.開啟lego_waist.prt接在身體下。
+  5.最後開啟lego_leg.prt和lego_waist.prt接合，完成lego_men
+  6.利用爆炸圖的功能將lego_man爆炸。
+  心得：利用creo將各個零件組合起來，真的很有趣。
+  但因為操作不順和錄製程式的畫質調太低，影片不太成功，
+  但是確實體會了creo的方便，利用雲端將畫好的檔案下載，再利用creo將複雜的零件組合，真的可以大大提升工作效率。
+
 任務二: 
   Vimeo: https://vimeo.com/95867694
   copy.com: https://www.copy.com/s/DEGh0OTCbkDD/3330.flv
 
 任務三: 
-請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
-  lego_man 自動組立程式組出來的Feat ID是順序的40 41 42 ...一個一個零件載入裝配.
-　而lego_parts_edu.7z 中下載相同名稱的 lego_man 零件卻不是這樣順序的...
-　這代表他並不是一次就組起來，可能途中有改變、刪除什麼的.
+  lego_man 利用自動組立程式組出來的Feat ID的排序是40、41、42 、43......以此類推，
+  一個一個零件檔載入裝配； 而lego_parts_edu.7z 中下載相同名稱的 lego_man 零件檔卻
+  不是這樣排序的， 表是lego_man不是一次就組起來，途中應該有改變、刪除......等程序。
 
 ===
 第十三週 (40123143)
@@ -55,7 +65,6 @@
   copy.com: https://copy.com/zJSJ6ZVGdtsy
 
 任務三:
-請詳細較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
   lego_parts_edu.7z裡的樂高零件比較多
   可是組合起來卻沒有太大差異
   第二個壓縮檔裡的零件可能是分成更細小的零件
