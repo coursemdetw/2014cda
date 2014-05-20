@@ -376,7 +376,7 @@ github大分組倉儲:https://github.com/coursemdetw/2014cda
 
 大致上就這樣吧...不過 c變數 忘記動到...不過只是照a與b同樣的型式...將a或b複製下來改成c就可以三軸同動了。
 
-第十二週評分
+第十二週評分(2ag10)
 ====
 
 40123116 : 10分
@@ -386,7 +386,7 @@ github大分組倉儲:https://github.com/coursemdetw/2014cda
 40123153 : 10分
 
 
-第十三週考試
+第十三週考試(2ag10)
 ====
 
 小組網站:http://goo.gl/til1Nq
@@ -421,7 +421,7 @@ lego_parts_edu.7z
 
 weblink user guide.pdf
 
-第十三週報告
+第十三週報告(2ag10)
 ====
 
 小組網站:http://goo.gl/QFJp5F
@@ -453,10 +453,13 @@ weblink user guide.pdf
 　而lego_parts_edu.7z 中下載相同名稱的 lego_man 零件卻不是這樣順序的...
 　這代表他並不是一次就組起來，可能途中有改變、刪除什麼的.
  
- 
 自動組立的某些限制條件或許沒訂得很好，動作有點好笑！
 
-第十三週評分
+P.S 自動組立不資源creo 2.0 M70(x64)版本，會跑出錯誤！只可以用於M70(x64)版本
+
+P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說無法利用 https://cdag10-40123153.rhcloud.com/cdag10/man/開啟...更無法利用https://cdag10-40123153.rhcloud.com/cdag10/man/assembly來跑自動組立.
+
+第十三週評分(2ag10)
 ====
 
 40123116 : 15分
