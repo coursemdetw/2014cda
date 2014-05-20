@@ -60,8 +60,11 @@
 <v t="2014spring.20140513154549.2226"><vh>@edit __init__.py</vh></v>
 <v t="kmolII_lite.20140520091240.1771"><vh>@edit man.py</vh></v>
 </v>
-<v t="kmolII_lite.20140519204745.1773" a="E"><vh>@path wsgi/programs/cdag11</vh>
+<v t="kmolII_lite.20140519204745.1773"><vh>@path wsgi/programs/cdag11</vh>
 <v t="kmolII_lite.20140519204745.1774"><vh>@edit __init__.py</vh></v>
+</v>
+<v t="kmolII_lite.20140520211255.2555" a="E"><vh>@path wsgi/programs/cdag12</vh>
+<v t="kmolII_lite.20140520211255.2556"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140513154549.2221"><vh>@path wsgi/programs/cdag14</vh>
 <v t="2014spring.20140513154549.2222"><vh>@edit __init__.py</vh></v>
@@ -971,5 +974,6 @@ Github 倉儲則為: https://github.com/coursemdetw/2014cda
 <t tx="kmolII_lite.20140513162816.2130"></t>
 <t tx="kmolII_lite.20140519204745.1773"></t>
 <t tx="kmolII_lite.20140519210900.2176"></t>
+<t tx="kmolII_lite.20140520211255.2555"></t>
 </tnodes>
 </leo_file>
