@@ -1,14 +1,14 @@
 import cherrypy
 
-# 這是 CDAG5 類別的定義
-class CDAG5(object):
+# 這是 CDAG6 類別的定義
+class CDAG6(object):
     # 各組利用 index 引導隨後的程式執行
     @cherrypy.expose
     def index(self, *args, **kwargs):
         outstring = '''
-這是 2014CDA 協同專案下的 cdag5 分組程式開發網頁, 以下為 W12 的任務執行內容.<br />
+這是 2014CDA 協同專案下的 cdag6 分組程式開發網頁, 以下為 W12 的任務執行內容.<br />
 <!-- 這裡採用相對連結, 而非網址的絕對連結 (這一段為 html 註解) -->
-<a href="cube1">cdag5 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
+<a href="cube1">cdag6 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
 <a href="fourbar1">四連桿組立</a><br /><br />
 請確定下列連桿位於 V:/home/fourbar 目錄中, 且開啟空白 Creo 組立檔案.<br />
 <a href="/static/fourbar.7z">fourbar.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
@@ -18,10 +18,10 @@ class CDAG5(object):
     ''' 
     假如採用下列規畫
     
-    import programs.cdag5 as cdag5
-    root.cdag5 = cdag5.CDAG5()
+    import programs.cdag6 as cdag6
+    root.cdag6 = cdag6.CDAG6()
     
-    則程式啟動後, 可以利用 /cdag5/cube1 呼叫函式執行
+    則程式啟動後, 可以利用 /cdag6/cube1 呼叫函式執行
     '''
     @cherrypy.expose
     def cube1(self):
@@ -66,7 +66,7 @@ count=0;
 try
 {
     var L, W, H;
-    L =50;
+    L =150;
     W =100;
     H=100;
         // 設定變數值, 利用 ModelItem 中的 CreateDoubleParamValue 轉換成 Pro/Web.Link 所需要的浮點數值
