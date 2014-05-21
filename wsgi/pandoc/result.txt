@@ -387,6 +387,7 @@ w12
 這裡是結果與討論
 
 網際協同產品設計(2ag5)
+期末報告網站：https://2014cdag5-yimin40123157.rhcloud.com
 ===
 
 ◎協同流程架構：
@@ -500,22 +501,73 @@ https://vimeo.com/92575709
 
 這裡是結果與討論
 
-網際四連桿機構設計(2ag8)
+網際鼓式煞車設計(2ag8)
 ===
 
-有關連桿設計
+第八組
 
-程式設計架構
-===
+組員:黃柏良 
+王若嘉
 
-連桿計算
+第八週
 
-結果與討論
-===
+(第二題) 請將上述執行過程錄為 flv 後, 上傳到個人的 Vemeo 空間中, 並將網址回報到各組網站 (dokuwiki 與 CMSimply)與報告中, 並且將相關心得與報告連結登錄到 wiki.mde.tw 第八週的分組頁面
 
-這裡是結果與討論
 
-by 2014cdag5
+(第三題) (協同計分, 分組進行) 請在各組的雲端 dowiki 中,根據下列 40 個帳號與密碼, 新增對應的使用者帳號與密碼後, 將雲端網址登錄在 wiki.mde.tw 各組第八週頁面中, 並說明操作過程與心得後, 將心得整理成 pdf 後繳交到 course@mde.tw.
+第九週
+
+(第一題 30%) 請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.
+(解題過程)
+
+第一題
+
+#程式碼#
+
+python 
+import math
+count = 0
+text='%04d'
+for i in range(100,200+10):
+print(text%round(math.log(i/100,10)*10000,0),end='-')
+count += 1
+if(count == 10):
+print()
+count = 0
+#openshift連結
+https://2014s-40123109.rhcloud.com/get_page?heading=%C2%A0%E7%AC%AC%E4%B9%9D%E9%80%B1
+
+ 
+
+第二題
+
+請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.
+
+http://cdg8-40123141.rhcloud.com/example/
+
+https://bitbucket.org/40123141/---
+
+第三題
+
+ 請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區, 並將連結放在個人第九週頁面.
+
+http://wiki-40123141.rhcloud.com/doku.php
+
+http://vimeo.com/92589824
+
+第十二週
+
+將第八週與第九週考試的摘要報告放入 Github 協同專案中的分組報告區, 並將內容放入各組控管的同步 OpenShift 網站中
+
+第十三週
+
+任務一: 請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位, 在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
+
+任務二: 請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
+
+任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分
+
+ 
 
 協同產品設計實習(cdag9)
 ===
@@ -597,7 +649,7 @@ cd2ag10報告(2ag10)
 
 以下為各週報告
 
-第十組組員
+第十組組員(2ag10)
 ====
 
 小組網站:http://goo.gl/aztMHi
@@ -1146,22 +1198,228 @@ http://dokuwiki-40123155.rhcloud.com/lib/exe/fetch.php?media=%E8%AA%B2%E7%A8%8B%
     40123138：75分
 
 
-<<<<<<< HEAD
-網際鼓式煞車設計(2ag14)
-=======
-網際鼓式煞車設計(2ag10)
->>>>>>> 26a5b9324111e15820203a5b96463a4196def80e
+﻿協同產品設計實習專案(2ag14)
 ===
 
-有關鼓式煞車
+w8
 
-程式設計架構
+第八週考試題目
+下列題目完成後, 必須(1)將程式碼送到個人的 Bitbucket repository 下(2)程式可在近端與雲端部署執行(3)在 wiki.mde.tw 個人第八週心得中留下 Bitbucket 與雲端執行連結(4)整理出一份小考第一(二, 或三)題的 PDF 檔案, 寄到 course@mde.tw, 標題為: 學號-小考第一(二, 或三)題, 內容必須包含程式碼, 解題過程, 解題心得, Bitbucket 連結, 雲端網址等資料.
+
+(第一題) 請寫一個執行時可以列出 9×9 乘法表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行
+
+'''
+<table border="1">
+<tbody>
+<tr>
+<td>1*1=1</td>
+<td>1*2=2</td>
+<td>1*3=3</td>
+<td>1*4=4</td>
+<td>1*5=5</td>
+<td>1*6=6</td>
+<td>1*7=7</td>
+<td>1*8=8</td>
+<td>1*9=9</td>
+</tr>
+<tr>
+<td>2*1=2</td>
+<td>2*2=4</td>
+<td>2*3=6</td>
+<td>2*4=8</td>
+<td>2*5=10</td>
+<td>2*6=12</td>
+<td>2*7=14</td>
+<td>2*8=16</td>
+<td>2*9=18</td>
+</tr>
+<tr>
+<td>3*1=3</td>
+<td>3*2=6</td>
+<td>3*3=9</td>
+<td>3*4=12</td>
+<td>3*5=15</td>
+<td>3*6=18</td>
+<td>3*7=21</td>
+<td>3*8=24</td>
+<td>3*9=27</td>
+</tr>
+<tr>
+<td>4*1=4</td>
+<td>4*2=8</td>
+<td>4*3=12</td>
+<td>4*4=16</td>
+<td>4*5=20</td>
+<td>4*6=24</td>
+<td>4*7=28</td>
+<td>4*8=32</td>
+<td>4*9=36</td>
+</tr>
+<tr>
+<td>5*1=5</td>
+<td>5*2=10</td>
+<td>5*3=15</td>
+<td>5*4=20</td>
+<td>5*5=25</td>
+<td>5*6=30</td>
+<td>5*7=35</td>
+<td>5*8=40</td>
+<td>5*9=45</td>
+</tr>
+<tr>
+<td>6*1=6</td>
+<td>6*2=12</td>
+<td>6*3=18</td>
+<td>6*4=24</td>
+<td>6*5=30</td>
+<td>6*6=36</td>
+<td>6*7=42</td>
+<td>6*8=48</td>
+<td>6*9=54</td>
+</tr>
+<tr>
+<td>7*1=7</td>
+<td>7*2=14</td>
+<td>7*3=21</td>
+<td>7*4=28</td>
+<td>7*5=35</td>
+<td>7*6=42</td>
+<td>7*7=49</td>
+<td>7*8=56</td>
+<td>7*9=63</td>
+</tr>
+<tr>
+<td>8*1=8</td>
+<td>8*2=16</td>
+<td>8*3=24</td>
+<td>8*4=32</td>
+<td>8*5=40</td>
+<td>8*6=48</td>
+<td>8*7=56</td>
+<td>8*8=64</td>
+<td>8*9=72</td>
+</tr>
+<tr>
+<td>9*1=9</td>
+<td>9*2=18</td>
+<td>9*3=27</td>
+<td>9*4=36</td>
+<td>9*5=45</td>
+<td>9*6=54</td>
+<td>9*7=63</td>
+<td>9*8=72</td>
+<td>9*9=81</td>
+</tr>
+</tbody>
+</table>
+''' 
+
+
+
+(第二題) 請將上述執行過程錄為 flv 後, 上傳到個人的 Vemeo 空間中, 並將網址回報到各組網站 (dokuwiki 與 CMSimply)與報告中, 並且將相關心得與報告連結登錄到 wiki.mde.tw 第八週的分組頁面中.
+
+
+(第三題) (協同計分, 分組進行) 請在各組的雲端 dowiki 中,根據下列 40 個帳號與密碼, 新增對應的使用者帳號與密碼後, 將雲端網址登錄在 wiki.mde.tw 各組第八週頁面中, 並說明操作過程與心得後, 將心得整理成 pdf 後繳交到 course@mde.tw.
+
+'''
+import hashlib
+ 
+''' sha1 secure hashes '''
+st_date =[] 
+ 
+def gen_password(user_password):
+    return hashlib.sha1(user_password.encode("utf-8")).hexdigest()
+ 
+with open("test.txt", "wt") as out_file:
+    with open("2014.txt", "r", encoding="utf-8")as in_file:
+        for index in in_file:
+ 
+            number, name =index.strip().split(' ')
+            mail=number+"@gm.nfu.edu.tw"
+            print(number,name)
+            st_date.append([number, name, mail])
+            out_file.write(str(number)+":"+gen_password(str(number))+":"+str(mail)+":user"+"\n")
+'''
+
+
+===
+w9
+
+
+
+ 
+
+期中考試題目
+下列題目完成後, 必須(1)將程式碼送到個人的 Bitbucket repository 下(2)程式可在近端與雲端部署執行(3)在 wiki.mde.tw 個人第九週心得中留下 Bitbucket 與雲端執行連結以及其它參考連結(4)整理出一份期中考第一(二, 或三)題的 PDF 檔案, 寄到 course@mde.tw, 標題為: cda_學號_姓名_期中考第一(二, 或三)題(乙班將 cda 改為 cdb), 內容必須包含程式碼, 解題過程, 解題心得, Bitbucket 連結, 雲端網址等資料.
+
+(第一題 30%) 請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift個人帳號上執行.
+
+ 程式 : https://bitbucket.org/40123136/444
+ 
+ 
+ (第二題 40%) 請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.       (第三題 30%) 請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區, 並將連結放在個人第九週頁面.
+ 
+程式 : https://bitbucket.org/40123136/99
+ 
+ 
+(第三題 30%) 請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的Vimeo  資料區, 並將連結放在個人第九週頁面.
+ 
+Vimeo : https://vimeo.com/92577999
+ 
+ 
+ 
+
+Bitbucket
+
+https://bitbucket.org/40123136/444
+https://bitbucket.org/40123136/99
+
+OpenShift
+
+http://cda14-40123136.rhcloud.com/
+http://python-cadpag5.rhcloud.com/
+https://2014a14-40123136.rhcloud.com/
+
+
+Vimeo
+
+https://vimeo.com/92577999
+
+
+===
+w13
+
+
+任務一: 請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位, 在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
+
+1.開啟lego_body.prt(主體)之後接上lego_arm_rt.prt、lego_arm_lt.prt
+2.加上lego_hand_lt.prt再來就將機器人的頭加上lego_head.prt
+3.在接上lego_waist.prt再來就將雙腿接上
+4.最後將lego_head.prt及lego_hat.prt
+機器人組合就完成了，
+之後利用爆炸圖可以得到爆炸後的各零件但需要再調整一下位置，就能完成良好的爆炸圖即可完成作業
+這是一個組合圖教學珍貴的經驗，一個了解自動組合程式的機會。
+ 
+ 
+任務二: 請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
+
+　小組vedio:  https://vimeo.com/95872800
+
+ 
+　小組copy.com: https://copy.com/kJl91O34CfvA
+ 
+ 
+任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
+
+ 
+ 　lego_man 自動組立程式組出來的Feat ID是40 41 42 的零件載入裝配.
+　lego_parts_edu.7z 中下載的 lego_man 零件卻不是這樣順序的...
+　這代表他不是一次就組起來的
+
+
 ===
 
-鼓式煞車
 
-結果與討論
-===
 
 這裡是結果與討論
 
@@ -1286,14 +1544,57 @@ OpenShift:
 
 2ag21
 
-組員 : 40023143、40123143、40123145、40123156
+組員: 40023143、40123143、40123145、40123156
 
-本組CMSimply網站 : http://cmsimply-40123156.rhcloud.com/
+本組CMSimply網站: http://cmsimply-40123156.rhcloud.com/
 
 ===
 第十三週
 
 任務一: 請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位, 在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
+
+任務二: 請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
+
+任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 
+請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
+
+===
+第十三週 (40023143)
+
+任務一:
+  1.開啟lego_body.prt利用重合將開啟後的lego_arm_rt.prt和lego_arm_lt.prt接上，再改變角度。
+  2.開啟lego_hand_lt.prt接上lego_arm_rt.prt和lego_arm_lt.prt完成身體與手
+  3.開啟lego_head.prt接在身體上在開啟lego_hat.prt完成頭的部分
+  4.開啟lego_waist.prt接在身體下。
+  5.最後開啟lego_leg.prt和lego_waist.prt接合，完成lego_men
+  6.利用爆炸圖的功能將lego_man爆炸。
+  心得：利用creo將各個零件組合起來，真的很有趣。
+  但因為操作不順和錄製程式的畫質調太低，影片不太成功，
+  但是確實體會了creo的方便，利用雲端將畫好的檔案下載，再利用creo將複雜的零件組合，真的可以大大提升工作效率。
+
+任務二: 
+  Vimeo: https://vimeo.com/95867694
+  copy.com: https://www.copy.com/s/DEGh0OTCbkDD/3330.flv
+
+任務三: 
+  lego_man 利用自動組立程式組出來的Feat ID的排序是40、41、42 、43......以此類推，
+  一個一個零件檔載入裝配； 而lego_parts_edu.7z 中下載相同名稱的 lego_man 零件檔卻
+  不是這樣排序的， 表是lego_man不是一次就組起來，途中應該有改變、刪除......等程序。
+
+===
+第十三週 (40123143)
+
+任務一: 
+  首先，先開啟lego_body.prt(主體)之後接上lego_arm_rt.prt、lego_arm_lt.prt之後再加上
+  lego_hand_lt.prt再來就將機器人的頭加上lego_head.prt，在接上lego_waist.prt再來就將
+  雙腿接上最後將lego_head.prt及lego_hat.prt，機器人組合就完成了，最後利用爆炸圖可以
+  得到爆炸後的各零件但需要在調整一下位置，就能完成良好爆炸圖即可完成作業，謝謝老師
+  的教導，這是一個很特別的組合圖教學，希望能快點了解自動組合程式。
+
+===
+第十三週 (40123156)
+
+任務一: 
   組立過程為
     1.開啟creo
     2.新建"組立"
@@ -1303,13 +1604,14 @@ OpenShift:
     設定零件間的限制條件
     要盡量設定到零件完全不能移動
 
-任務二: 請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
-  Vimeo : https://vimeo.com/95857245
-  copy.com : 
+任務二:
+  Vimeo: https://vimeo.com/95857245
+  copy.com: https://copy.com/zJSJ6ZVGdtsy
 
-任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 
-請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
+任務三:
   lego_parts_edu.7z裡的樂高零件比較多
+  可是組合起來卻沒有太大差異，第二個壓
+  縮檔裡的零件可能是分成更細小的零件。
 
 
 網際 OpenJSCAD 程式設計(coursemdetw)
