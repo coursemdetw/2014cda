@@ -428,7 +428,7 @@ axis_plane_assembly(session, assembly, transf, featID, 6,
 // 紅帽
 axis_plane_assembly(session, assembly, transf, featID, 5, 
                               "LEGO_HAT.prt", "A_2", "TOP", "A_2", "FRONT");
-# regenerate 並且 repaint 組立檔案
+// regenerate 並且 repaint 組立檔案
 assembly.Regenerate (void null);
 session.GetModelWindow (assembly).Repaint();    
 </script>

@@ -68,9 +68,10 @@
 <v t="2014spring.20140513092629.2151"><vh>@path wsgi/programs/cdag17</vh>
 <v t="2014spring.20140513092629.2152"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140506174436.1831"><vh>@path wsgi/programs/cdag30</vh>
+<v t="2014spring.20140506174436.1831" a="E"><vh>@path wsgi/programs/cdag30</vh>
 <v t="2014spring.20140506174436.1832"><vh>@edit __init__.py</vh></v>
 <v t="2014spring.20140513154549.2534"><vh>@edit man.py</vh></v>
+<v t="2014spring.20140521133830.2641"><vh>@edit man2.py</vh></v>
 </v>
 </v>
 <v t="course-mde-tw.20140417093332.2058" a="E"><vh>利用 pandoc 進行格式轉換</vh>
