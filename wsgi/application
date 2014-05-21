@@ -203,7 +203,8 @@ root.cdag30 = cdag30.CDAG30()
 import programs.cdag30.man as cdag30_man
 # 加入 cdag30 模組下的 man.py 且以子模組 man 對應其 MAN() 類別
 root.cdag30.man = cdag30_man.MAN()
-
+import programs.cdag30.man2 as cdag30_man2
+root.cdag30.man2 = cdag30_man2.MAN()
 # 假如在 os 環境變數中存在 'OPENSHIFT_REPO_DIR', 表示程式在 OpenShift 環境中執行
 if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
     # 雲端執行啟動
