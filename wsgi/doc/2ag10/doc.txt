@@ -455,9 +455,13 @@ weblink user guide.pdf
  
 自動組立的某些限制條件或許沒訂得很好，動作有點好笑！
 
-P.S 自動組立不資源creo 2.0 M70(x64)版本，會跑出錯誤！只可以用於M70(x64)版本
+P.S 自動組立不支援creo 2.0 M70(x64)版本，會跑出錯誤！只可以用於M60(x64)版本
 
-P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說無法利用 https://cdag10-40123153.rhcloud.com/cdag10/man/開啟...更無法利用https://cdag10-40123153.rhcloud.com/cdag10/man/assembly來跑自動組立.
+P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說無法利用 https://cdag10-40123153.rhcloud.com/cdag10/man/開啟...
+
+更無法利用https://cdag10-40123153.rhcloud.com/cdag10/man/assembly來跑自動組立.
+
+(可以利用https://cdag10-40123153.rhcloud.com/cdag30/man/assembly 來跑自動組立。)
 
 第十三週評分(2ag10)
 ====

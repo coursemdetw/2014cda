@@ -34,13 +34,13 @@
 \contentsline {section}{結果與討論}{27}{section*.35}
 \contentsline {section}{網際鼓式煞車設計(2ag12)}{27}{section*.36}
 \contentsline {section}{程式設計架構}{27}{section*.37}
-\contentsline {section}{結果與討論}{27}{section*.38}
+\contentsline {section}{結果與討論}{28}{section*.38}
 \contentsline {section}{協同產品設計實習專案(2ag13)}{28}{section*.39}
 \contentsline {subsection}{組員：}{28}{section*.40}
-\contentsline {section}{協同產品設計實習專案(2ag14)}{28}{section*.41}
+\contentsline {section}{協同產品設計實習專案(2ag14)}{29}{section*.41}
 \contentsline {section}{網際鼓式煞車設計(2ag15)}{33}{section*.42}
-\contentsline {section}{程式設計架構}{33}{section*.43}
-\contentsline {section}{結果與討論}{33}{section*.44}
+\contentsline {section}{程式設計架構}{34}{section*.43}
+\contentsline {section}{結果與討論}{34}{section*.44}
 \contentsline {section}{網際鼓式煞車設計(2ag16)}{34}{section*.45}
 \contentsline {section}{程式設計架構}{34}{section*.46}
 \contentsline {section}{結果與討論}{34}{section*.47}
