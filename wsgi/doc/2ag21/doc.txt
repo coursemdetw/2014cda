@@ -1,14 +1,70 @@
-網際鼓式煞車設計(2ag21)
+2ag21
+
+組員: 40023143、40123143、40123145、40123156
+
+本組CMSimply網站: http://cmsimply-40123156.rhcloud.com/
+
 ===
+第十三週
 
-有關鼓式煞車
+任務一: 請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位, 在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
 
-程式設計架構
+任務二: 請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
+
+任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 
+請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
+
 ===
+第十三週 (40023143)
 
-鼓式煞車
+任務一:
+  1.開啟lego_body.prt利用重合將開啟後的lego_arm_rt.prt和lego_arm_lt.prt接上，再改變角度。
+  2.開啟lego_hand_lt.prt接上lego_arm_rt.prt和lego_arm_lt.prt完成身體與手
+  3.開啟lego_head.prt接在身體上在開啟lego_hat.prt完成頭的部分
+  4.開啟lego_waist.prt接在身體下。
+  5.最後開啟lego_leg.prt和lego_waist.prt接合，完成lego_men
+  6.利用爆炸圖的功能將lego_man爆炸。
+  心得：利用creo將各個零件組合起來，真的很有趣。
+  但因為操作不順和錄製程式的畫質調太低，影片不太成功，
+  但是確實體會了creo的方便，利用雲端將畫好的檔案下載，再利用creo將複雜的零件組合，真的可以大大提升工作效率。
 
-結果與討論
+任務二: 
+  Vimeo: https://vimeo.com/95867694
+  copy.com: https://www.copy.com/s/DEGh0OTCbkDD/3330.flv
+
+任務三: 
+  lego_man 利用自動組立程式組出來的Feat ID的排序是40、41、42 、43......以此類推，
+  一個一個零件檔載入裝配； 而lego_parts_edu.7z 中下載相同名稱的 lego_man 零件檔卻
+  不是這樣排序的， 表是lego_man不是一次就組起來，途中應該有改變、刪除......等程序。
+
 ===
+第十三週 (40123143)
 
-這裡是結果與討論00123
+任務一: 
+  首先，先開啟lego_body.prt(主體)之後接上lego_arm_rt.prt、lego_arm_lt.prt之後再加上
+  lego_hand_lt.prt再來就將機器人的頭加上lego_head.prt，在接上lego_waist.prt再來就將
+  雙腿接上最後將lego_head.prt及lego_hat.prt，機器人組合就完成了，最後利用爆炸圖可以
+  得到爆炸後的各零件但需要在調整一下位置，就能完成良好爆炸圖即可完成作業，謝謝老師
+  的教導，這是一個很特別的組合圖教學，希望能快點了解自動組合程式。
+
+===
+第十三週 (40123156)
+
+任務一: 
+  組立過程為
+    1.開啟creo
+    2.新建"組立"
+    3.用"插入"功能加入零件
+    4.設定零件間的限制條件
+  注意事項為
+    設定零件間的限制條件
+    要盡量設定到零件完全不能移動
+
+任務二:
+  Vimeo: https://vimeo.com/95857245
+  copy.com: https://copy.com/zJSJ6ZVGdtsy
+
+任務三:
+  lego_parts_edu.7z裡的樂高零件比較多
+  可是組合起來卻沒有太大差異，第二個壓
+  縮檔裡的零件可能是分成更細小的零件。

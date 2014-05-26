@@ -612,7 +612,7 @@ session.GetModelWindow (assembly).Repaint();
           constr.ComponentReference = compSel;
     // static pfcConstraintAttributes Create (boolean Force, boolean Ignore) 
     // 必須 Force execution of this constraint 才會抑制 comp_placement_assumptions 為 yes 的作動?
-          constr.Attributes = pfcCreate ("pfcConstraintAttributes").Create (true, false);
+          constr.Attributes = pfcCreate("pfcConstraintAttributes").Create(true, false);
     // 將互動選擇相關資料, 附加在程式約束變數之後
           constrs.Append (constr);
         }
