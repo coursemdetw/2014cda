@@ -78,7 +78,7 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="course-mde-tw.20140417093332.2061"><vh>@edit title.txt</vh></v>
 </v>
 </v>
-<v t="course-mde-tw.20140417093332.2047"><vh>分組協同報告區</vh>
+<v t="course-mde-tw.20140417093332.2047" a="E"><vh>分組協同報告區</vh>
 <v t="course-mde-tw.20140417093332.2048" a="E"><vh>@path wsgi/doc</vh>
 <v t="course-mde-tw.20140417093332.2049" a="E"><vh>@path 2ag1</vh>
 <v t="course-mde-tw.20140417093332.2050"><vh>@edit doc.txt</vh></v>
@@ -1600,7 +1600,6 @@ Github 倉儲則為: https://github.com/coursemdetw/2014cda
 <t tx="course-mde-tw.20140422221207.1747">mathspec.sty 檔案必須放在 pandoc 目錄中, 與文書處理原始檔案放在一起.</t>
 <t tx="kmolII_lite.20140430001511.1599"></t>
 <t tx="kmolII_lite.20140513162816.2130"></t>
-
 <t tx="kmolII_lite.20140519204745.1773"></t>
 <t tx="kmolII_lite.20140519204745.1774">@language python
 import cherrypy
@@ -2370,9 +2369,5 @@ session.GetModelWindow (assembly).Repaint();
 &lt;/html&gt;
         '''
         return outstring</t>
-
-
-<t tx="kmolII_lite.20140519193822.1766"></t>
-
 </tnodes>
 </leo_file>
