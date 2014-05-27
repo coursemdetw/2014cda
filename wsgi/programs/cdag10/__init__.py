@@ -8,8 +8,8 @@ class CDAG10(object):
         outstring = '''
 這是 2014CDA 協同專案下的 cdag10 分組程式開發網頁, 以下為 W12 的任務執行內容.<br />
 <!-- 這裡採用相對連結, 而非網址的絕對連結 (這一段為 html 註解) -->
-<a href="cube1">cdag1 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
-<a href="fourbar1">四連桿組立</a><br /><br />
+<a href="cube10">cdag10 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
+<a href="fourbar10">四連桿組立</a><br /><br />
 請確定下列連桿位於 V:/home/fourbar 目錄中, 且開啟空白 Creo 組立檔案.<br />
 <a href="/static/fourbar.7z">fourbar.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
 '''
@@ -67,14 +67,19 @@ try
 {
     for(i=0;i<5;i++)
     {
-        myf = 100;
+        myf = 150;
         myn = myf + i*10;
         // 設定變數值, 利用 ModelItem 中的 CreateDoubleParamValue 轉換成 Pro/Web.Link 所需要的浮點數值
     aValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(myn);
-    bValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(myn);
+    bValue = pfcCreate
+ ("MpfcModelItem").CreateDoubleParamValue(myn);
+    cValue = pfcCreate
+  ("MpfcModelItem").CreateDoubleParamValue(myn);
+    
     // 將處理好的變數值, 指定給對應的零件變數
     a.Value = aValue;
     b.Value = bValue;
+    c.Value = cValue;
     //零件尺寸重新設定後, 呼叫 Regenerate 更新模型
     solid.Regenerate(void null);
     //利用 GetMassProperty 取得模型的質量相關物件
