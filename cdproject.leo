@@ -99,7 +99,7 @@
 <v t="2014pythonE.20140527204722.2508" a="E"><vh>@path 2ag2</vh>
 <v t="2014pythonE.20140527204722.2509"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014pythonE.20140429104126.1755" a="E"><vh>@path 2ag3</vh>
+<v t="2014pythonE.20140429104126.1755"><vh>@path 2ag3</vh>
 <v t="course-mde-tw.20140417093332.2052"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1960" a="E"><vh>@path 2ag4</vh>
