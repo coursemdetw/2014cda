@@ -93,14 +93,14 @@
 </v>
 <v t="course-mde-tw.20140417093332.2047" a="E"><vh>分組協同報告區</vh>
 <v t="course-mde-tw.20140417093332.2048" a="E"><vh>@path wsgi/doc</vh>
-<v t="course-mde-tw.20140417093332.2049" a="E"><vh>@path 2ag1</vh>
+<v t="course-mde-tw.20140417093332.2049"><vh>@path 2ag1</vh>
 <v t="course-mde-tw.20140417093332.2050"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="course-mde-tw.20140417093332.2051" a="E"><vh>@path 2ag2</vh>
-<v t="course-mde-tw.20140417093332.2052"><vh>@edit doc.txt</vh></v>
+<v t="2014pythonE.20140527204722.2508"><vh>@path 2ag2</vh>
+<v t="2014pythonE.20140527204722.2509"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014pythonE.20140429104126.1755" a="E"><vh>@path 2ag3</vh>
-<v t="2014pythonE.20140429104126.1756"><vh>@edit doc.txt</vh></v>
+<v t="course-mde-tw.20140417093332.2052"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1960" a="E"><vh>@path 2ag4</vh>
 <v t="2014spring.20140506161101.1961"><vh>@edit doc.txt</vh></v>
@@ -118,7 +118,7 @@
 <v t="2014pythonE.20140520234454.1953"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014pythonE.20140512203125.1905" a="E"><vh>@path 2ag9</vh>
-<v t="2014pythonE.20140512203125.1906" a="M"><vh>@edit doc.txt</vh></v>
+<v t="2014pythonE.20140512203125.1906"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1968" a="E"><vh>@path 2ag10</vh>
 <v t="2014spring.20140506161101.1969"><vh>@edit doc.txt</vh></v>
@@ -181,6 +181,7 @@ course-mde-tw 為協同人員
 <t tx="2014pythonE.20140520190326.1947"></t>
 <t tx="2014pythonE.20140520234454.1952"></t>
 <t tx="2014pythonE.20140520234911.1956"></t>
+<t tx="2014pythonE.20140527204722.2508"></t>
 <t tx="2014spring.20140430165707.2063">0. 請各組閱讀
 
 https://wiki.mde.tw/doku.php?id=%E5%8D%94%E5%90%8C%E7%94%A2%E5%93%81%E8%A8%AD%E8%A8%88:2014s_week10
@@ -921,7 +922,6 @@ doc
         doc.txt</t>
 <t tx="course-mde-tw.20140417093332.2048"></t>
 <t tx="course-mde-tw.20140417093332.2049"></t>
-<t tx="course-mde-tw.20140417093332.2051"></t>
 <t tx="course-mde-tw.20140417093332.2058">@language latex
 
 % 中文內容設定
