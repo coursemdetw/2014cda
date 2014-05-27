@@ -455,9 +455,13 @@ weblink user guide.pdf
  
 自動組立的某些限制條件或許沒訂得很好，動作有點好笑！
 
-P.S 自動組立不資源creo 2.0 M70(x64)版本，會跑出錯誤！只可以用於M70(x64)版本
+P.S 自動組立不支援creo 2.0 M70(x64)版本，會跑出錯誤！只可以用於M60(x64)版本
 
-P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說無法利用 https://cdag10-40123153.rhcloud.com/cdag10/man/開啟...更無法利用https://cdag10-40123153.rhcloud.com/cdag10/man/assembly來跑自動組立.
+P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說無法利用 https://cdag10-40123153.rhcloud.com/cdag10/man/開啟...(w14解決)
+
+更無法利用https://cdag10-40123153.rhcloud.com/cdag10/man/assembly來跑自動組立.
+
+(可以利用https://cdag10-40123153.rhcloud.com/cdag30/man/assembly 來跑自動組立。)
 
 第十三週評分(2ag10)
 ====
@@ -467,3 +471,77 @@ P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說
 40123118 : 15分
 
 40123153 : 15分
+
+
+第十四週任務(2ag10)
+====
+
+2014S CD Week14
+
+課程教材:
+
+A collaborative writing approach to wikis
+Collabrative engine for distributed mechanical design
+Web-based collaborative engineering support system
+第十四週任務
+請下載 lego_parts.7z , 解開壓縮檔案後, 將資料放入 V:\home\lego 目錄中.
+
+W14 任務 1 (5 分): 請以 Creo 開啟 remsub6.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+W14 任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.
+
+W14 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub6 函式, 當使用者連結至各組雲端網站中的 remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+以下為參考資料:
+
+Robot Educator Model 協同自動組立 (instruction)
+
+nxt_all_lessons.pdf
+
+http://www.education.rec.ri.cmu.edu/fire/fire-partners/4h/reference/slideshows/rem.html
+
+
+第十四週報告(2ag10)
+====
+
+利用Direct組立(因為使用起來比較人性化，又沒限制軟體，故用此軟體).
+
+將beam_angle載入，任意放置在空間中.
+
+將axle_10載入，將他以圓弧中心線與beam_angle之孔圓弧中心線重合.
+
+再將一面與孔中一面重合，利用端面與端面的距離，將它限制.
+(Beam_angle的寬為8.065，axle_10長為80.65.
+
+故距離相距為36.2925(原本想使用中間平面重合，但direct好像沒辦法定義新平面，我認為Parametric是可以做到定義新平面，使他們中間平面重合.)
+
+將axle_5載入，同樣與axle_10方法一樣.
+(Axle_5長為40.325.
+
+將Crossblock_2載入，與axle_10和axle_5方法相同，但沒有找中間平面問題，直接重合貼上在beam_angle之一平面.
+
+Bushing載入，方法與crossblock_2一樣.
+
+Conn_3載入，利用同心圓與平面重合至Crossblock_2.
+
+Beam_3載入，利用同心圓與平面重合至Conn_3.
+
+大致上就以上步驟，一樣不外乎就是重合、同心圓.
+
+同樣，使用direct組立，那麼在組裝之前必須先將位子轉好，因組立不能利用反轉功能.
+
+小組 : video:https://vimeo.com/96551143
+
+小組copy(PDF) : https://copy.com/b9hDHdVQVGyD
+
+小組copy : https://copy.com/m122NKMBQHeB
+
+
+第十四週評分(2ag10)
+====
+
+40123116 : 10
+
+40123118 : 10
+
+40123153 : 10
