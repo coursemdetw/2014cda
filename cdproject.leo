@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by Leo (http://leoeditor.com/leo_toc.html) -->
+<!-- Created by Leo (http://webpages.charter.net/edreamleo/front.html) -->
 <?xml-stylesheet ekr_test?>
 <leo_file xmlns:leo="http://www.leo-editor.org/2011/leo" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
@@ -93,10 +93,10 @@
 </v>
 <v t="course-mde-tw.20140417093332.2047" a="E"><vh>分組協同報告區</vh>
 <v t="course-mde-tw.20140417093332.2048" a="E"><vh>@path wsgi/doc</vh>
-<v t="course-mde-tw.20140417093332.2049"><vh>@path 2ag1</vh>
+<v t="course-mde-tw.20140417093332.2049" a="E"><vh>@path 2ag1</vh>
 <v t="course-mde-tw.20140417093332.2050"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014pythonE.20140527204722.2508"><vh>@path 2ag2</vh>
+<v t="2014pythonE.20140527204722.2508" a="E"><vh>@path 2ag2</vh>
 <v t="2014pythonE.20140527204722.2509"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014pythonE.20140429104126.1755" a="E"><vh>@path 2ag3</vh>
@@ -111,7 +111,7 @@
 <v t="2014spring.20140506161101.1964" a="E"><vh>@path 2ag6</vh>
 <v t="2014spring.20140506161101.1965"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014pythonE.20140429160432.1843"><vh>@path 2ag7</vh>
+<v t="2014pythonE.20140429160432.1843" a="E"><vh>@path 2ag7</vh>
 <v t="2014pythonE.20140429160432.1844"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014pythonE.20140520234454.1952" a="E"><vh>@path 2ag8</vh>
