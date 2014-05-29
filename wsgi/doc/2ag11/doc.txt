@@ -1,14 +1,183 @@
-網際鼓式煞車設計(2ag11)
-===
+cd2ag11報告(2ag11)
+====
 
-有關鼓式煞車
+以下為各週報告
 
-程式設計架構
-===
+第十一組組員(2ag11)
+====
 
-鼓式煞車
+小組網站:http://40123121-cadp13ag1.rhcloud.com/
 
-結果與討論
-===
+40123121-李啟揚
 
-這裡是結果與討論
+40123129-高永城
+
+40123133-梁智皓
+
+解說部份的圖詳見小組網站
+
+W8
+
+1.(第一題)
+ 
+
+程式碼:
+ 
+for i in range(1,10):
+   for j in range(1,10):
+      print('%2.d*%2.d=%2.d'%(i,j,i*j),end=" ")
+   print('')
+ 
+解題過程:首先建立i從1到10的for迴圈與j從1到10的for迴圈，在print相應的數字。
+ 
+心得:在考試中發現有很多不太了解的地方，
+第一個不了解的就是該如何完成題目要要
+求，經過很長時間的思考仍然有困難，請益了很多相關網站終於有一點發現，不過還是不足以完成題目要求的內容，礙於時間上的關係只能交出小小的成果
+ 
+ 
+1.(第三題)
+ 
+程式碼:
+ 
+import hashlib
+import string
+import random
+ 
+''' sha1 secure hashes '''
+ 
+# convert user_password into sha1 encoded string
+def gen_password(user_password):
+    return hashlib.sha1(user_password.encode("utf-8")).hexdigest()
+ 
+# generate random user password
+def user_password(size=6, chars=string.ascii_uppercase + string.digits):
+    return ''.join(random.choice(chars) for _ in range(size))
+
+def gen_users_auth_php(stud_list_filename, outputdir, sep):
+    # read lines from file
+    #lines = open("2b_stud_list.txt", "r", encoding="utf-8").read().splitlines()
+    lines = open(stud_list_filename, "r", encoding="utf-8").read().splitlines()
+    # we may also need to notice every user with computer generated passwords
+    file_header = '''
+# users.auth.php
+# <?php exit()?>
+# Don't modify the lines above
+#
+# Userfile
+#
+# Format:
+#
+# login:passwordhash:Real Name:email:groups,comma,seperated
+# smd5 admin:$1$BtiJLaL9$q3Zy/VE8X5VrEMsR.XWdj1:admin:admin@gmail.com:admin,user
+
+admin:$1$BtiJLaL9$q3Zy/VE8X5VrEMsR.XWdj1:admin:admin@gmail.com:admin,user
+'''
+    outputfile = open(outputdir+"/users.auth.php", "w", encoding="utf-8")
+    outputfile.write(file_header)
+    for i in range(len(lines)):
+       # password = user_password(8, "ABCDEFGHJKMNPQRSTUVWXYZ23456789")
+        password = lines[i].split("\t")[1]
+        user_account = lines[i].split("\t")[0]
+        computer_generated_password = password
+        sha1_password = gen_password(password)
+        real_name = lines[i].split("\t")[0]+"@gm.nfu.edu.tw"
+        email = lines[i].split("\t")[0]+"@gm.nfu.edu.tw"
+        groups = "user"
+        accou = user_account.lower()
+        print(accou)
+    
+    
+        print(lines[i].split("\t")[0], "-", password, "-", gen_password(password), \
+                "-", lines[i].split("\t")[1])
+                
+
+        print(password)
+        line_to_write = accou+sep+sha1_password+sep+real_name+sep+email+sep+groups+"\n"
+        outputfile.write(line_to_write)
+    outputfile.close()
+
+# call gen_users_auth_php() to generate users_auth.php file
+gen_users_auth_php("abc.txt", "./", sep=":")
+print("done")
+ 
+說明過程:由程式藉由文字文件(.txt)的帳號與密碼，產生users.auth.php後，由FZ傳至/var/lib/openshift/534c9adee0b8cdb4e600017b/app-root/data/conf並且取代原來的users.auth.php即成功，要注意產生後admin的權限問題，並且要及時更改密碼，才能確保安全問題。
+
+W9
+
+第二題: 請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同 的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表. 
+
+ 網站 : http://test-cadp13ag1.rhcloud.com/example/(後來因openshift不夠用已刪除此網)
+ 
+ 在 OPENSHIFT 創立新網頁並 CLONE 下來 之後在把載好的 CM 網站覆蓋進去 並把 WSGI 資料夾裡面的 application 替換成自己做的 
+ 
+ 第三題: 請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區, 並將連結放在個人第九週頁面.
+
+網站 :http://40123121wiki-cadp13ag1.rhcloud.com/doku.php?id=start
+
+ 
+
+先用 excel產生文件檔
+
+再將python程式碼完成
+
+配合文件檔來產生 users.auth.php檔案
+
+使用鑰匙搭配 FileZilla 軟體將產生的 users.auth.php上傳至app-root/data/conf下
+
+之後就能用產生的 帳號密碼登入自己前創wiki網站
+
+W13
+
+任務一: 請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位, 在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
+
+任務二: 請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
+
+任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
+
+首先載入身體
+
+再載入左右手給定限制條件並組裝
+
+依此再給它裝手掌
+
+再來是裝腰部和雙腳
+
+最後補個頭和帽子給它及組裝完成
+
+組裝詳細過程
+
+40123121:https://vimeo.com/95875254
+
+40123129:https://vimeo.com/95875255
+
+40123133:https://vimeo.com/95866667
+
+
+W14
+
+用W13的經驗可以快速上手
+
+先載入beam_angle.prt
+
+接下來都用限制條件方式組裝
+
+依序用axle_10.prt裝入beam_angle.prt較長那頭
+
+crossblock_2.prt裝在axle_10.prt兩邊並與beam_angle.prt面接觸
+
+axle_5.prt裝在beam_angle.prt另一頭
+
+crossblock_2.prt裝在axle_5.prt兩邊各2個
+
+conn_3.prt裝在beam_angle.prt較長那邊的crossblock_2.prt
+
+最後裝入beam_3.prt固定
+
+組裝詳細過程
+
+40123121:https://vimeo.com/96595415
+
+40123129:https://vimeo.com/96583000
+
+40123133:
+

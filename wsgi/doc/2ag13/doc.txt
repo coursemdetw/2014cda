@@ -79,7 +79,7 @@ http://dokuwiki-40123155.rhcloud.com/lib/exe/fetch.php?media=%E8%AA%B2%E7%A8%8B%
 如何應用組合 有點了解 重點就是不要找錯條線找錯面 就成功一半 
 剩下的就是自己判斷正確 不要失誤 就可組合成功
 
-十三週影片  http://vimeo.com/96494026
+40123155十三週影片  http://vimeo.com/96494026
 
 
 
@@ -92,4 +92,6 @@ http://dokuwiki-40123155.rhcloud.com/lib/exe/fetch.php?media=%E8%AA%B2%E7%A8%8B%
 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub6 函式, 
 remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
 
+
+40123155十四週影片  https://vimeo.com/96591689
 
