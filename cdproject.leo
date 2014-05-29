@@ -297,6 +297,7 @@ setup = '''
 \\usepackage[T1]{fontspec}    %設定字體用 
 \\usepackage{graphicx} 
 \\usepackage{fancyvrb} % for frame on Verbatim 
+\\usepackage{float}
 \\setCJKmainfont{新細明體}
 '''
 # 在 demo.tex 最前頭加上"中文設定"

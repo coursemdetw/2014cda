@@ -1,9 +1,8 @@
 % 2014 協同產品設計實習報告
-% 機械設計工程系二甲
-% April 23, 2014
+% 機械設計工程系二乙
+% April 30, 2014
 
-前言
-===
+# 前言
 
 協同產品設計實習課程目標[^1]
 
@@ -21,38 +20,21 @@ note.]
 
 延續程式語言與電腦輔助設計實習課程, 學習如何建構協同產品設計環境所需的工具.
 
-Pandoc 手冊
-===
+# Pandoc 手冊
 
-http://johnmacfarlane.net/pandoc/README.html
+<http://johnmacfarlane.net/pandoc/README.html>
 
-footnote
+共用圖片統一放在 doc 目錄外的 images/common 目錄中, 千萬不可以將圖片檔案放在 doc 目錄中.
 
-tables
+若要將圖片與內文放在一起,  可以在圖片後放一反斜線, 表示與隨後的內文結合在一起.
 
-flexible ordered lists
+![中美國旗](./../images/common/c2_w14_task2.png) \
 
-definition lists
+各組 images 存放目錄與引用, 統一放在 doc 目錄外的 images 目錄中 (千萬不可放在 doc 目錄中), 並且按照組別建立子目錄存放.
 
-fenced code blocks
+若是要將圖片獨立為一個 figure, 則不要放連結符號.
 
-superscript
-
-subscript
-
-strikeout
-
-title blocks
-
-automatic tables of contents
-
-embedded LaTeX math
-
-citations
-
-markdown inside HTML block elements
-
-
+![中美國旗](./../images/2ag1/c2_w14_task2.png)
 
 協同產品設計實習專案(2ag1)
 ===
@@ -368,60 +350,87 @@ for i in range(1,399+1):
 
 可以利用程式創造多人帳密，一起管理網站，減少一個一個創建帳密，又會有被盜用的風險。
 
-import math
-count = 0
-text='%04d'
-for i in range(100,200+10):
-    print(text%round(math.log(i/100,10)*10000,0),end='-')
-    count += 1
-    if(count == 10):
-        print()
-        count = 0
 
-class Example(object):
-_cp_config = {
-# if there is no utf-8 encoding, no Chinese input available
-'tools.encode.encoding': 'utf-8',
-'tools.sessions.on' : True,
-'tools.sessions.storage_type' : 'file',
-'tools.sessions.locking' : 'explicit',
-'tools.sessions.storage_path' : data_dir+'/tmp',
-# session timeout is 60 minutes
-'tools.sessions.timeout' : 60
-}
-
-@cherrypy.expose
-def index(self):
-    output = ''
-
-    form = '''
-    <form action='action'>
-    num1:<INPUT type='text' name='num1'>
-    num2:<INPUT type='text'  name='num2'>
-    <input type=submit>
-    <input type=reset>
-    </form>
-    '''
-    output += form
-    return output
-@cherrypy.expose
-def action(self, num1=9, num2=9):
-    num1 = int(num1)
-    num2 = int(num2)
-    output = ''
-    for i in range(num1):
-        for j in range(num2):
-            output += str(i) + '*' + str(j) + '=' + str(i*j) + '<br />'
-    return output
+W13任務(2ag3)
 
 
-import hashlib
-#convert user_password into sha1 encoded string
-def gen_password(user_password):
-    return hashlib.sha1(user_password.encode("utf-8")).hexdigest()
-text='abc%03d'
-for i in range(1,399+1):
-    print(text%(i)+':'+gen_password(text%(i))+':'+text%(i)+'@gmail.com:'+text%(i)+'@gmail.com:'+'user')
+1.  請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位, 在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
+
+2.  請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
+
+3.  請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
+
+摘要報告
+===
+
+組立步驟：
+
+1.建立新的檔案，選擇組立檔。
+
+2.將body零件檔叫出，再將右手臂零件檔叫出，使手臂之軸線與body之軸線重合，並將手臂內側與body邊重合緊貼。
+
+3.左手臂步驟如上。
+
+4.將底座裝上，條件有四個，背部及正面、內部左右兩側需緊靠。
+
+5.裝上右腳，使右腳軸線與底部重合，並將內側緊靠。
+
+6.左腳步驟如上。
+
+7.最後裝上頭部，頭部軸線與body重合，戴上帽子，Lego_man完成。
+
+心得
+===
+
+40123104心得：
+
+第一次用creo組立學到很多東西，知道原來用creo組立這麼方便，組完一個小人之後就感到很有成就感哈哈
+
+Vimeo影片：https://vimeo.com/95842802
+
+40123106心得：
+
+任務1：
+
+1.  一開始總不知道要如何將其對正，直到老師教學後，才知道要先對齊基準面。
+
+2.  組立時要隨時注意方向是否正確。
+
+任務2：
+
+1.  Vemeo 空間：https://vimeo.com/95891856
+
+2.  copy 空間：https://copy.com/A7wM7eItawg4
+
+自評分數：70
+
+40123111心得：
+
+第一次使用Creo，覺得比想像中好用，很清楚明瞭的工具列，組立起來也特別輕鬆。
+
+◎Lego_man組立過程Vimeo影片：
+
+Part1:https：//vimeo.com/95846586
+
+Part2:https：//vimeo.com/95846587
+
+自評分數：65
+
+W14任務(2ag3)
+
+任務 1：請以 Creo 開啟 remsub6.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+任務 2：請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.
+
+任務 3：請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub6 函式, 當使用者連結至各組雲端網站中的 remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+摘要報告
+===
+
+
+心得
+===
+
 
 網際鼓式煞車設計(2ag4)
 ===
@@ -546,11 +555,30 @@ https://vimeo.com/92575709
 將第八週與第九週考試的摘要報告放入 Github 協同專案中的分組報告區, 並將內容放入各組控管的同步 OpenShift 網站中
 
 *第十三週任務
-任務一: 請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位,     在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
+任務一: 請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位,在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
 
 任務二: 請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
 
 任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
+
+[40123109]
+vimeo網站：https://vimeo.com/95870809
+copy.com網站：https://copy.com/B4bciHt2pJ3T
+心得：在任務一利用手動組樂高零件，因滑鼠按鍵不夠靈敏，常會發生連按而導致定義零件位置時的困難，考慮下次帶自己的滑鼠來使用。
+而在組立過程中，掌握了面對齊面以及線與線重合等技巧，就能順利的組立。
+自動組立還在了解當中。
+
+*第十四週任務
+任務 1 (5 分): 請以 Creo 開啟 remsub6.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.
+
+任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub6 函式, 當使用者連結至各組雲端網站中的 remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+[40123109]
+vimeo網站：https://copy.com/B4bciHt2pJ3T
+copy.com網站：https://copy.com/B4bciHt2pJ3T
+心得：第十四週延續了上個禮拜的組立，這次的零件多了一點，在組立過程中，零件順序和步驟是關鍵，而在零件越來越多、組立步驟越來越複雜的情況下，利用程式組立相對會簡單許多。
 
 網際鼓式煞車設計(2ag7)
 ===
@@ -633,6 +661,21 @@ http://vimeo.com/92589824
 
 任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分
 
+第十四週
+
+ 任務 1 (5 分): 請以 Creo 開啟 remsub6.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+ 任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.
+
+任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub6 函式, 當使用者連結至各組雲端網站中的 remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+
+vimeo網站：https://vimeo.com/96600173
+
+copy.com網站：https://copy.com/ISoqibBrBnka
+
+
+心得：延續上個禮拜的組立，這次的零件麻煩許多，在組立過程中，零件順序和步驟很重要，零件越多、組立步驟越複雜，若能利用程式組立相對會簡單許多。
  
 
 協同產品設計實習(cdag9)
@@ -708,6 +751,33 @@ https://vimeo.com/92575092
 
 W12
 將第八週與第九週考試的摘要報告放入 Github 協同專案中的分組報告區, 並將內容放入各組控管的同步 OpenShift 網站中
+
+W13
+王瑞豪
+copy:https://copy.com/V9KF1pQSfCxN 
+vimeo:http://vimeo.com/95823596
+
+心得:這週是組一個小人偶，起初用起來還滿不容易的但組過之後其實發現並不難，還要加上錄影上傳製作過程
+
+
+吳昱緯
+vimeo:https://vimeo.com/95821387
+
+心得:在這次上課中最主要目的是要讓我們體會到程式組立的意義，在設定好工作平面XY YZ XZ三個平面時，我們可利用程式自動對正，在繪圖過程中就可以預先設定好組裝順序以省去不必要的麻煩，接下來就是電腦建立參數化繪圖，利用第13週的LEGO小人讓我理解程式千變萬化，能夠靈活運用的人才會有競爭力。
+
+W14
+40123114王瑞豪
+copy:https://www.copy.com/s/8e7X7SG6phCD/40123114_asm.flv 
+vimeo:https://vimeo.com/96570659
+
+心得:這禮拜的任務是要手動組立，這跟上禮拜的任務有點相似所以操作起來並沒有那麽陌生，但每次錄影時電腦都會有點當當的，這是點小缺點。用程式組立還是沒辦法成功所以只能拿到10分，下次再加油
+
+
+40123117 吳昱緯
+vimeo:https://vimeo.com/96551880
+
+心得:第14週的目標延續第13週的課程，在LEGO的車子組立零件十分的多，要如何建立正確觀念，用程式幫我們做事情是很重要的，如果只是用人力的方式只是有努力而沒有競爭力，在面對全球競爭下參數化已經是必備的了，要怎麼學好用程式控制參數化繪圖軟體也是現在該學習的目標之一。
+
 
 
 cd2ag10報告(2ag10)
@@ -1169,7 +1239,7 @@ weblink user guide.pdf
 
 P.S 自動組立不支援creo 2.0 M70(x64)版本，會跑出錯誤！只可以用於M60(x64)版本
 
-P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說無法利用 https://cdag10-40123153.rhcloud.com/cdag10/man/開啟...
+P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說無法利用 https://cdag10-40123153.rhcloud.com/cdag10/man/開啟...(w14解決)
 
 更無法利用https://cdag10-40123153.rhcloud.com/cdag10/man/assembly來跑自動組立.
 
@@ -1185,20 +1255,264 @@ P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說
 40123153 : 15分
 
 
-網際鼓式煞車設計(2ag11)
-===
+第十四週任務(2ag10)
+====
 
-有關鼓式煞車
+2014S CD Week14
 
-程式設計架構
-===
+課程教材:
 
-鼓式煞車
+A collaborative writing approach to wikis
+Collabrative engine for distributed mechanical design
+Web-based collaborative engineering support system
+第十四週任務
+請下載 lego_parts.7z , 解開壓縮檔案後, 將資料放入 V:\home\lego 目錄中.
 
-結果與討論
-===
+W14 任務 1 (5 分): 請以 Creo 開啟 remsub6.asm, 本任務要求各組員以手動組立完成此一零件組立.
 
-這裡是結果與討論
+W14 任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.
+
+W14 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub6 函式, 當使用者連結至各組雲端網站中的 remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+以下為參考資料:
+
+Robot Educator Model 協同自動組立 (instruction)
+
+nxt_all_lessons.pdf
+
+http://www.education.rec.ri.cmu.edu/fire/fire-partners/4h/reference/slideshows/rem.html
+
+
+第十四週報告(2ag10)
+====
+
+利用Direct組立(因為使用起來比較人性化，又沒限制軟體，故用此軟體).
+
+將beam_angle載入，任意放置在空間中.
+
+將axle_10載入，將他以圓弧中心線與beam_angle之孔圓弧中心線重合.
+
+再將一面與孔中一面重合，利用端面與端面的距離，將它限制.
+(Beam_angle的寬為8.065，axle_10長為80.65.
+
+故距離相距為36.2925(原本想使用中間平面重合，但direct好像沒辦法定義新平面，我認為Parametric是可以做到定義新平面，使他們中間平面重合.)
+
+將axle_5載入，同樣與axle_10方法一樣.
+(Axle_5長為40.325.
+
+將Crossblock_2載入，與axle_10和axle_5方法相同，但沒有找中間平面問題，直接重合貼上在beam_angle之一平面.
+
+Bushing載入，方法與crossblock_2一樣.
+
+Conn_3載入，利用同心圓與平面重合至Crossblock_2.
+
+Beam_3載入，利用同心圓與平面重合至Conn_3.
+
+大致上就以上步驟，一樣不外乎就是重合、同心圓.
+
+同樣，使用direct組立，那麼在組裝之前必須先將位子轉好，因組立不能利用反轉功能.
+
+小組 : video:https://vimeo.com/96551143
+
+小組copy(PDF) : https://copy.com/b9hDHdVQVGyD
+
+小組copy : https://copy.com/m122NKMBQHeB
+
+
+第十四週評分(2ag10)
+====
+
+40123116 : 10
+
+40123118 : 10
+
+40123153 : 10
+
+
+cd2ag11報告(2ag11)
+====
+
+以下為各週報告
+
+第十一組組員(2ag11)
+====
+
+小組網站:http://40123121-cadp13ag1.rhcloud.com/
+
+40123121-李啟揚
+
+40123129-高永城
+
+40123133-梁智皓
+
+解說部份的圖詳見小組網站
+
+W8
+
+1.(第一題)
+ 
+
+程式碼:
+ 
+for i in range(1,10):
+   for j in range(1,10):
+      print('%2.d*%2.d=%2.d'%(i,j,i*j),end=" ")
+   print('')
+ 
+解題過程:首先建立i從1到10的for迴圈與j從1到10的for迴圈，在print相應的數字。
+ 
+心得:在考試中發現有很多不太了解的地方，
+第一個不了解的就是該如何完成題目要要
+求，經過很長時間的思考仍然有困難，請益了很多相關網站終於有一點發現，不過還是不足以完成題目要求的內容，礙於時間上的關係只能交出小小的成果
+ 
+ 
+1.(第三題)
+ 
+程式碼:
+ 
+import hashlib
+import string
+import random
+ 
+''' sha1 secure hashes '''
+ 
+# convert user_password into sha1 encoded string
+def gen_password(user_password):
+    return hashlib.sha1(user_password.encode("utf-8")).hexdigest()
+ 
+# generate random user password
+def user_password(size=6, chars=string.ascii_uppercase + string.digits):
+    return ''.join(random.choice(chars) for _ in range(size))
+
+def gen_users_auth_php(stud_list_filename, outputdir, sep):
+    # read lines from file
+    #lines = open("2b_stud_list.txt", "r", encoding="utf-8").read().splitlines()
+    lines = open(stud_list_filename, "r", encoding="utf-8").read().splitlines()
+    # we may also need to notice every user with computer generated passwords
+    file_header = '''
+# users.auth.php
+# <?php exit()?>
+# Don't modify the lines above
+#
+# Userfile
+#
+# Format:
+#
+# login:passwordhash:Real Name:email:groups,comma,seperated
+# smd5 admin:$1$BtiJLaL9$q3Zy/VE8X5VrEMsR.XWdj1:admin:admin@gmail.com:admin,user
+
+admin:$1$BtiJLaL9$q3Zy/VE8X5VrEMsR.XWdj1:admin:admin@gmail.com:admin,user
+'''
+    outputfile = open(outputdir+"/users.auth.php", "w", encoding="utf-8")
+    outputfile.write(file_header)
+    for i in range(len(lines)):
+       # password = user_password(8, "ABCDEFGHJKMNPQRSTUVWXYZ23456789")
+        password = lines[i].split("\t")[1]
+        user_account = lines[i].split("\t")[0]
+        computer_generated_password = password
+        sha1_password = gen_password(password)
+        real_name = lines[i].split("\t")[0]+"@gm.nfu.edu.tw"
+        email = lines[i].split("\t")[0]+"@gm.nfu.edu.tw"
+        groups = "user"
+        accou = user_account.lower()
+        print(accou)
+    
+    
+        print(lines[i].split("\t")[0], "-", password, "-", gen_password(password), \
+                "-", lines[i].split("\t")[1])
+                
+
+        print(password)
+        line_to_write = accou+sep+sha1_password+sep+real_name+sep+email+sep+groups+"\n"
+        outputfile.write(line_to_write)
+    outputfile.close()
+
+# call gen_users_auth_php() to generate users_auth.php file
+gen_users_auth_php("abc.txt", "./", sep=":")
+print("done")
+ 
+說明過程:由程式藉由文字文件(.txt)的帳號與密碼，產生users.auth.php後，由FZ傳至/var/lib/openshift/534c9adee0b8cdb4e600017b/app-root/data/conf並且取代原來的users.auth.php即成功，要注意產生後admin的權限問題，並且要及時更改密碼，才能確保安全問題。
+
+W9
+
+第二題: 請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同 的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表. 
+
+ 網站 : http://test-cadp13ag1.rhcloud.com/example/(後來因openshift不夠用已刪除此網)
+ 
+ 在 OPENSHIFT 創立新網頁並 CLONE 下來 之後在把載好的 CM 網站覆蓋進去 並把 WSGI 資料夾裡面的 application 替換成自己做的 
+ 
+ 第三題: 請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區, 並將連結放在個人第九週頁面.
+
+網站 :http://40123121wiki-cadp13ag1.rhcloud.com/doku.php?id=start
+
+ 
+
+先用 excel產生文件檔
+
+再將python程式碼完成
+
+配合文件檔來產生 users.auth.php檔案
+
+使用鑰匙搭配 FileZilla 軟體將產生的 users.auth.php上傳至app-root/data/conf下
+
+之後就能用產生的 帳號密碼登入自己前創wiki網站
+
+W13
+
+任務一: 請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位, 在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
+
+任務二: 請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
+
+任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
+
+首先載入身體
+
+再載入左右手給定限制條件並組裝
+
+依此再給它裝手掌
+
+再來是裝腰部和雙腳
+
+最後補個頭和帽子給它及組裝完成
+
+組裝詳細過程
+
+40123121:https://vimeo.com/95875254
+
+40123129:https://vimeo.com/95875255
+
+40123133:https://vimeo.com/95866667
+
+
+W14
+
+用W13的經驗可以快速上手
+
+先載入beam_angle.prt
+
+接下來都用限制條件方式組裝
+
+依序用axle_10.prt裝入beam_angle.prt較長那頭
+
+crossblock_2.prt裝在axle_10.prt兩邊並與beam_angle.prt面接觸
+
+axle_5.prt裝在beam_angle.prt另一頭
+
+crossblock_2.prt裝在axle_5.prt兩邊各2個
+
+conn_3.prt裝在beam_angle.prt較長那邊的crossblock_2.prt
+
+最後裝入beam_3.prt固定
+
+組裝詳細過程
+
+40123121:https://vimeo.com/96595415
+
+40123129:https://vimeo.com/96583000
+
+40123133:
+
+
 
 網際鼓式煞車設計(2ag12)
 ===
@@ -1227,30 +1541,6 @@ P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說
 40123138
 
 OpenShift 網站: https://python-40123124.rhcloud.com/get_page?heading=%3Cspan%3E%E6%9C%9F%E4%B8%AD%E8%80%83%3C/span%3E
-
-
-
-第十二週
-
-請各組將第八週與第九週考試的摘要報告放入 Github 協同專案中的分組報告區, 並將內容放入各組控管的同步 OpenShift 網站中. (佔期末成績 5分)
-
-考試摘要     http://dokuwiki-40123155.rhcloud.com/doku.php
-
-
-
-第十三週
-
-40123124 一開始組合的時候不太熟悉,因為不常使用creo這個繪圖軟體,可是慢慢的熟能生巧之後,
-一下子就完成了,只是過程有許多小細節要注意, 像是面和面、軸和軸的對應要正確,如此一來,接合就會非常順利。
-
-40123138 第一次接觸到零件組立，相當不熟悉，
-但是摸索了一下子就會將LogoMan已條件限制的方式接合起來，過程中覺得還滿有趣的。
-
-40123155 CREO組件時要把相關的接起 要非常注意設定定位
-因為找錯會無法連接正確 組起樂高機器人後 對於CREO的使用
-如何應用組合 有點了解 重點就是不要找錯條線找錯面 就成功一半 
-剩下的就是自己判斷正確 不要失誤 就可組合成功
-
 
 
 * bitbucket網站:
@@ -1283,6 +1573,59 @@ http://dokuwiki-40123155.rhcloud.com/lib/exe/fetch.php?media=%E8%AA%B2%E7%A8%8B%
     40123124：70分
     
     40123138：75分
+
+
+
+
+
+
+
+第十二週
+
+請各組將第八週與第九週考試的摘要報告放入 Github 協同專案中的分組報告區, 並將內容放入各組控管的同步 OpenShift 網站中. (佔期末成績 5分)
+
+考試摘要     http://dokuwiki-40123155.rhcloud.com/doku.php
+
+
+
+第十三週
+
+任務一: 請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位, 在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
+
+任務二: 請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
+
+任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 
+請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別
+請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
+
+
+40123124 一開始組合的時候不太熟悉,因為不常使用creo這個繪圖軟體,可是慢慢的熟能生巧之後,
+一下子就完成了,只是過程有許多小細節要注意, 像是面和面、軸和軸的對應要正確,如此一來,接合就會非常順利。
+
+40123138 第一次接觸到零件組立，相當不熟悉，
+但是摸索了一下子就會將LogoMan已條件限制的方式接合起來，過程中覺得還滿有趣的。
+
+40123155 CREO組件時要把相關的接起 要非常注意設定定位
+因為找錯會無法連接正確 組起樂高機器人後 對於CREO的使用
+如何應用組合 有點了解 重點就是不要找錯條線找錯面 就成功一半 
+剩下的就是自己判斷正確 不要失誤 就可組合成功
+
+40123155十三週影片  http://vimeo.com/96494026
+
+
+
+第十四週
+任務 1 (5 分): 請以 Creo 開啟 remsub6.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 
+並將個人心得與相關連結放入各組協同報告中.
+
+任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub6 函式, 
+remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+
+40123155十四週影片  https://vimeo.com/96591689
+
 
 
 ﻿協同產品設計實習專案(2ag14)
@@ -1503,6 +1846,45 @@ w13
 　lego_parts_edu.7z 中下載的 lego_man 零件卻不是這樣順序的...
 　這代表他不是一次就組起來的
 
+===
+
+
+w14
+
+任務 1 (5 分): 請以 Creo 開啟 remsub6.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 
+並將個人心得與相關連結放入各組協同報告中.
+
+40123136
+copy : https://copy.com/fWOEHMmsKmGY
+vimeo : https://vimeo.com/96551591
+
+心得 :
+
+這周跟上周一樣但是這周比較麻煩一點,零件太多要一個一個找
+但做過一遍就會很順了
+
+
+40123144
+
+copy : https://copy.com/rHzHW0BignL6
+         https://copy.com/hJTYJkVOPDNO
+
+心得 :
+   
+這次手動組裝樂高零件看似簡單但是由於我們對
+creo不了解所以失敗了非常多次。
+可是不斷努力以及以及同學互相幫忙便可以完成了         
+         
+         
+
+任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub6 函式, 
+remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+
+
+
 
 ===
 
@@ -1586,6 +1968,18 @@ Bitbucket 連結
 https://bitbucket.org/40123137/week9
 Bitbucket 連結
 https://bitbucket.org/40123137/week9
+
+
+
+第13週
+===
+
+wiki連結:
+https://wiki.mde.tw/doku.php?id=2014s2a:%E7%AC%AC%E5%8D%81%E4%B8%83%E7%B5%84:40123137:w13
+
+第十三週-lego手動組立影片
+https://vimeo.com/95820147
+
 
 
 
