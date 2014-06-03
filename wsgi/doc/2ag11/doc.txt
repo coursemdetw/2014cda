@@ -181,3 +181,28 @@ conn_3.prt裝在beam_angle.prt較長那邊的crossblock_2.prt
 
 40123133:
 
+W15
+
+首先載入主體beam_7.prt
+
+再用限制條件在上面的孔放入axle_3.prt
+
+之後再導入兩個axle_extender.prt放到左右兩邊
+
+一樣繼續在左右兩邊導入axle_red.prt並加入限制條件
+
+conn_axle_female.prt也導入兩個放置在左右兩邊
+
+在其中一邊放入beam_angle_4x2.prt
+
+最後再補上conn.prt到beam_angle_4x2.prt上面的孔
+
+自動組立依然在研究中...
+
+組裝詳細過程
+
+40123121:https://vimeo.com/97187351
+
+40123129:https://vimeo.com/97187125
+
+40123133:https://vimeo.com/97188023
