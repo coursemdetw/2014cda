@@ -245,14 +245,20 @@ var assembly = model;
 // 空組立面為 ASM_TOP, ASM_FRONT, ASM_RIGHT
 // Body 組立面為 TOP, FRONT, RIGHT
 // 若 featID=0 表示為空組立檔案, 而且函式會傳回第一個組立件的 featID
+
 var featID = three_plane_assembly(session, assembly, transf, 0, 0, "BEAM_ANGLE.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "TOP", "FRONT", "RIGHT"); 
+
 alert("第一個零件特徵 ID 為:"+featID);
-// BEAM_ANGLE.prt 中間面為 DTM4, 其餘定位面則為 DTM3 與 DTM2
+
+// BEAM_ANGLE.prt 中間面為 middle_green, 其餘定位面則為 red 與 blue
 // AXLE_10.prt 中間面為 DTM1, Right 與 Front 則為定位面
 // featID, 0 表示為 BEAM_ANGLE.prt 零件, "middle_green", "red", "blue" 為其定位面
 // AXLE_10.prt 的定位面則為 "DTM1"(green), "RIGHT"(red), "FRONT"(blue)
+
 three_plane_assembly(session, assembly, transf, featID, 0, "AXLE_10.prt", "middle_green", "red", "blue", "DTM1", "RIGHT", "FRONT");
+
 alert("AXLE_10.prt 已經定位完成!");
+
 // regenerate 並且 repaint 組立檔案
 assembly.Regenerate (void null);
 session.GetModelWindow (assembly).Repaint();    
