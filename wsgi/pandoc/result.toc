@@ -25,39 +25,44 @@
 \contentsline {section}{程式碼}{18}{section*.26}
 \contentsline {section}{協同產品設計實習(cdag9)}{20}{section*.27}
 \contentsline {section}{cd2ag10報告(2ag10)}{21}{section*.28}
-\contentsline {section}{第十組組員(2ag10)}{21}{section*.29}
+\contentsline {subsection}{第十組組員(2ag10)}{21}{section*.29}
 \contentsline {section}{第八週考試摘要(2ag10)}{22}{section*.30}
-\contentsline {section}{第八週報告(2ag10)}{24}{section*.31}
-\contentsline {section}{第九週考試摘要(2ag10)}{25}{section*.32}
-\contentsline {section}{第九週報告(2ag10)}{26}{section*.33}
-\contentsline {section}{第十二週報告(2ag10)}{29}{section*.34}
-\contentsline {section}{第十二週評分(2ag10)}{31}{section*.35}
-\contentsline {section}{第十三週考試(2ag10)}{31}{section*.36}
-\contentsline {section}{第十三週報告(2ag10)}{32}{section*.37}
-\contentsline {section}{第十三週評分(2ag10)}{32}{section*.38}
-\contentsline {section}{第十四週任務(2ag10)}{33}{section*.39}
-\contentsline {section}{第十四週報告(2ag10)}{33}{section*.40}
-\contentsline {section}{第十四週評分(2ag10)}{34}{section*.41}
-\contentsline {section}{cd2ag11報告(2ag11)}{34}{section*.42}
-\contentsline {section}{第十一組組員(2ag11)}{34}{section*.43}
-\contentsline {section}{convert user\_password into sha1 encoded string}{35}{section*.44}
-\contentsline {section}{generate random user password}{35}{section*.45}
-\contentsline {section}{call gen\_users\_auth\_php() to generate users\_auth.php file}{36}{section*.46}
-\contentsline {section}{網際鼓式煞車設計(2ag12)}{37}{section*.47}
-\contentsline {section}{程式設計架構}{37}{section*.48}
-\contentsline {section}{結果與討論}{38}{section*.49}
-\contentsline {section}{協同產品設計實習專案(2ag13)}{38}{section*.50}
-\contentsline {subsection}{組員：}{38}{section*.51}
-\contentsline {section}{協同產品設計實習專案(2ag14)}{39}{section*.52}
-\contentsline {section}{網際鼓式煞車設計(2ag15)}{45}{section*.53}
-\contentsline {section}{程式設計架構}{45}{section*.54}
-\contentsline {section}{結果與討論}{45}{section*.55}
-\contentsline {section}{網際鼓式煞車設計(2ag16)}{45}{section*.56}
-\contentsline {section}{程式設計架構}{45}{section*.57}
-\contentsline {section}{結果與討論}{45}{section*.58}
-\contentsline {section}{第八週摘要報告}{45}{section*.59}
-\contentsline {section}{第九週摘要報告}{46}{section*.60}
-\contentsline {section}{第13週}{46}{section*.61}
-\contentsline {section}{網際 OpenJSCAD 程式設計(coursemdetw)}{48}{section*.62}
-\contentsline {section}{設計程式架構}{48}{section*.63}
-\contentsline {section}{結果與討論}{48}{section*.64}
+\contentsline {subsection}{第八週報告(2ag10)}{24}{section*.31}
+\contentsline {subsection}{第九週考試摘要(2ag10)}{25}{section*.32}
+\contentsline {subsection}{第九週報告(2ag10)}{26}{section*.33}
+\contentsline {subsection}{第十二週報告(2ag10)}{29}{section*.34}
+\contentsline {subsection}{第十二週評分(2ag10)}{31}{section*.35}
+\contentsline {subsection}{第十三週考試(2ag10)}{31}{section*.36}
+\contentsline {subsection}{第十三週報告(2ag10)}{31}{section*.37}
+\contentsline {subsection}{第十三週評分(2ag10)}{32}{section*.38}
+\contentsline {subsection}{第十四週任務(2ag10)}{33}{section*.39}
+\contentsline {subsection}{第十四週報告(2ag10)}{33}{section*.40}
+\contentsline {subsection}{第十四週評分(2ag10)}{34}{section*.41}
+\contentsline {subsection}{第十五週任務(2ag10)}{34}{section*.42}
+\contentsline {subsection}{第十五週報告(2ag10)}{35}{section*.43}
+\contentsline {section}{cd2ag11報告(2ag11)}{36}{section*.44}
+\contentsline {section}{第十一組組員(2ag11)}{36}{section*.45}
+\contentsline {section}{convert user\_password into sha1 encoded string}{36}{section*.46}
+\contentsline {section}{generate random user password}{37}{section*.47}
+\contentsline {section}{call gen\_users\_auth\_php() to generate users\_auth.php file}{37}{section*.48}
+\contentsline {section}{網際鼓式煞車設計(2ag12)}{39}{section*.49}
+\contentsline {section}{程式設計架構}{39}{section*.50}
+\contentsline {section}{結果與討論}{39}{section*.51}
+\contentsline {section}{協同產品設計實習專案(2ag13)}{39}{section*.52}
+\contentsline {subsection}{組員：}{39}{section*.53}
+\contentsline {section}{協同產品設計實習專案(2ag14)}{41}{section*.54}
+\contentsline {section}{網際鼓式煞車設計(2ag15)}{46}{section*.55}
+\contentsline {section}{程式設計架構}{46}{section*.56}
+\contentsline {section}{結果與討論}{47}{section*.57}
+\contentsline {section}{網際鼓式煞車設計(2ag16)}{47}{section*.58}
+\contentsline {section}{程式設計架構}{47}{section*.59}
+\contentsline {section}{結果與討論}{47}{section*.60}
+\contentsline {section}{組員}{47}{section*.61}
+\contentsline {section}{第八週摘要報告}{47}{section*.62}
+\contentsline {section}{第九週摘要報告}{48}{section*.63}
+\contentsline {section}{第13週}{48}{section*.64}
+\contentsline {section}{第14週}{48}{section*.65}
+\contentsline {section}{心得}{49}{section*.66}
+\contentsline {section}{網際 OpenJSCAD 程式設計(coursemdetw)}{50}{section*.67}
+\contentsline {section}{設計程式架構}{50}{section*.68}
+\contentsline {section}{結果與討論}{51}{section*.69}

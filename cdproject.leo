@@ -50,7 +50,7 @@
 <v t="kmolII_lite.20140513162816.2131"><vh>@edit __init__.py</vh></v>
 <v t="kmolII_lite.20140520162524.1775"><vh>@edit man.py</vh></v>
 </v>
-<v t="2014pythonE.20140520190326.1947"><vh>@path wsgi/programs/cdag6</vh>
+<v t="2014pythonE.20140520190326.1947" a="E"><vh>@path wsgi/programs/cdag6</vh>
 <v t="2014pythonE.20140520190326.1948"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014pythonE.20140520234911.1956" a="E"><vh>@path wsgi/programs/cdag8</vh>
@@ -69,13 +69,13 @@
 <v t="kmolII_lite.20140520211255.2555" a="E"><vh>@path wsgi/programs/cdag12</vh>
 <v t="kmolII_lite.20140520211255.2556"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513154549.2221"><vh>@path wsgi/programs/cdag14</vh>
+<v t="2014spring.20140513154549.2221" a="E"><vh>@path wsgi/programs/cdag14</vh>
 <v t="2014spring.20140513154549.2222"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513154549.2229"><vh>@path wsgi/programs/cdag16</vh>
+<v t="2014spring.20140513154549.2229" a="E"><vh>@path wsgi/programs/cdag16</vh>
 <v t="2014spring.20140513154549.2230"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513092629.2151"><vh>@path wsgi/programs/cdag17</vh>
+<v t="2014spring.20140513092629.2151" a="E"><vh>@path wsgi/programs/cdag17</vh>
 <v t="2014spring.20140513092629.2152"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140506174436.1831" a="E"><vh>@path wsgi/programs/cdag30</vh>
