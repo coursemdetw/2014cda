@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by Leo (http://leoeditor.com/leo_toc.html) -->
+<!-- Created by Leo (http://webpages.charter.net/edreamleo/front.html) -->
 <?xml-stylesheet ekr_test?>
 <leo_file xmlns:leo="http://www.leo-editor.org/2011/leo" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
@@ -48,7 +48,9 @@
 </v>
 <v t="kmolII_lite.20140513162816.2130" a="E"><vh>@path wsgi/programs/cdag5</vh>
 <v t="kmolII_lite.20140513162816.2131"><vh>@edit __init__.py</vh></v>
-<v t="kmolII_lite.20140520162524.1775"><vh>@edit man.py</vh></v>
+<v t="kmolII_lite.20140603221750.1809"><vh>@edit man.py</vh></v>
+<v t="kmolII_lite.20140603221750.1811"><vh>@edit man2.py</vh></v>
+<v t="kmolII_lite.20140603221750.1807"><vh>@edit remsub6.py</vh></v>
 </v>
 <v t="2014pythonE.20140520190326.1947" a="E"><vh>@path wsgi/programs/cdag6</vh>
 <v t="2014pythonE.20140520190326.1948"><vh>@edit __init__.py</vh></v>
