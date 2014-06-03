@@ -53,6 +53,12 @@
 <v t="2014pythonE.20140520190326.1947"><vh>@path wsgi/programs/cdag6</vh>
 <v t="2014pythonE.20140520190326.1948"><vh>@edit __init__.py</vh></v>
 </v>
+<v t="kmolII_lite.20140603113815.1803" a="E"><vh>@path wsgi/programs/cdag7</vh>
+<v t="kmolII_lite.20140603113815.1804"><vh>@edit __init__.py</vh></v>
+<v t="kmolII_lite.20140603113815.1814"><vh>@edit man.py</vh></v>
+<v t="kmolII_lite.20140603113815.1812"><vh>@edit man2.py</vh></v>
+<v t="kmolII_lite.20140603113815.1810"><vh>@edit remsub6.py</vh></v>
+</v>
 <v t="2014pythonE.20140520234911.1956" a="E"><vh>@path wsgi/programs/cdag8</vh>
 <v t="2014pythonE.20140520234911.1957"><vh>@edit __init__.py</vh></v>
 </v>
@@ -100,7 +106,7 @@
 <v t="2014pythonE.20140527204722.2508" a="E"><vh>@path 2ag2</vh>
 <v t="2014pythonE.20140527204722.2509"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014pythonE.20140429104126.1755"><vh>@path 2ag3</vh>
+<v t="2014pythonE.20140429104126.1755" a="E"><vh>@path 2ag3</vh>
 <v t="course-mde-tw.20140417093332.2052"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1960" a="E"><vh>@path 2ag4</vh>
@@ -986,5 +992,6 @@ Github 倉儲則為: https://github.com/coursemdetw/2014cda
 <t tx="kmolII_lite.20140519204745.1773"></t>
 <t tx="kmolII_lite.20140519210900.2176"></t>
 <t tx="kmolII_lite.20140520211255.2555"></t>
+<t tx="kmolII_lite.20140603113815.1803"></t>
 </tnodes>
 </leo_file>
