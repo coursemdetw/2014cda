@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <meta name="author" content="機械設計工程系二乙" />
+  <meta name="author" content="機械設計工程系二甲" />
   <meta name="date" content="2014-04-30" />
   <title>2014 協同產品設計實習報告</title>
   <style type="text/css">code{white-space: pre;}</style>
@@ -31,7 +31,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <body>
 <div id="header">
 <h1 class="title">2014 協同產品設計實習報告</h1>
-<h2 class="author">機械設計工程系二乙</h2>
+<h2 class="author">機械設計工程系二甲</h2>
 <h3 class="date">April 30, 2014</h3>
 </div>
 <h1 id="前言">前言</h1>
@@ -43,6 +43,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <p>延續程式語言與電腦輔助設計實習課程, 學習如何建構協同產品設計環境所需的工具.</p>
 <h1 id="pandoc-手冊">Pandoc 手冊</h1>
 <p><a href="http://johnmacfarlane.net/pandoc/README.html">http://johnmacfarlane.net/pandoc/README.html</a></p>
+<p><a href="http://pages.tzengyuxio.me/pandoc/">http://pages.tzengyuxio.me/pandoc/</a></p>
 <p>共用圖片統一放在 doc 目錄外的 images/common 目錄中, 千萬不可以將圖片檔案放在 doc 目錄中.</p>
 <p>若要將圖片與內文放在一起, 可以在圖片後放一反斜線, 表示與隨後的內文結合在一起.</p>
 <p><img src="./../images/common/c2_w14_task2.png" alt="中美國旗" /><br /> 各組 images 存放目錄與引用, 統一放在 doc 目錄外的 images 目錄中 (千萬不可放在 doc 目錄中), 並且按照組別建立子目錄存放.</p>
@@ -399,9 +400,16 @@ text=<span class="st">&#39;abc</span><span class="ot">%03d</span><span class="st
 <p>任務 1 (5 分): 請以 Creo 開啟 remsub6.asm, 本任務要求各組員以手動組立完成此一零件組立.</p>
 <p>任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.</p>
 <p>任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub6 函式, 當使用者連結至各組雲端網站中的 remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.</p>
-<p>vimeo網站：https://vimeo.com/96600173</p>
-<p>copy.com網站：https://copy.com/ISoqibBrBnka</p>
+<p>vimeo網站：https://vimeo.com/97188658</p>
+<p>copy.com網站：https://copy.com/kvxurKiUOb6A</p>
 <p>心得：延續上個禮拜的組立，這次的零件麻煩許多，在組立過程中，零件順序和步驟很重要，零件越多、組立步驟越複雜，若能利用程式組立相對會簡單許多。</p>
+<p>第十五週</p>
+<p>W15 任務 1 (5 分): 請以 Creo 開啟 remsub5.asm, 本任務要求各組員以手動組立完成此一零件組立.</p>
+<p>W15 任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.</p>
+<p>W15 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub5 函式, 當使用者連結至各組雲端網站中的 remsub5, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.</p>
+<p>vimeo網站：https://vimeo.com/97187767</p>
+<p>copy.com網站：https://copy.com/1eiLvyWpMkYG</p>
+<p>心得：這次的組立很簡單 很好做</p>
 <h1 id="協同產品設計實習cdag9">協同產品設計實習(cdag9)</h1>
 <p>組員：40123114王瑞豪 組員：40123117吳昱緯 組員：40123127洪宗佑</p>
 <p>小組openshift網站：https://2014cadg9-40123114.rhcloud.com/ 小組github網站：https://github.com/coursemdetw/2014cda</p>
@@ -941,6 +949,19 @@ outputfile.close()</code></pre>
 <p>40123121:https://vimeo.com/96595415</p>
 <p>40123129:https://vimeo.com/96583000</p>
 <p>40123133:</p>
+<p>W15</p>
+<p>首先載入主體beam_7.prt</p>
+<p>再用限制條件在上面的孔放入axle_3.prt</p>
+<p>之後再導入兩個axle_extender.prt放到左右兩邊</p>
+<p>一樣繼續在左右兩邊導入axle_red.prt並加入限制條件</p>
+<p>conn_axle_female.prt也導入兩個放置在左右兩邊</p>
+<p>在其中一邊放入beam_angle_4x2.prt</p>
+<p>最後再補上conn.prt到beam_angle_4x2.prt上面的孔</p>
+<p>自動組立依然在研究中...</p>
+<p>組裝詳細過程</p>
+<p>40123121:https://vimeo.com/97187351</p>
+<p>40123129:https://vimeo.com/97187125</p>
+<p>40123133:https://vimeo.com/97188023</p>
 <h1 id="網際鼓式煞車設計2ag12">網際鼓式煞車設計(2ag12)</h1>
 <p>有關鼓式煞車</p>
 <h1 id="程式設計架構-2">程式設計架構</h1>
@@ -1315,6 +1336,8 @@ outputfile.close()</code></pre>
 <p>鼓式煞車</p>
 <h1 id="結果與討論-4">結果與討論</h1>
 <p>這裡是結果與討論</p>
+<h1 id="組員-2">組員</h1>
+<p>40123137 陳家暐 40123154 謝正利 40123158 蔡宗霖</p>
 <h1 id="第八週摘要報告">第八週摘要報告</h1>
 <p>以協同方式寫Wiki</p>
 <p>本文目的在於讓學生利用開發的wiki與應用快速原型的協作式寫作的開發方法。而本文也由定性數據收集和分析方法的來評價。 最後，對於協作方式來寫作的方式，其影響極其討論協議到組別與軟件開發方面的考慮和教學相關的要求問題 研究方法 wiki的協作式寫作，基於設計的研究包括以下四個步驟： 1. 研究的現狀與認識目的並審查與wiki的協作式寫作相關的問題。 2. wiki將用於促進以協同方式寫作來設計，參與和群體互動。 3. 使用多種方法收集其經驗數據。 4. 通過系統的評價分析，並通過各種方法收集資料。分析，設計，實施和評價是相互共存的。而缺點提出於每個週期提出，重新設計，重新實現，並重新評估。 維基應用域教育在協同方式寫作方法而成的Wiki是適用於多種情況，期望得到的wiki應用在學習投資效益與協同方式來寫作。它十分靈活的，足以適應的專業條件。更具體地，它的應用領域包括不同級別的更高教育，從研究生到社會教育。除了協同寫作與學科相關，維基可以為一些應用程序的開發系統來使用，如產生教材，網路上互相評論，並收集數據於一種項目。</p>
@@ -1329,6 +1352,18 @@ outputfile.close()</code></pre>
 <h1 id="第13週">第13週</h1>
 <p>wiki連結: https://wiki.mde.tw/doku.php?id=2014s2a:%E7%AC%AC%E5%8D%81%E4%B8%83%E7%B5%84:40123137:w13</p>
 <p>第十三週-lego手動組立影片 https://vimeo.com/95820147</p>
+<h1 id="第14週">第14週</h1>
+<p>40123137</p>
+<p>W14 任務影片-40123137 https://vimeo.com/96548750 https://www.copy.com/browse/copy/w14.flv</p>
+<p>W14 任務組合檔 https://www.copy.com/browse/copy/w14.asm.1</p>
+<h1 id="心得-2">心得</h1>
+<p>本週得分 10分</p>
+<h1 id="第15週">第15週</h1>
+<p>40123137</p>
+<p>W14 任務影片-40123137 https://vimeo.com/97186451 https://www.copy.com/browse/copy/w15_37.flv</p>
+<p>W14 任務組合檔 https://www.copy.com/browse/copy/w15_37.1</p>
+<h1 id="心得-3">心得</h1>
+<p>本週得分 10分</p>
 <p>協同產品設計實習專案(2ag18)</p>
 <p>===============</p>
 <p>組員:</p>

@@ -1,5 +1,5 @@
 % 2014 協同產品設計實習報告
-% 機械設計工程系二乙
+% 機械設計工程系二甲
 % April 30, 2014
 
 # 前言
@@ -23,6 +23,8 @@ note.]
 # Pandoc 手冊
 
 <http://johnmacfarlane.net/pandoc/README.html>
+
+<http://pages.tzengyuxio.me/pandoc/>
 
 共用圖片統一放在 doc 目錄外的 images/common 目錄中, 千萬不可以將圖片檔案放在 doc 目錄中.
 
@@ -669,14 +671,30 @@ http://vimeo.com/92589824
 
 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub6 函式, 當使用者連結至各組雲端網站中的 remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
 
+vimeo網站：https://vimeo.com/97188658
 
-vimeo網站：https://vimeo.com/96600173
-
-copy.com網站：https://copy.com/ISoqibBrBnka
+copy.com網站：https://copy.com/kvxurKiUOb6A
 
 
 心得：延續上個禮拜的組立，這次的零件麻煩許多，在組立過程中，零件順序和步驟很重要，零件越多、組立步驟越複雜，若能利用程式組立相對會簡單許多。
  
+ 第十五週
+
+ 
+
+W15 任務 1 (5 分): 請以 Creo 開啟 remsub5.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+W15 任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.
+
+W15 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub5 函式, 當使用者連結至各組雲端網站中的 remsub5, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+
+vimeo網站：https://vimeo.com/97187767
+
+copy.com網站：https://copy.com/1eiLvyWpMkYG
+
+
+心得：這次的組立很簡單 很好做
 
 協同產品設計實習(cdag9)
 ===
@@ -1512,6 +1530,31 @@ conn_3.prt裝在beam_angle.prt較長那邊的crossblock_2.prt
 
 40123133:
 
+W15
+
+首先載入主體beam_7.prt
+
+再用限制條件在上面的孔放入axle_3.prt
+
+之後再導入兩個axle_extender.prt放到左右兩邊
+
+一樣繼續在左右兩邊導入axle_red.prt並加入限制條件
+
+conn_axle_female.prt也導入兩個放置在左右兩邊
+
+在其中一邊放入beam_angle_4x2.prt
+
+最後再補上conn.prt到beam_angle_4x2.prt上面的孔
+
+自動組立依然在研究中...
+
+組裝詳細過程
+
+40123121:https://vimeo.com/97187351
+
+40123129:https://vimeo.com/97187125
+
+40123133:https://vimeo.com/97188023
 
 
 網際鼓式煞車設計(2ag12)
@@ -1926,6 +1969,13 @@ remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關�
 
 這裡是結果與討論
 
+
+組員
+===
+40123137 陳家暐
+40123154 謝正利
+40123158 蔡宗霖
+
 第八週摘要報告
 ===
 
@@ -1979,6 +2029,42 @@ https://wiki.mde.tw/doku.php?id=2014s2a:%E7%AC%AC%E5%8D%81%E4%B8%83%E7%B5%84:401
 
 第十三週-lego手動組立影片
 https://vimeo.com/95820147
+
+第14週
+===
+
+40123137
+
+W14 任務影片-40123137
+https://vimeo.com/96548750
+https://www.copy.com/browse/copy/w14.flv
+
+W14 任務組合檔
+https://www.copy.com/browse/copy/w14.asm.1
+
+心得
+===
+
+本週得分 10分
+
+
+第15週
+===
+
+40123137
+
+W14 任務影片-40123137
+https://vimeo.com/97186451
+https://www.copy.com/browse/copy/w15_37.flv
+
+W14 任務組合檔
+https://www.copy.com/browse/copy/w15_37.1
+
+心得
+===
+
+本週得分 10分
+
 
 
 
