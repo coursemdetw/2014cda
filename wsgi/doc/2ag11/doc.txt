@@ -181,3 +181,37 @@ conn_3.prt裝在beam_angle.prt較長那邊的crossblock_2.prt
 
 40123133:
 
+W15
+
+第十五週任務
+請下載 lego_parts.7z orlego_parts.7z, 解開壓縮檔案後, 將資料放入 V:\home\lego 目錄中.
+
+W15 任務 1 (5 分): 請以 Creo 開啟 remsub5.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+W15 任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.
+
+W15 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub5 函式, 當使用者連結至各組雲端網站中的 remsub5, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+首先載入主體beam_7.prt
+
+再用限制條件在上面的孔放入axle_3.prt
+
+之後再導入兩個axle_extender.prt放到左右兩邊
+
+一樣繼續在左右兩邊導入axle_red.prt並加入限制條件
+
+conn_axle_female.prt也導入兩個放置在左右兩邊
+
+在其中一邊放入beam_angle_4x2.prt
+
+最後再補上conn.prt到beam_angle_4x2.prt上面的孔
+
+自動組立依然在研究中...
+
+組裝詳細過程
+
+40123121:https://vimeo.com/97187351
+
+40123129:https://vimeo.com/97187125
+
+40123133:https://vimeo.com/97188023

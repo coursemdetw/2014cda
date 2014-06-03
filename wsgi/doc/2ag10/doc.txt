@@ -4,7 +4,7 @@ cd2ag10報告(2ag10)
 以下為各週報告
 
 第十組組員(2ag10)
-====
+------------------
 
 小組網站:http://goo.gl/aztMHi
 
@@ -15,7 +15,7 @@ cd2ag10報告(2ag10)
 40123153-戴志軒
 
 第八週考試摘要(2ag10)
-====
+------------------
 
 小組網站:http://goo.gl/yi3qJ5
 
@@ -90,7 +90,7 @@ http://ethercalc.tw/ Openshift 上的 ethercalc <td>
 http://vimeo.com/user24079973/videos
 
 第八週報告(2ag10)
-====
+------------------
 
 小組網站:http://goo.gl/YCNd7p
 
@@ -137,7 +137,7 @@ https://vimeo.com/92003966
 P.S 由於題目理解錯誤，所以上述影片為失效。
 
 第九週考試摘要(2ag10)
-====
+------------------
 
 小組網站:http://goo.gl/8nPx2Y
 
@@ -165,7 +165,7 @@ http://vimeo.com/user24079973/videos
 
 
 第九週報告(2ag10)
-====
+------------------
 
 小組網站:http://goo.gl/Hy7Ktn
 
@@ -322,7 +322,7 @@ bitbucket: https://bitbucket.org/40123153/dokuwiki_abc
 第三題的程式碼實在不知道要打什麼….
 
 第十二週報告(2ag10)
-====
+------------------
 
 小組網站:http://goo.gl/28PW52
 
@@ -377,7 +377,7 @@ github大分組倉儲:https://github.com/coursemdetw/2014cda
 大致上就這樣吧...不過 c變數 忘記動到...不過只是照a與b同樣的型式...將a或b複製下來改成c就可以三軸同動了。
 
 第十二週評分(2ag10)
-====
+------------------
 
 40123116 : 10分
 
@@ -387,7 +387,7 @@ github大分組倉儲:https://github.com/coursemdetw/2014cda
 
 
 第十三週考試(2ag10)
-====
+------------------
 
 小組網站:http://goo.gl/til1Nq
 
@@ -422,7 +422,7 @@ lego_parts_edu.7z
 weblink user guide.pdf
 
 第十三週報告(2ag10)
-====
+------------------
 
 小組網站:http://goo.gl/QFJp5F
 
@@ -464,7 +464,7 @@ P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說
 (可以利用https://cdag10-40123153.rhcloud.com/cdag30/man/assembly 來跑自動組立。)
 
 第十三週評分(2ag10)
-====
+------------------
 
 40123116 : 15分
 
@@ -474,7 +474,9 @@ P.S2  無法將man.py程式移植到我們(cdag10)小組網頁中，也就是說
 
 
 第十四週任務(2ag10)
-====
+------------------
+
+小組網站: http://goo.gl/XvWaup
 
 2014S CD Week14
 
@@ -502,7 +504,11 @@ http://www.education.rec.ri.cmu.edu/fire/fire-partners/4h/reference/slideshows/r
 
 
 第十四週報告(2ag10)
-====
+------------------
+
+小組網站: http://goo.gl/K7RFOL
+
+任務一 :
 
 利用Direct組立(因為使用起來比較人性化，又沒限制軟體，故用此軟體).
 
@@ -530,18 +536,85 @@ Beam_3載入，利用同心圓與平面重合至Conn_3.
 
 同樣，使用direct組立，那麼在組裝之前必須先將位子轉好，因組立不能利用反轉功能.
 
+任務二 :
+
 小組 : video:https://vimeo.com/96551143
 
 小組copy(PDF) : https://copy.com/b9hDHdVQVGyD
 
 小組copy : https://copy.com/m122NKMBQHeB
 
+任務三 : 
+
+編輯進行中。
 
 第十四週評分(2ag10)
-====
+------------------
+
+小組網站: http://goo.gl/1VB3M0
 
 40123116 : 10
 
 40123118 : 10
 
 40123153 : 10
+
+第十五週任務(2ag10)
+------------------
+
+2014S CD Week15
+
+協同產品設計實習第十五週
+
+課程教材:
+
+A collaborative writing approach to wikis
+
+Collabrative engine for distributed mechanical design
+
+Web-based collaborative engineering support system
+
+第十五週任務
+
+請下載 lego_parts.7z orlego_parts.7z, 解開壓縮檔案後, 將資料放入 V:\home\lego 目錄中.
+
+W15 任務 1 (5 分): 請以 Creo 開啟 remsub5.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+W15 任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.
+
+W15 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub5 函式, 當使用者連結至各組雲端網站中的 remsub5, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+第十五週報告(2ag10)
+------------------
+
+１.W15 任務 1 (5 分): 請以 Creo 開啟 remsub5.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+    首先載入beam_7放置在三維空間中任意區(如有需要可以與組合圖的三個平面重合).
+
+    載入axle_3，與beam_7做孔重合及一對稱重合(端面與beam_7之一平面相距8.065mm).
+
+    載入axle_extender，同樣做軸線重何及孔內一平面重合(角度對正)，再端面與beam_7一平面重合，另一邊同樣.
+
+    載入axle_red，同樣軸線重合及軸上一平面與axle_extender之空內一平面重合(角度對正)，其端面再與axle_3之端面重合，另一邊同樣.
+
+    載入conn_axle_female，做孔內兩平面重合[取代軸線重合(不知道為什麼好像不能用軸線重合)]，端面再與axle_extender之端面平面重合，另一邊同樣.
+
+    載入beam_angle_4x2，轉角處之空與conn_axle_female之軸重合，之後再做平面重合使他貼上去.
+
+    載入conn之軸與beam_angle_4x2短邊孔做重合，conn之中間凸起處之一平面與beam...4x2之孔內平面做平面重合.
+
+ 
+
+２.W15 任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同    報告中.
+
+    小組video : https://vimeo.com/97187718
+
+    小組copy(影片): https://copy.com/VCsFtTNeRloE
+
+    小組copy(PDF): https://copy.com/f3Myu2zpvSKE
+
+ 
+
+３.W15 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub5 函式, 當使用者連結至各組雲端網站中的     remsub5, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+同十四週...
