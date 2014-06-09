@@ -172,6 +172,8 @@ root.cmsimply.download = cmsimply.Download()
 # 以下為 cdag1 的模組導入與連結設定
 import programs.cdag1 as cdag1
 root.cdag1 = cdag1.CDAG1()
+import programs.cdag1.remsub6 as cdag1_remsub6
+root.cdag1.remsub6 = cdag1_remsub6.remsub6()
 #####################################################
 # 導入協同程式 cdag2
 #####################################################
