@@ -19,16 +19,6 @@ class CDAG14(object):
 
 
 # 這是 REMSUB6 類別的定義
-'''
-# 在 application 中導入子模組
-import programs.cdag30.remsub6 as cdag30_remsub6
-# 加入 cdag30 模組下的 remsub6.py 且以子模組 remsub6 對應其 MAIN() 類別
-root.cdag30.remsub6 = cdag30_remsub6.MAIN()
-
-# 完成設定後, 可以利用
-/cdag30/remsub6/assembly
-# 呼叫 remsub6.py 中 MAIN 類別的 assembly 方法
-'''
 
     @cherrypy.expose
     def assembly(self, *args, **kwargs):
