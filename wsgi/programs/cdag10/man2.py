@@ -248,7 +248,7 @@ var assembly = model;
 var featID = three_plane_assembly(session, assembly, transf, 0, 0, "beam_angle.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "TOP", "FRONT", "RIGHT"); 
 // 利用函式呼叫組立右手 ARM, 組立增量次序為 1
 axis_plane_assembly(session, assembly, transf, featID, 0, 
-                              "axle_10.prt", "A_25", "FRONT", "TOP" , "A_1", "FRONT", "TOP");
+                              "axle_10.prt", "A_25", "TOP" , "A_1" , "TOP");
 
 axis_plane_assembly(session, assembly, transf, featID, 0, 
                               "axle_10.prt", "A_26",  "DTM2", "TOP" , "A_1", "RIGHT", "TOP");
