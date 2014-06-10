@@ -11,7 +11,7 @@ root.cdag10.remsub6 = cdag10_remsub6.remsub6()
 /cdag10/remsub6/assembly
 # 呼叫 man.py 中 MAN 類別的 assembly 方法
 '''
-class Remsub6(object):
+class remsub6(object):
     # 各組利用 index 引導隨後的程式執行
     @cherrypy.expose
     def index(self, *args, **kwargs):
