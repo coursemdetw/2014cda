@@ -193,7 +193,7 @@ root.cdag7 = cdag7.CDAG7()
 import programs.cdag10 as cdag10
 root.cdag10 = cdag10.CDAG10()
 import programs.cdag10.remsub6 as cdag10_remsub6
-root.cdag10.remsub6 = cdag10_remsub6.remsub6()
+root.cdag10.remsub6 = cdag10_remsub6.Remsub6()
 import programs.cdag14 as cdag14
 root.cdag14 = cdag14.CDAG14()
 import programs.cdag16 as cdag16
