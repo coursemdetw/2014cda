@@ -250,6 +250,8 @@ var featID = three_plane_assembly(session, assembly, transf, 0, 0, "beam_angle.p
 axis_plane_assembly(session, assembly, transf, featID, 0, 
                               "axle_10.prt", "A_25", "FRONT", "TOP" , "A_1", "FRONT", "TOP");
 
+axis_plane_assembly(session, assembly, transf, featID, 0, 
+                              "axle_10.prt", "A_26",  "DTM2", "TOP" , "A_1", "RIGHT", "TOP");
 
 
 assembly.Regenerate (void null);
