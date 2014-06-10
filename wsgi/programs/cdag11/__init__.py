@@ -1,14 +1,14 @@
 import cherrypy
 
-# 這是 CDAG5 類別的定義
-class CDAG5(object):
+# 這是 CDAG11 類別的定義
+class CDAG11(object):
     # 各組利用 index 引導隨後的程式執行
     @cherrypy.expose
     def index(self, *args, **kwargs):
         outstring = '''
-這是 2014CDA 協同專案下的 cdag5 分組程式開發網頁, 以下為 W12 的任務執行內容.<br />
+這是 2014CDA 協同專案下的 cdag11分組程式開發網頁, 以下為 W12 的任務執行內容.<br />
 <!-- 這裡採用相對連結, 而非網址的絕對連結 (這一段為 html 註解) -->
-<a href="cube1">cdag5 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
+<a href="cube11">cdag11 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
 <a href="fourbar1">四連桿組立</a><br /><br />
 請確定下列連桿位於 V:/home/fourbar 目錄中, 且開啟空白 Creo 組立檔案.<br />
 <a href="/static/fourbar.7z">fourbar.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
@@ -18,13 +18,13 @@ class CDAG5(object):
     ''' 
     假如採用下列規畫
     
-    import programs.cdag5 as cdag5
-    root.cdag5 = cdag5.CDAG5()
+    import programs.cdag11 as cdag11
+    root.cdag11 = cdag11.CDAG11()
     
-    則程式啟動後, 可以利用 /cdag5/cube1 呼叫函式執行
+    則程式啟動後, 可以利用 /cdag11/cube10 呼叫函式執行
     '''
     @cherrypy.expose
-    def cube1(self):
+    def cube11(self, *args, **kwargs):
         '''
     // 假如要自行打開特定零件檔案
     // 若第三輸入為 false, 表示僅載入 session, 但是不顯示
@@ -58,25 +58,23 @@ var solid = session.CurrentModel;
 
 var a, b, c, i, j, aValue, bValue, cValue, volume, count;
 // 將模型檔中的 a 變數設為 javascript 中的 a 變數
-a = solid.GetParam("W");
-b = solid.GetParam("L");
-c = solid.GetParam("H");
+a = solid.GetParam("a");
+b = solid.GetParam("b");
+c = solid.GetParam("c");
 volume=0;
 count=0;
 try
 {
-    var L, W, H;
-    L =50;
-    W =100;
-    H=100;
+    for(i=0;i<5;i++)
+    {
+        myf = 100;
+        myn = myf + i*10;
         // 設定變數值, 利用 ModelItem 中的 CreateDoubleParamValue 轉換成 Pro/Web.Link 所需要的浮點數值
-    aValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(L);
-    bValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(W);
-    cValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(H);
+    aValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(myn);
+    bValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(myn);
     // 將處理好的變數值, 指定給對應的零件變數
     a.Value = aValue;
     b.Value = bValue;
-    c.Value = cValue;
     //零件尺寸重新設定後, 呼叫 Regenerate 更新模型
     solid.Regenerate(void null);
     //利用 GetMassProperty 取得模型的質量相關物件
@@ -95,7 +93,7 @@ try
     //if (!newfile.Status) {
             //alert("pwlMdlSaveAs failed (" + newfile.ErrorCode + ")");
         //}
-
+    } // for loop
 }
 catch (err)
 {

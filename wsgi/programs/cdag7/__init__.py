@@ -1,109 +1,27 @@
 import cherrypy
 
-# 這是 CDAG1 類別的定義
-class CDAG1(object):
+# 這是 CDAG7 類別的定義
+class CDAG7(object):
     # 各組利用 index 引導隨後的程式執行
     @cherrypy.expose
     def index(self, *args, **kwargs):
         outstring = '''
-這是 2014CDA 協同專案下的 cdag1 分組程式開發網頁, 以下為 W12 的任務執行內容.<br />
+這是 2014CDA 協同專案下的 cdag7 分組程式開發網頁, 以下為 W12 的任務執行內容.<br />
 <!-- 這裡採用相對連結, 而非網址的絕對連結 (這一段為 html 註解) -->
-<a href="cube1">cdag1 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
-<a href="fourbar1">四連桿組立</a><br /><br />
+<a href="cube1">cdag5 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
+<a href="fourbar1">cdag5 四連桿組立</a><br /><br />
 請確定下列連桿位於 V:/home/fourbar 目錄中, 且開啟空白 Creo 組立檔案.<br />
 <a href="/static/fourbar.7z">fourbar.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
 '''
         return outstring
-    @cherrypy.expose
-    def test(self, w, h,l):
-        '''
-    // 假如要自行打開特定零件檔案
-    // 若第三輸入為 false, 表示僅載入 session, 但是不顯示
-    // ret 為 model open return
-    var ret = document.pwl.pwlMdlOpen("axle_5.prt", "v:/tmp", false);
-    if (!ret.Status) {
-        alert("pwlMdlOpen failed (" + ret.ErrorCode + ")");
-    }
-    //將 ProE 執行階段設為變數 session
-    var session = pfcGetProESession();
-    // 在視窗中打開零件檔案, 並且顯示出來
-    var window = session.OpenFile(pfcCreate("pfcModelDescriptor").CreateFromFileName("axle_5.prt"));
-    var solid = session.GetModel("axle_5.prt",pfcCreate("pfcModelType").MDL_PART);
-        '''
-        outstring = '''
-    <!DOCTYPE html> 
-    <html>
-    <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <script type="text/javascript" src="/static/weblink/examples/jscript/pfcUtils.js"></script>
-    <script type="text/javascript" src="/static/weblink/examples/jscript/pfcParameterExamples.js"></script>
-    <script type="text/javascript" src="/static/weblink/examples/jscript/pfcComponentFeatExamples.js"></script>
-    </head>
-    <body>
-    <script type="text/javascript">
-var session = pfcGetProESession ();
-
-// 以目前所開啟的檔案為 solid model
-// for volume
-var solid = session.CurrentModel;
-
-var a, b, c, i, j, aValue, bValue, cValue, volume, count;
-// 將模型檔中的 a 變數設為 javascript 中的 a 變數
-a = solid.GetParam("a");
-b = solid.GetParam("b");
-c = solid.GetParam("c");
-volume=0;
-count=0;
-try
-{
-    var w, h, l;
-    w = '''+w+''';
-    h = '''+h+''';
-    l = '''+l+''';
     
-        // 設定變數值, 利用 ModelItem 中的 CreateDoubleParamValue 轉換成 Pro/Web.Link 所需要的浮點數值
-    aValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(w);
-    bValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(h);
-    cValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(l);
-    // 將處理好的變數值, 指定給對應的零件變數
-    a.Value = aValue;
-    b.Value = bValue;
-    c.Value = cValue;
-    //零件尺寸重新設定後, 呼叫 Regenerate 更新模型
-    solid.Regenerate(void null);
-    //利用 GetMassProperty 取得模型的質量相關物件
-    properties = solid.GetMassProperty(void null);
-    volume = properties.Volume;
-    count = count + 1;
-    alert("執行第"+count+"次,零件總體積:"+volume);
-    // 將零件存為新檔案
-    //var newfile = document.pwl.pwlMdlSaveAs("filename.prt", "v:/tmp", "filename_5_"+count+".prt");
-    // 測試  stl 轉檔
-    //var stl_csys = "PRT_CSYS_DEF";
-    //var stl_instrs = new pfcCreate ("pfcSTLASCIIExportInstructions").Create(stl_csys);
-    //stl_instrs.SetQuality(10);  
-    //solid.Export("v:/tmp/filename_5_"+count+".stl", stl_instrs); 
-    // 結束測試轉檔
-    //if (!newfile.Status) {
-            //alert("pwlMdlSaveAs failed (" + newfile.ErrorCode + ")");
-        //}
-}
-catch (err)
-{
-    alert ("Exception occurred: "+pfcGetExceptionType (err));
-}
-    </script>
-    </body>
-    </html>
-    '''
-        return outstring
     ''' 
     假如採用下列規畫
     
-    import programs.cdag1 as cdag1
-    root.cdag1 = cdag1.CDAG1()
+    import programs.cdag5 as cdag5
+    root.cdag5 = cdag5.CDAG5()
     
-    則程式啟動後, 可以利用 /cdag1/cube1 呼叫函式執行
+    則程式啟動後, 可以利用 /cdag5/cube1 呼叫函式執行
     '''
     @cherrypy.expose
     def cube1(self, *args, **kwargs):
@@ -154,12 +72,7 @@ try
         // 設定變數值, 利用 ModelItem 中的 CreateDoubleParamValue 轉換成 Pro/Web.Link 所需要的浮點數值
     aValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(myn);
     bValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(myn);
-<<<<<<< HEAD
-    cValue = pfcCreate
-("MpfcModelItem").CreateDoubleParamValue(myn);
-=======
     cValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(myn);
->>>>>>> 32debcc129e7a0e8030cf9c2b869a633fe4499a0
     // 將處理好的變數值, 指定給對應的零件變數
     a.Value = aValue;
     b.Value = bValue;
@@ -529,7 +442,7 @@ session.GetModelWindow (assembly).Repaint();
     // 設定 config option
     session.SetConfigOption("comp_placement_assumptions","no");
     // 建立擺放零件的位置矩陣
-      var identityMatrix = pfcCreate("pfcMatrix3D");
+      var identityMatrix = pfcCreate ("pfcMatrix3D");
       for (var x = 0; x < 4; x++)
         for (var y = 0; y < 4; y++)
           {
@@ -538,7 +451,7 @@ session.GetModelWindow (assembly).Repaint();
         else
           identityMatrix.Set (x, y, 0.0);
           }
-      var transf = pfcCreate("pfcTransform3D").Create(identityMatrix);
+      var transf = pfcCreate ("pfcTransform3D").Create (identityMatrix);
     // 取得目前的工作目錄
       var currentDir = session.getCurrentDirectory();
     // 以目前已開檔, 作為 model
@@ -553,7 +466,7 @@ session.GetModelWindow (assembly).Repaint();
      for (var partnum = 0; partnum < 20; partnum++)
     {
     // 若 link1.prt 在 session 則直接取用
-      var componentModel = session.GetModelFromDescr(descr);
+      var componentModel = session.GetModelFromDescr (descr);
     // 若 link1.prt 不在 session 則從工作目錄中載入 session
       var componentModel = session.RetrieveModel(descr);
     // 若 link1.prt 已經在 session 則放入組立檔中
@@ -617,7 +530,7 @@ session.GetModelWindow (assembly).Repaint();
           constr.ComponentReference = compSel;
     // static pfcConstraintAttributes Create (boolean Force, boolean Ignore) 
     // 必須 Force execution of this constraint 才會抑制 comp_placement_assumptions 為 yes 的作動?
-          constr.Attributes = pfcCreate("pfcConstraintAttributes").Create(true, false);
+          constr.Attributes = pfcCreate ("pfcConstraintAttributes").Create (true, false);
     // 將互動選擇相關資料, 附加在程式約束變數之後
           constrs.Append (constr);
         }
