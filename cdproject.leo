@@ -968,6 +968,8 @@ Github 免費帳號特性:
 免費帳號只能使用 public 倉儲
 
 沒有限制 collaborators 個數, 適合多協同人員執行開放專案使用
+
+W16 周更新
 </t>
 <t tx="course-mde-tw.20140422171455.1745">在 Github 倉儲中將 OpenShift 倉儲設為 remote 倉儲
 
