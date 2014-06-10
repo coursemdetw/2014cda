@@ -9,7 +9,7 @@ import programs.cdag10.man as cdag10_man
 root.cdag10.man = cdag10_man.MAN()
 
 # 完成設定後, 可以利用
-/cdag10/man/remsub6
+/cdag10/man/assembly
 # 呼叫 man.py 中 MAN 類別的 remsub6 方法
 '''
 class MAN(object):
@@ -26,7 +26,7 @@ class MAN(object):
         return outstring
 
     @cherrypy.expose
-    def remsub6(self, *args, **kwargs):
+    def assembly(self, *args, **kwargs):
         outstring = '''
 <!DOCTYPE html> 
 <html>
@@ -45,7 +45,7 @@ class MAN(object):
 // axis_plane_assembly 組立函式
 ////////////////////////////////////////////////
 function axis_plane_assembly(session, assembly, transf, featID, inc, part2, axis1, plane1, axis2, plane2){
-var descr = pfcCreate("pfcModelDescriptor").CreateFromFileName ("v:/home/lego/man/"+part2);
+var descr = pfcCreate("pfcModelDescriptor").CreateFromFileName ("v:/home/lego/remsub6/"+part2);
 var componentModel = session.GetModelFromDescr(descr);
 var componentModel = session.RetrieveModel(descr);
 if (componentModel != void null)
@@ -91,7 +91,7 @@ asmcomp.SetConstraints(constrs, void null);
 // three_plane_assembly 採 align 組立, 若 featID 為 0 表示為空組立檔案
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 function three_plane_assembly(session, assembly, transf, featID, inc, part2, plane1, plane2, plane3, plane4, plane5, plane6){
-var descr = pfcCreate("pfcModelDescriptor").CreateFromFileName ("v:/home/lego/man/"+part2);
+var descr = pfcCreate("pfcModelDescriptor").CreateFromFileName ("v:/home/lego/remsub6/"+part2);
 var componentModel = session.GetModelFromDescr(descr);
 var componentModel = session.RetrieveModel(descr);
 if (componentModel != void null)
@@ -150,7 +150,7 @@ if (featID == 0)
 // three_plane_assembly2 採 mate 組立, 若 featID 為 0 表示為空組立檔案
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 function three_plane_assembly2(session, assembly, transf, featID, inc, part2, plane1, plane2, plane3, plane4, plane5, plane6){
-var descr = pfcCreate("pfcModelDescriptor").CreateFromFileName ("v:/home/lego/man/"+part2);
+var descr = pfcCreate("pfcModelDescriptor").CreateFromFileName ("v:/home/lego/remsub6/"+part2);
 var componentModel = session.GetModelFromDescr(descr);
 var componentModel = session.RetrieveModel(descr);
 if (componentModel != void null)
