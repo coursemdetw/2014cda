@@ -436,8 +436,8 @@ var conn_3_left = axis_plane_assembly(work_directory + 'conn_3.prt', session, as
 var beam_3 = one_axis_two_plane_assembly(work_directory + 'beam_3.prt', session, assembly, transf, crossblock_2_right, 3,
     "A_17", "DTM7","FRONT",  "A_37", "BOTTOM", "RIGHT");
  */
-assembly.Regenerate(void null);
-session.GetModelWindow(assembly).Repaint();
+assembly.Regenerate (void null);
+session.GetModelWindow (assembly).Repaint();
 </script>
 </body>
 </html>
