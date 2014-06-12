@@ -213,6 +213,8 @@ import programs.cdag30.man2 as cdag30_man2
 root.cdag30.man2 = cdag30_man2.MAN()
 import programs.cdag30.remsub6 as cdag30_remsub6
 root.cdag30.remsub6 = cdag30_remsub6.MAIN()
+import programs.cdag30.gear as cdag30_gear
+root.cdag30.gear = cdag30_gear.MAIN()
 # 假如在 os 環境變數中存在 'OPENSHIFT_REPO_DIR', 表示程式在 OpenShift 環境中執行
 if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
     # 雲端執行啟動
