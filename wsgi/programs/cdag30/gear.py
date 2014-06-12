@@ -1,6 +1,14 @@
 
 import cherrypy
 
+import os
+import sys
+
+# 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
+_curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
+# 將所在目錄設為系統搜尋目錄
+sys.path.append(_curdir)
+
 # 這是 Gear 設計類別的定義
 '''
 # 在 application 中導入子模組
