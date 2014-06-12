@@ -84,7 +84,7 @@ class MAIN(object):
     # 改寫為齒面寬的設計函式
     @cherrypy.expose
     def gear_width(self, 馬力, 轉速, 減速比, 齒形, 安全係數, 材料, 小齒輪齒數):
-        SQLite連結 = Store(SQLiteWriter("programs/cdag30/lewis.db", frozen=True))
+        SQLite連結 = Store(SQLiteWriter(_curdir+"/lewis.db", frozen=True))
         # 根據所選用的齒形決定壓力角
         if(齒形 == 1 or 齒形 == 2):
             壓力角 = 20
@@ -186,7 +186,7 @@ class MAIN(object):
         try:
             # 利用 Store  建立資料庫檔案對應物件, 並且設定 frozen=True 表示不要開放動態資料表的建立
             # 因為程式以 application 所在目錄執行, 因此利用相對目錄連結 lewis.db 資料庫檔案
-            SQLite連結 = Store(SQLiteWriter("programs/cdag30/lewis.db", frozen=True))
+            SQLite連結 = Store(SQLiteWriter(_curdir+"/lewis.db", frozen=True))
             #material = SQLite連結.find_one("steel","serialno = ?",[序號])
             # str(SQLite連結.count("steel")) 將傳回 70, 表示資料庫中有 70 筆資料
             material = SQLite連結.find("steel")
