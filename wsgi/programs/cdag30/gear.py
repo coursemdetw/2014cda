@@ -83,10 +83,11 @@ class MAIN(object):
 
     # 改寫為齒面寬的設計函式
     @cherrypy.expose
-    def gear_width(self, 馬力, 轉速, 減速比, 齒形, 安全係數, 材料, 小齒輪齒數):
+    def gear_width(self, horsepower=100, rpm=1000, ratio=4, toothtype=1, safetyfactor=2, material_serialno=1, npinion=18):
         SQLite連結 = Store(SQLiteWriter(_curdir+"/lewis.db", frozen=True))
+        outstring = ""
         # 根據所選用的齒形決定壓力角
-        if(齒形 == 1 or 齒形 == 2):
+        if(toothtype == 1 or toothtype == 2):
             壓力角 = 20
         else:
             壓力角 = 25
@@ -98,11 +99,11 @@ class MAIN(object):
             最小齒數 = 12
      
         # 直接設最小齒數
-        if 小齒輪齒數 <= 最小齒數:
-            小齒輪齒數 = 最小齒數
+        if int(npinion) <= 最小齒數:
+            npinion = 最小齒數
         # 大於400的齒數則視為齒條(Rack)
-        if 小齒輪齒數 >= 400:
-            小齒輪齒數 = 400
+        if int(npinion) >= 400:
+            npinion = 400
      
         # 根據所選用的材料查詢強度值
         # 由 material之序號查 steel 表以得材料之降伏強度S單位為 kpsi 因此查得的值要成乘上1000
@@ -111,42 +112,39 @@ class MAIN(object):
         # 指定 steel 資料表
         steel = SQLite連結.new("steel")
         # 資料查詢
-        # 將 unsno 與 treatment 從材料字串中隔開
-        unsno, treatment = 材料.split("_")
-        #print(unsno, treatment)
-     
-        material = SQLite連結.find_one("steel","unsno=? and treatment=?",[unsno, treatment])
+        #material = SQLite連結.find_one("steel","unsno=? and treatment=?",[unsno, treatment])
+        material = SQLite連結.find_one("steel","serialno=?",[material_serialno])
         # 列出 steel 資料表中的資料筆數
         #print(SQLite連結.count("steel"))
-        print (material.yield_str)
+        #print (material.yield_str)
         strengthstress = material.yield_str*1000
         # 由小齒輪的齒數與齒形類別,查詢lewis form factor
         # 先查驗是否有直接對應值
-        on_table = SQLite連結.count("lewis","gearno=?",[小齒輪齒數])
+        on_table = SQLite連結.count("lewis","gearno=?",[npinion])
         if on_table == 1:
             # 直接進入設計運算
-            print("直接運算")
-            print(on_table)
-            lewis_factor = SQLite連結.find_one("lewis","gearno=?",[小齒輪齒數])
+            #print("直接運算")
+            #print(on_table)
+            lewis_factor = SQLite連結.find_one("lewis","gearno=?",[npinion])
             #print(lewis_factor.type1)
             # 根據齒形查出 formfactor 值
-            if(齒形 == 1):
+            if(toothtype == 1):
                 formfactor = lewis_factor.type1
-            elif(齒形 == 2):
+            elif(toothtype == 2):
                 formfactor = lewis_factor.type2
-            elif(齒形 == 3):
+            elif(toothtype == 3):
                 formfactor = lewis_factor.type3
             else:
                 formfactor = lewis_factor.type4
         else:
             # 沒有直接對應值, 必須進行查表內插運算後, 再執行設計運算
-            print("必須內插")
-            #print(interpolation(小齒輪齒數, 齒形))
-            formfactor = self.interpolation(小齒輪齒數, 齒形)
+            #print("必須內插")
+            #print(interpolation(npinion, gear_type))
+            formfactor = self.interpolation(npinion, toothtype)
      
         # 開始進行設計運算
      
-        ngear = 小齒輪齒數 * 減速比
+        ngear = int(npinion) * int(ratio)
      
         # 重要的最佳化設計---儘量用整數的diametralpitch
         # 先嘗試用整數算若 diametralpitch 找到100 仍無所獲則改用 0.25 作為增量再不行則宣告 fail
@@ -158,27 +156,28 @@ class MAIN(object):
             diametralpitch = i
             #circularpitch = 3.14159/diametralpitch
             circularpitch = math.pi/diametralpitch
-            pitchdiameter = 小齒輪齒數/diametralpitch
-            #pitchlinevelocity = 3.14159*pitchdiameter*轉速/12
-            pitchlinevelocity = math.pi * pitchdiameter * 轉速/12
-            transmittedload = 33000 * 馬力/pitchlinevelocity
+            pitchdiameter = int(npinion)/diametralpitch
+            #pitchlinevelocity = 3.14159*pitchdiameter*rpm/12
+            pitchlinevelocity = math.pi*pitchdiameter * float(rpm)/12
+            transmittedload = 33000*float(horsepower)/pitchlinevelocity
             velocityfactor = 1200/(1200 + pitchlinevelocity)
             # formfactor is Lewis form factor
             # formfactor need to get from table 13-3 and determined ty teeth number and type of tooth
             # formfactor = 0.293
             # 90 is the value get from table corresponding to material type
-            facewidth = transmittedload * diametralpitch * 安全係數/velocityfactor/formfactor/strengthstress
+            facewidth = transmittedload*diametralpitch*float(safetyfactor)/velocityfactor/formfactor/strengthstress
             if(counter>5000):
-                print("超過5000次的設計運算,仍無法找到答案!")
-                print("可能所選用的傳遞功率過大,或無足夠強度的材料可以使用!")
+                outstring += "超過5000次的設計運算,仍無法找到答案!<br />"
+                outstring += "可能所選用的傳遞功率過大,或無足夠強度的材料可以使用!<br />"
                 # 離開while迴圈
                 break
             i += 0.1
             counter += 1
         facewidth = round(facewidth, 4)
         if(counter<5000):
-            print("進行"+str(counter)+"次重複運算後,得到合用的facewidth值為:"+str(facewidth))
-        
+            outstring = "進行"+str(counter)+"次重複運算後,得到合用的facewidth值為:"+str(facewidth)
+        return outstring
+
     # 各組利用 index 引導隨後的程式執行
     @cherrypy.expose
     def index(self, *args, **kwargs):
@@ -201,7 +200,7 @@ class MAIN(object):
             return "抱歉! 資料庫無法連線<br />"
 
         outstring = '''
-<form id=entry method=post action="\">
+<form id=entry method=post action="gear_width">
 請填妥下列參數，以完成適當的齒尺寸大小設計。<br />
 馬達馬力:<input type=text name=horsepower id=horsepower value=100 size=10>horse power<br />
 馬達轉速:<input type=text name=rpm id=rpm value=1120 size=10>rpm<br />
@@ -213,7 +212,7 @@ class MAIN(object):
 <option value=type4>壓力角25度,a=1.0,b=1.35
 </select><br />
 安全係數:<input type=text name=safetyfactor id=safetyfactor value=3 size=10><br />
-齒輪材質:<select name=material id=material>
+齒輪材質:<select name=material_serialno id=material_serialno>
 '''
         for material_item in material:
             outstring += "<option value=" + str(material_item.serialno) + ">UNS - " + \
