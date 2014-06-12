@@ -52,7 +52,7 @@ import math
 class MAIN(object):
     @cherrypy.expose
     def interpolation(self, small_gear_no=18, gear_type=1):
-        SQLite連結 = Store(SQLiteWriter("programs/cdag30/lewis.db", frozen=True))
+        SQLite連結 = Store(SQLiteWriter(_curdir+"/lewis.db", frozen=True))
         # 使用內插法求值
         # 找出比目標齒數大的其中的最小的,就是最鄰近的大值
         lewis_factor = SQLite連結.find_one("lewis","gearno > ?",[small_gear_no])
