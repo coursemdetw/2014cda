@@ -184,6 +184,8 @@ import programs.cdag4 as cdag4
 root.cdag4 = cdag4.CDAG4()
 import programs.cdag5 as cdag5
 root.cdag5 = cdag5.CDAG5()
+import programs.cdag6 as cdag6
+root.cdag6 = cdag6.CDAG6()
 import programs.cdag9 as cdag9
 root.cdag9 = cdag9.CDAG9()
 import programs.cdag7 as cdag7
@@ -196,6 +198,9 @@ import programs.cdag16 as cdag16
 root.cdag16 = cdag16.CDAG16()
 import programs.cdag17 as cdag17
 root.cdag17 = cdag17.CDAG17()
+
+import programs.cdag6.test1 as cdag6_test1
+root.cdag6.test1 = cdag6_test1.Test()
 
 # 以下為 cdag30 的模組導入與連結設定
 import programs.cdag30 as cdag30
