@@ -36,7 +36,6 @@
 <v t="2014spring.20140503125211.2097" a="E"><vh>分組程式開發</vh>
 <v t="2014spring.20140503125211.2098" a="E"><vh>@path wsgi/programs/cdag1</vh>
 <v t="2014spring.20140503125211.2099"><vh>@edit __init__.py</vh></v>
-<v t="2014pythonE.20140609192211.1906"><vh>@edit remsub6.py</vh></v>
 </v>
 <v t="2014spring.20140503125211.2100" a="E"><vh>@path wsgi/programs/cdag2</vh>
 <v t="2014spring.20140503125211.2101"><vh>@edit __init__.py</vh></v>
@@ -50,12 +49,11 @@
 </v>
 <v t="kmolII_lite.20140513162816.2130" a="E"><vh>@path wsgi/programs/cdag5</vh>
 <v t="kmolII_lite.20140513162816.2131"><vh>@edit __init__.py</vh></v>
-<v t="kmolII_lite.20140603221750.1809"><vh>@edit man.py</vh></v>
-<v t="kmolII_lite.20140603221750.1811"><vh>@edit man2.py</vh></v>
-<v t="kmolII_lite.20140603221750.1807"><vh>@edit remsub6.py</vh></v>
+<v t="kmolII_lite.20140520162524.1775"><vh>@edit man.py</vh></v>
 </v>
 <v t="2014pythonE.20140520190326.1947" a="E"><vh>@path wsgi/programs/cdag6</vh>
 <v t="2014pythonE.20140520190326.1948"><vh>@edit __init__.py</vh></v>
+<v t="2014pythonE.20140609200008.1974"><vh>@edit test1.py</vh></v>
 </v>
 <v t="kmolII_lite.20140603113815.1803" a="E"><vh>@path wsgi/programs/cdag7</vh>
 <v t="kmolII_lite.20140603113815.1804"><vh>@edit __init__.py</vh></v>

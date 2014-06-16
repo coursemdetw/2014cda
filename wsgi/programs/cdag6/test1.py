@@ -3,15 +3,15 @@ import cherrypy
 # 這是 MAN 類別的定義
 '''
 # 在 application 中導入子模組
-import programs.cdag1.remsub6 as cdag1_remsub6
-# 加入 cdag1 模組下的 remsub6.py 且以子模組 remsub6 對應其 remsub6() 類別
-root.cdag1.remsub6 = cdag1_remsub6.remsub6()
+import programs.cdag30.man as cdag30_man
+# 加入 cdag30 模組下的 man.py 且以子模組 man 對應其 MAN() 類別
+root.cdag30.man = cdag30_man.MAN()
  
 # 完成設定後, 可以利用
-/cdag1/remsub6
+/cdag30/man/assembly
 # 呼叫 man.py 中 MAN 類別的 assembly 方法
 '''
-class remsub6(object):
+class Test(object):
     # 各組利用 index 引導隨後的程式執行
     @cherrypy.expose
     def index(self, *args, **kwargs):
@@ -406,7 +406,7 @@ plane1~plane2 要組裝的父 參考面
 plane3~plane4 要組裝的子 參考面
 */
  
-var work_directory = 'V:/home/lego/'
+var work_directory = 'V:/lego/'
 //function three_plane_assembly(file_location, session, assembly, transf, featID, constrain_way, plane1, plane2, plane3, plane4, plane5, plane6) {
 var body_id = three_plane_assembly(work_directory + 'beam_angle.prt', session, assembly, transf, -1, 1, "ASM_FRONT", "ASM_TOP", "ASM_RIGHT", "FRONT", "TOP", "RIGHT");
 //function one_axis_two_plane_assembly(file_location, session, assembly, transf, featID, constrain_way, axis1, plane1_1, plane1_2, axis2, plane2_1, plane2_2)
@@ -422,9 +422,9 @@ var crossblock_2_left_front = one_axis_two_plane_assembly(work_directory + 'cros
  
 var crossblock_2_right_front = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 2, "A_26", "DTM4", "DTM3",  "A_16", "DTM1", "DTM5");
  
-var crossblock_2_left_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_left_front, 2, "A_16", "DTM1", "DTM5",  "A_16", "DTM1", "DTM4");
+var crossblock_2_left_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_left, 2, "A_16", "DTM1", "DTM5",  "A_16", "DTM1", "DTM4");
  
-var crossblock_2_right_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_right_front, 2, "A_16", "DTM1", "DTM4",  "A_16", "DTM1", "DTM5");
+var crossblock_2_right_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_right, 2, "A_16", "DTM1", "DTM4",  "A_16", "DTM1", "DTM5");
  
 var conn_3_left = axis_plane_assembly(work_directory + 'conn_3.prt', session, assembly, transf, crossblock_2_left, 1, "A_17", "DTM10", "A_20", "DTM2");
  

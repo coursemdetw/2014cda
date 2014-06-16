@@ -3,12 +3,12 @@ import cherrypy
 # 這是 MAN 類別的定義
 '''
 # 在 application 中導入子模組
-import programs.cdag1.remsub6 as cdag1_remsub6
-# 加入 cdag1 模組下的 remsub6.py 且以子模組 remsub6 對應其 remsub6() 類別
-root.cdag1.remsub6 = cdag1_remsub6.remsub6()
+import programs.cdag10.remsub6 as cdag10_remsub6
+# 加入 cdag10 模組下的 remsub6.py 且以子模組 remsub6 對應其 remsub6() 類別
+root.cdag10.remsub6 = cdag10_remsub6.remsub6()
  
 # 完成設定後, 可以利用
-/cdag1/remsub6
+/cdag10/remsub6/assembly
 # 呼叫 man.py 中 MAN 類別的 assembly 方法
 '''
 class remsub6(object):
@@ -16,7 +16,7 @@ class remsub6(object):
     @cherrypy.expose
     def index(self, *args, **kwargs):
         outstring = '''
-這是 2014CDA 協同專案下的 cdag30 模組下的 MAN 類別.<br /><br />
+這是 2014CDA 協同專案下的 cdag10 模組下的 MAN 類別.<br /><br />
 <!-- 這裡採用相對連結, 而非網址的絕對連結 (這一段為 html 註解) -->
 <a href="assembly">執行  MAN 類別中的 assembly 方法</a><br /><br />
 請確定下列零件於 V:/home/lego/man 目錄中, 且開啟空白 Creo 組立檔案.<br />
@@ -237,7 +237,7 @@ function three_plane_assembly(file_location, session, assembly, transf, featID, 
 // 以上為 three_plane_assembly() 函式
  
  
-//兩軸一面
+//1軸2面
 function one_axis_two_plane_assembly(file_location, session, assembly, transf, featID, constrain_way, axis1, plane1_1, plane1_2, axis2, plane2_1, plane2_2) {
     //設定part2 路徑
     var descr = pfcCreate("pfcModelDescriptor").CreateFromFileName(file_location);
@@ -406,35 +406,38 @@ plane1~plane2 要組裝的父 參考面
 plane3~plane4 要組裝的子 參考面
 */
  
-var work_directory = 'V:/home/lego/'
+var work_directory = "V:/home/lego/";
+
+alert("test");
 //function three_plane_assembly(file_location, session, assembly, transf, featID, constrain_way, plane1, plane2, plane3, plane4, plane5, plane6) {
 var body_id = three_plane_assembly(work_directory + 'beam_angle.prt', session, assembly, transf, -1, 1, "ASM_FRONT", "ASM_TOP", "ASM_RIGHT", "FRONT", "TOP", "RIGHT");
 //function one_axis_two_plane_assembly(file_location, session, assembly, transf, featID, constrain_way, axis1, plane1_1, plane1_2, axis2, plane2_1, plane2_2)
 var alex_10 = one_axis_two_plane_assembly(work_directory + 'axle_10.prt', session, assembly, transf, body_id, 1, "A_25", "FRONT", "TOP", "A_1", "FRONT", "TOP");
  
-var alex_5 = one_axis_two_plane_assembly(work_directory + 'axle_5.prt', session, assembly, transf, body_id, 1, "A_26", "DTM1", "TOP", "A_1", "RIGHT", "TOP");
- 
+var alex_5 = one_axis_two_plane_assembly(work_directory + 'axle_5.prt', session, assembly, transf, body_id, 1, "A_26", "DTM2", "TOP", "A_1", "RIGHT", "TOP");
+
+/* 
 var crossblock_2_left = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 1, "A_25", "DTM3","FRONT",  "A_16", "DTM4", "DTM1");
  
-var crossblock_2_right = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 1, "A_25", "DTM2","FRONT",  "A_16", "DTM5", "DTM1");
+var crossblock_2_right = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 1, "A_25", "DTM1","FRONT",  "A_16", "DTM5", "DTM1");
  
-var crossblock_2_left_front = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 2, "A_26", "DTM4", "DTM2",  "A_16", "DTM1", "DTM4");
+var crossblock_2_left_front = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 2, "A_26", "DTM4", "DTM1",  "A_16", "DTM1", "DTM4");
  
 var crossblock_2_right_front = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 2, "A_26", "DTM4", "DTM3",  "A_16", "DTM1", "DTM5");
  
-var crossblock_2_left_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_left_front, 2, "A_16", "DTM1", "DTM5",  "A_16", "DTM1", "DTM4");
+var crossblock_2_left_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_left, 2, "A_16", "DTM2", "DTM5",  "A_16", "DTM1", "DTM4");
  
-var crossblock_2_right_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_right_front, 2, "A_16", "DTM1", "DTM4",  "A_16", "DTM1", "DTM5");
+var crossblock_2_right_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_right, 2, "A_16", "DTM2", "DTM4",  "A_16", "DTM1", "DTM5");
  
-var conn_3_left = axis_plane_assembly(work_directory + 'conn_3.prt', session, assembly, transf, crossblock_2_left, 1, "A_17", "DTM10", "A_20", "DTM2");
+var conn_3_left = axis_plane_assembly(work_directory + 'conn_3.prt', session, assembly, transf, crossblock_2_left, 1, "A_17", "DTM10", "A_20", "DTM1");
  
-var conn_3_left = axis_plane_assembly(work_directory + 'conn_3.prt', session, assembly, transf, crossblock_2_right, 1, "A_17", "DTM10", "A_20", "DTM2");
+var conn_3_left = axis_plane_assembly(work_directory + 'conn_3.prt', session, assembly, transf, crossblock_2_right, 1, "A_17", "DTM10", "A_20", "DTM1");
  
 var beam_3 = one_axis_two_plane_assembly(work_directory + 'beam_3.prt', session, assembly, transf, crossblock_2_right, 3,
     "A_17", "DTM7","FRONT",  "A_37", "BOTTOM", "RIGHT");
- 
-assembly.Regenerate(void null);
-session.GetModelWindow(assembly).Repaint();
+ */
+assembly.Regenerate (void null);
+session.GetModelWindow (assembly).Repaint();
 </script>
 </body>
 </html>
