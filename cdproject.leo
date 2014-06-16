@@ -103,7 +103,7 @@
 <v t="course-mde-tw.20140417093332.2061"><vh>@edit title.txt</vh></v>
 </v>
 </v>
-<v t="course-mde-tw.20140417093332.2047"><vh>分組協同報告區</vh>
+<v t="course-mde-tw.20140417093332.2047" a="E"><vh>分組協同報告區</vh>
 <v t="course-mde-tw.20140417093332.2048" a="E"><vh>@path wsgi/doc</vh>
 <v t="course-mde-tw.20140417093332.2049" a="E"><vh>@path 2ag1</vh>
 <v t="course-mde-tw.20140417093332.2050"><vh>@edit doc.txt</vh></v>
