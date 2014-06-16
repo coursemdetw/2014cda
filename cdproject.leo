@@ -22,11 +22,11 @@
 <v t="course-mde-tw.20140422171455.1745"><vh>Github 倉儲與 OpenShift 同步</vh></v>
 <v t="2014spring.20140430175148.1771"><vh>@edit README.md</vh></v>
 <v t="2014spring.20140430205920.1773"><vh>分散式課程評量</vh></v>
-<v t="2014spring.20140430165707.2063" a="E"><vh>第十一週任務</vh>
+<v t="2014spring.20140430165707.2063"><vh>第十一週任務</vh>
 <v t="2014spring.20140506093255.1795"><vh>組立約束條件</vh></v>
 <v t="2014spring.20140506093255.1796"><vh>組立 0 程式</vh></v>
 </v>
-<v t="2014spring.20140508134612.2129" a="E"><vh>第十二週任務</vh>
+<v t="2014spring.20140508134612.2129"><vh>第十二週任務</vh>
 <v t="2014spring.20140513154549.2535"><vh>組立約束條件屬性</vh></v>
 </v>
 <v t="course-mde-tw.20140417093332.2027" a="E"><vh>@path wsgi</vh>
@@ -36,53 +36,56 @@
 <v t="2014spring.20140503125211.2097" a="E"><vh>分組程式開發</vh>
 <v t="2014spring.20140503125211.2098" a="E"><vh>@path wsgi/programs/cdag1</vh>
 <v t="2014spring.20140503125211.2099"><vh>@edit __init__.py</vh></v>
+<v t="2014pythonE.20140609192211.1906"><vh>@edit remsub6.py</vh></v>
 </v>
-<v t="2014spring.20140503125211.2100" a="E"><vh>@path wsgi/programs/cdag2</vh>
+<v t="2014spring.20140503125211.2100"><vh>@path wsgi/programs/cdag2</vh>
 <v t="2014spring.20140503125211.2101"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140513092629.1905" a="E"><vh>@path wsgi/programs/cdag3</vh>
 <v t="2014spring.20140513092629.1906"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513154549.2217" a="E"><vh>@path wsgi/programs/cdag4</vh>
+<v t="2014spring.20140513154549.2217"><vh>@path wsgi/programs/cdag4</vh>
 <v t="2014spring.20140513154549.2218"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="kmolII_lite.20140513162816.2130" a="E"><vh>@path wsgi/programs/cdag5</vh>
+<v t="kmolII_lite.20140513162816.2130"><vh>@path wsgi/programs/cdag5</vh>
 <v t="kmolII_lite.20140513162816.2131"><vh>@edit __init__.py</vh></v>
-<v t="kmolII_lite.20140520162524.1775"><vh>@edit man.py</vh></v>
+<v t="kmolII_lite.20140603221750.1809"><vh>@edit man.py</vh></v>
+<v t="kmolII_lite.20140603221750.1811"><vh>@edit man2.py</vh></v>
+<v t="kmolII_lite.20140603221750.1807"><vh>@edit remsub6.py</vh></v>
 </v>
-<v t="2014pythonE.20140520190326.1947" a="E"><vh>@path wsgi/programs/cdag6</vh>
+<v t="2014pythonE.20140520190326.1947"><vh>@path wsgi/programs/cdag6</vh>
 <v t="2014pythonE.20140520190326.1948"><vh>@edit __init__.py</vh></v>
-<v t="2014pythonE.20140609200008.1974"><vh>@edit test1.py</vh></v>
 </v>
-<v t="kmolII_lite.20140603113815.1803" a="E"><vh>@path wsgi/programs/cdag7</vh>
+<v t="kmolII_lite.20140603113815.1803"><vh>@path wsgi/programs/cdag7</vh>
 <v t="kmolII_lite.20140603113815.1804"><vh>@edit __init__.py</vh></v>
 <v t="kmolII_lite.20140603113815.1814"><vh>@edit man.py</vh></v>
 <v t="kmolII_lite.20140603113815.1812"><vh>@edit man2.py</vh></v>
 <v t="kmolII_lite.20140603113815.1810"><vh>@edit remsub6.py</vh></v>
 </v>
-<v t="2014pythonE.20140520234911.1956" a="E"><vh>@path wsgi/programs/cdag8</vh>
+<v t="2014pythonE.20140520234911.1956"><vh>@path wsgi/programs/cdag8</vh>
 <v t="2014pythonE.20140520234911.1957"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="kmolII_lite.20140519210900.2176" a="E"><vh>@path wsgi/programs/cdag9</vh>
+<v t="kmolII_lite.20140519210900.2176"><vh>@path wsgi/programs/cdag9</vh>
 <v t="kmolII_lite.20140519210900.2177"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140513154549.2225" a="E"><vh>@path wsgi/programs/cdag10</vh>
-<v t="kmolII_lite.20140527100048.2066"><vh>@edit man2.py</vh></v>
 <v t="2014spring.20140513154549.2226"><vh>@edit __init__.py</vh></v>
+<v t="kmolII_lite.20140527100048.2066"><vh>@edit man2.py</vh></v>
+<v t="kmolII_lite.20140610090944.1816"><vh>@edit remsub6.py</vh></v>
 </v>
-<v t="kmolII_lite.20140519204745.1773" a="E"><vh>@path wsgi/programs/cdag11</vh>
+<v t="kmolII_lite.20140519204745.1773"><vh>@path wsgi/programs/cdag11</vh>
 <v t="kmolII_lite.20140519204745.1774"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="kmolII_lite.20140520211255.2555" a="E"><vh>@path wsgi/programs/cdag12</vh>
+<v t="kmolII_lite.20140520211255.2555"><vh>@path wsgi/programs/cdag12</vh>
 <v t="kmolII_lite.20140520211255.2556"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513154549.2221" a="E"><vh>@path wsgi/programs/cdag14</vh>
+<v t="2014spring.20140513154549.2221"><vh>@path wsgi/programs/cdag14</vh>
 <v t="2014spring.20140513154549.2222"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513154549.2229" a="E"><vh>@path wsgi/programs/cdag16</vh>
+<v t="2014spring.20140513154549.2229"><vh>@path wsgi/programs/cdag16</vh>
 <v t="2014spring.20140513154549.2230"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513092629.2151" a="E"><vh>@path wsgi/programs/cdag17</vh>
+<v t="2014spring.20140513092629.2151"><vh>@path wsgi/programs/cdag17</vh>
 <v t="2014spring.20140513092629.2152"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140506174436.1831" a="E"><vh>@path wsgi/programs/cdag30</vh>
@@ -90,6 +93,7 @@
 <v t="2014spring.20140513154549.2534"><vh>@edit man.py</vh></v>
 <v t="2014spring.20140521133830.2641"><vh>@edit man2.py</vh></v>
 <v t="2014spring.20140529085742.2200"><vh>@edit remsub6.py</vh></v>
+<v t="2014spring.20140612075518.1982"><vh>@edit gear.py</vh></v>
 </v>
 </v>
 <v t="course-mde-tw.20140417093332.2058" a="E"><vh>利用 pandoc 進行格式轉換</vh>
@@ -969,6 +973,8 @@ Github 免費帳號特性:
 免費帳號只能使用 public 倉儲
 
 沒有限制 collaborators 個數, 適合多協同人員執行開放專案使用
+
+W16 周更新
 </t>
 <t tx="course-mde-tw.20140422171455.1745">在 Github 倉儲中將 OpenShift 倉儲設為 remote 倉儲
 
