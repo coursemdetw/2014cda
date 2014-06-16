@@ -182,6 +182,8 @@ import programs.cdag2 as cdag2
 root.cdag2 = cdag2.CDAG2()
 import programs.cdag3 as cdag3
 root.cdag3 = cdag3.CDAG3()
+import programs.cdag3.remsub6 as cdag3_remsub6
+root.cdag3.remsub6 = cdag3_remsub6.remsub6()
 import programs.cdag4 as cdag4
 root.cdag4 = cdag4.CDAG4()
 import programs.cdag5 as cdag5
