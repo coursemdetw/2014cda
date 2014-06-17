@@ -251,7 +251,7 @@ axis_plane_assembly(session, assembly, transf, featID, 0,
                               "02.prt", "TOP", "A_4" , "TOP" , "A_4");
 
 axis_plane_assembly(session, assembly, transf, featID, 0, 
-                              "03.prt", "DTM1",  "A_2", "DTM1", "A_1");
+                              "03.prt", "DTM1",  "A_4", "TOP", "A_1");
 
 
 assembly.Regenerate (void null);
