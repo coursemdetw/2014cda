@@ -40,7 +40,7 @@ class CDAG14(object):
 // axis_plane_assembly 組立函式
 ////////////////////////////////////////////////
 function axis_plane_assembly(session, assembly, transf, featID, inc, part2, axis1, plane1, axis2, plane2){
-var descr = pfcCreate("pfcModelDescriptor").CreateFromFileName ("v:/home/lego/remsub6/"+part2);
+var descr = pfcCreate("pfcModelDescriptor").CreateFromFileName ("v:/home/lego/remsub/"+part2);
 var componentModel = session.GetModelFromDescr(descr);
 var componentModel = session.RetrieveModel(descr);
 if (componentModel != void null)
@@ -86,7 +86,7 @@ asmcomp.SetConstraints(constrs, void null);
 // three_plane_assembly 採 align 組立, 若 featID 為 0 表示為空組立檔案
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 function three_plane_assembly(session, assembly, transf, featID, inc, part2, plane1, plane2, plane3, plane4, plane5, plane6){
-var descr = pfcCreate("pfcModelDescriptor").CreateFromFileName ("v:/home/lego/remsub6/"+part2);
+var descr = pfcCreate("pfcModelDescriptor").CreateFromFileName ("v:/home/lego/remsub/"+part2);
 var componentModel = session.GetModelFromDescr(descr);
 var componentModel = session.RetrieveModel(descr);
 if (componentModel != void null)
