@@ -11,7 +11,7 @@ class CDAG14(object):
 <a href="cube1">cdag14 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
 <a href="fourbar1">四連桿組立</a><br /><br />
 <a href="assembly">remsub6</a><br /><br />
-<a href="assembly1">remsub6</a><br /><br />
+<a href="assembly1">remsub</a><br /><br />
 請確定下列連桿位於 V:/home/fourbar 目錄中, 且開啟空白 Creo 組立檔案.<br />
 <a href="/static/fourbar.7z">fourbar.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
 '''
@@ -241,7 +241,7 @@ var assembly = model;
 // Body 組立面為 TOP, FRONT, RIGHT
 // 若 featID=0 表示為空組立檔案, 而且函式會傳回第一個組立件的 featID
 
-var featID = three_plane_assembly(session, assembly, transf, 0, 0, "CROSSBLOCK_BLACK.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "TOP", "FRONT", "RIGHT"); 
+var featID = three_plane_assembly(session, assembly, transf, 0, 0, "crossblock_black.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "TOP", "FRONT", "RIGHT"); 
 
 alert("第一個零件特徵 ID 為:"+featID);
 
