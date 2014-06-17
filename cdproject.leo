@@ -44,6 +44,7 @@
 <v t="2014spring.20140513092629.1905" a="E"><vh>@path wsgi/programs/cdag3</vh>
 <v t="2014spring.20140513092629.1906"><vh>@edit __init__.py</vh></v>
 <v t="2014pythonE.20140616203015.1980"><vh>@edit remsub6.py</vh></v>
+<v t="2014pythonE.20140617093602.1912"><vh>@edit man.py</vh></v>
 </v>
 <v t="2014spring.20140513154549.2217"><vh>@path wsgi/programs/cdag4</vh>
 <v t="2014spring.20140513154549.2218"><vh>@edit __init__.py</vh></v>
