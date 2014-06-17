@@ -51,8 +51,6 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 </v>
 <v t="kmolII_lite.20140513162816.2130"><vh>@path wsgi/programs/cdag5</vh>
 <v t="kmolII_lite.20140513162816.2131"><vh>@edit __init__.py</vh></v>
-<<<<<<< HEAD
-=======
 <v t="kmolII_lite.20140603221750.1809"><vh>@edit man.py</vh></v>
 <v t="kmolII_lite.20140603221750.1811"><vh>@edit man2.py</vh></v>
 <v t="kmolII_lite.20140603221750.1807"><vh>@edit remsub6.py</vh></v>
@@ -71,16 +69,12 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 </v>
 <v t="kmolII_lite.20140519210900.2176"><vh>@path wsgi/programs/cdag9</vh>
 <v t="kmolII_lite.20140519210900.2177"><vh>@edit __init__.py</vh></v>
->>>>>>> a1b503c585a6404212543ed0f4aeb5cf5b450ed3
 </v>
 <v t="2014spring.20140513154549.2225" a="E"><vh>@path wsgi/programs/cdag10</vh>
 <v t="2014spring.20140513154549.2226"><vh>@edit __init__.py</vh></v>
 <v t="kmolII_lite.20140527100048.2066"><vh>@edit man2.py</vh></v>
 <v t="kmolII_lite.20140610090944.1816"><vh>@edit remsub6.py</vh></v>
 </v>
-<<<<<<< HEAD
-<v t="2014spring.20140513154549.2221" a="E"><vh>@path wsgi/programs/cdag14</vh>
-=======
 <v t="kmolII_lite.20140519204745.1773"><vh>@path wsgi/programs/cdag11</vh>
 <v t="kmolII_lite.20140519204745.1774"><vh>@edit __init__.py</vh></v>
 </v>
@@ -88,7 +82,6 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="kmolII_lite.20140520211255.2556"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140513154549.2221"><vh>@path wsgi/programs/cdag14</vh>
->>>>>>> a1b503c585a6404212543ed0f4aeb5cf5b450ed3
 <v t="2014spring.20140513154549.2222"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140513154549.2229"><vh>@path wsgi/programs/cdag16</vh>
@@ -100,12 +93,9 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="2014spring.20140506174436.1831" a="E"><vh>@path wsgi/programs/cdag30</vh>
 <v t="2014spring.20140506174436.1832"><vh>@edit __init__.py</vh></v>
 <v t="2014spring.20140513154549.2534"><vh>@edit man.py</vh></v>
-<<<<<<< HEAD
-=======
 <v t="2014spring.20140521133830.2641"><vh>@edit man2.py</vh></v>
 <v t="2014spring.20140529085742.2200"><vh>@edit remsub6.py</vh></v>
 <v t="2014spring.20140612075518.1982"><vh>@edit gear.py</vh></v>
->>>>>>> a1b503c585a6404212543ed0f4aeb5cf5b450ed3
 </v>
 </v>
 <v t="course-mde-tw.20140417093332.2058" a="E"><vh>利用 pandoc 進行格式轉換</vh>
@@ -144,7 +134,7 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="2014spring.20140506161101.1968"><vh>@path 2ag10</vh>
 <v t="2014spring.20140506161101.1969"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014spring.20140506161101.1972"><vh>@path 2ag11</vh>
+<v t="2014spring.20140506161101.1972" a="E"><vh>@path 2ag11</vh>
 <v t="2014spring.20140506161101.1973"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1976" a="E"><vh>@path 2ag12</vh>
@@ -199,6 +189,8 @@ course-mde-tw 為協同人員
 <t tx="2014pythonE.20140429160432.1843"></t>
 <t tx="2014pythonE.20140429160432.1847"></t>
 <t tx="2014pythonE.20140512203125.1905"></t>
+<t tx="2014pythonE.20140520190326.1947"></t>
+<t tx="2014pythonE.20140520234911.1956"></t>
 <t tx="2014spring.20140430165707.2063">0. 請各組閱讀
 
 https://wiki.mde.tw/doku.php?id=%E5%8D%94%E5%90%8C%E7%94%A2%E5%93%81%E8%A8%AD%E8%A8%88:2014s_week10
@@ -1003,5 +995,9 @@ Github 倉儲則為: https://github.com/coursemdetw/2014cda
 <t tx="course-mde-tw.20140422221207.1747">mathspec.sty 檔案必須放在 pandoc 目錄中, 與文書處理原始檔案放在一起.</t>
 <t tx="kmolII_lite.20140430001511.1599"></t>
 <t tx="kmolII_lite.20140513162816.2130"></t>
+<t tx="kmolII_lite.20140519204745.1773"></t>
+<t tx="kmolII_lite.20140519210900.2176"></t>
+<t tx="kmolII_lite.20140520211255.2555"></t>
+<t tx="kmolII_lite.20140603113815.1803"></t>
 </tnodes>
 </leo_file>
