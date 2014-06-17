@@ -82,6 +82,9 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="kmolII_lite.20140520211255.2555"><vh>@path wsgi/programs/cdag12</vh>
 <v t="kmolII_lite.20140520211255.2556"><vh>@edit __init__.py</vh></v>
 </v>
+<v t="2014pythonE.20140617115728.1914" a="E"><vh>@path wsgi/programs/cdag13</vh>
+<v t="2014pythonE.20140617115728.1915"><vh>@edit __init__.py</vh></v>
+</v>
 <v t="2014spring.20140513154549.2221"><vh>@path wsgi/programs/cdag14</vh>
 <v t="2014spring.20140513154549.2222"><vh>@edit __init__.py</vh></v>
 </v>
@@ -192,6 +195,7 @@ course-mde-tw 為協同人員
 <t tx="2014pythonE.20140512203125.1905"></t>
 <t tx="2014pythonE.20140520190326.1947"></t>
 <t tx="2014pythonE.20140520234911.1956"></t>
+<t tx="2014pythonE.20140617115728.1914"></t>
 <t tx="2014spring.20140430165707.2063">0. 請各組閱讀
 
 https://wiki.mde.tw/doku.php?id=%E5%8D%94%E5%90%8C%E7%94%A2%E5%93%81%E8%A8%AD%E8%A8%88:2014s_week10
