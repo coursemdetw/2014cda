@@ -253,8 +253,8 @@ axis_plane_assembly(session, assembly, transf, featID, 0,
 axis_plane_assembly(session, assembly, transf, featID, 0, 
                               "03.prt", "A_5","DTM1","A_1","TOP" );
 
-axis_plane_assembly(session, assembly, transf, featID, 0, 
-                              "04.prt", "A_2","TOP","A_2", "DTM1" );
+axis_plane_assembly(session, assembly, transf, featID, 1, 
+                              "04.prt", "A_4","TOP","A_2", "DTM1" );
 
 assembly.Regenerate (void null);
 session.GetModelWindow (assembly).Repaint();    
