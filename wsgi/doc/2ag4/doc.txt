@@ -1,28 +1,87 @@
-網際鼓式煞車設計(2ag4)
+上課內容及連結(2ag4)
 ===
-github連結
+組  員
+------------------
+陳于加 40123107
+
+李念融 40123120
+
+蔡朝仁 40123150
+
+期末報告網站：<https://cdg4-40123150.rhcloud.com/>
+
+ *  github連結
+ 
 40123107: https://github.com/40123107
+
 40123120: https://github.com/40123120
+
 cdag4: https://github.com/2014cdag4/2014cdag4
 
-cmsimply連結
+ *  cmsimply連結
+ 
 40123107: https://github.com/40123107
-40123120: https://github.com/40123120
-40123150: http://cdg4-40123150.rhcloud.com/
-===
 
-第九週 
+40123120: https://github.com/40123120
+
+40123150: http://cdg4-40123150.rhcloud.com/
+
+
+w9 
+------------------
 1.(第一題 30%) 請寫一個執行時可以列出以十為底對數表的網際 Python 程式, 然後 Push 到個人 bitbucket 空間, 而且同步指到 OpenShift 個人帳號上執行.
 http://cdg4-40123150.rhcloud.com/get_page?heading=%E7%AC%AC%E4%B8%80%E9%A1%8C
+
 2.(第二題 40%) 請在個人的 OpenShift 平台上建立一個能夠列印出與九九乘法表結果完全相同的網際程式, 接著在乘法表上端加上兩個輸入表單, 讓使用者輸入兩個整數, 按下送出鍵後, 程式會列出以此兩個整數為基底的乘法表, 例如: 若兩個欄位都輸入: 9, 則列出九九乘法表, 若輸入 9, 20, 則列出 9×20 的乘法表.
 http://cdg4-40123150.rhcloud.com/example/
 http://vimeo.com/92577008
+
 3.(第三題 30%) 請在各組的雲端 dokuwiki 中, 新增帳號與密碼都是由 abc001 ~ abc399 字串所組成的 399 名用戶登入對應資料, 並將製作過程與驗證流程拍成 flv 後上傳到個人的 Vimeo 資料區, 並將連結放在個人第九週頁面.
+
 https://php-40123150.rhcloud.com/doku.php?id=start
+
 http://vimeo.com/92577072
-===
+
 w12
-請連結 https://github.com/2014cdag4/2014cdag4
-===
+------------------
+*  連結 
+https://github.com/2014cdag4/2014cdag4
+
+w13
+------------------ 
+ *  resume lego man 
+ 
+影片連結:
+40123107: https://vimeo.com/95824586
+
+40123120: https://vimeo.com/95822191 ; https://copy.com/qL7DduszalWK
+
+40123150: https://vimeo.com/95822326
+
+w14
+------------------
+*  resume6 
+
+影片連結:
+40123107: https://vimeo.com/96571775
+
+40123120: https://vimeo.com/96549354 ; https://copy.com/ORfUnlwa0i09
+
+40123150: https://vimeo.com/96551552 ; https://copy.com/6qCGIZSxODvX
+
+w15
+------------------
+*  resume5 影片連結:
+
+40123107: https://vimeo.com/97187712 ; https://copy.com/3TZYpaK7ieZS
+
+40123120: https://vimeo.com/97186008 ; https://copy.com/J1y8ARXMGBKZ
+
+40123150: https://vimeo.com/97186460 ; https://copy.com/9HLYm4eaIOyc
+
+w16
+------------------
+*  個別畫零組件，傳上分組網頁個別設定組立條件，在下載其他組員得參數，即可分別自動組裝
 
 這裡是結果與討論
+------------------

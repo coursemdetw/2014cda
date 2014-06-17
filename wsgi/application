@@ -31,7 +31,7 @@ class CDProject(object):
     'tools.encode.encoding': 'utf-8',
     'tools.sessions.on' : True,
     'tools.sessions.storage_type' : 'file',
-    #'tools.sessions.locking' : 'explicit',
+    'tools.sessions.locking' : 'explicit',
     'tools.sessions.storage_path' : data_dir+'/tmp',
     # session timeout is 60 minutes
     'tools.sessions.timeout' : 60
@@ -180,14 +180,25 @@ import programs.cdag2 as cdag2
 root.cdag2 = cdag2.CDAG2()
 import programs.cdag3 as cdag3
 root.cdag3 = cdag3.CDAG3()
+import programs.cdag3.remsub6 as cdag3_remsub6
+root.cdag3.remsub6 = cdag3_remsub6.remsub6()
+import programs.cdag3.man as cdag3_man
+root.cdag3.man = cdag3_man.MAN()
 import programs.cdag4 as cdag4
 root.cdag4 = cdag4.CDAG4()
+root.cdag4.man = cdag4.MAN()
+root.cdag4.resume5 = cdag4.RESUME5()
 import programs.cdag5 as cdag5
 root.cdag5 = cdag5.CDAG5()
+<<<<<<< HEAD
+=======
+import programs.cdag6 as cdag6
+root.cdag6 = cdag6.CDAG6()
 import programs.cdag9 as cdag9
 root.cdag9 = cdag9.CDAG9()
 import programs.cdag7 as cdag7
 root.cdag7 = cdag7.CDAG7()
+>>>>>>> a1b503c585a6404212543ed0f4aeb5cf5b450ed3
 import programs.cdag10 as cdag10
 root.cdag10 = cdag10.CDAG10()
 import programs.cdag14 as cdag14
@@ -197,16 +208,14 @@ root.cdag16 = cdag16.CDAG16()
 import programs.cdag17 as cdag17
 root.cdag17 = cdag17.CDAG17()
 
+
 # 以下為 cdag30 的模組導入與連結設定
 import programs.cdag30 as cdag30
 root.cdag30 = cdag30.CDAG30()
 import programs.cdag30.man as cdag30_man
 # 加入 cdag30 模組下的 man.py 且以子模組 man 對應其 MAN() 類別
 root.cdag30.man = cdag30_man.MAN()
-import programs.cdag30.man2 as cdag30_man2
-root.cdag30.man2 = cdag30_man2.MAN()
-import programs.cdag30.remsub6 as cdag30_remsub6
-root.cdag30.remsub6 = cdag30_remsub6.MAIN()
+
 # 假如在 os 環境變數中存在 'OPENSHIFT_REPO_DIR', 表示程式在 OpenShift 環境中執行
 if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
     # 雲端執行啟動
