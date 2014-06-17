@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by Leo (http://leoeditor.com/leo_toc.html) -->
+<!-- Created by Leo (http://webpages.charter.net/edreamleo/front.html) -->
 <?xml-stylesheet ekr_test?>
 <leo_file xmlns:leo="http://www.leo-editor.org/2011/leo" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
@@ -36,13 +36,13 @@ expanded="course-mde-tw.20140417093332.2030,"><vh>@file application</vh></v>
 expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 </v>
 <v t="2014spring.20140503125211.2097" a="E"><vh>分組程式開發</vh>
-<v t="2014spring.20140503125211.2098"><vh>@path wsgi/programs/cdag1</vh>
+<v t="2014spring.20140503125211.2098" a="E"><vh>@path wsgi/programs/cdag1</vh>
 <v t="2014spring.20140503125211.2099"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140503125211.2100"><vh>@path wsgi/programs/cdag2</vh>
 <v t="2014spring.20140503125211.2101"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513092629.1905"><vh>@path wsgi/programs/cdag3</vh>
+<v t="2014spring.20140513092629.1905" a="E"><vh>@path wsgi/programs/cdag3</vh>
 <v t="2014spring.20140513092629.1906"><vh>@edit __init__.py</vh></v>
 <v t="2014pythonE.20140616203015.1980"><vh>@edit remsub6.py</vh></v>
 <v t="2014pythonE.20140617093602.1912"><vh>@edit man.py</vh></v>
@@ -56,7 +56,7 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="kmolII_lite.20140603221750.1811"><vh>@edit man2.py</vh></v>
 <v t="kmolII_lite.20140603221750.1807"><vh>@edit remsub6.py</vh></v>
 </v>
-<v t="2014pythonE.20140520190326.1947"><vh>@path wsgi/programs/cdag6</vh>
+<v t="2014pythonE.20140520190326.1947" a="E"><vh>@path wsgi/programs/cdag6</vh>
 <v t="2014pythonE.20140520190326.1948"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="kmolII_lite.20140603113815.1803"><vh>@path wsgi/programs/cdag7</vh>
@@ -88,7 +88,8 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="2014spring.20140513154549.2221"><vh>@path wsgi/programs/cdag14</vh>
 <v t="2014spring.20140513154549.2222"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513154549.2229"><vh>@path wsgi/programs/cdag16</vh>
+<v t="2014spring.20140513154549.2229" a="E"><vh>@path wsgi/programs/cdag16</vh>
+<v t="2014pythonE.20140618045524.1819"><vh>@edit man.py</vh></v>
 <v t="2014spring.20140513154549.2230"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140513092629.2151"><vh>@path wsgi/programs/cdag17</vh>
@@ -144,14 +145,17 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="2014spring.20140506161101.1976" a="E"><vh>@path 2ag12</vh>
 <v t="2014spring.20140506161101.1977"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014spring.20140506161101.1956"><vh>@path 2ag13</vh>
+<v t="2014spring.20140506161101.1956" a="E"><vh>@path 2ag13</vh>
 <v t="2014spring.20140506161101.1957"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1980" a="E"><vh>@path 2ag14</vh>
 <v t="2014spring.20140506161101.1981"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014pythonE.20140429160432.1847" a="E"><vh>@path 2ag16</vh>
-<v t="2014pythonE.20140429160432.1848"><vh>@edit doc.txt</vh></v>
+<v t="2014pythonE.20140429160432.1848" a="O"><vh>@edit doc.txt</vh></v>
+<v t="2014pythonE.20140618045524.1831"><vh>@edit w13.txt</vh></v>
+<v t="2014pythonE.20140618045524.1833"><vh>@edit w14.txt</vh></v>
+<v t="2014pythonE.20140618045524.1837"><vh>@edit w15.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1984" a="E"><vh>@path 2ag17</vh>
 <v t="2014spring.20140506161101.1985"><vh>@edit doc.txt</vh></v>
@@ -192,6 +196,21 @@ course-mde-tw 為協同人員
 <t tx="2014pythonE.20140429104126.1755"></t>
 <t tx="2014pythonE.20140429160432.1843"></t>
 <t tx="2014pythonE.20140429160432.1847"></t>
+<t tx="2014pythonE.20140429160432.1848">@nocolor
+﻿協同產品設計實習專案(2ag16)
+
+===
+
+40123134 莊凱翔
+
+40123135 陳俊安
+
+40123148 蔡宗霖
+
+Our CMSimply : https://cmsimply-cda2014g16.rhcloud.com/
+
+===
+</t>
 <t tx="2014pythonE.20140512203125.1905"></t>
 <t tx="2014pythonE.20140520190326.1947"></t>
 <t tx="2014pythonE.20140520234911.1956"></t>
