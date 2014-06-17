@@ -827,7 +827,7 @@ axis_plane_assembly(session, assembly, transf, featID, 5,
         return outstring
         
         
-class resume5(object):
+class RESUME5(object):
     # 各組利用 index 引導隨後的程式執行
     @cherrypy.expose
     def index(self, *args, **kwargs):
