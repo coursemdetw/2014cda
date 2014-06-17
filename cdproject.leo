@@ -30,18 +30,19 @@
 <v t="2014spring.20140513154549.2535"><vh>組立約束條件屬性</vh></v>
 </v>
 <v t="course-mde-tw.20140417093332.2027" a="E"><vh>@path wsgi</vh>
-<v t="course-mde-tw.20140417093332.2028" a="E"><vh>@file application</vh></v>
-<v t="2014spring.20140508134612.2197"><vh>@file cmsimply.py</vh></v>
+<v t="course-mde-tw.20140417093332.2028" a="E"
+expanded="course-mde-tw.20140417093332.2030,"><vh>@file application</vh></v>
+<v t="2014spring.20140508134612.2197" a="E"
+expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 </v>
 <v t="2014spring.20140503125211.2097" a="E"><vh>分組程式開發</vh>
-<v t="2014spring.20140503125211.2098" a="E"><vh>@path wsgi/programs/cdag1</vh>
+<v t="2014spring.20140503125211.2098"><vh>@path wsgi/programs/cdag1</vh>
 <v t="2014spring.20140503125211.2099"><vh>@edit __init__.py</vh></v>
-<v t="2014pythonE.20140609192211.1906"><vh>@edit remsub6.py</vh></v>
 </v>
 <v t="2014spring.20140503125211.2100"><vh>@path wsgi/programs/cdag2</vh>
 <v t="2014spring.20140503125211.2101"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513092629.1905" a="E"><vh>@path wsgi/programs/cdag3</vh>
+<v t="2014spring.20140513092629.1905"><vh>@path wsgi/programs/cdag3</vh>
 <v t="2014spring.20140513092629.1906"><vh>@edit __init__.py</vh></v>
 <v t="2014pythonE.20140616203015.1980"><vh>@edit remsub6.py</vh></v>
 <v t="2014pythonE.20140617093602.1912"><vh>@edit man.py</vh></v>
@@ -110,11 +111,11 @@
 <v t="course-mde-tw.20140417093332.2049" a="E"><vh>@path 2ag1</vh>
 <v t="course-mde-tw.20140417093332.2050"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014pythonE.20140527204722.2508" a="E"><vh>@path 2ag2</vh>
-<v t="2014pythonE.20140527204722.2509"><vh>@edit doc.txt</vh></v>
+<v t="course-mde-tw.20140417093332.2051" a="E"><vh>@path 2ag2</vh>
+<v t="course-mde-tw.20140417093332.2052"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014pythonE.20140429104126.1755" a="E"><vh>@path 2ag3</vh>
-<v t="course-mde-tw.20140417093332.2052"><vh>@edit doc.txt</vh></v>
+<v t="2014pythonE.20140429104126.1756"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1960" a="E"><vh>@path 2ag4</vh>
 <v t="2014spring.20140506161101.1961"><vh>@edit doc.txt</vh></v>
@@ -128,13 +129,10 @@
 <v t="2014pythonE.20140429160432.1843" a="E"><vh>@path 2ag7</vh>
 <v t="2014pythonE.20140429160432.1844"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014pythonE.20140520234454.1952" a="E"><vh>@path 2ag8</vh>
-<v t="2014pythonE.20140520234454.1953"><vh>@edit doc.txt</vh></v>
-</v>
 <v t="2014pythonE.20140512203125.1905" a="E"><vh>@path 2ag9</vh>
 <v t="2014pythonE.20140512203125.1906"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014spring.20140506161101.1968" a="E"><vh>@path 2ag10</vh>
+<v t="2014spring.20140506161101.1968"><vh>@path 2ag10</vh>
 <v t="2014spring.20140506161101.1969"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1972" a="E"><vh>@path 2ag11</vh>
@@ -143,7 +141,7 @@
 <v t="2014spring.20140506161101.1976" a="E"><vh>@path 2ag12</vh>
 <v t="2014spring.20140506161101.1977"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014spring.20140506161101.1956" a="E"><vh>@path 2ag13</vh>
+<v t="2014spring.20140506161101.1956"><vh>@path 2ag13</vh>
 <v t="2014spring.20140506161101.1957"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1980" a="E"><vh>@path 2ag14</vh>
@@ -193,9 +191,7 @@ course-mde-tw 為協同人員
 <t tx="2014pythonE.20140429160432.1847"></t>
 <t tx="2014pythonE.20140512203125.1905"></t>
 <t tx="2014pythonE.20140520190326.1947"></t>
-<t tx="2014pythonE.20140520234454.1952"></t>
 <t tx="2014pythonE.20140520234911.1956"></t>
-<t tx="2014pythonE.20140527204722.2508"></t>
 <t tx="2014spring.20140430165707.2063">0. 請各組閱讀
 
 https://wiki.mde.tw/doku.php?id=%E5%8D%94%E5%90%8C%E7%94%A2%E5%93%81%E8%A8%AD%E8%A8%88:2014s_week10
@@ -296,12 +292,14 @@ with open('V:/project/2014cda/wsgi/pandoc/result.txt', 'w', encoding="utf-8") as
                 outfile.write(line)
             outfile.write("\n\n")
 
+
 # 將目錄指到 pandoc
 mandir = d.get('path') + "/wsgi/pandoc"
 g.es(mandir)
 os.chdir(mandir)
 # 先轉一份 html 
 os.system("V:\\apps\\pandoc\\pandoc.exe -s result.txt -o result.html")
+
 # 利用 pandoc 將 demo.txt 轉為 demo.tex, 在此決定是否要有 toc
 os.system("V:\\apps\\pandoc\\pandoc.exe -s result.txt --toc -o result.tex")
 # 中文設定必須要放在 begin document 之前
@@ -310,7 +308,6 @@ setup = '''
 \\usepackage[T1]{fontspec}    %設定字體用 
 \\usepackage{graphicx} 
 \\usepackage{fancyvrb} % for frame on Verbatim 
-\\usepackage{float}
 \\setCJKmainfont{新細明體}
 '''
 # 在 demo.tex 最前頭加上"中文設定"
@@ -937,6 +934,7 @@ doc
         doc.txt</t>
 <t tx="course-mde-tw.20140417093332.2048"></t>
 <t tx="course-mde-tw.20140417093332.2049"></t>
+<t tx="course-mde-tw.20140417093332.2051"></t>
 <t tx="course-mde-tw.20140417093332.2058">@language latex
 
 % 中文內容設定
