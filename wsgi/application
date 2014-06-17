@@ -194,6 +194,8 @@ import programs.cdag10 as cdag10
 root.cdag10 = cdag10.CDAG10()
 import programs.cdag10.man2 as cdag10_man2
 root.cdag10.man2 = cdag10_man2.MAN()
+import programs.cdag10.man3 as cdag10_man3
+root.cdag10.man3 = cdag10_man3.MAN()
 import programs.cdag10.remsub6 as cdag10_remsub6
 root.cdag10.remsub6 = cdag10_remsub6.remsub6()
 import programs.cdag14 as cdag14
