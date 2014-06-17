@@ -3,12 +3,12 @@ import cherrypy
 # 這是 MAN 類別的定義
 '''
 # 在 application 中導入子模組
-import programs.cdag1.remsub6 as cdag1_remsub6
-# 加入 cdag1 模組下的 remsub6.py 且以子模組 remsub6 對應其 remsub6() 類別
-root.cdag1.remsub6 = cdag1_remsub6.remsub6()
+import programs.cdag3.remsub6 as cdag3_remsub6
+# 加入 cdag3 模組下的 remsub6.py 且以子模組 remsub6 對應其 remsub6() 類別
+root.cdag3.remsub6 = cdag3_remsub6.remsub6()
  
 # 完成設定後, 可以利用
-/cdag1/remsub6
+/cdag3/remsub6
 # 呼叫 man.py 中 MAN 類別的 assembly 方法
 '''
 class remsub6(object):
