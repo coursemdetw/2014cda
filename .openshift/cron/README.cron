@@ -22,9 +22,15 @@ See: man crontab or above link for more details and see the the weekly/
 
 PLEASE NOTE: The Cron cartridge must be installed in order to run the configured jobs.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 81bf3da137e92227ede49d25e348e252064832c9
 
 For more information about cron, consult the documentation:
 http://openshift.github.io/documentation/oo_cartridge_guide.html#cron
 http://openshift.github.io/documentation/oo_user_guide.html#cron
+<<<<<<< HEAD
 >>>>>>> fcc7ba9eca64e3297ca5b9c171df4972217ae118
+=======
+>>>>>>> 81bf3da137e92227ede49d25e348e252064832c9
