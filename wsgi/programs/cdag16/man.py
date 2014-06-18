@@ -17,7 +17,7 @@ class MAN(object):
     @cherrypy.expose
     def index(self, *args, **kwargs):
         outstring = '''
-這是 2014CDA 協同專案下的 cdag30 模組下的 MAN 類別.<br /><br />
+這是 2014CDA 協同專案下的 cdag16 模組下的 MAN 類別.<br /><br />
 <!-- 這裡採用相對連結, 而非網址的絕對連結 (這一段為 html 註解) -->
 <a href="assembly">執行  MAN 類別中的 assembly 方法</a><br /><br />
 請確定下列零件於 V:/home/lego/man 目錄中, 且開啟空白 Creo 組立檔案.<br />
