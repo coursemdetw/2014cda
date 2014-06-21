@@ -408,30 +408,30 @@ plane3~plane4 要組裝的子 參考面
  
 var work_directory = "V:/home/lego/remsub6/"
 //function three_plane_assembly(file_location, session, assembly, transf, featID, constrain_way, plane1, plane2, plane3, plane4, plane5, plane6) {
-var body_id = three_plane_assembly(work_directory + 'beam_angle.prt', session, assembly, transf, -1, 1, "ASM_FRONT", "ASM_TOP", "ASM_RIGHT", "FRONT", "TOP", "RIGHT");
+var body_id = three_plane_assembly(work_directory + 'crossblock_black.prt', session, assembly, transf, -1, 1, "ASM_FRONT", "ASM_TOP", "ASM_RIGHT", "FRONT", "TOP", "RIGHT");
 //function one_axis_two_plane_assembly(file_location, session, assembly, transf, featID, constrain_way, axis1, plane1_1, plane1_2, axis2, plane2_1, plane2_2)
 var alex_10 = one_axis_two_plane_assembly(work_directory + 'axle_10.prt', session, assembly, transf, body_id, 1, "A_25", "FRONT", "TOP", "A_1", "FRONT", "TOP");
  
-var alex_5 = one_axis_two_plane_assembly(work_directory + 'axle_5.prt', session, assembly, transf, body_id, 1, "A_26", "DTM2", "TOP", "A_1", "RIGHT", "TOP");
+//var alex_5 = one_axis_two_plane_assembly(work_directory + 'axle_5.prt', session, assembly, transf, body_id, 1, "A_26", "DTM2", "TOP", "A_1", "RIGHT", "TOP");
 
 /* 
-var crossblock_2_left = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 1, "A_25", "DTM3","FRONT",  "A_16", "DTM4", "DTM1");
+//var crossblock_2_left = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 1, "A_25", "DTM3","FRONT",  "A_16", "DTM4", "DTM1");
  
-var crossblock_2_right = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 1, "A_25", "DTM1","FRONT",  "A_16", "DTM5", "DTM1");
+//var crossblock_2_right = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 1, "A_25", "DTM1","FRONT",  "A_16", "DTM5", "DTM1");
  
-var crossblock_2_left_front = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 2, "A_26", "DTM4", "DTM1",  "A_16", "DTM1", "DTM4");
+//var crossblock_2_left_front = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 2, "A_26", "DTM4", "DTM1",  "A_16", "DTM1", "DTM4");
  
-var crossblock_2_right_front = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 2, "A_26", "DTM4", "DTM3",  "A_16", "DTM1", "DTM5");
+//var crossblock_2_right_front = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 2, "A_26", "DTM4", "DTM3",  "A_16", "DTM1", "DTM5");
  
-var crossblock_2_left_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_left, 2, "A_16", "DTM2", "DTM5",  "A_16", "DTM1", "DTM4");
+//var crossblock_2_left_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_left, 2, "A_16", "DTM2", "DTM5",  "A_16", "DTM1", "DTM4");
  
-var crossblock_2_right_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_right, 2, "A_16", "DTM2", "DTM4",  "A_16", "DTM1", "DTM5");
+//var crossblock_2_right_2 = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, crossblock_2_right, 2, "A_16", "DTM2", "DTM4",  "A_16", "DTM1", "DTM5");
  
-var conn_3_left = axis_plane_assembly(work_directory + 'conn_3.prt', session, assembly, transf, crossblock_2_left, 1, "A_17", "DTM10", "A_20", "DTM1");
+//var conn_3_left = axis_plane_assembly(work_directory + 'conn_3.prt', session, assembly, transf, crossblock_2_left, 1, "A_17", "DTM10", "A_20", "DTM1");
  
-var conn_3_left = axis_plane_assembly(work_directory + 'conn_3.prt', session, assembly, transf, crossblock_2_right, 1, "A_17", "DTM10", "A_20", "DTM1");
+//var conn_3_left = axis_plane_assembly(work_directory + 'conn_3.prt', session, assembly, transf, crossblock_2_right, 1, "A_17", "DTM10", "A_20", "DTM1");
  
-var beam_3 = one_axis_two_plane_assembly(work_directory + 'beam_3.prt', session, assembly, transf, crossblock_2_right, 3,
+//var beam_3 = one_axis_two_plane_assembly(work_directory + 'beam_3.prt', session, assembly, transf, crossblock_2_right, 3,
     "A_17", "DTM7","FRONT",  "A_37", "BOTTOM", "RIGHT");
  */
 assembly.Regenerate(void null);
