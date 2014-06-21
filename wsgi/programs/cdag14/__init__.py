@@ -686,19 +686,24 @@ alert("第一個零件特徵 ID 為:"+featID);
 // featID, 0 表示為 BEAM_ANGLE.prt 零件, "middle_green", "red", "blue" 為其定位面
 // AXLE_10.prt 的定位面則為 "DTM1"(green), "RIGHT"(red), "FRONT"(blue)
 
-var featID1 =three_plane_assembly(session, assembly, transf, featID, 0, "beam_7.prt", "RIGHT", "A_25", "DTM4", "DTM1", "A_42", "TOP");
+//1
+three_plane_assembly(session, assembly, transf, featID, 0, "beam_7.prt", "RIGHT", "A_25", "DTM4", "DTM1", "A_42", "TOP");
 
-var featID2 =three_plane_assembly(session, assembly, transf, featID1, 0, "crossblockb.prt", "RIGHT", "FRONT", "DTM2", "DTM1", "FRONT", "DTM5");
+//2
+three_plane1_assembly(session, assembly, transf, featID, 1, "crossblockb.prt", "RIGHT", "FRONT", "DTM2", "DTM1", "FRONT", "DTM5");
  
 
+//3
+//three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "DTM1", "A_42", "DTM2", "RIGHT", "A_25", "DTM5");
 
-//var featID =three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "DTM1", "A_42", "DTM2", "RIGHT", "A_25", "DTM5");
+//4
+//three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
 
-//var featID =three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
+//5
+//three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
 
-//var featID =three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
-
-//var featID =three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
+//6
+//three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
 
  
 
