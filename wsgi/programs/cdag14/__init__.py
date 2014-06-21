@@ -677,7 +677,7 @@ alert("第一個零件特徵 ID 為:"+featID);
 // featID, 0 表示為 BEAM_ANGLE.prt 零件, "middle_green", "red", "blue" 為其定位面
 // AXLE_10.prt 的定位面則為 "DTM1"(green), "RIGHT"(red), "FRONT"(blue)
 
-three_plane_assembly(session, assembly, transf, featID, 0, "beam_7.prt", "DTM1", "A_42", "TOP", "RIGHT", "A_25", "DTM4");
+three_plane_assembly(session, assembly, transf, featID, 0, "beam_7.prt", "RIGHT", "A_25", "DTM4", "DTM1", "A_42", "TOP");
 
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "DTM1", "A_42", "TOP", "RIGHT", "A_25", "DTM4");
  
