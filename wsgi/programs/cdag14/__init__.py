@@ -408,9 +408,9 @@ plane3~plane4 要組裝的子 參考面
  
 var work_directory = "V:/home/lego/remsub6/"
 //function three_plane_assembly(file_location, session, assembly, transf, featID, constrain_way, plane1, plane2, plane3, plane4, plane5, plane6) {
-var body_id = three_plane_assembly(work_directory + 'crossblock_black.prt', session, assembly, transf, -1, 1, "ASM_FRONT", "ASM_TOP", "ASM_RIGHT", "FRONT", "TOP", "RIGHT");
+var body_id = three_plane_assembly(work_directory + "beam_7.prt", session, assembly, transf, -1, 1, "ASM_FRONT", "ASM_TOP", "ASM_RIGHT", "FRONT", "TOP", "RIGHT");
 //function one_axis_two_plane_assembly(file_location, session, assembly, transf, featID, constrain_way, axis1, plane1_1, plane1_2, axis2, plane2_1, plane2_2)
-var alex_10 = one_axis_two_plane_assembly(work_directory + 'axle_10.prt', session, assembly, transf, body_id, 1, "A_25", "FRONT", "TOP", "A_1", "FRONT", "TOP");
+var alex_10 = one_axis_two_plane_assembly(work_directory +"crossblockb.prt", session, assembly, transf, body_id, 1, "A_41", "A_42", "TOP", "A_24", "A_25", "DTM4");
  
 //var alex_5 = one_axis_two_plane_assembly(work_directory + 'axle_5.prt', session, assembly, transf, body_id, 1, "A_26", "DTM2", "TOP", "A_1", "RIGHT", "TOP");
 
@@ -677,7 +677,7 @@ alert("第一個零件特徵 ID 為:"+featID);
 // featID, 0 表示為 BEAM_ANGLE.prt 零件, "middle_green", "red", "blue" 為其定位面
 // AXLE_10.prt 的定位面則為 "DTM1"(green), "RIGHT"(red), "FRONT"(blue)
 
-three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "A_41", "A_42", "TOP", "A_24", "A_25", "DTM4");
+three_plane_assembly(session, assembly, transf, featID, 1, "crossblockb.prt", "A_41", "A_42", "TOP", "A_24", "A_25", "DTM4");
  
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
