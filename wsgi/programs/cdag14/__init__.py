@@ -679,11 +679,16 @@ alert("第一個零件特徵 ID 為:"+featID);
 
 three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "DTM1", "A_42", "TOP", "RIGHT", "A_25", "DTM4");
  
-three_plane_assembly(session, assembly, transf, featID, 0, "crossblock_3.prt", "DTM2", "A_42", "DTM1", "DTM4", "A_25", "RIGHT");
+three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "DTM2", "A_42", "DTM1", "DTM4", "A_25", "RIGHT");
+
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
+
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
+
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
+
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
+
  
 
 
