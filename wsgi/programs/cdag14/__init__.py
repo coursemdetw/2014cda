@@ -241,7 +241,7 @@ var assembly = model;
 // Body 組立面為 TOP, FRONT, RIGHT
 // 若 featID=0 表示為空組立檔案, 而且函式會傳回第一個組立件的 featID
 
-var featID = three_plane_assembly(session, assembly, transf, 0, 0, "crossblock_black.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "DTM1", "DTM3", "RIGHT"); 
+var featID = three_plane_assembly(session, assembly, transf, 0, 0, "crossblock_black.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "DTM4", "DTM3", "RIGHT"); 
 
 //var featID = three_plane_assembly(session, assembly, transf, 0, 0, "beam_7.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "TOP", "FRONT", "RIGHT"); 
 
