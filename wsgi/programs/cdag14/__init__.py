@@ -666,7 +666,7 @@ var assembly = model;
 // Body 組立面為 TOP, FRONT, RIGHT
 // 若 featID=0 表示為空組立檔案, 而且函式會傳回第一個組立件的 featID
 
-var featID = three_plane_assembly(session, assembly, transf, 0, 0, "crossblockb.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "DTM4", "DTM3", "RIGHT"); 
+var featID = three_plane_assembly(session, assembly, transf, 0, 0, "crossblockb.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "TOP", "FRONT", "RIGHT"); 
 
 //var featID = three_plane_assembly(session, assembly, transf, 0, 0, "beam_7.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "TOP", "FRONT", "RIGHT"); 
 
@@ -681,9 +681,9 @@ three_plane_assembly(session, assembly, transf, featID, 0, "beam_7.prt", "DTM1",
 
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "DTM1", "A_42", "TOP", "RIGHT", "A_25", "DTM4");
  
-three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "DTM2", "A_42", "DTM1", "DTM4", "A_25", "RIGHT");
 
-//three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
+
+three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "DTM1", "A_42", "DTM2", "RIGHT", "A_25", "DTM4");
 
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
 
