@@ -405,14 +405,23 @@ else 按照 1
 plane1~plane2 要組裝的父 參考面
 plane3~plane4 要組裝的子 參考面
 */
+
+
+
+
+
+
  
-var work_directory = "V:/home/lego/remsub6/"
+var work_directory = "V:/home/lego/remsub/"
 //function three_plane_assembly(file_location, session, assembly, transf, featID, constrain_way, plane1, plane2, plane3, plane4, plane5, plane6) {
-var body_id = three_plane_assembly(work_directory + "beam_7.prt", session, assembly, transf, -1, 1, "ASM_FRONT", "ASM_TOP", "ASM_RIGHT", "FRONT", "TOP", "RIGHT");
+
+var body_id = three_plane_assembly(work_directory + "crossblockb.prt", session, assembly, transf, -1, 1, "ASM_FRONT", "ASM_TOP", "ASM_RIGHT", "FRONT", "TOP", "RIGHT");
+
 //function one_axis_two_plane_assembly(file_location, session, assembly, transf, featID, constrain_way, axis1, plane1_1, plane1_2, axis2, plane2_1, plane2_2)
-var crossblockb = one_axis_two_plane_assembly(work_directory +"crossblockb.prt", session, assembly, transf, body_id, 1, "A_41", "A_42", "TOP", "A_24", "A_25", "DTM4");
+
+var beam_7 = one_axis_two_plane_assembly(work_directory +"beam_7.prt", session, assembly, transf, body_id, 1, "RIGHT", "A_25", "DTM4", "DTM1", "A_42", "TOP");
  
-//var alex_5 = one_axis_two_plane_assembly(work_directory + 'axle_5.prt', session, assembly, transf, body_id, 1, "A_26", "DTM2", "TOP", "A_1", "RIGHT", "TOP");
+var crossblockb = one_axis_two_plane_assembly(work_directory + "crossblockb", session, assembly, transf, body_id, 1, "RIGHT", "FRONT", "DTM2", "DTM1", "FRONT", "DTM5");
 
 /* 
 //var crossblock_2_left = one_axis_two_plane_assembly(work_directory + 'crossblock_2.prt', session, assembly, transf, body_id, 1, "A_25", "DTM3","FRONT",  "A_16", "DTM4", "DTM1");
@@ -679,7 +688,7 @@ alert("第一個零件特徵 ID 為:"+featID);
 
 var featID1 =three_plane_assembly(session, assembly, transf, featID, 0, "beam_7.prt", "RIGHT", "A_25", "DTM4", "DTM1", "A_42", "TOP");
 
-var featID2 =three_plane_assembly(session, assembly, transf, featID1, 0, "crossblockb.prt", "RIGHT", "A_25", "DTM2", "DTM1", "A_42", "DTM5");
+var featID2 =three_plane_assembly(session, assembly, transf, featID1, 0, "crossblockb.prt", "RIGHT", "FRONT", "DTM2", "DTM1", "FRONT", "DTM5");
  
 
 
