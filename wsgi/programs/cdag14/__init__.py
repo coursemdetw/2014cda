@@ -666,9 +666,9 @@ var assembly = model;
 // Body 組立面為 TOP, FRONT, RIGHT
 // 若 featID=0 表示為空組立檔案, 而且函式會傳回第一個組立件的 featID
 
-//var featID = three_plane_assembly(session, assembly, transf, 0, 0, "crossblockb.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "DTM4", "DTM3", "RIGHT"); 
+var featID = three_plane_assembly(session, assembly, transf, 0, 0, "crossblockb.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "DTM4", "DTM3", "RIGHT"); 
 
-var featID = three_plane_assembly(session, assembly, transf, 0, 0, "beam_7.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "TOP", "FRONT", "RIGHT"); 
+//var featID = three_plane_assembly(session, assembly, transf, 0, 0, "beam_7.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "TOP", "FRONT", "RIGHT"); 
 
 alert("第一個零件特徵 ID 為:"+featID);
 
@@ -677,7 +677,9 @@ alert("第一個零件特徵 ID 為:"+featID);
 // featID, 0 表示為 BEAM_ANGLE.prt 零件, "middle_green", "red", "blue" 為其定位面
 // AXLE_10.prt 的定位面則為 "DTM1"(green), "RIGHT"(red), "FRONT"(blue)
 
-three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "DTM1", "A_42", "TOP", "RIGHT", "A_25", "DTM4");
+three_plane_assembly(session, assembly, transf, featID, 0, "beam_7.prt", "DTM1", "A_42", "TOP", "RIGHT", "A_25", "DTM4");
+
+//three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "DTM1", "A_42", "TOP", "RIGHT", "A_25", "DTM4");
  
 three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "DTM2", "A_42", "DTM1", "DTM4", "A_25", "RIGHT");
 
