@@ -688,7 +688,7 @@ alert("第一個零件特徵 ID 為:"+featID);
 
 
 //1
-three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM5", "FRONT", "DTM7", "RIGHT", "FRONT", "TOP");
+three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM5", "A_1", "DTM7", "RIGHT", "A_24", "TOP");
 
 //2
 //three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM4", "FRONT", "DTM7", "RIGHT", "FRONT", "TOP");
