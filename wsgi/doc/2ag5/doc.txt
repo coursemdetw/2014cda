@@ -1,243 +1,494 @@
-網際協同產品設計(2ag5)
+協同產品設計(2ag5)
 ===
-% 國立虎尾科技大學_102學年度_ 第二學期
-% 機械設計工程系_協同產品設計實習
 
-授課教師：嚴家銘 老師.
-班  級：四設計二甲.
-組  員：陳怡樺 40123108.
-組  員：康庭瑋 40123130.
-組  員：盧毅民 40123157.
+國立虎尾科技大學_102學年度_ 第二學期
+
+機械設計工程系_協同產品設計實習
+
+班  級：四設計二甲
+
+組  員：陳怡樺 40123108
+
+組  員：康庭瑋 40123130
+
+組  員：盧毅民 40123157
 
 期末報告網站：<https://2014cdag5-yimin40123157.rhcloud.com>
 
-===
-# 【期中內容摘要】
-% 協同流程架構：
-1. 說明：善用各網站所提供的資源, 進行期末專案全班協同管理.
-2. 近端 USB/Portable hard drive：儲存文件檔案資料 (Leo 程式管理, Pandoc 自動產生文件).
-3. 遠端 Openshift 網站：免費最多能建立 3 個網頁.
-4. 遠端 Github 倉儲：專案無限制人數協同, 免費倉儲只能 Public.
-5. 遠端 Bitbucket 倉儲：免費專案最多 5 人協同, 倉儲能變更 Public/Privacy.
+期中內容摘要
+------------------
+ *  協同流程架構：
+    1. 說明：善用各網站所提供的資源, 進行期末專案全班協同管理
+    2. 近端 USB/Portable hard drive：儲存文件檔案資料 (Leo 程式管理, Pandoc 自動產生文件)
+    3. 遠端 Openshift 網站：免費最多能建立 3 個網頁
+    4. 遠端 Github 倉儲：專案無限制人數協同, 免費倉儲只能 Public
+    5. 遠端 Bitbucket 倉儲：免費專案最多 5 人協同, 倉儲能變更 Public/Privacy
 
-% Pro/​Web.Link：
-1. 確認近端協同環境版次.
-2. Leo 4.11, Creo win7 64位元.
-3. Creo Pro/​Web.Link 透過 javascript 執行 (Creo only IE).
-4. 設定 Creo “File → Options → Configuration Editor” 底下.
-5. web_enable_javascript 設為 “on”.
-6. regen_failure_handling 設為 “resolve_mode”.
-7. 設定 IE 瀏覽器 “網際網路選項” 底下.
-8.“安全性 → ✔信任的網站 → 網站 → 新增Pro/​Web.Link網站”.
-9.“自訂等級 → ActiveX控制項與外掛程式” 所有選項設為 “●啟用”.
+ *  Pro​Web.Link：
+    1. 確認近端協同環境版次
+    2. Leo 4.11, Creo win7 64位元
+    3. Creo Pro​Web.Link 透過 javascript 執行 (Creo only IE)
+    4. 設定 Creo “File → Options → Configuration Editor” 底下
+    5. web_enable_javascript 設為 “on”
+    6. regen_failure_handling 設為 “resolve_mode”
+    7. 設定 IE 瀏覽器 “網際網路選項” 底下
+    8. “安全性 → 信任的網站 → 網站 → 新增Pro​Web.Link網站”
+    9. “自訂等級 → ActiveX控制項與外掛程式” 所有選項設為 “啟用”
 
-% git 衝突解決：
-1. git pull.
-2. git reset.
-3. git add -A.
-4. git status.
-5. git commit -m “fix problems”.
-6. git push.
+ *  git 衝突解決：
+    1. git pull.
+    2. git reset.
+    3. git add -A.
+    4. git status.
+    5. git commit -m “fix problems”.
+    6. git push.
 
 
-# 【2014s_cd_w12】
-% 【w12_任務一】
-1. 將摘要報告放入 Github 協同專案 (wsgi/doc/2ag5/doc).
-2. 內容控管同步 OpenShift 網站.
+
+2014s_cd_w12
+------------------
+ *  w12_任務一
+    1. 將摘要報告放入 Github 協同專案 (wsgi/doc/2ag5/doc).
+    2. 內容控管同步 OpenShift 網站
+
 《已完成》Github 協同專案版次證明：<http://goo.gl/KbUUyQ>
-% 【w12_任務二】
-1. 將摘要報告放入 Github 協同專案 (wsgi/doc/2ag5/doc).
-2. 利用 CherryPy 與 Pro/Web.Link 技術控制 Cube 零件.
+
+
+ *  w12_任務二
+    1. 將摘要報告放入 Github 協同專案 (wsgi/doc/2ag5/doc)
+    2. 利用 CherryPy 與 Pro/Web.Link 技術控制 Cube 零件
+
 《已完成》2014cdag5 頁面：<http://2014cda-mdenfu.rhcloud.com/cdag5>
 
 
-# 【2014s_cd_w13】
-% 【w13_任務一】(以"組員"為單位)
-1. 下載 lego_man.7z, 手動組立.
-2. 說明組立過程的重點與注意事項.
-#以下為組員手動組立心得報告：(依學號排序) 
+2014s_cd_w13
+------------------
+ *  w13_任務一(以"組員"為單位)
+    1. 下載 lego_man.7z, 手動組立
+    2. 說明組立過程的重點與注意事項
 
-% 【陳怡樺  40123108】✔
- 建立新檔(選ASM檔).
- 按 組裝 將零件圖(身體)叫出.
- 按 組裝 將零件圖(右手)叫出.
- 給限制(軸和軸 面和面).
- 按 組裝 將零件圖(左手)叫出.
- 給限制(軸和軸 面和面).
-一樣的步驟將其他零件叫出組好. 
+以下為組員手動組立心得報告：(依學號排序) 
 
-% 【康庭瑋  40123130】✔
-軸一定要找對= = ，不然機器人會變得很奇怪，.
-看圖一塊一塊把他們拚上去，還蠻好玩的，.
-先叫出身體 把手跟他的手掌裝上去，.
-接著裝頭 裝帽子，手腳都裝上去就完成了.
+ *  陳怡樺  40123108
 
-% 【盧毅民 40123157】✔
-1. 下載 lego_man.7z.
-2. 解壓縮(man)後新增一組立檔.
-3. 在左側欄位.
-    "設定 → 樹欄 → 模型樹欄 → 新增欄 『特徵 ID』 → 套用 → 確定".
-4. 依序將 lego.prt 零件組立  (順序有關自動組立程式).
-    (1) body.
-    (2) arm_rt → hand  (重合約束軸線、面).
-    (3) arm_lt → hand.
-    (4) waist → leg_rt → leg_lt  (重合約束軸線、面)  (角度位移約束使腳站立).
-    (5) head → hat  #重合約束(軸線、面).
-    注意：組立過程可適當關閉顯示(軸、點、座標系、平面), 便於零件相互約束組立.
-5. 錄製上述組立過程即完成.
+建立新檔(選ASM檔)
+
+按組裝 將零件圖(身體)叫出
+
+按組裝 將零件圖(右手)叫出
+
+給限制(軸和軸 面和面)
+
+按組裝將零件圖(左手)叫出
+
+給限制(軸和軸 面和面)
+
+一樣的步驟將其他零件叫出組好
+
+ *  康庭瑋  40123130
+
+軸一定要找對= = ，不然機器人會變得很奇怪，
+
+看圖一塊一塊把他們拚上去，還蠻好玩的，
+
+先叫出身體 把手跟他的手掌裝上去，
+
+接著裝頭 裝帽子，手腳都裝上去就完成了
+
+ *  盧毅民 40123157
+    1. 下載 lego_man.7z
+    2. 解壓縮(man)後新增一組立檔
+    3. 在左側欄位
+        "設定 → 樹欄 → 模型樹欄 → 新增欄 『特徵 ID』 → 套用 → 確定"
+    4. 依序將 lego.prt 零件組立  (順序有關自動組立程式)
+        (1) body.
+        (2) arm_rt → hand  (重合約束軸線、面)
+        (3) arm_lt → hand
+        (4) waist → leg_rt → leg_lt  (重合約束軸線、面)  (角度位移約束使腳站立)
+        (5) head → hat  #重合約束(軸線、面)
+         注意：組立過程可適當關閉顯示(軸、點、座標系、平面), 便於零件相互約束組立
+    5. 錄製上述組立過程即完成
 
 
-% 【w13_任務二】(以"組員"為單位)
-1. 錄製手動組立流程影片 (flv).
-2. 上傳 Vimeo 及 copy.com 展示.
-#以下為組員手動組立流程影片：(依學號排序) .
+ *  w13_任務二(以"組員"為單位)
+    1. 錄製手動組立流程影片 (flv)
+    2. 上傳 Vimeo 及 copy.com 展示
+        以下為組員手動組立流程影片：(依學號排序) 
 
-% 【陳怡樺  40123108】✔
+ *  陳怡樺  40123108
+ 
 Vimeo：<https://vimeo.com/96493690>
+    
 copy.com：<https://copy.com/OQgdOmkLMvYG>
 
-% 【康庭瑋  40123130】✔
+ *  康庭瑋  40123130
+ 
 Vimeo：<https://vimeo.com/96551475>
-copy.com：<https://copy.com/ZxaxcJxjpTE6>
 
-% 【盧毅民 40123157】✔
+ copy.com：<https://copy.com/ZxaxcJxjpTE6>
+
+ *  盧毅民 40123157
+
 Vimeo：<https://vimeo.com/95866041>
+
 copy.com：<https://copy.com/DR3QpDywqHfx>
 
 
-% 【w13_任務三】(以"組"為單位)
-1. 觀察 lego_man 自動組立程式.
-2. 說明 lego 兩個檔案比較差別結果.
+ *  w13_任務三(以"組"為單位)
+    1. 觀察 lego_man 自動組立程式.
+    2. 說明 lego 兩個檔案比較差別結果
 
-lego_man 自動組立程式：.
-1. 設定 IE 瀏覽器安全性, 信任 "<http://2014cda-mdenfu.rhcloud.com/>" 協同網站.
-    並設定程式執行等級, ActiveX 底下選項全部 "啟用".
-    (實際上只須啟用 "下載未簽署").
-2. 將 lego_man.7z 零件放置 "home → lego →man".
-    並將 lego_parts_edu.7z 零件放置 "home → lego".
-    自動組立程式須經規劃, 設定每個零件基準面與定位面.
-    (三個基準參考面："ASM_FRONT", "ASM_TOP", "ASM_RIGHT").
-    組立零件 "特徵 ID" 與順序是關鍵.
-3. 啟動 Creo 並新建組立檔.
-4. 在 Creo 中以 IE 開啟 "http://2014cda-mdenfu.rhcloud.com/cdag30/man".
-5. 點選 "執行 MAN 類別中的 assembly 方法" 即可執行自動組立.
-6. 若所有相關設定正確無誤, 自動組立方便又迅速.
+ *  lego_man 自動組立程式：.
+    1. 設定 IE 瀏覽器安全性, 信任 "<http://2014cda-mdenfu.rhcloud.com/>" 協同網站
+    
+        並設定程式執行等級, ActiveX 底下選項全部 "啟用"
+        
+        (實際上只須啟用 "下載未簽署")
+        
+    2. 將 lego_man.7z 零件放置 "home → lego →man"
+    
+        並將 lego_parts_edu.7z 零件放置 "home → lego"
+        
+        自動組立程式須經規劃, 設定每個零件基準面與定位面
+        
+        (三個基準參考面："ASM_FRONT", "ASM_TOP", "ASM_RIGHT")
+        
+        組立零件 "特徵 ID" 與順序是關鍵
+        
+    3. 啟動 Creo 並新建組立檔
+    4. 在 Creo 中以 IE 開啟 "http://2014cda-mdenfu.rhcloud.com/cdag30/man"
+    5. 點選 "執行 MAN 類別中的 assembly 方法" 即可執行自動組立
+    6. 若所有相關設定正確無誤, 自動組立方便又迅速
 
-差異比較結果：.
-lego_man.7z ：2012年版 (lego_man.asm：73KB).
-lego_parts_edu.7z：2006年版 (lego_man.asm：46KB).
-組立特徵 ID 相同：39~56.
+ *  差異比較結果：
+ 
+    lego_man.7z ：2012年版 (lego_man.asm：73KB)
+    
+    lego_parts_edu.7z：2006年版 (lego_man.asm：46KB)
+    
+    組立特徵 ID 相同：39~56
 
-組立順序相同：.
-"身體 → 雙臂 → 雙手 → 頭 → 下盤 → 雙腳 → 帽子".
-注意：若執行自動組立版本非 lego_man.7z, 則會導致當機 .
-
-
-# 【2014s_cd_w14】
-% 【w14_任務一】(以"組員"為單位)
-1. Creo 執行 remsub6.asm.
-2. 組員手動零件組立與個人心得.
-#以下為組員手動組立心得報告：(依學號排序) .
-
-% 【陳怡樺  40123108】✔
-心得：W14組樂高零件時須注意方向，和W13週的小人偶不太一樣的地方是不可以只設定軸，而是要三個面的固定，和上次的小人偶比起來過程較複雜，須注意的地方也比較多，比上一次的有難度，最後還是一一克服了。.
-
-% 【康庭瑋  40123130】
-
-組員請在此建立心得 ...
-
-% 【盧毅民 40123157】✔
-1. 下載 lego_parts.7z , 手動組立 remsub6.asm.
-2. 解壓縮(lego)後新建組立檔.
-3. remsub6 組立總共含有 7 種不同的零件.
-4. 有別於上週組立練習說明(約束重點), 本週說明著重在組立方法.
-5. 手動組立順序：.
-    (1) beam_angle.prt → axle_10.prt & axle_5.prt  (主要架構).
-    (2) 後端部分(長軸)：.
-         crossblock_2.prt 矩陣 → bushing.prt 矩陣 → conn_3.prt 矩陣 → beam_3.prt.
-    (3) 前端部分(短軸)：.
-         crossblock_2.prt 矩陣*2.
-6. 組立約束時, 若要完全約束限制零件, 大部分需要三個約束條件.
-7. 錄製手動組立過程說明  (本週影片有錄製聲音說明 !).
+ *  組立順序相同：
+ 
+    "身體 → 雙臂 → 雙手 → 頭 → 下盤 → 雙腳 → 帽子"
+    
+    注意：若執行自動組立版本非 lego_man.7z, 則會導致當機 
 
 
-% 【w14_任務二】(以"組員"為單位)
-1. 錄製手動組立流程.
-2. 上傳 copy.com 與 Vimeo 網站.
-#以下為組員手動組立流程影片：(依學號排序) .
 
-% 【陳怡樺  40123108】
-Vimeo：.
-copy.com：.
+2014s_cd_w14
+------------------
+ *  w14_任務一(以"組員"為單位)
+    1. Creo 執行 remsub6.asm
+    2. 組員手動零件組立與個人心得
+        以下為組員手動組立心得報告：(依學號排序) 
 
-% 【康庭瑋  40123130】
-Vimeo：.
-copy.com：.
+ *  陳怡樺  40123108
 
-% 【盧毅民 40123157】✔
+心得：W14組樂高零件時須注意方向，和W13週的小人偶不太一樣的地方是不可以只設定軸，而是要三個面的固定，和上次的小人偶比起來過程較複雜，須注意的地方也比較多，比上一次的有難度，最後還是一一克服了。
+
+ *  康庭瑋  40123130
+
+比上個禮拜還難...有很多尺寸是用手調的。感覺很費時間，一樣的地方幾乎差不多，在於這個要給他更多的定義才可以。
+
+ *  盧毅民 40123157
+    1. 下載 lego_parts.7z , 手動組立 remsub6.asm
+    2. 解壓縮(lego)後新建組立檔
+    3. remsub6 組立總共含有 7 種不同的零件
+    4. 有別於上週組立練習說明(約束重點), 本週說明著重在組立方法
+    5. 手動組立順序：
+        (1) beam_angle.prt → axle_10.prt & axle_5.prt  (主要架構)
+        (2) 後端部分(長軸)：
+            crossblock_2.prt 矩陣 → bushing.prt 矩陣 → conn_3.prt 矩陣 → beam_3.prt
+        (3) 前端部分(短軸)：
+            crossblock_2.prt 矩陣*2
+    6. 組立約束時, 若要完全約束限制零件, 大部分需要三個約束條件
+    7. 錄製手動組立過程說明  (本週影片有錄製聲音說明 !)
+
+
+ *  w14_任務二(以"組員"為單位)
+    1. 錄製手動組立流程
+    2. 上傳 copy.com 與 Vimeo 網站
+        以下為組員手動組立流程影片：(依學號排序) 
+
+ *  陳怡樺  40123108
+
+Vimeo：<https://vimeo.com/97719975>
+
+copy.com：<https://copy.com/g1UKqK9K8BuO>
+
+ *  康庭瑋  40123130
+
+Vimeo：<https://vimeo.com/98397621>
+
+copy.com：<https://copy.com/NqyaFmrIGXKq>
+
+ *  盧毅民 40123157
+
 Vimeo：<https://vimeo.com/96608344>
+
 copy.com：<https://copy.com/pk4XYjF7WPOM>
 
 
-% 【w14_任務三】(以"組"為單位)
-1. 修改 man 自動組立程式, 組別心得.
-2. 組立函式命名為 remsub6.
-3. 組別雲端網站 cdag5/remsub6 執行(自動組立程式練習中).
+ *  w14_任務三(以"組"為單位)
+    1. 修改 man 自動組立程式, 組別心得
+    2. 組立函式命名為 remsub6
+    3. 組別雲端網站 cdag5/remsub6 執行(自動組立程式練習中)
 
 
-# 【2014s_cd_w15】
-% 【w15_任務一】(以"組員"為單位)
-1. Creo 執行 remsub5.asm.
-2. 組員手動零件組立與個人心得.
-#以下為組員手動組立心得報告：(依學號排序) .
 
-% 【陳怡樺  40123108】✔
-心得：第十五週的組立和第十四週的組立，組成的方法有點相似，因為上次組立時已經把方法練習過好幾次，因此此次的組立時問題不多，過程挺順利。.
+2014s_cd_w15
+------------------
+ *  w15_任務一(以"組員"為單位)
+    1. Creo 執行 remsub5.asm
+    2. 組員手動零件組立與個人心得
+        以下為組員手動組立心得報告：(依學號排序) 
 
-% 【康庭瑋  40123130】
+ *  陳怡樺  40123108
 
-組員請在此建立心得 ...
+心得：第十五週的組立和第十四週的組立，組成的方法有點相似，因為上次組立時已經把方法練習過好幾次，因此此次的組立時問題不多，過程挺順利。
 
-% 【盧毅民 40123157】✔
-1. 下載 lego_parts.7z , 手動組立 remsub5.asm.
-2. 解壓縮(lego)後新建組立檔.
-3. remsub5 組立總共含有 7 種不同的零件.
-4. 本週組立方式跟上週相同, 以陣列的方式來完成左右兩側相同的零件.
-5. 手動組立順序：.
-    (1) beam_7.prt → axle_3.prt (主體支架).
-    (2) 延伸軸：.
-         axle_extender.prt 矩陣 → axle_red.prt 矩陣 → conn_axle_female.prt 插上左右兩端.
-    (3) 左側多的部分：.
-         beam_angle_4x2.prt → conn.prt.
-6. 組立約束時, 若要完全約束限制零件, 大部分需要三個約束條件.
-7. 錄製手動組立過程說明 (本週影片一樣有錄製聲音說明 !).
+ *  康庭瑋  40123130
+
+跟上個禮拜很像，有學過之後明顯的時間縮短很多，不過還是有遇到裝不上去的問題，姓好友小組組員一一幫我解決。
+
+ *  盧毅民 40123157
+    1. 下載 lego_parts.7z , 手動組立 remsub5.asm
+    2. 解壓縮(lego)後新建組立檔
+    3. remsub5 組立總共含有 7 種不同的零件
+    4. 本週組立方式跟上週相同, 以陣列的方式來完成左右兩側相同的零件
+    5. 手動組立順序：
+        (1) beam_7.prt → axle_3.prt (主體支架)
+        (2) 延伸軸：
+            axle_extender.prt 矩陣 → axle_red.prt 矩陣 → conn_axle_female.prt 插上左右兩端
+        (3) 左側多的部分：
+            beam_angle_4x2.prt → conn.prt
+    6. 組立約束時, 若要完全約束限制零件, 大部分需要三個約束條件
+    7. 錄製手動組立過程說明 (本週影片一樣有錄製聲音說明 !)
 
 
-% 【w15_任務二】(以"組員"為單位)
-1. 錄製手動組立流程.
-2. 上傳 copy.com 與 Vimeo 網站.
-#以下為組員手動組立流程影片：(依學號排序) .
+ *  w15_任務二(以"組員"為單位)
+    1. 錄製手動組立流程
+    2. 上傳 copy.com 與 Vimeo 網站
+        以下為組員手動組立流程影片：(依學號排序) 
 
-% 【陳怡樺  40123108】✔
+ *  陳怡樺  40123108
+
 Vimeo：<https://vimeo.com/97187970>
+
 copy.com：<https://copy.com/19KKMErjep6H>
 
-% 【康庭瑋  40123130】✔
+ *  康庭瑋  40123130
+
 Vimeo：<https://vimeo.com/97189182>
+
 copy.com：<https://copy.com/q3vd3Bt01X6S>
 
-% 【盧毅民 40123157】✔
+ *  盧毅民 40123157
+
 Vimeo：<https://vimeo.com/97223621>
+
 copy.com：<https://copy.com/iDzQt6etEcws>
 
 
-% 【w14_任務三】(以"組"為單位)
-1. 修改 man 自動組立程式, 命名函式為 remsub5.
-2. 組別雲端網站下 cdag5/remsub5 可執行.
-3. 編寫自動組立程式心得：.
-    (1) 其實執行任務困難點在於前置作業相關設定, 花了不少時間處理錯誤.
-    (2) 編寫自動組立程式已模組化, 將所需零件與對應面依依確認組立即完成.
+ *  w14_任務三(以"組"為單位)
+    1. 修改 man 自動組立程式, 命名函式為 remsub5
+    2. 組別雲端網站下 cdag5/remsub5 可執行
+    3. 編寫自動組立程式心得：
+        (1) 其實執行任務困難點在於前置作業相關設定, 花了不少時間處理錯誤
+        (2) 編寫自動組立程式已模組化, 將所需零件與對應面依依確認組立即完成
 
-===
 
-2014.06.03  11:16 pm  by 2014cdag5 
+
+2014s_cd_w16~18
+------------------
+ *  期末任務說明
+    1. 以 “教材三” 架構, 建立 Teamproject 雲端軟體套件
+
+ *  期末任務所需技術
+    1. 在近端利用 Creo 繪製零件
+    2. 利用遠端 ProWeb.Link 程式修改近端 Creo 零件尺寸
+    3. 將近端零件轉為 STL, 上傳至遠端 CMSimply 網站中檢視
+    4. 在近端利用手動組立零件
+    5. 在近端利用遠端網站上的 ProWeb.Link 進行自動組立
+    6. 在近端與雲端建立 Dokuwiki 網站
+    7. 利用手動或半自動方式管理 Dokuwiki 的使用者
+    8. 在近端與雲端建立 CMSimply 網站
+    9. 利用 Github 與 Bitbucket 管理所有文字資料的版次
+    10. 利用近端 Leo Editor 與可攜程式系統管理所有資料
+    11. 利用近端環境產生 pdf 與 html 格式報告資料
+
+
+
+期末專案報告
+------------------
+國立虎尾科技大學  102學年度  第二學期
+
+機械設計工程系   協同產品設計實習
+
+
+期末專案報告
+
+
+班  級：四設計二甲
+
+組  員：
+
+陳怡樺 40123108
+
+康庭瑋 40123130 
+
+盧毅民 40123157
+
+
+
+ *  摘要
+ 
+網際協同工程支援系統：於機械設計與結構分析上的應用
+
+考量支援協同設計與同步工程中軟體的多元性，並且為了在產品開發過程中完成各項活動的整合，就必須導入許多新的科技。
+
+但通常中小型公司並無足夠時間與經費來強化其資訊科技與軟體資源。
+
+
+
+ *  協同產品專案設計：Lego Man (lego_man.7z)
+
+    (一)機械設計協同流程架構：服務端與客戶端                                                    
+![cdag5_0_1](./../images/2ag5/cdag5_0_1.jpg)
+
+
+    (二)近端與遠端資料庫伺服器：資料庫倉儲系統                                                    
+![cdag5_0_2](./../images/2ag5/cdag5_0_2.jpg)
+
+
+    (0)產品開發協同管理：Trello                                                                                                      
+![cdag5_0_3](./../images/2ag5/cdag5_0_3.jpg)
+
+
+    (1)近端設計零件：Creo                                                                                                                                          
+![cdag5_1_1](./../images/2ag5/cdag5_1_1.jpg)
+
+
+    (2)遠端ProWeb.Link 程式修改近端 Creo 零件尺寸
+
+1.零件網際參數調控 Creo 系統 config.pro 檔案設定
+
+(b)確定加入下列兩行:
+
+  web_enable_javascript on
+
+  regen_failure_handling resolve_mode
+
+(c)表示允許系統在嵌入式 IE 瀏覽器中執行 Javascript，而且零組件變數修改後能自動更新零組件                          
+![cdag5_2_1](./../images/2ag5/cdag5_2_1.jpg)
+
+
+2.IE 的設定
+
+(a) IE 10: 工具 / 網際網路選項 / 安全性 / 信任的網站
+
+(b)將所要啟動 ProWeb.Link 的網站 URL 加入後，設定以下兩項安全等級:
+
+(i)ActiveX 控制項與插件->起始不標示為安全的 ActiveX 控制項->啟用
+
+(ii)指令碼處理 / Active scripting / 啟用                                                                                                
+![cdag5_2_2](./../images/2ag5/cdag5_2_2.jpg)
+
+
+3.網站 Javascript 程式的編寫
+
+(a)Lego Man網際參數設計
+
+(b)利用網際介面工程師透過所編寫的ProWeb.Link 程式以參數設定改變零組件尺寸。                                                 
+![cdag5_2_3](./../images/2ag5/cdag5_2_3.jpg)
+
+
+4.立方體零件(cube1)尺寸變更：<http://2014cda-mdenfu.rhcloud.com/cdag5/cube1>
+
+
+    (3)近端零件轉為 STL, 遠端 CMSimply 網站檢視                                                                                                                                                                       
+![cdag5_3_1](./../images/2ag5/cdag5_3_1.jpg)
+
+
+Lego_man STL 網站檢視：<http://2014cdag5-yimin40123157.rhcloud.com/static/viewstl.html?src=/downloads/lego_man.stl>                                                   
+
+
+    (4)近端手動組立Lego Man零件                                                                                                                                                                                                   
+![cdag5_4_1](./../images/2ag5/cdag5_4_1.jpg)
+
+
+    (5)近端利用遠端網站 ProWeb.Link 自動組立                                                                                                                                                                               
+![cdag5_5_1](./../images/2ag5/cdag5_5_1.jpg)
+
+
+    1.lego_man 自動組立網站：<http://2014cda-mdenfu.rhcloud.com/cdag30/man>                                                                                                                                                                                                                                                                                                                                                                                    
+
+
+    (6)近端與遠端建立 Dokuwiki 網站                                                                                                                                                                                                                                                                                                                  
+![cdag5_6_1](./../images/2ag5/cdag5_6_1.jpg)
+
+
+1.第五組Dokuwiki 期末網站：<http://cddokuwiki-mde40123157.rhcloud.com/>                                                   
+
+
+    (7)手動或半自動方式管理 Dokuwiki 的使用者                                                                                                                                                                                         
+![cdag5_7_1](./../images/2ag5/cdag5_7_1.jpg)
+
+
+1.自動產生abc 399組使用者帳密程式
+```python
+import hashlib
+ 
+def gen_password(user_password):
+    return hashlib.sha1(user_password.encode("utf-8")).hexdigest()
+ 
+text = 'abc%03d'
+for i in range(1,399+1):
+    print(text%(i)+':'+gen_password(text%(i))+':'+text%(i)+':'+text%(i)+'@gmail.com'+':cd,user')
+```
+
+
+    (8)近端與雲端建立 CMSimply 網站                                                                                                                                                                                             
+![cdag5_8_1](./../images/2ag5/cdag5_8_1.jpg)
+
+
+1.第五組CMSimply 期末網站：<http://2014cdag5-yimin40123157.rhcloud.com/>                                                                                                   
+
+
+    (9)Github 與 Bitbucket 管理資料版次                                                                                                   
+![cdag5_9_1](./../images/2ag5/cdag5_9_1.jpg)
+
+
+1.第五組Github 期末倉儲：<https://github.com/2014cdag5>                                                                                                                                                                                                                                                                                                                          
+![cdag5_9_2](./../images/2ag5/cdag5_9_2.jpg)
+
+
+2.第五組Bitbucket 期末倉儲：<https://bitbucket.org/yimin40123157/2014cdag5/src>                                                                                                                  
+
+
+    (10)近端 Leo Editor 與可攜程式系統管理資料                                                                                                                                                                                 
+![cdag5_10_1](./../images/2ag5/cdag5_10_1.jpg)
+
+
+    (11)近端pandoc產生 pdf 與 html 報告資料                                                                                                                                                                 
+![cdag5_11_1](./../images/2ag5/cdag5_11_1.jpg)
+
+
+
+ *  心得報告
+
+雲端協同產品設計是未來趨勢
+
+機械設計工程師必須具備撰寫程式與機構設計的能力
+
+pandoc產生文件時好時壞, 文件編排彈性小
+
+而且格式要相當準確才會正確產生所要文件
+
+想要自動化系統, 或者是 proweblink 自動組立程式
+
+前置作業都需要花相當多的時間與成本
+
+高成本, 高效益, 未來發展不容小覷
+
