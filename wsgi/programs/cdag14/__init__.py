@@ -10,13 +10,14 @@ class CDAG14(object):
 <!-- 這裡採用相對連結, 而非網址的絕對連結 (這一段為 html 註解) -->
 <a href="cube1">cdag14 正方體參數繪圖</a>(尺寸變數 a, b, c)<br /><br />
 <a href="fourbar1">四連桿組立</a><br /><br />
-<a href="assembly">remsub6</a><br /><br />
+
+
 <a href="assembly1">remsub</a><br /><br />
 
 
 
 請確定下列連桿位於 V:/home/fourbar 目錄中, 且開啟空白 Creo 組立檔案.<br />
-<a href="/static/fourbar.7z">fourbar.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
+<a href="/static/remsub.7z">remsub.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
 '''
         return outstring
 
