@@ -273,8 +273,23 @@ W15 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單�
 
  
 
-w16
+w16.17.18
 -----------------
+期末報告下載(pdf)  <https://copy.com/fqlpVsfQ3AGY> 
+
+期末報告下載(html) <https://copy.com/ZuAYma3c9ugS>
+
+期末報告展示(html) <http://cmsimply-cdag7.rhcloud.com/static/2014cdag7.html>
+
+第7組github倉儲 <https://github.com/2014cdag7/2014cdag7>
+
+第7組bitbucke倉儲t <https://bitbucket.org/pl5630/2014cdag7/src/>
+
+openShift雲端網站
+
+dokuwiki <http://wiki-49823207.rhcloud.com/>
+
+cmsimply <http://cmsimply-cdag7.rhcloud.com/>
 
 第十六, 十七與十八週的任務 (佔期末成績 45 分), 在讓各組根據教材三的架構做為導引, 建立一個類似 Teamproject 的雲端軟體套件.
 
