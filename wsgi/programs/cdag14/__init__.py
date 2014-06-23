@@ -281,9 +281,11 @@ three_plane_assembly(session, assembly, transf, featID, 5, "axle_3.prt", "FRONT"
 //7
 three_plane_assembly(session, assembly, transf, featID, 0, "conn.prt", "DTM9", "RIGHT", "DTM1", "DTM1", "RIGHT", "FRONT");
 
+//8
+three_plane_assembly(session, assembly, transf, featID, 5, "conn.prt", "DTM6", "DTM19", "DTM2", "TOP", "DTM3", "FRONT");
 
-
-
+//9
+//three_plane_assembly(session, assembly, transf, featID, 0, "conn.prt", "DTM9", "RIGHT", "DTM1", "DTM1", "RIGHT", "FRONT");
  
 
 
