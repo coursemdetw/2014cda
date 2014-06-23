@@ -32,9 +32,8 @@
 <v t="course-mde-tw.20140417093332.2027" a="E"><vh>@path wsgi</vh>
 <v t="course-mde-tw.20140417093332.2028" a="E"
 expanded="course-mde-tw.20140417093332.2030,"><vh>@file application</vh></v>
-<v t="2014spring.20140508134612.2197"
+<v t="2014spring.20140508134612.2197" a="E"
 expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
-
 <v t="course-mde-tw.20140417093332.2028" a="E"
 expanded="course-mde-tw.20140417093332.2030,"></v>
 <v t="2014spring.20140508134612.2197" a="E"
@@ -43,7 +42,6 @@ expanded="2014spring.20140508134612.2221,"></v>
 expanded="course-mde-tw.20140417093332.2030,"></v>
 <v t="2014spring.20140508134612.2197" a="E"
 expanded="2014spring.20140508134612.2221,"></v>
-
 </v>
 <v t="2014spring.20140503125211.2097" a="E"><vh>分組程式開發</vh>
 <v t="2014spring.20140503125211.2098" a="E"><vh>@path wsgi/programs/cdag1</vh>
