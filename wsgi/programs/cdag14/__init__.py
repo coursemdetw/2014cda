@@ -12,7 +12,9 @@ class CDAG14(object):
 <a href="fourbar1">四連桿組立</a><br /><br />
 <a href="assembly">remsub6</a><br /><br />
 <a href="assembly1">remsub</a><br /><br />
-<!-- <a href="assembly3">remsub44444</a><br /><br /> -->
+
+<a href="assembly3">remsub44444</a><br /><br />
+
 請確定下列連桿位於 V:/home/fourbar 目錄中, 且開啟空白 Creo 組立檔案.<br />
 <a href="/static/fourbar.7z">fourbar.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
 '''
@@ -688,13 +690,21 @@ alert("第一個零件特徵 ID 為:"+featID);
 
 
 //1
+<<<<<<< HEAD
 //three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM5", "A_1", "DTM1", "RIGHT", "A_4", "DTM1");
+=======
+three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM5", "A_1", "DTM1", "RIGHT", "A_4", "DTM1");
+>>>>>>> 182e27822974b72a5f7e06bcefcd7949f5406c0f
 
 //2
 three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM4", "A_1", "DTM1", "RIGHT", "A_4", "DTM1");
 
 //3
+<<<<<<< HEAD
 //three_plane_assembly(session, assembly, transf, featID, 0, "bushing.prt", "TOP", "RIGHT", "FRONT", "DTM6", "DTM5", "FRONT");
+=======
+three_plane_assembly(session, assembly, transf, featID, 0, "bushing.prt", "TOP", "RIGHT", "FRONT", "DTM6", "DTM5", "FRONT");
+>>>>>>> 182e27822974b72a5f7e06bcefcd7949f5406c0f
 
 //4
 three_plane_assembly(session, assembly, transf, featID, 0, "bushing.prt", "TOP", "RIGHT", "FRONT", "DTM6", "DTM4", "FRONT");
