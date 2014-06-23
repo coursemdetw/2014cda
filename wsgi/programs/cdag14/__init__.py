@@ -258,7 +258,6 @@ var featID = three_plane_assembly(session, assembly, transf, 0, 0, "crossblockb.
 
 
 //1
-
 three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM5", "A_1", "DTM1", "RIGHT", "A_4", "DTM1");
 
 
@@ -266,7 +265,6 @@ three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM5",
 three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM4", "A_1", "DTM1", "RIGHT", "A_4", "DTM1");
 
 //3
-
 //three_plane_assembly(session, assembly, transf, featID, 0, "conn.prt", "DTM3", "DTM1", "A_26", "DTM2", "FRONT", "A_18");
 
 
@@ -274,9 +272,8 @@ three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM4",
 three_plane_assembly(session, assembly, transf, featID, 0, "beam_5.prt", "DTM6", "RIGHT", "FRONT", "TOP", "DTM3", "FRONT");
  
 
-
 //5
-three_plane_assembly(session, assembly, transf, featID, 1, "crossblock3.prt", "FRONT", "TOP", "DTM4", "DTM2", "DTM12", "FRONT");
+three_plane_assembly(session, assembly, transf, featID, 4, "crossblock3.prt", "FRONT", "TOP", "DTM4", "DTM2", "DTM1", "FRONT");
 
 //6
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
