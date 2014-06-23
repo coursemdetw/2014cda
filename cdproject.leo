@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by Leo (http://leoeditor.com/leo_toc.html) -->
+<!-- Created by Leo (http://webpages.charter.net/edreamleo/front.html) -->
 <?xml-stylesheet ekr_test?>
 <leo_file xmlns:leo="http://www.leo-editor.org/2011/leo" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
@@ -89,8 +89,8 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="2014spring.20140513154549.2221"><vh>@path wsgi/programs/cdag14</vh>
 <v t="2014spring.20140513154549.2222"><vh>@edit __init__.py</vh></v>
 </v>
-<v t=".20140623212652.2014"><vh>@path wsgi/programs/cdag15</vh>
-<v t=".20140623212652.2015"><vh>@edit __init__.py</vh></v>
+<v t="2014pythonE.20140623212652.2014"><vh>@path wsgi/programs/cdag15</vh>
+<v t="2014pythonE.20140623212652.2015"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140513154549.2229" a="E"><vh>@path wsgi/programs/cdag16</vh>
 <v t="2014pythonE.20140618045524.1819"><vh>@edit man.py</vh></v>
@@ -99,8 +99,8 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="2014spring.20140513092629.2151"><vh>@path wsgi/programs/cdag17</vh>
 <v t="2014spring.20140513092629.2152"><vh>@edit __init__.py</vh></v>
 </v>
-<v t=".20140623212652.2018" a="E"><vh>@path wsgi/programs/cdag18</vh>
-<v t=".20140623212652.2019"><vh>@edit __init__.py</vh></v>
+<v t="2014pythonE.20140623212652.2018" a="E"><vh>@path wsgi/programs/cdag18</vh>
+<v t="2014pythonE.20140623212652.2019"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140506174436.1831" a="E"><vh>@path wsgi/programs/cdag30</vh>
 <v t="2014spring.20140506174436.1832"><vh>@edit __init__.py</vh></v>
@@ -158,8 +158,8 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="2014spring.20140506161101.1980"><vh>@path 2ag14</vh>
 <v t="2014spring.20140506161101.1981"><vh>@edit doc.txt</vh></v>
 </v>
-<v t=".20140623212652.2002" a="E"><vh>@path 2ag15</vh>
-<v t=".20140623212652.2003"><vh>@edit doc.txt</vh></v>
+<v t="2014pythonE.20140623212652.2002" a="E"><vh>@path 2ag15</vh>
+<v t="2014pythonE.20140623212652.2003"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014pythonE.20140429160432.1847" a="E"><vh>@path 2ag16</vh>
 <v t="2014pythonE.20140429160432.1848" a="O"><vh>@edit doc.txt</vh></v>
@@ -167,11 +167,11 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 <v t="2014pythonE.20140618045524.1833"><vh>@edit w14.txt</vh></v>
 <v t="2014pythonE.20140618045524.1837"><vh>@edit w15.txt</vh></v>
 </v>
-<v t="2014spring.20140506161101.1984"><vh>@path 2ag17</vh>
+<v t="2014spring.20140506161101.1984" a="E"><vh>@path 2ag17</vh>
 <v t="2014spring.20140506161101.1985"><vh>@edit doc.txt</vh></v>
 </v>
-<v t=".20140623212652.2010" a="E"><vh>@path 2ag18</vh>
-<v t=".20140623212652.2011"><vh>@edit doc.txt</vh></v>
+<v t="2014pythonE.20140623212652.2010" a="E"><vh>@path 2ag18</vh>
+<v t="2014pythonE.20140623212652.2011"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="123.20140502221015.1628" a="E"><vh>@path 2ag21</vh>
 <v t="123.20140502221015.1630"><vh>@edit doc.txt</vh></v>
@@ -183,10 +183,6 @@ expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
 </v>
 </vnodes>
 <tnodes>
-<t tx=".20140623212652.2002"></t>
-<t tx=".20140623212652.2010"></t>
-<t tx=".20140623212652.2014"></t>
-<t tx=".20140623212652.2018"></t>
 <t tx="123.20140502221015.1628"></t>
 <t tx="2014pythonE.20140422152422.1669">配合 2014cda 專案
 
@@ -214,7 +210,7 @@ course-mde-tw 為協同人員
 <t tx="2014pythonE.20140429160432.1843"></t>
 <t tx="2014pythonE.20140429160432.1847"></t>
 <t tx="2014pythonE.20140429160432.1848">@nocolor
-協同產品設計實習專案(2ag16)
+﻿協同產品設計實習專案(2ag16)
 
 ===
 
@@ -232,6 +228,10 @@ Our CMSimply : https://cmsimply-cda2014g16.rhcloud.com/
 <t tx="2014pythonE.20140520190326.1947"></t>
 <t tx="2014pythonE.20140520234911.1956"></t>
 <t tx="2014pythonE.20140617115728.1914"></t>
+<t tx="2014pythonE.20140623212652.2002"></t>
+<t tx="2014pythonE.20140623212652.2010"></t>
+<t tx="2014pythonE.20140623212652.2014"></t>
+<t tx="2014pythonE.20140623212652.2018"></t>
 <t tx="2014spring.20140430165707.2063">0. 請各組閱讀
 
 https://wiki.mde.tw/doku.php?id=%E5%8D%94%E5%90%8C%E7%94%A2%E5%93%81%E8%A8%AD%E8%A8%88:2014s_week10
