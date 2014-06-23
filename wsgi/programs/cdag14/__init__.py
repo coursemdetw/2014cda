@@ -259,7 +259,7 @@ alert("第一個零件特徵 ID 為:"+featID);
 
 //1
 
-//three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM5", "A_1", "DTM1", "RIGHT", "A_4", "DTM1");
+three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM5", "A_1", "DTM1", "RIGHT", "A_4", "DTM1");
 
 
 //2
@@ -267,11 +267,11 @@ three_plane_assembly(session, assembly, transf, featID, 0, "axle_5.prt", "DTM4",
 
 //3
 
-//three_plane_assembly(session, assembly, transf, featID, 0, "bushing.prt", "TOP", "RIGHT", "FRONT", "DTM6", "DTM5", "FRONT");
+three_plane_assembly(session, assembly, transf, featID, 0, "conn.prt", "DTM3", "DTM1", "RIGHT", "DTM1", "FRONT", "RIGHT");
 
 
 //4
-three_plane_assembly(session, assembly, transf, featID, 0, "bushing.prt", "TOP", "RIGHT", "FRONT", "DTM6", "DTM4", "FRONT");
+//three_plane_assembly(session, assembly, transf, featID, 0, "bushing.prt", "TOP", "RIGHT", "FRONT", "DTM6", "DTM4", "FRONT");
  
 
 
