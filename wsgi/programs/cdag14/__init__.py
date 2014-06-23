@@ -277,7 +277,7 @@ three_plane_assembly(session, assembly, transf, featID, 0, "beam_5.prt", "DTM6",
 
 
 //5
-three_plane_assembly(session, assembly, transf, featID, 0, "crossblock3.prt", "FRONT", "TOP", "DTM4", "DTM2", "DTM12", "FRONT");
+three_plane_assembly(session, assembly, transf, featID, 4, "crossblock3.prt", "FRONT", "TOP", "DTM4", "DTM2", "DTM12", "FRONT");
 
 //6
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
