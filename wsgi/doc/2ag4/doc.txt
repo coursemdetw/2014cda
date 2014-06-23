@@ -79,9 +79,38 @@ w15
 
 40123150: https://vimeo.com/97186460 ; https://copy.com/9HLYm4eaIOyc
 
-w16
+w16~w18
 ------------------
 *  個別畫零組件，傳上分組網頁個別設定組立條件，在下載其他組員得參數，即可分別自動組裝
+*  期末報告
+1.  翻譯
+*  Abstract:
+The diversity in software used to support collaborative design and concurrent engineering requires the implementation of new technologies in order to ensure the integration between the various activities of the product development process. Most of the time, companies can not afford to spend the time and the funds required to enhance their IT and software resources. This is often the case of small and medium companies.
+*  重點：
+要達到協同設計和即時變更設計，必須要有相輔助的軟體來達成，因此需要開發新的技術和程式，來達成協同的目的。
+
+*  Nowadays, in mechanical design, the needs for product data sharing between Computer Aided Design (CAD) and finite element analysis (FEA) activities have been fairly increased even for small companies. This article aims at presenting Teamproject software,an asynchronous Web Computer Supported Cooperative Work (CSCW) oriented toward the sharing and viewing of 3D data (CAD and FEA) based on Virtual Reality Modeling Language (VRML). Regarding the collaborative design and concurrent engineering approaches, this software increases the information access and its availability to expert and non-expert users in a remote mode.
+*  重點：
+*  目前可以利用CAD(2D或3D)軟體進行零件編輯或組件的組立，且有部分的CAD軟體已經可以達到部分的自動組立或是線上協同技術(例如 Creo)。
+這些軟體可以讓使用者在不同的地區(國家)，進行零件編輯及變更，並將他分享到指定的區域供協同組員下載或進行下一步的編輯，以達到不需要面對面也可完成協同工作的目的。
+*  The article deals with the benefits proposed by the use of Web technologies in mechanical design and structural analysis fields. It details the software architecture of Teamproject. One of the added values offered by the new version of the Web CSCW is the translation of CAD and FEA data into VRML format. It extends the 3D product data review to all the team members involved in a project. Indeed, the reading of the Java3D can be ensured by the most used web navigator (like Internet Explorer and Netscape) with the aid of a free plug-in. To summarize, the proposed Web CSCW provides a simple and efficient access to mechanical design and structural analysis data in a real collaborative engineering approach.
+*  Introduction
+The increase in information sharing, led by multisite distribution of activities and by extended enterprise approaches implemented in many companies, emphasize the requirements of means and tools supporting collaborative work in a remote organization [1,2].
+Concurrent engineering and collaborative design methods and tools contribute widely to simplify the development of remote and distributed works [3,4].
+Concurrency and distribution of tasks become synonymous with success because of the increasing needs for reactivity and competitiveness for companies.
+Web technologies represent one of the most powerful tools of exchange, pooling, and distribution of information between project’s team members [5,6].
+The aim of the article is to present an asynchronous Web Computer Supported Cooperative  Work (CSCW) that would enhance the sharing of Computer Aided Design (CAD) and finite element analysis (FEA) data. In the following section, the interest of using Web technologies more widely in mechanical engineering projects is shown.
+This section also presents a survey of the available technologies and their possible applications in the above-mentioned field. Then, the asynchronous collaborative engineering support system and its main
+features developed by Ideamech Company are detailed.
+Finally, the integration of a Java3D viewer is assessed and discussed, and the interests of the presented research work are summarized.
+*  重點：
+在多方的訊息共享之下，協同組員可以利用這些訊息進行設計。
+協同設計可以使設計的速度加快，並且在協同組員共同的監督之下，以達到較少的錯誤，避免掉以後修正錯誤的麻煩。
+協同必須要進行任務分配，每個人有各自的工作，完成後將訊息分享至協同平台，供其他人使用及變更，再將所有人的部分進行結合(零件組立)，以完成一項產品。
+
+2.  透過小組分工，在遠端分別傳送自己的部分，最後再放在一起進行組立，達到期末要求。
+*  心得:
+透過這學期，學期到，如何在遠端建設倉儲，並且分享給自己組員，也在其中後，進行零件自動生成尺寸，並且做到自動組立，這學期學到很多利用程式，進行分工，以及減少人力的技術。
 
 這裡是結果與討論
 ------------------

@@ -188,6 +188,8 @@ import programs.cdag4 as cdag4
 root.cdag4 = cdag4.CDAG4()
 root.cdag4.man = cdag4.MAN()
 root.cdag4.resume5 = cdag4.RESUME5()
+import programs.cdag4.g4 as g4
+root.cdag4.phone = g4.phone()
 import programs.cdag5 as cdag5
 root.cdag5 = cdag5.CDAG5()
 

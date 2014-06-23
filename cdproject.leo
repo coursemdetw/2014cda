@@ -22,18 +22,19 @@
 <v t="course-mde-tw.20140422171455.1745"><vh>Github 倉儲與 OpenShift 同步</vh></v>
 <v t="2014spring.20140430175148.1771"><vh>@edit README.md</vh></v>
 <v t="2014spring.20140430205920.1773"><vh>分散式課程評量</vh></v>
-<v t="2014spring.20140430165707.2063"><vh>第十一週任務</vh>
+<v t="2014spring.20140430165707.2063" a="E"><vh>第十一週任務</vh>
 <v t="2014spring.20140506093255.1795"><vh>組立約束條件</vh></v>
 <v t="2014spring.20140506093255.1796"><vh>組立 0 程式</vh></v>
 </v>
-<v t="2014spring.20140508134612.2129"><vh>第十二週任務</vh>
+<v t="2014spring.20140508134612.2129" a="E"><vh>第十二週任務</vh>
 <v t="2014spring.20140513154549.2535"><vh>組立約束條件屬性</vh></v>
 </v>
 <v t="course-mde-tw.20140417093332.2027" a="E"><vh>@path wsgi</vh>
 <v t="course-mde-tw.20140417093332.2028" a="E"
 expanded="course-mde-tw.20140417093332.2030,"><vh>@file application</vh></v>
-<v t="2014spring.20140508134612.2197" a="E"
+<v t="2014spring.20140508134612.2197"
 expanded="2014spring.20140508134612.2221,"><vh>@file cmsimply.py</vh></v>
+
 <v t="course-mde-tw.20140417093332.2028" a="E"
 expanded="course-mde-tw.20140417093332.2030,"></v>
 <v t="2014spring.20140508134612.2197" a="E"
@@ -42,6 +43,7 @@ expanded="2014spring.20140508134612.2221,"></v>
 expanded="course-mde-tw.20140417093332.2030,"></v>
 <v t="2014spring.20140508134612.2197" a="E"
 expanded="2014spring.20140508134612.2221,"></v>
+
 </v>
 <v t="2014spring.20140503125211.2097" a="E"><vh>分組程式開發</vh>
 <v t="2014spring.20140503125211.2098" a="E"><vh>@path wsgi/programs/cdag1</vh>
@@ -57,6 +59,7 @@ expanded="2014spring.20140508134612.2221,"></v>
 </v>
 <v t="2014spring.20140513154549.2217" a="E"><vh>@path wsgi/programs/cdag4</vh>
 <v t="2014spring.20140513154549.2218"><vh>@edit __init__.py</vh></v>
+<v t="kmolII_lite.20140623191045.2080"><vh>@edit g4.py</vh></v>
 </v>
 <v t="kmolII_lite.20140513162816.2130" a="E"><vh>@path wsgi/programs/cdag5</vh>
 <v t="kmolII_lite.20140513162816.2131"><vh>@edit __init__.py</vh></v>
@@ -87,21 +90,27 @@ expanded="2014spring.20140508134612.2221,"></v>
 <v t="kmolII_lite.20140519204745.1773" a="E"><vh>@path wsgi/programs/cdag11</vh>
 <v t="kmolII_lite.20140519204745.1774"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="kmolII_lite.20140520211255.2555" a="E"><vh>@path wsgi/programs/cdag12</vh>
+<v t="kmolII_lite.20140520211255.2555"><vh>@path wsgi/programs/cdag12</vh>
 <v t="kmolII_lite.20140520211255.2556"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014pythonE.20140617115728.1914" a="E"><vh>@path wsgi/programs/cdag13</vh>
 <v t="2014pythonE.20140617115728.1915"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513154549.2221" a="E"><vh>@path wsgi/programs/cdag14</vh>
+<v t="2014spring.20140513154549.2221"><vh>@path wsgi/programs/cdag14</vh>
 <v t="2014spring.20140513154549.2222"><vh>@edit __init__.py</vh></v>
+</v>
+<v t="2014pythonE.20140623212652.2014"><vh>@path wsgi/programs/cdag15</vh>
+<v t="2014pythonE.20140623212652.2015"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140513154549.2229" a="E"><vh>@path wsgi/programs/cdag16</vh>
 <v t="2014pythonE.20140618045524.1819"><vh>@edit man.py</vh></v>
 <v t="2014spring.20140513154549.2230"><vh>@edit __init__.py</vh></v>
 </v>
-<v t="2014spring.20140513092629.2151" a="E"><vh>@path wsgi/programs/cdag17</vh>
+<v t="2014spring.20140513092629.2151"><vh>@path wsgi/programs/cdag17</vh>
 <v t="2014spring.20140513092629.2152"><vh>@edit __init__.py</vh></v>
+</v>
+<v t="2014pythonE.20140623212652.2018" a="E"><vh>@path wsgi/programs/cdag18</vh>
+<v t="2014pythonE.20140623212652.2019"><vh>@edit __init__.py</vh></v>
 </v>
 <v t="2014spring.20140506174436.1831" a="E"><vh>@path wsgi/programs/cdag30</vh>
 <v t="2014spring.20140506174436.1832"><vh>@edit __init__.py</vh></v>
@@ -150,14 +159,17 @@ expanded="2014spring.20140508134612.2221,"></v>
 <v t="2014spring.20140506161101.1972" a="E"><vh>@path 2ag11</vh>
 <v t="2014spring.20140506161101.1973"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014spring.20140506161101.1976" a="E"><vh>@path 2ag12</vh>
+<v t="2014spring.20140506161101.1976"><vh>@path 2ag12</vh>
 <v t="2014spring.20140506161101.1977"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014spring.20140506161101.1956" a="E"><vh>@path 2ag13</vh>
 <v t="2014spring.20140506161101.1957"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014spring.20140506161101.1980" a="E"><vh>@path 2ag14</vh>
+<v t="2014spring.20140506161101.1980"><vh>@path 2ag14</vh>
 <v t="2014spring.20140506161101.1981"><vh>@edit doc.txt</vh></v>
+</v>
+<v t="2014pythonE.20140623212652.2002" a="E"><vh>@path 2ag15</vh>
+<v t="2014pythonE.20140623212652.2003"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014pythonE.20140429160432.1847" a="E"><vh>@path 2ag16</vh>
 <v t="2014pythonE.20140429160432.1848" a="O"><vh>@edit doc.txt</vh></v>
@@ -167,6 +179,9 @@ expanded="2014spring.20140508134612.2221,"></v>
 </v>
 <v t="2014spring.20140506161101.1984" a="E"><vh>@path 2ag17</vh>
 <v t="2014spring.20140506161101.1985"><vh>@edit doc.txt</vh></v>
+</v>
+<v t="2014pythonE.20140623212652.2010" a="E"><vh>@path 2ag18</vh>
+<v t="2014pythonE.20140623212652.2011"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="123.20140502221015.1628" a="E"><vh>@path 2ag21</vh>
 <v t="123.20140502221015.1630"><vh>@edit doc.txt</vh></v>
@@ -223,6 +238,10 @@ Our CMSimply : https://cmsimply-cda2014g16.rhcloud.com/
 <t tx="2014pythonE.20140520190326.1947"></t>
 <t tx="2014pythonE.20140520234911.1956"></t>
 <t tx="2014pythonE.20140617115728.1914"></t>
+<t tx="2014pythonE.20140623212652.2002"></t>
+<t tx="2014pythonE.20140623212652.2010"></t>
+<t tx="2014pythonE.20140623212652.2014"></t>
+<t tx="2014pythonE.20140623212652.2018"></t>
 <t tx="2014spring.20140430165707.2063">0. 請各組閱讀
 
 https://wiki.mde.tw/doku.php?id=%E5%8D%94%E5%90%8C%E7%94%A2%E5%93%81%E8%A8%AD%E8%A8%88:2014s_week10
@@ -302,7 +321,7 @@ d = c.scanAllDirectives(p)
 filenames = ['title.txt', '2bg1/doc.txt', '2bg2/doc.txt', '2bg3/doc.txt', '2bg5/doc.txt', '2bg15/doc.txt', '2bg13/doc.txt', '2bg9/doc.txt']
 '''
 # 定義要合併檔案的共同目錄
-directory = "V:/2014cda/wsgi/doc/"
+directory = "V:/project/2014cda/wsgi/doc/"
 # 定義一個空數列
 filenames = []
 for (path, dirs, files) in os.walk(directory):
@@ -315,7 +334,7 @@ filenames.sort(key=natural_keys)
 # 利用 insert 以 0 為索引, 將 title.txt 放在數列最前頭
 filenames.insert(0, directory+"title.txt")
 # 以下將依據 filenames 數列中的檔案合併為 result.txt 之後再進行文書處理轉換
-with open('V:/2014cda/wsgi/pandoc/result.txt', 'w', encoding="utf-8") as outfile:
+with open('V:/project/2014cda/wsgi/pandoc/result.txt', 'w', encoding="utf-8") as outfile:
     for fname in filenames:
         #fname = directory+fname
         with open(fname, encoding="utf-8") as infile:
