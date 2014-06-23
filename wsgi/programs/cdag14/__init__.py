@@ -285,7 +285,7 @@ three_plane_assembly(session, assembly, transf, featID, 0, "conn.prt", "DTM9", "
 three_plane_assembly(session, assembly, transf, featID, 5, "conn.prt", "DTM6", "DTM19", "DTM2", "TOP", "DTM3", "FRONT");
 
 //9
-//three_plane_assembly(session, assembly, transf, featID, 0, "conn.prt", "DTM9", "RIGHT", "DTM1", "DTM1", "RIGHT", "FRONT");
+//three_plane_assembly(session, assembly, transf, featID, 0, "beam_5.prt", "DTM9", "RIGHT", "DTM1", "DTM1", "RIGHT", "FRONT");
  
 
 
