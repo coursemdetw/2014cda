@@ -12,7 +12,7 @@ class CDAG14(object):
 <a href="fourbar1">四連桿組立</a><br /><br />
 <a href="assembly">remsub6</a><br /><br />
 <a href="assembly1">remsub</a><br /><br />
-<a href="assembly3">remsub44444</a><br /><br />
+<!-- <a href="assembly3">remsub44444</a><br /><br /> -->
 請確定下列連桿位於 V:/home/fourbar 目錄中, 且開啟空白 Creo 組立檔案.<br />
 <a href="/static/fourbar.7z">fourbar.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
 '''
