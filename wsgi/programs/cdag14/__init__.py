@@ -16,7 +16,7 @@ class CDAG14(object):
 
 
 
-請確定下列連桿位於 V:/home/fourbar 目錄中, 且開啟空白 Creo 組立檔案.<br />
+請確定下列連桿位於 V:/home/lego 目錄中, 且開啟空白 Creo 組立檔案.<br />
 <a href="/static/remsub.7z">remsub.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
 '''
         return outstring
