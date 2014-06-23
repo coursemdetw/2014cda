@@ -188,6 +188,8 @@ import programs.cdag4 as cdag4
 root.cdag4 = cdag4.CDAG4()
 root.cdag4.man = cdag4.MAN()
 root.cdag4.resume5 = cdag4.RESUME5()
+import programs.cdag4.g4 as g4
+root.cdag4.phone = g4.phone()
 import programs.cdag5 as cdag5
 root.cdag5 = cdag5.CDAG5()
 
@@ -199,6 +201,15 @@ import programs.cdag7 as cdag7
 root.cdag7 = cdag7.CDAG7()
 import programs.cdag10 as cdag10
 root.cdag10 = cdag10.CDAG10()
+<<<<<<< HEAD
+import programs.cdag10.man2 as cdag10_man2
+root.cdag10.man2 = cdag10_man2.MAN()
+import programs.cdag10.man3 as cdag10_man3
+root.cdag10.man3 = cdag10_man3.MAN()
+import programs.cdag10.remsub6 as cdag10_remsub6
+root.cdag10.remsub6 = cdag10_remsub6.remsub6()
+=======
+>>>>>>> b0ee2af874bbda4443e7202b6d18fe084057a3d5
 import programs.cdag14 as cdag14
 root.cdag14 = cdag14.CDAG14()
 # 以下為 cdag16 的模組導入與連結設定
