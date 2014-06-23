@@ -31,7 +31,7 @@ class CDProject(object):
     'tools.encode.encoding': 'utf-8',
     'tools.sessions.on' : True,
     'tools.sessions.storage_type' : 'file',
-    #'tools.sessions.locking' : 'explicit',
+    'tools.sessions.locking' : 'explicit',
     'tools.sessions.storage_path' : data_dir+'/tmp',
     # session timeout is 60 minutes
     'tools.sessions.timeout' : 60
@@ -188,6 +188,8 @@ import programs.cdag4 as cdag4
 root.cdag4 = cdag4.CDAG4()
 root.cdag4.man = cdag4.MAN()
 root.cdag4.resume5 = cdag4.RESUME5()
+import programs.cdag4.g4 as g4
+root.cdag4.phone = g4.phone()
 import programs.cdag5 as cdag5
 root.cdag5 = cdag5.CDAG5()
 
