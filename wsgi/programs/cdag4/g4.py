@@ -16,11 +16,11 @@ class phone(object):
     @cherrypy.expose
     def index(self, *args, **kwargs):
         outstring = '''
-這是 2014CDA 協同專案下的 cdag30 模組下的 MAN 類別.<br /><br />
+這是 2014CDA 協同專案下的 cdag4 模組下的 phone 類別.<br /><br />
 <!-- 這裡採用相對連結, 而非網址的絕對連結 (這一段為 html 註解) -->
-<a href="assembly">執行  MAN 類別中的 assembly 方法</a><br /><br />
-請確定下列零件於 V:/home/lego/man 目錄中, 且開啟空白 Creo 組立檔案.<br />
-<a href="/static/lego_man.7z">lego_man.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
+<a href="assembly">執行  phone 類別中的 assembly 方法</a><br /><br />
+請確定下列零件於 V:/home/phone/ 目錄中, <br />
+<a href="/static/phone.7z">phone.7z</a>(滑鼠右鍵存成 .7z 檔案)<br />
 '''
         return outstring
  
@@ -236,7 +236,7 @@ class phone(object):
         // 將此模型設為組立物件
         var assembly = model;
          
-        var work_directory = 'V:/2014cdag4/phone_dock/';
+        var work_directory = 'V:/home/phone/';
          
         //使用方式
         //test_assembly(使用的 session, 組立檔案, 參照座標準矩陣, 父組立零件ID, 欲組立零件位置,
@@ -261,15 +261,17 @@ class phone(object):
             ["align","align"],
             ["datum","axis"],["datum","axis"],
             ["DTM1", "A_1"], ["DTM1", "A_2"]);
+            
         var body_id4 = test_assembly(session, assembly, transf, body_id1,work_directory + 'prt0002.prt',
             ["align","align"],
             ["datum","axis"],["datum","axis"],
             ["DTM1", "A_2"], ["DTM1", "A_2"]);
+            
         var body_id5 = test_assembly(session, assembly, transf, body_id,work_directory + 'prt0001.prt',
             ["align","align"],
-            ["datum","axis","axis"],["datum","axis","axis"],
-            ["DTM2", "A_3", "A_3"], ["DTM2", "A_3", "A_1"]);
-         
+            ["datum","axis"],["datum","axis"],
+            ["DTM2", "A_3"], ["DTM2", "A_3"]);
+            
         assembly.Regenerate(void null);
         session.GetModelWindow(assembly).Repaint();
         </script>
