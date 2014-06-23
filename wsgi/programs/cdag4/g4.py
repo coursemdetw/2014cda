@@ -26,8 +26,7 @@ class phone(object):
  
     @cherrypy.expose
     def assembly(self, *args, **kwargs):
-        outstring =          '''                <html>
-                <head>
+        outstring =          '''                <html>                <head>
                 <meta http-equiv="content-type" content="text/html;charset=utf-8">
                 <script type="text/javascript" src="/static/weblink/examples/jscript/pfcUtils.js"></script>
                 </head>
@@ -237,7 +236,7 @@ class phone(object):
         // 將此模型設為組立物件
         var assembly = model;
          
-        var work_directory = 'V:/lego/';
+        var work_directory = 'V:/2014cdag4/phone_dock/';
          
         //使用方式
         //test_assembly(使用的 session, 組立檔案, 參照座標準矩陣, 父組立零件ID, 欲組立零件位置,
@@ -250,11 +249,26 @@ class phone(object):
         //    ["datum","datum","datum"],["datum","datum","datum"],   告訴CREO選擇面or線or點
         //    ["ASM_FRONT", "ASM_TOP", "ASM_RIGHT"], ["FRONT", "TOP", "RIGHT"]);    面or線or點的代號
 
-        var body_id = test_assembly(session, assembly, transf, -1,work_directory + 'beam_angle.prt',
+        var body_id = test_assembly(session, assembly, transf, -1,work_directory + 'prt0002.prt',
             ["align","align","align"],
             ["datum","datum","datum"],["datum","datum","datum"],
             ["ASM_FRONT", "ASM_TOP", "ASM_RIGHT"], ["FRONT", "TOP", "RIGHT"]);
-
+        var body_id1 = test_assembly(session, assembly, transf, body_id,work_directory + 'prt0001.prt',
+            ["align","align"],
+            ["datum","axis"],["datum","axis"],
+            ["DTM1", "A_2"], ["DTM1", "A_3"]);
+        var body_id3 = test_assembly(session, assembly, transf, body_id1,work_directory + 'prt0002.prt',
+            ["align","align"],
+            ["datum","axis"],["datum","axis"],
+            ["DTM1", "A_1"], ["DTM1", "A_2"]);
+        var body_id4 = test_assembly(session, assembly, transf, body_id1,work_directory + 'prt0002.prt',
+            ["align","align"],
+            ["datum","axis"],["datum","axis"],
+            ["DTM1", "A_2"], ["DTM1", "A_2"]);
+        var body_id5 = test_assembly(session, assembly, transf, body_id,work_directory + 'prt0001.prt',
+            ["align","align"],
+            ["datum","axis","axis"],["datum","axis","axis"],
+            ["DTM2", "A_3", "A_3"], ["DTM2", "A_3", "A_1"]);
          
         assembly.Regenerate(void null);
         session.GetModelWindow(assembly).Repaint();
