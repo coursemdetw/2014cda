@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Created by Leo (http://webpages.charter.net/edreamleo/front.html) -->
+<!-- Created by Leo (http://leoeditor.com/leo_toc.html) -->
 <?xml-stylesheet ekr_test?>
 <leo_file xmlns:leo="http://www.leo-editor.org/2011/leo" >
 <leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
@@ -164,7 +164,7 @@ expanded="2014spring.20140508134612.2221,"></v>
 <v t="2014spring.20140506161101.1956" a="E"><vh>@path 2ag13</vh>
 <v t="2014spring.20140506161101.1957"><vh>@edit doc.txt</vh></v>
 </v>
-<v t="2014spring.20140506161101.1980"><vh>@path 2ag14</vh>
+<v t="2014spring.20140506161101.1980" a="E"><vh>@path 2ag14</vh>
 <v t="2014spring.20140506161101.1981"><vh>@edit doc.txt</vh></v>
 </v>
 <v t="2014pythonE.20140623212652.2002" a="E"><vh>@path 2ag15</vh>
@@ -219,7 +219,7 @@ course-mde-tw 為協同人員
 <t tx="2014pythonE.20140429160432.1843"></t>
 <t tx="2014pythonE.20140429160432.1847"></t>
 <t tx="2014pythonE.20140429160432.1848">@nocolor
-﻿協同產品設計實習專案(2ag16)
+協同產品設計實習專案(2ag16)
 
 ===
 
