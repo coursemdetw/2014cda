@@ -249,7 +249,7 @@ var featID = three_plane_assembly(session, assembly, transf, 0, 0, "crossblockb.
 
 //var featID = three_plane_assembly(session, assembly, transf, 0, 0, "beam_7.prt", "ASM_TOP", "ASM_FRONT", "ASM_RIGHT", "TOP", "FRONT", "RIGHT"); 
 
-alert("第一個零件特徵 ID 為:"+featID);
+//alert("第一個零件特徵 ID 為:"+featID);
 
 // BEAM_ANGLE.prt 中間面為 middle_green, 其餘定位面則為 red 與 blue
 // AXLE_10.prt 中間面為 DTM1, Right 與 Front 則為定位面
@@ -275,9 +275,8 @@ three_plane_assembly(session, assembly, transf, featID, 0, "beam_5.prt", "DTM6",
  
 
 
-
 //5
-three_plane_assembly(session, assembly, transf, featID, 4, "crossblock3.prt", "FRONT", "TOP", "DTM4", "DTM2", "DTM12", "FRONT");
+three_plane_assembly(session, assembly, transf, featID, 1, "crossblock3.prt", "FRONT", "TOP", "DTM4", "DTM2", "DTM12", "FRONT");
 
 //6
 //three_plane_assembly(session, assembly, transf, featID, 0, "crossblockb.prt", "F6", "A_36", "A_38", "F9", "A_4", "A_3");
