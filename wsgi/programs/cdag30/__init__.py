@@ -70,15 +70,9 @@ try
     W =100;
     H=100;
         // 設定變數值, 利用 ModelItem 中的 CreateDoubleParamValue 轉換成 Pro/Web.Link 所需要的浮點數值
-<<<<<<< HEAD
     aValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(L);
     bValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(W);
     cValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(H);
-=======
-    aValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(myn);
-    bValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(myn);
-    cValue = pfcCreate ("MpfcModelItem").CreateDoubleParamValue(myn);
->>>>>>> a5452d6fc240975478fe8e59391376aa34e6596d
     // 將處理好的變數值, 指定給對應的零件變數
     a.Value = aValue;
     b.Value = bValue;

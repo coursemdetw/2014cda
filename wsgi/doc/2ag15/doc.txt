@@ -1,14 +1,336 @@
-網際鼓式煞車設計(2ag15)
+協同產品設計實習專案(2ag15)
 ===
 
-有關鼓式煞車
+組員:
+----------
+40123131 張凱傑
+40123146 廖振弦
+40123151 鄭羽
 
-程式設計架構
-===
+小組網站：https://2014cdag15-40123146.rhcloud.com/cmsimply/get_page?heading=CDAG15
 
-鼓式煞車
+以下為小組各週任務
+------------------
 
-結果與討論
-===
 
-這裡是結果與討論
+第十三週任務
+------------------
+任務一: 請以手動方式, 從下方下載 lego_man.7z 零件, 完成組立後, 以組員為單位, 在各分組報告區詳細說明組立過程的重點與注意事項. (5 分)
+
+任務二: 請利用 Vimeo 及 copy.com 存放任務一中的手動組立流程影片檔案, 以組員為單位, 將連結放入各分組報告區中. (5 分)
+
+任務三: 請仔細觀察協同程式中的 lego_man 自動組立程式, 並且從下方 lego_parts_edu.7z 中下載相同名稱的 lego_man 零件, 請詳細比較兩個壓縮檔案解開的 lego_man 零件檔案, 有哪些差別? 請將詳細比對結果以組為單位將資料放入各分組的報告中. (5 分)
+ 
+
+40123131_w13 張凱傑
+
+任務一 
+
+依照這個順序叫出零件:身體-右手-手掌-左手-手掌-腰身-右腳-左腳-頭-帽子
+
+並且在組裝時小心的約束他
+
+很多地方都需要用角度約束來讓小人的動作不會那麼僵硬 
+
+多練幾次這方面就很快了
+
+ 
+
+任務二
+
+手動組立操作過程影片
+
+vimeo:
+
+https://vimeo.com/95874246 
+ 
+
+w13_40123146 廖振弦
+
+任務一 
+
+先將身體加入是第一步　
+
+每個零件組合的做法大同小異　
+
+都是先將軸對齊後　在點面與面結合
+
+比較特別的是在接腿之前　要先將腰部接起來　
+
+接腰部要對三個面　分別對完後才可接合
+
+以上是組合的重點
+
+我認為要先多練習幾次 熟悉creo的介面
+
+不然在做的時候 很容易點到不同的東西 很難移動 
+
+ 
+
+任務二
+
+手動組立操作過程影片
+
+vimeo:
+
+https://vimeo.com/95857339
+
+copy:
+
+https://copy.com/QdDdElVTFsqq
+ 
+
+w13_40123151 鄭羽
+
+任務一 
+
+ creo打開之後，一開始組合lego必須要先把body叫出來，再叫出一個arm
+
+注意滾輪轉動，因為如果稍微轉動太大，物件立刻會定型，最後要修改是非常的困難
+
+基本上重點大至是這樣，其他步驟皆跟其他製圖軟體使用方是差不多
+
+任務二
+
+手動組立操作過程影片
+
+vimeo:
+
+https://vimeo.com/95857528
+
+
+第十四週任務
+------------------
+W14 任務 1 (5 分): 請以 Creo 開啟 remsub6.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+ 
+
+W14 任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.
+
+ 
+
+ W14 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub6 函式, 當使用者連結至各組雲端網站中的 remsub6, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+ 
+
+w14 40123131 張凱傑
+
+任務一、二
+
+ 這次的做法跟上次大同小異
+
+一樣要注意的點就是角度位移要做好
+
+而且這次零件比較多
+
+慢慢做就能很穩定的做得很好
+
+ 
+
+手動組立操作過程影片
+
+vimeo:
+
+https://vimeo.com/96586490
+
+ 
+
+w14 40123146 廖振弦
+
+任務一、二
+
+這次的組裝過程跟上跟上週差不多
+
+要注意的是　這次的每個零件的組裝
+
+幾乎都是要對兩個軸　再面對面
+
+經過上週的組立練習後　操作上也越來越順　
+
+這次時間較久　是因為零件較多的關係　
+
+手動組立大致上是沒什麼問題的
+
+ 
+
+手動組立操作過程影片
+
+vimeo:
+
+https://vimeo.com/96579216
+
+copy:
+
+https://copy.com/GcS22LDSYlWv
+ 
+
+w14 40123151 鄭羽
+
+ 任務一、二
+
+這禮拜又做了除了這禮拜的人偶以外的東西了
+
+做起來滿新奇的，但是用過這麼多製圖軟體，個人認為creo真的不算好用
+
+很多地方都可以在人性化一點，像上學期的solvespace雖然容量小小的
+
+但是他限制不會這麼多。但接觸各式軟體還不錯
+
+所以未來希望可以再接觸更多的製圖軟體
+
+ 
+
+手動組立操作過程影片
+
+vimeo:
+
+https://vimeo.com/96704576
+
+
+第十五週任務
+------------------
+W15 任務 1 (5 分): 請以 Creo 開啟 remsub5.asm, 本任務要求各組員以手動組立完成此一零件組立.
+
+W15 任務 2 (5 分): 請將任務 1 手動組立流程拍成 flv 檔案後, 分別上傳到 copy.com 與 Vimeo 網站, 並將個人心得與相關連結放入各組協同報告中.
+
+W15 任務 3 (5 分): 請修改上週小人偶自動組立程式, 以組為單位, 將組立命名為 remsub5 函式, 當使用者連結至各組雲端網站中的 remsub5, 可以完成自動組立, 操作完成後, 請將分組心得與相關連結放入各組協同報告中.
+
+ 
+
+w15 40123131 張凱傑
+ 
+
+w15 40123146 廖振弦
+
+任務一、二
+
+這週的任務跟上週差不多，只要creo操作多練習幾次
+
+短時間內完成是可行的
+
+ 
+
+手動組立操作過程影片
+
+vimeo:https://vimeo.com/97235628
+
+copy:https://copy.com/ltakYf20bQgl
+ 
+
+w15 40123151 鄭羽
+
+ 任務一
+
+做起來滿新奇的，但是用過這麼多製圖軟體，個人認為creo真的不算好用
+
+很多地方都可以在人性化一點，像上學期的solvespace雖然容量小小的
+
+但是他限制不會這麼多。但接觸各式軟體還不錯
+
+所以未來希望可以再接觸更多的製圖軟體
+
+像是PRO-E之類的軟體
+
+
+第十六~十八週任務(期末報告)
+------------------
+
+組員:
+
+40123131 張凱傑
+40123146 廖振弦
+40123151 鄭羽
+
+期末報告PDF:https://copy.com/QAl7jQR0iBtx
+
+摘要:
+
+  工業革命後，知識與技術大爆炸。250年後的現今科技日益月新的
+  
+  進步，人類不斷的想讓生活過得更好更舒適，便開始研發新產 
+  
+  品，能夠省下更多的時間與金錢，在工作方面可以更省力更便
+  
+  利，並不斷的改良一些不實用的用品，使這些物品更加的耐用。
+  
+  但是單靠一個人單打獨鬥很難做出一項產品，更別說闖出一片天
+  
+  了，這時就需要靠不同能力的人協同來完成工作、完成作品。
+
+    本次我們將要用協同的方式來完成自動組立機構，分別用圖以及
+    
+    程式結合再加上雲端協同系統，便能組員身在四方，但能省時又
+    
+    輕鬆的組立出費時又廢神的3D零件組裝
+
+根據教材三的架構做為導引， 編寫一份套件簡介的報告
+
+The diversity in software used to support collaborative design and concurrent engineering requires the implementation of new
+technologies in order to ensure the integration between the various activities of the product development process.
+考量支援協同設計與同步工程中軟體的多元性, 並且為了在產品開發過程中完成各項活動的整合, 就必須導入許多新的科技.
+
+Most of the time, companies can not afford to spend the time and the funds required to enhance their IT and software resources. This is often the case of small and medium companies.
+但通常中小型公司並無足夠時間與經費來強化其資訊科技與軟體資源.
+
+Nowadays, in mechanical design, the needs for product data sharing between Computer Aided Design (CAD) and finite element
+analysis (FEA) activities have been fairly increased even for small companies.
+目前, 即便是小型公司, 就機械設計在電腦輔助設計與有限元素分析過程中的產品資料分享需求, 卻仍不斷增加.
+
+This article aims at presenting Teamproject software, an asynchronous Web Computer Supported Cooperative Work (CSCW) oriented toward the sharing and viewing of 3D data (CAD and FEA) based on Virtual Reality Modeling Language (VRML).
+本文主旨在發表一套植基於虛擬實境模擬語言, 能夠分享並檢視 3D 資料 (電腦輔助設計與有限元素分析) 的非同步網際電腦分工支援系統,  Teamproject 軟體.
+
+Regarding the collaborative design and concurrent engineering approaches, this software increases the information access and its availability to expert and non-expert users in a remote mode.
+就協同設計與同步工程方法而言, 此套件能提升專家或非專家在遠端擷取資訊的效能.
+
+The article deals with the benefits proposed by the use of Web technologies in 
+mechanical design and structural analysis fields. It details the software architecture of Teamproject.
+
+本文處理使用機械設計裡的網際技術和結構分析領域利益的好處
+詳細說明了Teamproject.的軟件架構
+
+One of the added values offered by the new version of the Web CSCW is the translation of CAD and FEA data into VRML format. It extends the 3D product data review to all the team members involved in a project. Indeed, the reading of the Java3D can be ensured by the most used web navigator (like Internet Explorer and Netscape) with the aid of a free plug-in.
+
+其中一個增加價值是被新版本的網際電腦分工支援系統
+是在虛擬實境模擬語言格式裡電腦輔助設計和有限元素分析的資料所翻譯提供
+它擴張的3D產品數據回顧了所有參予此計畫的小組成員
+的確，Java3D這免費插件可被保證是最多被使用的(就像Internet Explorer and Netscape)
+
+To summarize, the proposed Web CSCW provides a simple and efficient access to mechanical design and structural analysis data in a real collaborative engineering approach.
+
+總之，網際電腦分工支援系統在協同工程方法裡提供一個簡單且高效能存取的機械設計和結構分析資料
+
+Using Internet as communication support allows the implementation of new methods and tools enabling collaborative engineering in a remote and distributed design project approach.
+使用互聯網作為通信的方法能 和工具執行在遠程協同工程和分佈式 在於設計項目的方法。
+
+An asynchronous Web CSCW, such as Teamproject, can significantly improve project management and sharing of information between partners.
+用網際電腦分工支援系統協同工作， 如Teamproject，可以顯著提高項目 之間的管理和共享信息 系統。
+
+The implementation of such a kind of Web CSCW is easy because it is fully based on Internet and OpenSource features. Teamproject may provide a real added value in the management of design projects.
+這樣的一種實施網際電腦分工支援系統是容易的，因為它是完全基於互聯網 和開源的特性。團隊項目可以提供 在實際設計項目的管理附加值。
+
+It offers a fast and efficient access to the issues of mechanical design and structural analysis.
+它提供了一個快速，高效的 機械設計和結構分析。
+
+Without this kind of software, these data require the use of tools with a huge corporate know-how and expertise, especially in FEA field.
+如果沒有這個 種軟件，這些數據需要使用工具用 一個龐大的企業知識和專業知識，尤其是在有限元素分析。
+
+This article has introduced the use of Web technologies in mechanical design project. The architecture and the main features of the asynchronous CSCW developed by Ideamech Company have been described.
+本文介紹了使用網際技術 在機械設計項目。 該體系結構 和異步網際電腦分工支援系統的主要特點 通過Ideamec公司開發的已有描述。
+
+Regarding the users’ needs for communication, coordination, and cooperation in collaborative engineering, the following key functionalities of Teamproject can be underlined:projects and documents management, message notification, files sharing, CAD and FEA viewing.
+關於用戶的通信，協調的需要， 還有協同工程的合作， Teamproject以下的主要功能 強調：項目和文檔管理 消息通知，文件共享，電腦輔助設計和有限元素分析 的觀賞。
+
+Based on a survey of available technologies, the choice new 3D data viewer based on Java3D has been made and its specifications have been detailed.
+基於現有技術的調查， 和Java3D新的三維數據查看器 已取得其規格並已經詳細的說明。
+
+學習心得：
+　　
+　　經過這十八周的協同之後，此堂課給我們小組最大的收穫不外乎就是團隊合作的重要性，俗話說三個臭皮匠勝過一個諸葛亮，每個人都各有所長，現今社會想要當一個全能的人是多麼困難的事情，但若藉著團隊合作必定也能夠做到比單打獨鬥來的更有效率的成果，當然能夠排除時間與空間問題也是拜科技所賜。
+
+　　這學期在技術方面學到的協同，包括架設雲端dokuwiki、CMSimply還有Creo零件組立、自動組立等…，這些使我們或機械設計工程師更便利的去協同，所以其實兩年來受益良多。
+
+
+
+小組網站：
+dokuwiki：https://cd15dokuwiki-40123146.rhcloud.com/doku.php?id=start&do=revisions
+CMSimply：http://cd15cmsimply-40123146.rhcloud.com/get_page?heading=head%201
+
